@@ -46,3 +46,9 @@
 * [PROGRAMMING IS NOT A CRAFT](http://blog.8thlight.com/doug-bradbury/2009/08/22/why-software-development-is-a-craft.html)
 * [Why Software Development is a Craft](http://dannorth.net/2011/01/11/programming-is-not-a-craft)
 * [Software Engineering: Dead?](http://blog.codinghorror.com/software-engineering-dead)
+
+### Class Notes
+- Get everyone to install Brew
+- Then install Git
+- Make sure everyone has their cloned
+- Talk about readings, practice committing to Github
