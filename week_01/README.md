@@ -67,4 +67,6 @@ https://mac.github.com/
   * Pushing changes
   * Pulling remote changes
   * [*Awesome* article about Git and Github](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1)
+  * Keeping our forks in sync
+    * https://help.github.com/articles/syncing-a-fork 
 * Talk about readings
