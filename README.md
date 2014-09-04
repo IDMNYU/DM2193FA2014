@@ -21,11 +21,15 @@ enable the production of a website of professional-quality design and production
 
 ### PROGRAM GOALS
 
-The following IDM program goals are introduced and reinforced within this course. Students will:
+The following IDM program goals are introduced and reinforced within this course. 
 
-* Achieve a well-rounded proficiency in technical concepts including: core competence in object-oriented computer programming; fluency in industry standard best practices, hardware, software, and professional workflows; and full understanding of the interaction and user design concepts behind the art, science, and engineering in web development.
-* Understanding of digital media professions in different areas, including their professional structures, organizational hierarchies, and expected skills for entry.
+Students will:
 
+* develop conceptual thinking skills to generate ideas and content in order to solve problems or create opportunities.
+* develop technical skills to realize their ideas.
+* develop critical thinking skills that will allow them to analyze and position their work within cultural, historic, aesthetic, economic, and technological contexts.
+* gain knowledge of professional practices and organizations by developing their verbal, visual, and written communication for documentation and presentation, exhibition and promotion, networking, and career preparation.
+* develop collaboration skills to actively and effectively work in a team or group.
 
 ### COURSE GOALS
 
