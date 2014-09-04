@@ -32,6 +32,8 @@
   * [Craigslist](http://www.craigslist.com)
   * [Yahoo](http://www.yahoo.com)
   * [Hacker News](https://news.ycombinator.com)
+* Semantics
+ * ![neat chart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.png)
 
 ... MORE TBD ...
 
@@ -40,6 +42,7 @@
 ### Reading Assignment
 * [Following A Web Design Process](http://www.smashingmagazine.com/2011/06/22/following-a-web-design-process)
 * [How to Read a Wireframe](http://blog.fuzzymath.com/wp-content/uploads/2011/07/Fuzzy-Math-How-to-read-a-wireframe.pdf)
+* [Semantics in HTML5](http://alistapart.com/article/semanticsinhtml5)
 
 ### Coding Exercise
 * Create a Stylesheet 

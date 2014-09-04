@@ -33,7 +33,7 @@ Each week add a link into your [deliverables.md](./deliverables.md) and include 
 Yugop reminds me of 2003 when the Internet was a weird wasteland of no more than the occasional experimental burst of bright white light 
 hinting of a future to come, rich with interactive design, thoughtful user experience, and relentless amounts of media information and context!
 
-### Reading Responses
+### Reading Response
 Each week before class add a reading response into your [deliverables.md](./deliverables.md)
 * Include A title and link to the article
 Reflect on the following questions:

@@ -43,12 +43,28 @@
 ### Q + A
 
 ### Reading Assignment
+Check out these three articles and write a response that reflects on what they mean to you!
 * [PROGRAMMING IS NOT A CRAFT](http://blog.8thlight.com/doug-bradbury/2009/08/22/why-software-development-is-a-craft.html)
 * [Why Software Development is a Craft](http://dannorth.net/2011/01/11/programming-is-not-a-craft)
 * [Software Engineering: Dead?](http://blog.codinghorror.com/software-engineering-dead)
 
+#Github for OSX
+https://mac.github.com/
+
 ### Class Notes
-- Get everyone to install Brew
-- Then install Git
-- Make sure everyone has their cloned
-- Talk about readings, practice committing to Github
+* Get everyone download Github's app for OSX
+* Make sure everyone has the course repo forked and cloned to their computer
+* Setting up Sublime Text
+  * Install [Package Control](https://sublime.wbond.net/installation)
+  * Install jQuery Package (CMD+Shift+P, "PCI", "jquery")
+  * Helpful Articles
+    * http://www.coderslexicon.com/my-10-favorite-sublime-text-tools-and-shortcuts-for-beginners
+    * http://blog.alainmeier.com/post/27255145114/some-things-beginners-might-not-know-about-sublime-text
+  * Try stuff!
+* Overview of Git and Github
+  * Making changes
+  * Committing changes
+  * Pushing changes
+  * Pulling remote changes
+  * [*Awesome* article about Git and Github](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1)
+* Talk about readings

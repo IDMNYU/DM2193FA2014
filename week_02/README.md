@@ -38,7 +38,7 @@
 * HyperText Markup Language
   * Elements
   * Attributes
-  * Semantics
+  * [Semantic Markup](http://en.wikipedia.org/wiki/Semantic_HTML)
 * Cascading Stylesheets
   * CSS 1, 2, 3
   * Selectors
