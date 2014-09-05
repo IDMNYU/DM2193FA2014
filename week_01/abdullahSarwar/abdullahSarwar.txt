@@ -1,0 +1,12 @@
+
+Assignment:
+
+ChessNYC ChessNYC blasts you with information on its homepage, but the placement of all the information is in a comfortable and organized location. It has just enough visuals to keep the user interested (Rolling Banner), but not too many which might cause the user to be overwhelmed. The logo of the company is the most repeated image on the website which makes it easier for the user to recognize the brand, if he or she ever sees it. The website has drop down menus, rolling banners, easy-to-see contact information, and boxes around most of the main features; these features give a user comfortable layout by making the site easy to navigate.
+
+Here's a link to a Lynda.com course that teaches HTML.
+
+This is a link to a Joomla! tutorial course, Joomla! is the CMS that ChessNYC.com uses.
+
+Reading Responses
+
+Coming Soon!
