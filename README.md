@@ -195,7 +195,11 @@ If you are student with a disability who is requesting accommodations, please co
     * Twitter Bootstrap
     * SASS & LESS
 * [Week 10](./week_10/README.md)
-
+  * Flex time to cover special topics
+    * Accessibility
+    * Print Stylesheets
+    * Mobile Web
+    * Server-side languages
 * [Week 11](./week_11/README.md)
   * Final Project: Introducion to Final Project
   * Propose Create a Tumblr Theme
