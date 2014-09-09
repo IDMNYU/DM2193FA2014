@@ -166,16 +166,44 @@ If you are student with a disability who is requesting accommodations, please co
 
 ### COURSE WEEKS
 * [Week 1](./week_01/README.md)
+** Introduction to the Course
 * [Week 2](./week_02/README.md)
+** HTML, XML, Semantics
+** Browser Environment
 * [Week 3](./week_03/README.md)
+** Cascading Stylesheets
+** Separation of Data and Display
 * [Week 4](./week_04/README.md)
+** Javascript
+** Adding Behavior to Display 
 * [Week 5](./week_05/README.md)
+** Midterm Project: Information and Interface Design
+** Redesign Craigslist or Hacker News
 * [Week 6](./week_06/README.md)
+** Midterm Critique
 * [Week 7](./week_07/README.md)
+** Advanced Interfaces:
+*** Sticky Headers
+*** Modals & Dropdowns
+*** Slideshow
+*** Lightbox
 * [Week 8](./week_08/README.md)
+** Advanced Interfaces:
+*** Media Queries and Responsive Design
 * [Week 9](./week_09/README.md)
+** Frameworks and Preprocessors:
+*** Twitter Bootstrap
+*** SASS & LESS
 * [Week 10](./week_10/README.md)
+
 * [Week 11](./week_11/README.md)
+** Final Project: Introducion to Final Project
+** Propose Create a Tumblr Theme
 * [Week 12](./week_12/README.md)
+** Final Project: Design & Build Sessions
+*** Design Critique
 * [Week 13](./week_13/README.md)
+** Final Project: Finish Build
+*** Build & User Experience Critique
 * [Final Project](./final/README.md)
+** Final Project due with **all end of course documentation**!
