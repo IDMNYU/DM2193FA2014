@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<h1>This is a pretty gnarly title</h1>
+		<label>What's your name?</label><input type="text" id="name" value="">
+		<button id="submit" onclick="answer();">This is my name.</button>
+	</body>
+
+	<script>
+		function answer(){
+			var name = document.getElementById('name').value;
+
+			if (name != ""){
+				alert("Well you're dumb, " + name);
+			}else{
+				alert("I said what's your name...?");
+			}
+		}
+	</script>
+</html>
