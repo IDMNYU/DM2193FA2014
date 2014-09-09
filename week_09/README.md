@@ -9,7 +9,7 @@
     Rm 813 • 3 credit hrs
     Office hours by appointment or directly after class
     Email <johnny.benson@nyu.edu>
-    Class Website <https://github.com/DM2193/DM2193>
+    Class Website <https://github.com/IDMNYU/DM2193FA2014>
 
 ---
 
