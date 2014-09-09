@@ -57,18 +57,19 @@ p {
 		<br><br>
 		<span>Thank you for taking the survey!</span>
 		<br>
-		<button onClick = "continue();" name = "submit">Submit</button>
+		<button onClick = "result()" name = "submit">Submit</button>
 	</p>
-	<h5 id = "result"></h5>
-</body>
-<script>
-	function continue()
+	<script>
+	function result()
 	{
-		alert("This page will refresh on successful submission, are you sure you want to proceed?");
-		if(confirm("Yes") == true)
+		if(confirm ("This page will refresh on successful submission, are you sure you want to proceed?") == true)
 		{
 			history.go(0)
 		}
+		else
+		{
+		}
 	}
 </script>
+</body>
 </html>
