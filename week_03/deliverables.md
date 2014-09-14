@@ -16,7 +16,7 @@
 ## Weekly Deliverables
 
 ### Show & Tell
-
+http://showcase.commercialtype.com/
 ### Reading Responses
 
 ### Coding Exercise
