@@ -13,6 +13,15 @@
 
 ---
 
+<h1> Home work for second week. Reading respons!</h1>
+
+<p>
+	The first article has fully explained how things works in different side, for both developer and costumers. I am totally agree with taht and I have read other books, mentioned about the same thing. Then it brings me a question, when everyone knows colorful things or specific structure are key point of how a website performance, why we can't make the html has the ability to do the same work? There are so many tools are able to do this but not direct on html. 
+	For the second article, lots of ideas works great but they may not be a great business idea, it does not turn profit and it is a big issue with lots of websites, it performe things, normally free and can not produce anything in order to make real profit. 
+</p>
+
+
+
 ## Weekly Deliverables
 
 ### Overview
