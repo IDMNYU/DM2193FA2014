@@ -20,12 +20,13 @@
 
 ### In-Class
 
-* Code Review: Basic Document
 * Reading Discussion: Designing for the Web
 * Early Web 
   * This website works best in Netscape Navigator at 640x480
 * Web 2.0
   * Web Standards
+    * [Designing with Web Standards (3rd Edition)](http://www.amazon.com/Designing-Web-Standards-Jeffrey-Zeldman/dp/0321616952)
+    * http://www.webstandards.org
 * Mobile First
 * Responsive Design
 * User Interface and Information Design Case Studies:
@@ -34,6 +35,7 @@
   * [Hacker News](https://news.ycombinator.com)
 * Semantics
  * ![neat chart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.png)
+* Code Review: Basic Document
 
 ... MORE TBD ...
 
