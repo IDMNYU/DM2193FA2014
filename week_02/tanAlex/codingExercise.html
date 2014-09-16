@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 2 Assignment</title>
+</head>
+<style>
+h3 {
+	height:25vh;
+	margin:0px;
+	border:1px solid black;
+	text-align:center;
+	padding-top:3%;
+}
+
+div {
+	height:25vh;
+	border:1px solid black;
+	text-align:center;
+	padding-top:3%;
+	border-top:none;
+}
+
+a {
+	color:black;
+	text-decoration:none;
+}
+
+p {
+	height:25vh;
+	margin:0px;
+	border:1px solid black;
+	border-top:none;
+	text-align:center;
+	padding-top:3%;
+}
+</style>
+<body>
+	<h3>
+		<big>Welcome! This is a short survey</big>
+		<br>
+		<small>It will only take a few seconds</small>
+	</h3>
+
+	<div>
+		<a href = "https://38.media.tumblr.com/tumblr_lmi0qugt5r1qindnxo1_400.gif">Click to see a cute gif</a>
+		<br>
+		<b>Did you like that gif?</b>
+		<select>
+			<option value = "yes">Yes</option>
+			<option value = "no">No</option>
+		</select>
+	</div>
+
+	<p>
+		<span>What is your name?</span>
+		<input type = "text" name = "text1" value = "Name">
+		<br><br>
+		<span>Thank you for taking the survey!</span>
+		<br>
+		<button onClick = "result()" name = "submit">Submit</button>
+	</p>
+	<script>
+	function result()
+	{
+		if(confirm ("This page will refresh on successful submission, are you sure you want to proceed?") == true)
+		{
+			history.go(0)
+		}
+		else
+		{
+		}
+	}
+</script>
+</body>
+</html>

@@ -9,7 +9,7 @@
     Rm 813 • 3 credit hrs
     Office hours by appointment or directly after class
     Email <johnny.benson@nyu.edu>
-    Class Website <https://github.com/DM2193/DM2193>
+    Class Website <https://github.com/IDMNYU/DM2193FA2014>
 
 ---
 
@@ -72,7 +72,14 @@
 * [The Unproven Path BY JOEL SPOLSKY](http://www.inc.com/magazine/20081101/how-hard-could-it-be-the-unproven-path.html)
 * (Optional) [Garrett, Jesse James. “Chapter 2: Meet the Elements.” from The Elements of User Experience: User-Centered Design](http://www.jjg.net/elements/pdf/elements_ch02.pdf)
 
-### Coding Exercise
+### Homework
+* Put together three recipe pages. 
+  * Mark them up in HTML
+  * Make them use the same heirarchical structure! 
+  * Commit them to your **Week 2** folder.
+  * index.html, index2.html, index3.html
+
+### (OLD) Coding Exercise -- Extra Credit
 * Create a **[valid](http://html5.validator.nu)** HTML Document that contains:
   * At least three different block level elements
   * Inside each block level element should be three different inline elements
