@@ -16,7 +16,8 @@
 ## Weekly Deliverables
 
 ### Show & Tell
-http://showcase.commercialtype.com/
+[Showcase Commercial Type](http://showcase.commercialtype.com/)
+Features designs for 16 microsites that each show a different font family from a library and "highlight a different aspect of its personality." The font microsites are interactive and engaging and feature fonts in a variety of instances == whether conversation or animation. 
 ### Reading Responses
 
 ### Coding Exercise
