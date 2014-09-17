@@ -1,0 +1,21 @@
+body{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: white;
+    background-color: brown;
+
+    margin-top: 100px;
+   	margin-bottom: 100px;
+    margin-right: 300px;
+    margin-left: 300px;}
+
+h1 {color: #31B404;
+	font-size: 40px;}
+
+h2 {color: #BCF5A9;
+	font-size: 30px;}
+
+a:link {color: #F2F2F2;}
+
+a:visited {color: #848484;}
+
+a:hover {text-decoration: underline;
