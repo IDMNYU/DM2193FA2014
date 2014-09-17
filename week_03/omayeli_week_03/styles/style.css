@@ -1,0 +1,17 @@
+
+body {
+	background: brown;
+}
+
+h1 {
+	font-family: "ADOBE MYUNGJO STD";
+	text-align: center;
+	font-size: 50px;
+	color: white;
+}
+ul {
+   list-style-type: circle;
+}
+ol {
+    list-style-type: circle;
+}
