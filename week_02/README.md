@@ -32,6 +32,12 @@
   * Chrome
   * -Netscape-
   * -Mosaic-
+* Early Web 
+  * This website works best in Netscape Navigator at 640x480
+* Web 2.0
+  * Web Standards
+    * [Designing with Web Standards (3rd Edition)](http://www.amazon.com/Designing-Web-Standards-Jeffrey-Zeldman/dp/0321616952)
+    * http://www.webstandards.org
 * [Document Object Model](http://www.w3.org/TR/DOM-Level-3-Core/introduction.html)
   * The DOM is a programming API for documents. It is based on an object structure that closely resembles the structure of the documents it models.
   * ![DOM Modules](http://j-hnnybens-n.com/capture/zkgst.png)
