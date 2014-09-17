@@ -1,0 +1,89 @@
+/*
+    Reset Style Sheet
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+}
+
+/*
+    Start Styles
+ */
+
+/*
+    Specificty
+    Elements +1
+    .Classes +10
+    #Ids     +100
+ */
+
+/* 
+    Commas let you group selectors together to have the
+    same properties applied to them.
+
+    Commas are "and"'s
+
+    .heading, 
+    .subheading {
+        font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    }
+*/
+
+/* 
+    Spaces let you target elements that are children of other elements
+    You have to read them in reverse.
+
+    "Give me all of the children IN this parent"
+    Example:
+
+
+*/
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+}
+
+.recipe {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.heading {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.subheading {
+    font-size: 24px;
+    /* 
+        Example: Short-hand syntax
+        margin: 5px 0 20px 0;
+    */
+   margin-top: 50px;
+   margin-right: 0;
+   margin-bottom: 10px;
+   margin-left: 0;
+}
+
+.ingredients {
+    list-style: none;
+}
+
+.ingredients .ingredient {
+    margin-bottom: 10px;
+}
+
+.recipe-instruction-heading {
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+.recipe-instruction-heading,
+.recipe-instruction-body {
+    margin-bottom: 5px;
+}
