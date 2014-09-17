@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+}
+
+body{
+	background: #FF00FF;
+	color: #4B0082;
+	font-family: "Arial"
+	font-size: 12px;
+}
+/*.heading,
+.subheading{
+	font-family: "Arial"
+}*/
+.heading {
+	font-size: 48px;
+}
+
+.subheading{
+	font-size: 36px;
+}
+
+/*commas let you you group selectors together to have the same properties applied to them*/
+/*Commas are "and"'s as html is to English*/
+/*The normal class is the equivalent to the commas and classes*/
+
+/*.normal{
+	font-family: "Arial"
+}/
+
+/*
+	Spaces let you target elements that are children of other elements
+	You have to read them in reverse.
+
+	"Give me all of the children IN this parent"
+
+
+*/
+
+
+/*
+	Specificity
+	Elements: 1;
+	CLassees: 10;
+	Ids: 100;
+
+*/
