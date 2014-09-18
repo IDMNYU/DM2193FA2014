@@ -20,10 +20,15 @@
 Features designs for 16 microsites that each show a different font family from a library and "highlight a different aspect of its personality." The font microsites are interactive and engaging and feature fonts in a variety of instances == whether conversation or animation.
  
 ### Reading Responses
-* [The Unproven Path](http://www.inc.com/magazine/20081101/how-hard-could-it-be-the-unproven-path.html)
-What really stood out to me was "I abandoned seven long-held principles about business and software engineering, and nothing terrible happened." So much of innovation and entrepreneurship is just getting down to it. We may make the mistake of planning for so long and trying to make sure everything is right before we begin that we never actually begin or it ceases to become what it was when we started -- a passion project. Nothing drains out passion and enthusiasm as much as weeks of organization and planning. Sometimes the best strategy is to "just do it." I absoultely agree with his conclusion.
-* [Understanding Visual Organization](http://www.lukew.com/ff/entry.asp?981)
-The article echoes what we just learnt in my Visual Foundation class which is we have a great responsiblity as artists in determining what comes across to the seer. Our teacher was talking about how visual design is so much more than "making things pretty" and this article is just a fine example. Look at how many things we have to take into consideration! In that class, we're discussing color and patterns, and now I'm reading about visual hierarchy and relationships -- all things that come together to send a message visually. So everything is coming full cirle.
+* [Following a Web Design Process](http://www.smashingmagazine.com/2011/06/22/following-a-web-design-process/)
+I thought the article was very informative and cool -- the list of resources is really helpful. It reminded me that what we're (trying) to do isn't strictly one-sided. There are other things to think about rather than our own vision namely the client, target audience e.t.c. Also, I like that it acknowledged that "the process will be different for each designer/project." It's something I think I'd try to follow without fail but in the end I think I'd fall back into disorganization. We'll see. Kudos to the people that can do this for every project though.
+
+* [Semantics in HTML 5](http://alistapart.com/article/semanticsinhtml5)
+Fav quote: "Let’s not rush into these decisions lightly—after all, with climate change we’ve saddled our grandkids with enough trouble as it is. Let’s at least leave them the best possible HTML we can."
+HTML isn't going anywhere soon and I do agree with the author pretty much on everything he said. While at the back of my mind I'm thinking we could just wing it (forever) and who even uses IE6/IE7 anymore?? it's important to cater to all browsers and readers and responsibly find a way to make HTML better. The additions on HTML5 while an improvement (e.g section to group content and time) it's not a feasible solution. We can't just keep adding elements whenever we see a need for something. We'll end up with a billion elements half of which cannot show on a percentage of browsers. I like his recommendation (the class names) -- using what is already there just in a more specific and different way. But it begs the question how (if we are to) create a standard and make it normal practice.
+lass values, or should the possible values all be determined by a standardized specification?
+* [How to read a wireframe](http://blog.fuzzymath.com/wp-content/uploads/2011/07/Fuzzy-Math-How-to-read-a-wireframe.pdf)
+I don't get it ...yet.
 
 
 ### Coding Exercise
