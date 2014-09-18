@@ -2,7 +2,7 @@ Article Discussion
 =========
  
 ____
-Visible Narratives: Understanding Visual Organization by Luke Wroblewski
+[Visible Narratives: Understanding Visual Organization by LukeW]
 ---
 ---
 
@@ -21,7 +21,7 @@ Visual hierarchy does more than simply explain page elements.
 Visual organization is only half of visual communication.
 
 ---
-How Hard Could It Be? by Joel Spolsky
+[How Hard Could It Be? by Joel Spolsky]
 ---
 ---
 
@@ -46,7 +46,7 @@ We're not going to need big racks of computers; it turns out that Jeff and his p
 For his part, Jeff says he didn't want our new venture to feel "Like work" - that if Stack Overflow wasn't fun to do, he didn't want to be doing it.
 
 ---
-The Elements of the User Experience by Jesse James Garrett
+[The Elements of the User Experience by Jesse James Garrett]
 ---
 ---
 
@@ -89,3 +89,7 @@ If we can get them, will we have a way to catalog them, keep track of them, and 
 As the technology has advanced databases have become more widely used to drive Web sites.
 
 We'll see what the elements on each plane have in common, what makes each one different, and how they affect each other to create the total user experience.
+
+[The Elements of the User Experience by Jesse James Garrett]:http://www.jjg.net/elements/pdf/elements_ch02.pdf
+[Visible Narratives: Understanding Visual Organization by LukeW]:http://www.lukew.com/ff/entry.asp?981
+[How Hard Could It Be? by Joel Spolsky]:http://www.inc.com/magazine/20081101/how-hard-could-it-be-the-unproven-path.html
