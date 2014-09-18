@@ -6,42 +6,23 @@ ____
 ---
 ---
 
-Visual communication can be thought of as two intertwined parts: personality, or look and feel, and visual organization.
+Visual communication can be thought of as two intertwined parts: personality, or look and feel, and visual organization. Visual organization must be split into hierarchies in order for the website to look condensed. To build effective visual hierarchies, we use visual relationships to add more or less visual weight to page elements and thereby establish a pattern of movement through the layout. Without visual hierarchy, page elements compete for attention, and as a result, none of them win. In a layout with an effective visual hierarchy, the distinct visual weight of each element guides viewers through the page in an informative and appropriate manner. 
 
-To build effective visual hierarchies, we use visual relationships to add more or less visual weight to page elements and thereby establish a pattern of movement through the layout.
-
-Without visual hierarchy, page elements compete for attention, and as a result, none of them win.
-
-In a layout with an effective visual hierarchy, the distinct visual weight of each element guides viewers through the page in an informative and appropriate manner.
-
-Meaning is created through the differences and similarities among elements and their place in the page's visual hierarchy.
-
-Visual hierarchy does more than simply explain page elements.
-
-Visual organization is only half of visual communication.
+Meaning is created through the differences and similarities among elements and their place in the page's visual hierarchy. Visual hierarchy does more than simply explain page elements. Visual organization is only half of visual communication, the rest is personality and feel. 
 
 ---
 [How Hard Could It Be? by Joel Spolsky]
 ---
 ---
 
-Users wouldn't have to search through 100 answers, some of which were clearly wrong, because the best answers would rise to the top as other members of the community voted.
+Users wouldn't have to search through 100 answers, some of which were clearly wrong, because the best answers would rise to the top as other members of the community voted. Like all Joel's other ideas, it went nowhere. Jeff liked the idea, so they decided to make it a joint venture.
 
-Like all my other ideas, nobody around here had any time to do it, so the idea went nowhere.
+Joel had no idea if the site would work or exactly how it might make money, and he didn't have a ton of time to put into it.
+The design for Stack Overflow was mapped out in a few phone conversations, and Jeff and his friends just started banging out the code. Jeff kept telling Joel, "It's going to take six to eight weeks." Joel knew there was no chance that would happen, given that Jeff pulled his timeline completely out of thin air, but Joel still humored him.
 
-Jeff liked the idea, so we decided to make it a joint venture.
+The voting system worked well - you could see that the answers to a given question were getting sorted with the best at the top of the rankings. Before Joel could type in the whole question, Jeff's code cleverly pointed out that someone already had asked that exact question and gotten a few answers, and the best answer had already been voted up to the top.
 
-I had no idea if the site would work or exactly how it might make money, and I didn't have a ton of time to put into it.
-
-The design for Stack Overflow was mapped out in a few phone conversations, and Jeff and his friends just started banging out the code.
-
-Jeff kept telling me, "It's going to take six to eight weeks." I knew there was no chance that would happen, given that Jeff pulled his timeline completely out of thin air, but I humored him.
-
-The voting system worked well - you could see that the answers to a given question were getting sorted with the best at the top of the rankings.
-
-Before I could type in the whole question, Jeff's code cleverly pointed out that someone already had asked that exact question and gotten a few answers, and the best answer had already been voted up to the top.
-
-We're not going to need big racks of computers; it turns out that Jeff and his programmers were so good that they built a site that could serve 80,000 visitors a day using only one server that costs a few hundred bucks a month.
+They didn't need big racks of computers; it turns out that Jeff and his programmers were so good that they built a site that could serve 80,000 visitors a day using only one server that costs a few hundred bucks a month.
 
 For his part, Jeff says he didn't want our new venture to feel "Like work" - that if Stack Overflow wasn't fun to do, he didn't want to be doing it.
 
