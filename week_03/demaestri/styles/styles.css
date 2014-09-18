@@ -1,2 +1,50 @@
 body {
-background-color: blue }
+background-color: lightgrey }
+
+/*
+Reset style sheet
+*/
+
+*{ 
+	
+	padding: 0;
+	font-size: 100%;
+	font: inherent;
+	font-weight: normal;
+}
+
+/*
+.heading,
+.subheading {
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+*/
+
+.recipe{
+	width:85% ;
+	height: 12px auto ;
+	font-family: "Gill Sans", Sans-serif;
+}
+body{
+	font-size: 12px;
+}
+
+
+.heading{
+	font-size: 40px;
+	margin-bottom: 20 px;
+}
+
+.subheading{
+	font-size: 20px;
+	font-variant: small-caps;
+}
+
+.recipe-instruction{
+	font-weight: bold;
+}
+
+.ingredients.ingredient{
+	margin-bottom: 10px;
+}
+*/
