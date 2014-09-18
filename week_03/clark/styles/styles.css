@@ -4,11 +4,12 @@
 	font-size: 100%;
 	font: inherit;
 	font-weight: normal;
+	line-height: 1.5;
 }
 
 body{
-	background: #FF00FF;
-	color: #4B0082;
+	background:	#A0522D;
+	color: white;
 	font-family: "Arial"
 	font-size: 12px;
 }
@@ -17,12 +18,55 @@ body{
 	font-family: "Arial"
 }*/
 .heading {
-	font-size: 48px;
+	font-size: 36px;
+	margin: 10px;
+	text-align: center;
+}
+
+.heading-words{
+	color: black;
 }
 
 .subheading{
-	font-size: 36px;
+	font-size: 24px;
+	background: black;
+	width: 100%;
+	border-radius: 5px;
+	text-align: center;
 }
+
+.subheading .nav-item{
+	color: white;
+	padding: 4px, 4px;
+}
+
+.image-banner  {
+    width: 55%;
+    height: 360px;
+    margin: auto;
+    border-radius: 10px;
+    background: url('../images/DANCING_COOKIE.gif') 50% 50%;
+    background-size: cover;
+}
+
+.ingredients{
+	list-style: none;
+}
+
+.ingredient{
+	color:black;
+	margin-bottom: 12px;
+}
+
+.instructions{
+	list-style: decimal;
+}
+
+.instruction{
+	color:white;
+	margin-bottom: 5px;
+}
+
 
 /*commas let you you group selectors together to have the same properties applied to them*/
 /*Commas are "and"'s as html is to English*/
