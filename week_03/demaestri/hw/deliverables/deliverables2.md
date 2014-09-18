@@ -12,15 +12,15 @@
     Class Website <https://github.com/DM2193/DM2193>
 
 ---
+WEEK 3! (EXTRA CREDIT !!! YEAHHH extra credit is the best.)
 
 ## Weekly Deliverables
 
 ### Show & Tell
 
+http://mry.com/
 
-http://prescottfoland.co/hexshifter/ 
-
-So in this website you can make a color based on changing the RGB scales and it’s just visually a very cool way of displaying this. And then it’s also awesome that they give you the exact hex number for the color, so it’s create for web designers. 
+I LOVE LOVE LOVE the design of this website. And it makes me wanna work there. I literally just reopened it just to scroll up and down over and over again. It's so beautiful :')
 
 
 ### Reading Responses
