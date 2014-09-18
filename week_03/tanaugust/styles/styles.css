@@ -1,0 +1,41 @@
+/*body{
+	background: lightgreen;
+}*/
+*{
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	font-size: 100%;
+	font-weight: normal:;	
+}
+
+h1{
+	font-size: 123px;
+}
+
+
+/*
+.heading,
+.subheading{
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}*/
+
+.normal{
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+.heading{
+	font-size: 48px;
+}
+
+.subheading{
+	font-size:36px;
+}
+
+#logo{
+	color: darkorange;
+}
+
+.ingredients .ingredient{
+	margin-bottom: 10px;
+}
