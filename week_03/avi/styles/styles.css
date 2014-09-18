@@ -1,0 +1,39 @@
+/*
+
+Reset Style Sheet  
+
+*/
+
+
+body {
+	background: white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+
+}
+
+.heading {
+	font-size: 48px;
+	font-family: "Helvetica Neue" ;
+
+}
+
+.subheading {
+	font-size: 36px;
+	font-family: "Helvetica Neue" ;
+}
+
+#logo {
+	color: darkorange;
+}
+
+.ingredients .ingrediets {
+	font-family: helvetica
+	color: blue;
+}

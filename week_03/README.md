@@ -20,24 +20,53 @@
 
 ### In-Class
 
+#### Tuesday
+* Cascading Stylesheets
+  * Selectors
+    * Comma separated selectors
+    * Space separated selectors
+  * Properties
+  * Specificity
+    * Element +1
+    * .Class +10
+    * #ID + 100
+  * Top-down Parsing
+* Box Model
+  * Content
+  * Padding
+  * Border
+  * Margin
+  * Outline
+  * ![Box Model](http://j-hnnybens-n.com/capture/xhbaq.png)
+* Reset Styles
+  * vs. Browser Default Styles
+* External Styles
+  * `<link>` Tag
+* Inline Styles
+  * `<style>` Tag
+* Style Attribute
+  * `<p style="color:red"></p>`
+* Chrome Developer Tools
+  * ![DevTools](http://j-hnnybens-n.com/capture/cwqvi.png)
+    * View the live box model for any element
+    * See the parsed markup
+    * See styles applied to elements
+      * Manipulate styles for testing
+
+#### Thursday
+* Show & Tell
 * Reading Discussion: Designing for the Web
-* Early Web 
-  * This website works best in Netscape Navigator at 640x480
-* Web 2.0
-  * Web Standards
-    * [Designing with Web Standards (3rd Edition)](http://www.amazon.com/Designing-Web-Standards-Jeffrey-Zeldman/dp/0321616952)
-    * http://www.webstandards.org
-* Mobile First
-* Responsive Design
+* In-Class Coding
+  * Finish styling recipes
+  * Combine into a single page
+* Review Chrome Developer Tools Again
+* Mobile First & Responsive Design
 * User Interface and Information Design Case Studies:
   * [Craigslist](http://www.craigslist.com)
   * [Yahoo](http://www.yahoo.com)
   * [Hacker News](https://news.ycombinator.com)
 * Semantics
  * ![neat chart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.png)
-* Code Review: Basic Document
-
-... MORE TBD ...
 
 ### Q + A
 
@@ -46,8 +75,15 @@
 * [How to Read a Wireframe](http://blog.fuzzymath.com/wp-content/uploads/2011/07/Fuzzy-Math-How-to-read-a-wireframe.pdf)
 * [Semantics in HTML5](http://alistapart.com/article/semanticsinhtml5)
 
-### Coding Exercise
-* Create a Stylesheet 
- * Style an element
- * Style using a .class
- * Style using an #ID
+### Homework
+* Continue work on your 3 recipe html documents
+  * **Make sure the HTML markup is consistent across all three documents!**
+    * Same tags, same class names!
+  * Add the `<link>` tag we created in the first recipe to the `<head>` of each of the documents
+    * Make sure your styles are applying correctly to all of the recipes!
+  * Expand on the styles we started in class
+    * Remember, no styling of elements, no styling with #ids!
+    * Only use .class names for styling.
+  * Commit them to your **Week 3** folder.
+    * We already got this started in class, it should just work :)
+

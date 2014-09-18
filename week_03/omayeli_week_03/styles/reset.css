@@ -1,0 +1,33 @@
+/*
+Reset style sheet
+*/
+/*// command / for comments*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+}
+/*
+Commas let you group selectors together to have the same properties applied to them
+*/
+<h1 class = " heading normal" <--- you can have multiple classes 
+/*
+Commas let you group selectors together to have the same properties applied to them
+*/
+.heading,
+.subheading {
+	font-size: 48px;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; /* fallback mode if it doesn't have the first one it gets the next and so on */
+	/* if you want to use this for index.html then you add class to it */
+}
+
+/*
+Specificity
+
+*/
+/*
+spaces show parent and child
+*/

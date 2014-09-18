@@ -15,8 +15,19 @@
 
 ## Week 4
 
+    Everything has beauty, but not everyone sees it.
+        — Confucious
+
 ### In-Class
+* Javascript
+  * Native Objects
+  * Frameworks
+    * jQuery
+    * Underscore
+  * Review Chrome Developer Tools Again!
+  * ![DevTools](http://j-hnnybens-n.com/capture/cwqvi.png)
+    * Javascript console
+    * Network Requests
 
-### Q + A
-
-### Reading Assignment
+* In-Class Coding
+  * Recipe Slideshow
