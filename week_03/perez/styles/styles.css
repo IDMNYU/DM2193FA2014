@@ -1,0 +1,62 @@
+/*
+	Reset Style Sheet
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+}
+
+/*
+	Start Styles
+*/
+
+/*
+Wrong
+h1 {
+	font-size: 123px;
+}
+
+p {
+	font-family: "Arial"
+}
+*/
+
+/*.heading,
+.subheading {
+	font-family: "Helvetica Neue, Helvetica, Arail, Sans-serif"
+}*/
+
+.normal {
+	font-family: "Helvetica Neue, Helvetica, Arail, Sans-serif"
+}
+
+.heading {
+	font-size: 48px;
+}
+
+.subheading {
+	font-size: 36px;
+}
+
+.ingredients, .ingredient {
+	margin-bottom: 10px;
+}
+
+.recipe-instruction {
+	margin-bottom: 10px;
+}
+
+#logo {
+	color: red;
+}
+
+/*
+	Specificity
+	Elements +1
+	.Classes +10
+	#Ids     +100
+*/
