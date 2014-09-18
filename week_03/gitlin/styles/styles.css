@@ -5,6 +5,17 @@
 .subheading {
 	font-size: 1.5em;
 }
-.inside-text {
+/*.inside-text {
 	margin-left: 1.5em;
+}*/
+.ingredient-heading, .instruction-heading {
+	padding-left: .5em;
+	font-size: 1.25em;
+}
+.ingredients {
+	font-size: large;
+}
+.instructions {
+	line-height: 1.5em;
+	font-size: medium;
 }
