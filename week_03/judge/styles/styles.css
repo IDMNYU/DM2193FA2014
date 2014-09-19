@@ -6,7 +6,7 @@
 	font: inherit;
 	font-weight: normal;}
 
-.heading, .subheading {font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+.heading, .subheading {font-family: "Georgia", Arial, Sans-Serif;
 font-weight: bold;}
 .heading {font-size: 42px;
 		font-color: #5F3514;}
@@ -26,7 +26,7 @@ font.bold {
     background-color: #E38F4F;}
 
 body{
-	font-family: "Helvetica Neue";
+	font-family: "Georgia";
 	background: #5F3514;
 	}
 
