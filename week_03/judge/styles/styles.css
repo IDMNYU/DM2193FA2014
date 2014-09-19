@@ -1,0 +1,33 @@
+/*reset style sheet:*/
+/*CSS reads from the top down - lower class name will win out because it was read last*/
+*{	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;}
+
+.heading, .subheading {font-family: "Georgia", Arial, Sans-Serif;
+font-weight: bold;}
+.heading {font-size: 42px;
+		font-color: #5F3514;}
+.subheading {font-size: 34px;}
+.ingredient{font-size: 16px;
+padding-left: 10px;}
+.recipe-instruction{font-size: 20px; font-weight: bold;}
+font.bold {
+    font-weight: bold;
+	font-color: #5F3514;}
+
+.recipe {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    width: 50%;
+    background-color: #E38F4F;}
+
+body{
+	font-family: "Georgia";
+	background: #5F3514;
+	}
+
+	/*FOR HOMEWORK: MAKE CONSISTENT HEADINGS AND STUFF FOR ALL RECIPE DOCUMENTS*/

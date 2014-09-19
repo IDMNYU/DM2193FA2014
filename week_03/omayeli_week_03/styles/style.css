@@ -1,0 +1,55 @@
+/*
+    Reset Style Sheet
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+/*
+    Start Styles
+ */
+/*
+    CSS Specificty
+        Elements +1
+        .Classes +10
+        #Ids     +100
+ */
+
+/* 
+    Commas let you group selectors together to have the
+    same properties applied to them.
+
+    Commas are "and"'s
+
+    Pro Tip: Always hit RETURN after using a Comma;
+
+    Example:
+    .heading, 
+    .subheading {
+        font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    }
+*/
+
+/* 
+    Spaces between Selectors let you target elements that are children of other elements
+    You have to read them in reverse.
+
+    "Give me all of the children IN this parent"
+    Example: .ingredients .ingredient { ... }
+
+*/
+
+/*
+    [Global Styles]
+ */
+
+
