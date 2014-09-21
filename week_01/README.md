@@ -27,10 +27,10 @@
   * [Javascript](http://en.wikipedia.org/wiki/JavaScript), 1995
   * [CSS](http://en.wikipedia.org/wiki/Cascading_Style_Sheets), 1996
 * Craftsmanship: Materials & Tools
+  * Your own laptop
   * Github and Version Control
   * Text Editor
   * Terminal
-  * FTP
 * Commitment to Self-education
 
 ### Overview of Weekly Deliverables
@@ -40,20 +40,26 @@
 * Coding Exercises
 * Ticket to Leave
 
-### Q + A
-
 ### Reading Assignment
 Check out these three articles and write a response that reflects on what they mean to you!
 * [PROGRAMMING IS NOT A CRAFT](http://blog.8thlight.com/doug-bradbury/2009/08/22/why-software-development-is-a-craft.html)
 * [Why Software Development is a Craft](http://dannorth.net/2011/01/11/programming-is-not-a-craft)
 * [Software Engineering: Dead?](http://blog.codinghorror.com/software-engineering-dead)
 
-#Github for OSX
-https://mac.github.com/
+### Github Apps
+* https://mac.github.com/
+* https://windows.github.com/
 
-### Class Notes
+### Markdown
+* [Markdown Basics](https://daringfireball.net/projects/markdown/basics)
+* [Markdown Cheat Sheet](http://warpedvisions.org/projects/markdown-cheat-sheet.md)
+
+### Q + A
+*10min at the end of class for any unanswers questions*
+
+### Class Notes & Homework
 * Get everyone download Github's app for OSX
-* Make sure everyone has the course repo forked and cloned to their computer
+* Make sure everyone has the course repo cloned onto their laptop
 * Setting up Sublime Text
   * Install [Package Control](https://sublime.wbond.net/installation)
   * Install jQuery Package (CMD+Shift+P, "PCI", "jquery")

@@ -15,8 +15,18 @@
 
 ## Week 6
 
+    It's through mistakes that you actually can grow. You have to get bad in order to get good.
+        — Paula Scher
+
 ### In-Class
+* [Midterm Midterm Midterm](../midterm/README.md)
+* Introduction
+* Working Period
 
 ### Q + A
+*10min at the end of class for any unanswers questions*
 
-### Reading Assignment
+### Homework
+* Work on your midterm!
+  * Wireframes due Thursday
+  * Designs due Tuesday

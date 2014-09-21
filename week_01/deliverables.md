@@ -33,13 +33,22 @@ Each week add a link into your [deliverables.md](./deliverables.md) and include 
 Yugop reminds me of 2003 when the Internet was a weird wasteland of no more than the occasional experimental burst of bright white light 
 hinting of a future to come, rich with interactive design, thoughtful user experience, and relentless amounts of media information and context!
 
-### Reading Response
-Each week before class add a reading response into your [deliverables.md](./deliverables.md)
+### Reading Responses
+Each week to kick off Tuesday's class, we will discuss the prior week's reading assigments
+
+* Before class on Tuesday add a reading response into your [deliverables.md](./deliverables.md)
+* These are effectively your "notes" for having the in-class discussion!
 * Include A title and link to the article
+
 Reflect on the following questions:
+
 * The most important point(s) (or the most useful or valuable thing(s) you learned) from the reading, and why.
 * The most confusing points, and why they were confusing.
 * How the material connects with or breaks from your prior knowledge or how it connects with your knowledge from other courses
+
+---
+
+### Tips
 
 ##### <a name="filenames"></a>Filenames
 Guidelines for good file names for web development

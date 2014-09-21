@@ -16,7 +16,8 @@
 ## Week 13
 
 ### In-Class
+* Final Project Critique
+* Produce & Deliver all of the documentation necessary for this course
 
 ### Q + A
-
-### Reading Assignment
+*10min at the end of class for any unanswers questions*

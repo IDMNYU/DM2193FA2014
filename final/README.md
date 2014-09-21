@@ -25,6 +25,6 @@ Submitted to the Theme Garden
 
 More Info TBD
 
-### In-Class
-
 * Critique
+  * Be prepared to talk about your work in front of the class
+  * Use the language and vocabulary above to describe your decision making process / design process.
