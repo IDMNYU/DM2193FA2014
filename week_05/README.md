@@ -21,11 +21,12 @@
 ### In-Class
 * Javascript
   * Native Objects
-    * String
-  * Scope in Javascript
+  * Scope
   * Classical Inheritance vs. Prototypal Inheritance
+  * [Javascript Cheat Sheet](http://overapi.com/javascript)
   * Libraries & Utilities
-    * jquery
+    * jQuery
+      * [jQuery Cheat Sheet](http://oscarotero.com/jquery)
     * Underscore
     * Prototype, MooTools, YUI
   * Application Frameworks

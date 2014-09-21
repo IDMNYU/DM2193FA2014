@@ -30,7 +30,7 @@
   * [Semantics in HTML5](http://alistapart.com/article/semanticsinhtml5)
 * Catch up on Show & Tell
 * Mobile First & Responsive Design
-* [CSS Cheat Sheet](http://coding.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)
+* **[CSS Cheat Sheet](http://coding.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)**
 
 #### Thursday
 * In-Class Coding
