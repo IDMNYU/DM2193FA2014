@@ -15,8 +15,8 @@
 
 ## Week 4
 
-    Everything has beauty, but not everyone sees it.
-        — Confucious
+    You have to be a romantic to invest yourself, your money, and your time in cheese.
+        — Anthony Bourdain
 
 ### In-Class
 

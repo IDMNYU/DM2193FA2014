@@ -15,9 +15,6 @@
 
 ## Midterm Project - The speed bump in the middle
 
-    Never fall in love with an idea. They're whores. If the one you're with isn't doing the job, there's always, always, always another.
-        — Chip Kidd
-
     Content precedes design. Design in the absence of content is not design, it’s decoration.
         — Jeffrey Zeldman
 
