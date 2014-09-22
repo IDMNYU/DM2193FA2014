@@ -1,0 +1,42 @@
+/*reset style sheet:*/
+/*CSS reads from the top down - lower class name will win out because it was read last*/
+*{	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #DADADA;
+    padding: 50px 50px;}
+
+.index {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #DADADA;
+    padding: 50px 50px;
+	text-align: center;}
+
+.recipe {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    width: 50%;
+    background-color: #E38F4F;}
+
+body{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: black;
+    background-color: black;}
+
+h1 {color: #400081; font-size: 36px; font-family: Georgia; font-weight: bold; text-align: center;}
+h2 {color: #643099; font-size: 24px; font-family: Georgia; font-weight: bold;}
+h3 {color: #400081; font-size: 48px; font-family: Georgia; font-weight: bold; text-align: center;}
+h4 {color: #A319A3; font-size: 18px; font-family: Georgia; font-weight: bold;}
+a:link {color: #A319A3; text-decoration: none;}
+a:visited {color: #DA45B4;}
+a:hover {text-decoration: underline;}
