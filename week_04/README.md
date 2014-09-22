@@ -29,19 +29,23 @@
   * [How to Read a Wireframe](http://blog.fuzzymath.com/wp-content/uploads/2011/07/Fuzzy-Math-How-to-read-a-wireframe.pdf)
   * [Semantics in HTML5](http://alistapart.com/article/semanticsinhtml5)
 * Catch up on Show & Tell
+* **[CSS Cheat Sheet](http://coding.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)**
 * In-Class Coding
   * Mobile First & Responsive Design
-    * Adding media queries to your recipe pages
-* **[CSS Cheat Sheet](http://coding.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)**
+    * Meta Viewport
+    * Media Queries
+      * [Media Query logic explained](http://css-tricks.com/logic-in-media-queries)
+      * [Media Query Cheat Sheet](http://mac-blog.org.ua/css-3-media-queries-cheat-sheet)
+
 
 #### Thursday
 * In-Class Coding
   * Single Page Recipe Site
-    * Start fresh with [my markup found here](./johnny/recipe_site_singlepage/)
-    * Copy the folder into your directory
+    * Start fresh with a *copy* of [my markup](./johnny/recipe_site_singlepage/)
+    * *Copy* the folder into your directory
     * Make an initial commit to GitHub
       * "My initial commit for single page recipe site"
-      * Sync
+      * Sync with Github
     * Spend a few minutes familiarizing yourself with the markup and class names
     * We are going to style the recipes to look like cards and you can flip between
     * This will be the basis of our introduction to Javascript next class
@@ -51,4 +55,4 @@
 *10min at the end of class for any unanswers questions*
 
 ### Homework
-* Finish styling
+* Finish styling the recipe site

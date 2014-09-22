@@ -143,8 +143,7 @@ body {
  */
 
 .recipe {
-    width: 85%;
-    margin: 50px auto;
+    margin: 50px;
 }
 
 .recipe-name {
@@ -199,4 +198,23 @@ body {
     color: #999999;
     padding: 5px;
     margin: 5px 0;
+}
+
+
+@media (max-width: 640px) {
+
+    /*
+        For Small Screens
+     */
+
+    .recipe-navigation {
+        width: 100%;
+        border-radius: 0;
+    }
+    .recipe-navigation .nav-item {
+        display: block;
+        border-radius: 0;
+        padding: 10px 35px;
+    }
+
 }
