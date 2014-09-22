@@ -53,15 +53,24 @@ h2{
 */
 /* Target the child that is in that class */
 
+body{
+    font-family: 'Italianno',cursive;
+    font-size: 25px;
+    background-color: black;
+    color: red;
+}
+
+
 .heading {
-    font-size: 48px;
+    font-size: 72px;
     text-align: center;
     margin: 10px;
 }
 
 .heading-stay {
     text-decoration: underline;
-    color: #0000FF;   
+    color: #CC0000; 
+    font-family: 'Niconne', cursive;
 }
 
 .heading-stay:hover {
@@ -76,22 +85,25 @@ h2{
     width: 85%;
     padding: 8px 4px;
     margin: 20px auto;
-    border-radius: 4px;
-    background: rgba(0,0,0,0.067);
+    border-radius: 20px;
+    background: red;
+    text-align: center;
 }
 
 .recipe-navigation .nav-item {
     text-decoration: none;
-    color: #666;
+    color: black;
     font-weight: bold;
-    padding: 3px 4px;
+    padding: 6px 25px;
     margin: 0 4px;
     white-space: nowrap;
+    
 }
 
 .recipe-navigation .nav-item:hover {
-    background: rgba(0,0,0,0.12);
-    border-radius: 3px;
+    background: black;
+    border-radius: 20px;
+    color: red;
 }
 
 .recipe-navigation .nav-item.current-page,
@@ -105,31 +117,29 @@ h2{
 
 .recipe-home-banner  {
     width: 85%;
-    height: 480px;
-    margin: auto;
+    height: 85%;
+    margin: 50px;
     border-radius: 8px;
-    background: url('../images/pizza.gif') 50% 50% no-repeat;
+    background: url("../images/food-sin.jpg");
     background-size: cover;
+    
 }
 
 .recipe-home-banner-label {
-    /*
-        TODO: Talk about this!
-        Using line-height for vertical centering and whitespace no wrap
-     */
-    line-height: 480px;
     white-space: nowrap;
     text-align: center;
-    color: #fff;
+    color: #FF3300;
     font-size: 24px;
     font-weight: bold;
     text-shadow: 1px 1px 10pxpx rgba(0,0,0,0.2);
+    font-family: 'Italianno', cursive;
+    font-size: 40px;
 }
 
 
 /*
     [Recipe Styles]
- */
+ */`
 
 .recipe {
     width: 85%;
@@ -137,12 +147,14 @@ h2{
 }
 
 .recipe-name {
-    font-size: 24px;
+    font-size: 60px;
     margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .recipe-subheading {
-    font-size: 18px;
+    font-size: 48px;
     /* 
         Example: Short-hand syntax
         margin: 5px 0 20px 0;
@@ -150,7 +162,7 @@ h2{
    margin-top: 50px;
    margin-right: 0;
    margin-bottom: 10px;
-   margin-left: 0;
+   margin-left: 40px;
 }
 
 .recipe-image > img {
@@ -163,29 +175,25 @@ h2{
     max-width: 100%;
     max-height: 480px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ingredients {
-    list-style: none;
+    list-style: circle outside none;
 }
 
 .ingredient {
     margin-bottom: 10px;
+    text-align: center;
+    font-size: 36px;
 }
 
-.instruction-heading {
-    font-weight: bold;
+.instructions {
     margin: 10px 0 0;
 }
 
-.instruction-heading,
-.instruction-body {
-    margin-bottom: 5px;
-}
-
-.instruction-tip {
-    font-size: 12px;
-    color: #999999;
-    padding: 5px;
-    margin: 5px 0;
+.instruction{
+    margin-left: 40px;
+    font-size: 36px;
 }
