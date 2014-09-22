@@ -29,7 +29,9 @@
   * [How to Read a Wireframe](http://blog.fuzzymath.com/wp-content/uploads/2011/07/Fuzzy-Math-How-to-read-a-wireframe.pdf)
   * [Semantics in HTML5](http://alistapart.com/article/semanticsinhtml5)
 * Catch up on Show & Tell
-* Mobile First & Responsive Design
+* In-Class Coding
+  * Mobile First & Responsive Design
+    * Adding media queries to your recipe pages
 * **[CSS Cheat Sheet](http://coding.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)**
 
 #### Thursday

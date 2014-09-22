@@ -115,12 +115,12 @@ body {
  */
 
 .recipe-home-banner  {
-    /*width: 85%;*/
-    /*height: 480px;*/
-    /*margin: auto;*/
-    /*border-radius: 8px;*/
-    /*background: url('../images/pizza.gif') 50% 50% no-repeat;*/
-    /*background-size: cover;*/
+    width: 85%;
+    height: 480px;
+    margin: auto;
+    border-radius: 8px;
+    background: url('../images/pizza.gif') 50% 50% no-repeat;
+    background-size: cover;
 }
 
 .recipe-home-banner-label {
