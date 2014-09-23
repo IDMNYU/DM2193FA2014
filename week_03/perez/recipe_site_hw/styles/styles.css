@@ -1,62 +1,129 @@
-/*
-	Reset Style Sheet
-*/
-
 * {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font: inherit;
-	font-weight: normal;
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+
+    box-sizing: border-box;
 }
 
-/*
-	Start Styles
-*/
+body {
 
-/*
-Wrong
-h1 {
-	font-size: 123px;
-}
-
-p {
-	font-family: "Arial"
-}
-*/
-
-/*.heading,
-.subheading {
-	font-family: "Helvetica Neue, Helvetica, Arail, Sans-serif"
-}*/
-
-.normal {
-	font-family: "Helvetica Neue, Helvetica, Arail, Sans-serif"
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
 }
 
 .heading {
-	font-size: 48px;
+    font-size: 48px;
+    text-align: center;
+    margin: 10px;
 }
 
-.subheading {
-	font-size: 36px;
+.heading-anchor {
+    text-decoration: none;
+    color: #666;   
 }
 
-.ingredients, .ingredient {
-	margin-bottom: 10px;
+.heading-anchor:hover {
+    color: hotpink;
 }
 
-.recipe-instruction {
-	margin-bottom: 10px;
+.recipe-navigation {
+    width: 85%;
+    padding: 8px 4px;
+    margin: 20px auto;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.067);
 }
 
-#logo {
-	color: red;
+.recipe-navigation .nav-item {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 3px 4px;
+    margin: 0 4px;
+    white-space: nowrap;
 }
 
-/*
-	Specificity
-	Elements +1
-	.Classes +10
-	#Ids     +100
-*/
+.recipe-navigation .nav-item:hover {
+    background: rgba(0,0,0,0.12);
+    border-radius: 3px;
+}
+
+.recipe-navigation .nav-item.current-page,
+.recipe-navigation .nav-item:hover {
+    color: #333;
+}
+
+.recipe-home-banner  {
+    width: 85%;
+    height: 480px;
+    margin: auto;
+    border-radius: 8px;
+    background: url('../images/pizza.gif') 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.recipe-home-banner-label {
+
+    line-height: 480px;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10pxpx rgba(0,0,0,0.2);
+}
+
+.recipe {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.recipe-name {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.recipe-subheading {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.recipe-image > img {
+    display: block;
+    max-width: 100%;
+    max-height: 480px;
+    height: auto;
+}
+
+.ingredients {
+    list-style: none;
+}
+
+.ingredient {
+    margin-bottom: 10px;
+}
+
+.instruction-heading {
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.instruction-heading,
+.instruction-body {
+    margin-bottom: 5px;
+}
+
+.instruction-tip {
+    font-size: 12px;
+    color: #999999;
+    padding: 5px;
+    margin: 5px 0;
+}
