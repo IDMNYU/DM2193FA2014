@@ -2,6 +2,7 @@
 body {
 	background-color: #ecf0f1;
 	font-family: 'Open Sans', sans-serif;
+	color: #333333;
 }
 
 h1 {
@@ -60,4 +61,19 @@ a:hover, a:active {
 	padding-left: 20px;
 
 	line-height: 1.5em;
+}
+
+.nav-container {	
+	margin: 20px;
+	text-align: right;
+}
+
+.nav-container a:link, a:visited {
+	padding: 10px;
+}
+
+.nav-container a:hover, a:active, a.selected {
+	background-color: #333333;
+	color: #ffffff;
+	text-decoration: none;
 }
