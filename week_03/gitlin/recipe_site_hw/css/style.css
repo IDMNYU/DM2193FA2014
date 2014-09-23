@@ -1,0 +1,71 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: arial, sans-serif;
+}
+.nav-sidebar {
+	display: block;
+	background-color: #2b2b2b;
+	width: 17%;
+	text-align: left;
+	float: left;
+	height: inherit;
+	position: fixed;
+}
+.nav-sidebar .nav-content {
+	list-style: none;
+	padding: 0px;
+}
+.nav-sidebar .nav-content > li > a{
+	text-decoration: none;
+	color: white;
+	line-height: 1.5em;
+	font-size: 1em;
+}
+.nav-sidebar .nav-content > li {
+	padding: 1em;
+	transition: padding-left 200ms linear;
+}
+.nav-sidebar .nav-content > li:hover {
+	background-color: darkgrey;
+	padding-left: 1.5em;
+}
+.nav-sidebar .nav-content > .active {
+	background-color: darkgrey;
+	padding-left: 1.5em;
+}
+.nav-header {
+	list-style: none;
+	padding: 0px;
+	font-family: arial, sans-serif;
+	font-size: 2em;
+	line-height: 3em;
+}
+.nav-header > a {
+	text-decoration: none;
+	color: white;
+	padding-left: 1em;
+}
+.content {
+	width: 80%;
+	height: inherit;
+	float: left;
+	display: block;
+	padding-left: 1em;
+	margin-left: 17%;
+}
+.col-half {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-third {
+	width: 29%;
+	display: inline-block;
+	vertical-align: top;
+}
+.col-half > img, .col-third > img {
+	padding-left: 75px;
+	margin: 20px auto;
+}

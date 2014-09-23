@@ -16,7 +16,8 @@
 ## Week 7
 
 ### In-Class
+* Midterm Critique
+* Advances Interface Examples
 
 ### Q + A
-
-### Reading Assignment
+*10min at the end of class for any unanswers questions*

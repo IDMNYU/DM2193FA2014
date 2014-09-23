@@ -15,8 +15,36 @@
 
 ## Week 5
 
+    Everything has beauty, but not everyone sees it.
+        — Confucious
+
 ### In-Class
+* Javascript
+  * Native Objects
+  * Scope
+  * Classical Inheritance vs. Prototypal Inheritance
+  * [Javascript Cheat Sheet](http://overapi.com/javascript)
+  * Libraries & Utilities
+    * jQuery
+      * [jQuery Cheat Sheet](http://oscarotero.com/jquery)
+    * Underscore
+    * Prototype, MooTools, YUI
+  * Application Frameworks
+    * Ember
+    * Knockout
+    * Angular
+    * Backbone
+  * Review Chrome Developer Tools Again!
+  * ![DevTools](http://j-hnnybens-n.com/capture/cwqvi.png)
+    * Javascript console
+    * Network Requests
 
 ### Q + A
+*10min at the end of class for any unanswers questions*
 
 ### Reading Assignment
+* [Classical Inheritance in JavaScript](http://javascript.crockford.com/inheritance.html)
+
+### Homework
+* [Untrusted](http://alexnisnevich.github.io/untrusted)
+ * Whoever beats the game gets extra credit

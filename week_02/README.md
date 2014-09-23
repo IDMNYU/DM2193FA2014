@@ -44,7 +44,9 @@
 * HyperText Markup Language
   * Elements
   * Attributes
-  * [Semantic Markup](http://en.wikipedia.org/wiki/Semantic_HTML)
+  * Semantics
+    * [Semantic Markup](http://en.wikipedia.org/wiki/Semantic_HTML)
+    * ![neat chart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.png)
 * Cascading Stylesheets
   * CSS 1, 2, 3
   * Selectors
@@ -72,6 +74,7 @@
   * Usability and Intentionality
 
 ### Q + A
+*10min at the end of class for any unanswers questions*
 
 ### Reading Assignment
 * [Wroblewski, Luke. “Visible Narratives: Understanding Visual Organization.” LukeW Interface Designs. 2003. (21 Aug. 2008)](http://www.lukew.com/resources/articles/visible_narratives.html)

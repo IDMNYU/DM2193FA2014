@@ -1,0 +1,199 @@
+/* Reset Style Sheet */
+
+*{
+	margin:0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+}
+
+/*Commas let you group selectors together to have the same properties applied to them.
+Commas are "and's"
+
+.heading,
+.subheading{
+	font-family: "Helvetica Neue", Hevitica, Arial, Sans-serif;
+}
+*/
+
+/*Spaces let you target elements that are children of other elements
+you have to read them in reverse
+	
+*/
+
+/*
+Class notes
+
+.normal{
+	font-family:"Helvetica Neue", Hevitica, Arial, Sans-serif;
+	font-size: 100px;
+}
+
+.heading{
+	font-size: 48px;
+}
+
+.subheading{
+	font-size: 36px;
+}
+
+h2{
+	font-size: 36px
+}
+
+#logo{
+	color: darkorange;
+}
+
+.ingredients .ingredient{
+	margin-bottom: 10px;
+
+}
+*/
+/* Target the child that is in that class */
+
+body{
+    font-family: 'Italianno',cursive;
+    font-size: 25px;
+    background-color: black;
+    color: red;
+}
+
+
+.heading {
+    font-size: 72px;
+    text-align: center;
+    margin: 10px;
+}
+
+.heading-stay {
+    text-decoration: underline;
+    color: #CC0000; 
+    font-family: 'Niconne', cursive;
+}
+
+.heading-stay:hover {
+    color: #FF33cc;
+}
+
+/*
+    [Navigation Styles]
+ */
+
+.recipe-navigation {
+    width: 85%;
+    padding: 8px 4px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background: red;
+    text-align: center;
+}
+
+.recipe-navigation .nav-item {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 6px 25px;
+    margin: 0 4px;
+    white-space: nowrap;
+    
+}
+
+.recipe-navigation .nav-item:hover {
+    background: black;
+    border-radius: 20px;
+    color: red;
+}
+
+.recipe-navigation .nav-item.current-page,
+.recipe-navigation .nav-item:hover {
+    color: #333;
+}
+
+/*
+    [Home Styles]
+ */
+
+.recipe-home-banner  {
+    width: 85%;
+    height: 85%;
+    margin: 50px;
+    border-radius: 8px;
+    background: url("../images/food-sin.jpg");
+    background-size: cover;
+    
+}
+
+.recipe-home-banner-label {
+    white-space: nowrap;
+    text-align: center;
+    color: #FF3300;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10pxpx rgba(0,0,0,0.2);
+    font-family: 'Italianno', cursive;
+    font-size: 40px;
+}
+
+
+/*
+    [Recipe Styles]
+ */`
+
+.recipe {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.recipe-name {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.recipe-subheading {
+    font-size: 48px;
+    /* 
+        Example: Short-hand syntax
+        margin: 5px 0 20px 0;
+    */
+   margin-top: 50px;
+   margin-right: 0;
+   margin-bottom: 10px;
+   margin-left: 40px;
+}
+
+.recipe-image > img {
+    /*
+        TODO: Talk about this!
+        These are special instructions to affect how the image behaves 
+        as the size of it's parent element reacts to the size of the browser window
+     */
+    display: block;
+    max-width: 100%;
+    max-height: 480px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ingredients {
+    list-style: circle outside none;
+}
+
+.ingredient {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.instructions {
+    margin: 10px 0 0;
+}
+
+.instruction{
+    margin-left: 40px;
+    font-size: 36px;
+}

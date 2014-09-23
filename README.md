@@ -171,18 +171,20 @@ If you are student with a disability who is requesting accommodations, please co
   * HTML, XML, Semantics
   * Browser Environment
 * [Week 3](./week_03/README.md)
-  * Cascading Stylesheets
+  * Cascading Stylesheets - Part 1
   * Separation of Data and Display
 * [Week 4](./week_04/README.md)
+  * Cascading Stylesheets - Part 2
+  * Advanced Selectors
+* [Week 5](./week_05/README.md)
   * Javascript
   * Adding Behavior to Display 
-* [Week 5](./week_05/README.md)
-  * Midterm Project: Information and Interface Design
-  * Redesign Craigslist or Hacker News
 * [Week 6](./week_06/README.md)
-  * Midterm Critique
+  * [Midterm Project](./midterm/README.md)
+  * Redesign Craigslist or Hacker News
 * [Week 7](./week_07/README.md)
-  * Advanced Interfaces:
+  * Midterm Critique
+  * Advanced Interfaces
     * Sticky Headers
     * Modals & Dropdowns
     * Slideshow

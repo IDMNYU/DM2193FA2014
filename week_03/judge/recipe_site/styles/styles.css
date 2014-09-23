@@ -1,0 +1,55 @@
+/*Reset stylesheet*/
+*{margin:0;
+padding: 0;
+
+font-size:100%;
+font: inherit;
+font-weight: normal;
+line-height: 1.5;}
+
+body{
+
+	/* example of font shorthand
+
+	font:12px/18px bold italic Georgia;
+
+	font-size: 12px;
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: bold; */
+
+	font-family: helvetica, arial, sans-serif;
+	margin: 50px;
+}
+
+.heading{
+	font-size: 48px}
+
+.heading-anchor{
+	opacity: .67;
+	text-decoration: none;
+	transition: all 500ms linear;}
+
+	/*HW: go look up Vendor Prefixes*/
+
+	/*RGB=jpg (16million colors)
+	RGBA=png (16million+some colors)
+	index (256 colors)=gif
+	hex codes = 16 possible values #RRGGBB [a-f][1-9]*/
+
+.heading-anchor:hover{
+	color: #70CA6B;
+}
+
+.recipe-navigation{
+	background-color: rgba(0,0,0,0.25);
+}
+.nav-item{}
+
+.recipe-home-banner{}
+.recipe-home-banner-label{}
+
+
+
+
+

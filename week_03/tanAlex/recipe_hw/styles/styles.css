@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+.heading-anchor {
+	text-decoration: none;
+	color:black;
+	font-size: 36px;
+	padding-left:40%;
+}
+
+.recipe-home-banner-label {
+	padding-top:3%;
+	padding-left:38%;
+	padding-bottom:3%;
+}
+
+.navigationBar {
+	padding-top:2%;
+	padding-bottom:2%;
+	width:100%;
+	font-color:black;
+}
+
+.homePage {
+	color:black;
+	text-decoration:none;
+	font-size: 18px;
+	border-style:solid;
+	border-color:gray;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left:9%;
+	padding-right:9%;
+}
+
+.chocolateChip {
+	color:black;
+	text-decoration:none;
+	font-size: 18px;
+	border-style:solid;
+	border-color:gray;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left:8%;
+	padding-right:8%;
+}
+
+.brownies {
+	color:black;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left:9%;
+	padding-right:9%;
+	text-decoration:none;
+	font-size: 18px;
+	border-style:solid;
+	border-color:gray;
+}
+
+.lemonBar {
+	color:black;
+	text-decoration: none;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left:9%;
+	padding-right:9%;
+	font-size: 18px;
+	border-style:solid;
+	border-color:gray;
+}
+
+.heading {
+	font-size: 36px;
+}
+
+.subheading {
+	font-size: 28px;
+}
+
+.ingredient {
+	padding-left: 3%;
+}
+
+.instruction {
+	padding-left: 3%;
+}
+
+.gallery {
+	padding-left: 3%;
+}

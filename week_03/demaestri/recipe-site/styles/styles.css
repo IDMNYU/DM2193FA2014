@@ -1,0 +1,59 @@
+/*
+Reset Style Sheet
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+
+	/*font-size: 100%; 
+	font: inherit;
+	font-weight: normal; */
+	line-height: 1.5; 
+}
+
+body{
+	
+/*
+	Example of Font Shorthand: ;
+	font: 12px/18px bold italic Arial ; 
+
+	font-size:;
+	font-weight: bold; 
+	font-family: Arial;
+	font-style: italic;
+	line-height: 18px;*/
+	font-family: helvetica, Arial, sans-serif;
+	margin: 50px;
+	text-align: center;
+
+}
+
+.heading{
+	font-size: 48px; 
+}
+.heading-anchor{
+	color: darkorange;
+	text-decoration: none;
+
+/*HW: Look up CSS Vendor Prefixes*/;
+
+	transition: all 500ms linear;
+}
+.heading-anchor:hover{
+	opacity: 0.67;
+}
+
+.recipe-navigation{
+	background-color: rgba(0,0,0,0.15);
+}
+.nav-time{
+
+}
+
+.recipe-home-banner{
+
+}
+.recipe-home-banner-label{
+
+}

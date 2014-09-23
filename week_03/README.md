@@ -54,21 +54,13 @@
       * Manipulate styles for testing
 
 #### Thursday
-* Show & Tell
-* Reading Discussion: Designing for the Web
 * In-Class Coding
   * Finish styling recipes
-  * Combine into a single page
 * Review Chrome Developer Tools Again
-* Mobile First & Responsive Design
-* User Interface and Information Design Case Studies:
-  * [Craigslist](http://www.craigslist.com)
-  * [Yahoo](http://www.yahoo.com)
-  * [Hacker News](https://news.ycombinator.com)
-* Semantics
- * ![neat chart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.png)
+* Note: We ran out of time in class working on this! Continue styling your recipes
 
 ### Q + A
+*10min at the end of class for any unanswers questions*
 
 ### Reading Assignment
 * [Following A Web Design Process](http://www.smashingmagazine.com/2011/06/22/following-a-web-design-process)
@@ -86,4 +78,5 @@
     * Only use .class names for styling.
   * Commit them to your **Week 3** folder.
     * We already got this started in class, it should just work :)
+  * Experiment with styles over the weekend coming to week 4. We ran out of time in class!
 
