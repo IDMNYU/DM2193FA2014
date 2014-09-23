@@ -44,6 +44,20 @@ p{
 	color: red;
 }
 
+.heading-button {
+		font-size: 50px;
+		font-family:serif;
+		color: blue;
+
+		text-decoration: none;
+		transition: all 500ms linear;
+}
+	
+.heading-button: hover {
+		opacity: 0.67;
+
+}
+
 #logo {
 	color: red;
 }
