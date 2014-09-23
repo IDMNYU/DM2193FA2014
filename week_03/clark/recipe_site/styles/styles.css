@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+	line-height: 1.5; 
+	background-color: #A0522D;
+	/*line-height: 150%; is the same as line-height: 1.5;*/
+}
+
+body{
+	/*
+	Example of Font Shorthand
+
+	font: 12px/18px bold italic Arial;
+	font-size: 12px;
+	font-family: bold;
+	font-style: italic;
+	line-height: 18px;
+	font-family: Arial;
+	*/
+
+	font-family: helvetica, arial, sans-serif;
+	margin: 
+}
+
+.heading{
+	font-size: 48px;
+	text-align: center;
+}
+
+.heading-anchor{
+	color: #ff8c00;
+	text-decoration: none;
+	transition: all 500ms linear;
+}
+
+.heading-anchor:hover {
+	opacity: 0.67;
+	/*Hw loop up css vender prefixes*/
+}
+
+.recipe-navigatioon{
+	background-color: rgba(0,0,1,1);
+	/*a = aplha and means transperancy
+		png has alpha, jpeg doesn't
+		dithering will purposely pixal pictures
+	*/
+	width: 70%;
+	padding: 4px, 6px;
+	margin:	auto;
+	border-radius: 6px;
+
+}
+
+.recipe-navigatioon .nav-item{
+	color: white;
+	padding: 4px, 4px;
+	margin: 5px;
+	white-space: nowrap;
+}
+
+.recipe-home-banner{
+	width: 55%;
+    height: 360px;
+    margin: auto;
+    border-radius: 10px;
+    background: url('./images/DANCING_COOKIE.gif') 50% 50%;
+    background-size: cover;
+}
+
+.recipe-home-banner-label{
+	line-height: 2;
+	text-align: center;
+	color: white;
+}
+
+.ingredient{
+	list-style: none;
+	color: white;
+}
+
+.ingredients{
+	color: red;
+	margin-bottom: 12px;
+}
+
+.instructions{
+	list-style: decimal;
+}
+
+.instruction{
+	color: black;
+	margin-bottom: 5px;
+}
