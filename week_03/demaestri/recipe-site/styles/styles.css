@@ -23,18 +23,22 @@ body{
 	font-family: Arial;
 	font-style: italic;
 	line-height: 18px;*/
-	font-family: helvetica, Arial, sans-serif;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif, 
 	margin: 50px;
 	text-align: center;
+	background-color: black;
+	color: white;
 
 }
 
 .heading{
-	font-size: 48px; 
+	font-size: 48px;
 }
 .heading-anchor{
-	color: darkorange;
+	color: white;
 	text-decoration: none;
+	font-family: didot;
+}
 
 /*HW: Look up CSS Vendor Prefixes*/;
 
@@ -45,15 +49,55 @@ body{
 }
 
 .recipe-navigation{
-	background-color: rgba(0,0,0,0.15);
+	background-color: white;
+	font-variant: small-caps; 
+	text-decoration: overline;
 }
+
+	/* unvisited link */
+
+a:link {
+    color: grey;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
 .nav-time{
 
 }
 
 .recipe-home-banner{
+	color: white;
+	font-family: optima;
+	font-size: 12px;
 
 }
 .recipe-home-banner-label{
 
+}
+.recipe-subheading{
+	color: lightblue;
+	font: georgia;
+}
+.instructions{
+	font-family: "HelveticaNeue-Light, Helvetica, Arial, "Lucida Grande", sans-serif; 
+	color: pink;
+	text-align: right;
+}
+
+.ingredients{
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
