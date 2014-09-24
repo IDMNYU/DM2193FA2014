@@ -91,6 +91,11 @@
 	padding-left: 3%;
 }
 
+.instructionList {
+	list-style-position: inside;
+	list-style-type: decimal;
+}
+
 .gallery {
 	padding-left: 3%;
 }
