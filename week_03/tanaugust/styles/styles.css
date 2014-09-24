@@ -60,8 +60,9 @@ body {
         for properties that you want to be shared
         across all of your pages!
      */
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-family: "Sans-serif", Helvetica, Sans-serif;
     font-size: 14px;
+    background-color: #8FBC8F;
 }
 
 .heading {
