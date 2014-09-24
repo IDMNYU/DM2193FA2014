@@ -8,9 +8,21 @@ Reset Style Sheet
 		font-weight: normal;
 	}
 
+	.nav-sidebar{
+		line-height: 480px;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10pxpx rgba(0,0,0,0.2);
+	}
+
 	.picture{
-		width: 350px;
-		height: 350px;
+		display: block;
+    	max-width: 100%;
+    	max-height: 350px;
+    	height: auto;
 	}
 
 	.listtype{
@@ -44,5 +56,6 @@ Reset Style Sheet
 	.subsubheading{
 		font-weight: bold; 
 	}
+
 
 
