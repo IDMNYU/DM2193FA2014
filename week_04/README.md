@@ -47,14 +47,16 @@ De will be covering this class for me!
 * In-Class Coding
   * Single Page Recipe Site
     * Start fresh with a copy of my markup, [get it here](https://github.com/IDMNYU/DM2193FA2014/raw/master/week_04/johnny/recipe_app.zip)
-    * *Copy* into a folder in your `week_04/` directory
+    * Exact the contents and *copy* into a folder in your `week_04/your_name` directory
     * Make an initial commit to GitHub
       * "My initial commit for single page recipe site"
       * Sync with Github
     * Spend a few minutes familiarizing yourself with the markup and class names
+      * Styling things goes faster when you know how the markup is put together!
     * We are going to style the recipes to look like cards and you can flip between them
-    * This will be the basis of our introduction to Javascript next class
+    * This will be the basis of our introduction to Javascript for next class so be sharp!
     * Open up the empty stylesheet and take it away!
+    * Thanks De :)
 
 ### Q + A
 *10min at the end of class for any unanswers questions*
