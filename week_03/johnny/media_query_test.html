@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta 
+        name="viewport" 
+        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" 
+    />
+
+    <meta name="" content="" />
+
+    <title>test</title>
+    <style type="text/css">
+        h3 {
+            text-align:center; 
+            font-size: 66px; 
+            font-family: arial; 
+        }
+
+        /* PRINT VERSION */
+        @media print {
+            h3:after {content: ' - PRINT'; display: inline;}
+        }
+        /* PHONE VERSION */
+        @media only screen and (min-width: 320px) {
+            h3:after {content: ' - PHONE'; display: inline;}
+        }
+        /* TABLET VERSION */
+        @media only screen and (min-width: 768px) {
+            h3:after {content: ' - TABLET'; display: inline;}
+        }
+        /* DESKTOP VERSION */
+        @media only screen and (min-width: 980px) {
+            h3:after {content: ' - DESKTOP'; display: inline;}
+        }
+    </style>
+</head>
+<body>
+    <h3>TEST</h3>
+</body>
+</html>
