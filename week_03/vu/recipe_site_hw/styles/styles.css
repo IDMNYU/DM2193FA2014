@@ -116,12 +116,12 @@ body{
  */
 
 .recipe-home-banner  {
-    width: 85%;
-    height: 85%;
+    width: 80%;
+    height: 100%;
     margin: 50px;
     border-radius: 8px;
     background: url("../images/food-sin.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     
 }
 
@@ -196,4 +196,17 @@ body{
 .instruction{
     margin-left: 40px;
     font-size: 36px;
+}
+
+@media (max-width: 640px){
+    .recipe-navigation{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .recipe-navigation .nav-item{
+        display:block;
+        border-radius: 0;
+        padding: 10px 35px;
+    }
 }
