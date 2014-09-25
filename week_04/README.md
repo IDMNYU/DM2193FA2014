@@ -46,7 +46,7 @@ De will be covering this class for me!
 
 * In-Class Coding
   * Single Page Recipe Site
-    * Start fresh with a copy of my markup (.zip file coming soon)
+    * Start fresh with a copy of my markup, [get it here](./johnny/recipe_app.zip)
     * *Copy* into a folder in your `week_04/` directory
     * Make an initial commit to GitHub
       * "My initial commit for single page recipe site"
