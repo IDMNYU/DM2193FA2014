@@ -13,7 +13,6 @@ html, body {
 	height: inherit;
 	position: fixed;
 }
-
 .nav-sidebar .nav-content {
 	list-style: none;
 	padding: 0px;
@@ -69,4 +68,12 @@ html, body {
 .col-half > img, .col-third > img {
 	padding-left: 75px;
 	margin: 20px auto;
+}
+@media (max-width: 1024px) {
+	.nav-sidebar {
+		width: 100px;
+	}
+	.content {
+		margin-left: 120px;
+	}
 }
