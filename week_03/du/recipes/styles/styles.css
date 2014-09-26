@@ -15,7 +15,7 @@
 	font-family: times normal
 }
 .heading {
-	font-size: 40px;
+	font-size: 55px;
 	color: orange
 
 }
@@ -44,3 +44,22 @@
 	margin-right: 100px;
 	
 }
+
+.bigger {
+	background-color: lightgrey;
+	border: 6px solid pink;
+	margin: 10px;
+	font-size: 20px;
+
+}
+
+.pagetitle {
+	font-family: impact;
+	font-size: 30px;
+
+}
+
+
+
+
+
