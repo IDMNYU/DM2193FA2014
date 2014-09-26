@@ -1,0 +1,85 @@
+/**
+ *  [Reset Styles]
+ *
+ *  Undo browser-specific styles
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+
+/**
+ *  [Global Styles]
+ *
+ *  Styles that affect everything on the page!
+ */
+
+body {
+    
+    /*
+        It is OK to apply styles to the body tag
+        for properties that you want to be shared
+        across all of your pages!
+     */
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/**
+ *  [Site Styles]
+ *
+ *  Styles for your website!
+ */
+
+.heading {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.heading-anchor {
+    color: teal;
+}
+.heading-anchor:hover {
+    color: skyblue;
+}
+
+.recipe-navigation {
+    display: table;
+    background-color: green;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: auto;
+    text-align: center;
+}
+
+.nav-item {
+    background-color: rgba(0,0,0,0);
+    color: black;
+}
+.nav-item:hover {
+    background-color: rgba(255,0,0,0.5);
+}
+
+.recipes {
+    display:block;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.recipe {
+    display:none;
+}
+:target {
+    display:block;
+}
