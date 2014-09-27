@@ -34,6 +34,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 14px;
     color: #333;
+    margin-top: 30px;
 }
 
 /**
@@ -62,7 +63,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.01);;
     border-radius: 10px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.01);
+    background: rgba(0, 0, 0, 0.02);
 
 
 }
@@ -73,7 +74,7 @@ body {
 
 }
 .nav-item:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
  .recipe-navigation a {
@@ -146,11 +147,11 @@ body {
 
 /* PRINT VERSION */
         @media print {
-            h3:after {content: ' - PRINT'; display: inline;}
+            h3:after {display: inline;}
         }
         /* PHONE VERSION */
         @media only screen and (min-width: 320px) {
-            h3:after {content: ' - PHONE'; display: inline;}
+            h3:after {display: inline;}
         }
         @media screen and (max-width: 620px) {
                 .recipe-navigation   {
@@ -172,10 +173,10 @@ body {
          
         /* TABLET VERSION */
         @media only screen and (min-width: 768px) {
-            h3:after {content: ' - TABLET'; display: inline;}
+            h3:after {display: inline;}
         }
         /* DESKTOP VERSION */
         @media only screen and (min-width: 980px) {
-            h3:after {content: ' - DESKTOP'; display: inline;}
+            h3:after {display: inline;}
         }
 
