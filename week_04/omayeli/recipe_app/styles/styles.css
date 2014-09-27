@@ -45,38 +45,83 @@ body {
     font-size: 40px;
     text-align: center;
  }
+.heading:hover{
+    font-size: 42px;
+}
 .heading-anchor {
     text-decoration: none;
       color: black;
 }
 .recipe-navigation {
     text-align: center;
+    width:700px;
     display: table;
-    margin-top: 20px;
+    margin-top: 8px;
     margin-right: auto;
     margin-left: auto;
+    border: 1px solid rgba(0, 0, 0, 0.01);;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.01);
 
 
 }
 .nav-item  {
     text-decoration: none;
     color: black;
-    width: 200em;
+   
+
+}
+.nav-item:hover {
+    background-color: white;
 }
 
  .recipe-navigation a {
+    width:200px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.01);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+ 
 }
-.recipes {
-    display: block;
-    max-width: 500px;
-    max-height: 500px;
-    margin-right: auto;
+.recipe{
+    display: none;
+}
+:target {
+    display: block
+}
+.recipe {
+    margin-top: 2px;
+    max-width: 680px;
     margin-left: auto;
-    margin-top: 20px;
+    margin-right: auto;
+    height: 500px;
+    position: relative;
     overflow: auto;
 }
+.recipe-label {
+    color:white;
+    font-style: bold;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    width: 280px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+.recipe-label:hover {
+
+}
+.image {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.recipe-body {
+    margin-top: -60px;
+    margin-left: 320px;
+}
+
 .recipe {
     display: none;
 
@@ -86,13 +131,22 @@ body {
 
 }
 
-ul.ingredients {
+.ingredients {
     display: list-item;
     list-style-type: circle;
     list-style-position: outside;
 }
-ol.instructions {
-    display: list-item;
-    list-style-type: circle;
-    list-style-position: outside;
+.recipe-name {
+    font-size: 20px;
+    font-weight: bold;
 }
+
+.recipe-subheading {
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: -20px;
+    padding-top:24px ;
+    padding-bottom: 6px ;
+}
+
+
