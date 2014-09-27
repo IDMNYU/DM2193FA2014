@@ -41,3 +41,58 @@ body {
  *
  *  Styles for your website!
  */
+ .heading {
+    font-size: 40px;
+    text-align: center;
+ }
+.heading-anchor {
+    text-decoration: none;
+      color: black;
+}
+.recipe-navigation {
+    text-align: center;
+    display: table;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+.nav-item  {
+    text-decoration: none;
+    color: black;
+    width: 200em;
+}
+
+ .recipe-navigation a {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+.recipes {
+    display: block;
+    max-width: 500px;
+    max-height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    overflow: auto;
+}
+.recipe {
+    display: none;
+
+}
+:target {
+    display: block;
+
+}
+
+ul.ingredients {
+    display: list-item;
+    list-style-type: circle;
+    list-style-position: outside;
+}
+ol.instructions {
+    display: list-item;
+    list-style-type: circle;
+    list-style-position: outside;
+}
