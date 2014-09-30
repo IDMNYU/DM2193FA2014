@@ -1,0 +1,103 @@
+/*
+Reset Style Sheet
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+
+	/*font-size: 100%; 
+	font: inherit;
+	font-weight: normal; */
+	line-height: 1.5; 
+}
+
+body{
+	
+/*
+	Example of Font Shorthand: ;
+	font: 12px/18px bold italic Arial ; 
+
+	font-size:;
+	font-weight: bold; 
+	font-family: Arial;
+	font-style: italic;
+	line-height: 18px;*/
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif, 
+	margin: 50px;
+	text-align: center;
+	background-color: black;
+	color: white;
+
+}
+
+.heading{
+	font-size: 48px;
+}
+.heading-anchor{
+	color: white;
+	text-decoration: none;
+	font-family: didot;
+}
+
+/*HW: Look up CSS Vendor Prefixes*/;
+
+	transition: all 500ms linear;
+}
+.heading-anchor:hover{
+	opacity: 0.67;
+}
+
+.recipe-navigation{
+	background-color: white;
+	font-variant: small-caps; 
+	text-decoration: overline;
+}
+
+	/* unvisited link */
+
+a:link {
+    color: grey;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
+.nav-time{
+
+}
+
+.recipe-home-banner{
+	color: white;
+	font-family: optima;
+	font-size: 12px;
+
+}
+.recipe-home-banner-label{
+
+}
+.recipe-subheading{
+	color: lightblue;
+	font: georgia;
+}
+.instructions{
+	font-family: "HelveticaNeue-Light, Helvetica, Arial, "Lucida Grande", sans-serif; 
+	color: pink;
+	text-align: right;
+}
+
+.ingredients{
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
