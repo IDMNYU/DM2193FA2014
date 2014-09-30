@@ -81,11 +81,24 @@ html {
     background-color: #999999;
 }
 
+.instructions, .ingredients, .recipe-home-banner-heading{
+    padding:10px 30px;
+}
+.instruction, .ingredient {
+    font-size:1.15em;
+}
+.instruction {
+    list-style-type:decimal;
+}
+.ingredient {
+    font-weight:bold;
+}
+
 .recipes {
     display:block;
     margin: 50px auto;
-    max-width: 1000px;
-    max-height:500px;
+    width: 1000px;
+    height:500px;
 }
 
 .recipe-baked-ziti .recipe-label {
@@ -104,14 +117,12 @@ html {
     display:inline-block;
     position:absolute;
     float:left;
-    background-position: center;
-    background-repeat: none;
-    background-size: auto, 100%;
     width: 17%;
-    height:100%;
-    max-height: 500px;
+    height: 500px;
     border-radius: 10px;
-    overflow:hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px, auto;
 }
 
 .recipe-name {
@@ -137,7 +148,16 @@ html {
     border-radius: 10px;
 }
 
-/*TEMP*/
+.recipe-subheading {
+    width:100%;
+    font-weight:bold;
+    font-size:1.3em;
+    text-align: center;
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+}
+
 .recipe {
     display:none;
     width: 100%;
