@@ -1,0 +1,170 @@
+/**
+ *  [Reset Styles]
+ *
+ *  Undo browser-specific styles
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+
+/**
+ *  [Global Styles]
+ *
+ *  Styles that affect everything on the page!
+ */
+
+body {
+    
+    /*
+        It is OK to apply styles to the body tag
+        for properties that you want to be shared
+        across all of your pages!
+     */
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/**
+ *  [Site Styles]
+ *
+ *  Styles for your website!
+ */
+
+.heading {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px;
+}
+.heading-anchor {
+    text-decoration: none;
+    color: #666;   
+}
+.heading-anchor:hover {
+    color: darkgrey;
+}
+.recipe-navigation {
+    width: 85%;
+    padding: 8px 4px;
+    margin: 20px auto;
+    border-radius: 4px;
+    background: lightgrey;
+}
+.recipe-navigation .nav-item {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 3px 4px;
+    margin: 0 4px;
+    white-space: nowrap;
+}
+.recipe-navigation .nav-item:hover {
+    background: grey;
+    border-radius: 3px;
+    color: #333;
+}
+.recipes {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 64%;
+    margin-bottom: 2em;
+}
+.recipe {
+    height: 500px;
+    position: absolute;
+    width: inherit;
+    margin-right: auto;
+    margin-left: auto;
+}
+.recipe-label {
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    height: 500px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 500px;
+    border-radius: 10px;
+    margin-right: 5px
+}
+.recipe-baked-ziti {
+    z-index: 2;
+}
+.recipe-chocolate-chip-cookies {
+    z-index: 3;
+}
+.recipe-chunky-cheesecake-brownies {
+    z-index: 4;
+}
+.recipe-baked-ziti .recipe-label {
+    background-image: url(../images/recipe-baked-ziti.jpg);
+}
+.recipe-chocolate-chip-cookies .recipe-label {
+    background-image: url(../images/recipe-chocolate-chip-cookies.jpg);
+}
+.recipe-chunky-cheesecake-brownies .recipe-label {
+    background-image: url(../images/recipe-chunky-cheesecake-brownies.jpg);
+}
+.recipe-name {
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 10px;
+}
+.recipe-body {
+    vertical-align: top;
+    overflow: auto;
+    float: right;
+    border-radius: 10px;
+    background: lightgrey;
+    width: 600px;
+    height: 500px;
+    padding: 10px;
+    margin-left: 5px;
+}
+.recipe-section {
+    padding: 0px 20px;
+}
+.recipe-subheading {
+    font-size: 32px;
+}
+.ingredients {
+    font-size: 16px;
+}
+.ingredient {
+
+}
+.instructions {
+    font-size: 16px;
+}
+.instruction {
+
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media (min-width : 320px) and (max-width : 480px) {
+.recipe-label, .recipe-body {
+    width: auto;
+}
+}
+/* iPads (portrait and landscape) ----------- */
+@media (min-width : 768px) and (max-width : 1024px) {
+.recipe-label, .recipe-body {
+    width: auto;
+}
+}

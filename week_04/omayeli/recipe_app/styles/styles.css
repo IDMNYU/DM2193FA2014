@@ -41,3 +41,141 @@ body {
  *
  *  Styles for your website!
  */
+ .heading {
+    font-size: 40px;
+    text-align: center;
+ }
+.heading:hover{
+    font-size: 42px;
+}
+.heading-anchor {
+    text-decoration: none;
+      color: black;
+}
+.recipe-navigation {
+    text-align: center;
+    width:700px;
+    display: table;
+    margin-top: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid rgba(0, 0, 0, 0.01);;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.01);
+
+
+}
+.nav-item  {
+    text-decoration: none;
+    color: black;
+   
+
+}
+.nav-item:hover {
+    background-color: white;
+}
+
+ .recipe-navigation a {
+    width:200px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+ 
+}
+.recipe{
+    display: none;
+}
+:target {
+    display: block
+}
+.recipe {
+    margin-top: 2px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    position: relative;
+    overflow: auto;
+}
+.recipe-label {
+    font-style: bold;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    width: 280px;
+    height: 85px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.recipe-label:hover {
+
+}
+.image {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.recipe-body {
+    margin-top: -60px;
+    margin-left: 320px;
+}
+
+
+.ingredients {
+    display: list-item;
+    list-style-type: circle;
+    list-style-position: outside;
+}
+.recipe-name {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.recipe-subheading {
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: -20px;
+    padding-top:24px ;
+    padding-bottom: 6px ;
+
+}
+
+
+
+/* PRINT VERSION */
+        @media print {
+            h3:after {content: ' - PRINT'; display: inline;}
+        }
+        /* PHONE VERSION */
+        @media only screen and (min-width: 320px) {
+            h3:after {content: ' - PHONE'; display: inline;}
+        }
+        @media screen and (max-width: 620px) {
+                .recipe-navigation   {
+                    border-radius: 2px;
+                    width: 500px;
+                    margin-right: auto;
+                    margin-left: 0;
+                    display: inline-block;
+                
+            }
+               .recipe-navigation a {
+                   position: relative;
+                    margin:-2px;
+                    width:300px;
+                    padding: 5px;
+                    border-radius: 0px;
+                    border: 1px solid rgba(0, 0, 0, 0.03);
+            }
+         
+        /* TABLET VERSION */
+        @media only screen and (min-width: 768px) {
+            h3:after {content: ' - TABLET'; display: inline;}
+        }
+        /* DESKTOP VERSION */
+        @media only screen and (min-width: 980px) {
+            h3:after {content: ' - DESKTOP'; display: inline;}
+        }
+
