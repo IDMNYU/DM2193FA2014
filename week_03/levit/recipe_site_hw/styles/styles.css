@@ -103,3 +103,7 @@ body {
 .instruction {
 	color: #007A7A;
 }
+
+@media (max-width: 640px){
+	
+}
