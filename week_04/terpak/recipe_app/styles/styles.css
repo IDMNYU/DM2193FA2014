@@ -34,6 +34,11 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 14px;
     color: #333;
+    height:100%;
+}
+
+html {
+    height:100%;
 }
 
 /**
@@ -48,54 +53,88 @@ body {
 }
 
 .heading-anchor {
-    color: teal;
+    color: #000000;
+    font-weight:bold;
+    text-decoration: none !important;
 }
 .heading-anchor:hover {
-    color: skyblue;
+    color: #777777;
 }
 
 .recipe-navigation {
     display: table;
-    background-color: green;
+    background-color: #BBBBBB;
     margin: 0 auto;
     padding: 5px;
     border-radius: 5px;
-    max-width: auto;
+    width: 60%;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .nav-item {
-    background-color: rgba(0,0,0,0);
     color: black;
+    font-weight: bold;
+    text-decoration: none !important;
 }
 .nav-item:hover {
-    background-color: rgba(255,0,0,0.5);
+    background-color: #999999;
 }
 
 .recipes {
     display:block;
     margin: 50px auto;
-    max-width: 600px;
-    max-height:300px;
+    max-width: 1000px;
+    max-height:500px;
+}
+
+.recipe-baked-ziti .recipe-label {
+    background: url("../images/recipe-baked-ziti.jpg");
+}
+
+.recipe-chocolate-chip-cookies .recipe-label {
+    background: url("../images/recipe-chocolate-chip-cookies.jpg");
+}
+
+.recipe-chunky-cheesecake-brownies .recipe-label {
+    background: url("../images/recipe-chunky-cheesecake-brownies.jpg");
 }
 
 .recipe-label {
     display:inline-block;
+    position:absolute;
     float:left;
-    background-image: url("../images/recipe-baked-ziti.jpg");
     background-position: center;
     background-repeat: none;
-    background-size: 100% 100%;
-    width: 25%;
-    height: 100%;
+    background-size: auto, 100%;
+    width: 17%;
+    height:100%;
+    max-height: 500px;
+    border-radius: 10px;
+    overflow:hidden;
+}
+
+.recipe-name {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    font-size: 1.55em;
+    font-weight: bold;
+    height: 70px;
+    width:100%;
+    border-radius-top-left: 10px;
+    border-radius-top-right: 10px;
 }
 
 .recipe-body {
     display:inline-block;
     float:right;
+    background-color: #DDDDDD;
+    max-height:500px;
     height:100%;
-    width:75%;
+    width:70%;
+    margin-left: 5%;
     overflow-y: scroll;
+    border-radius: 10px;
 }
 
 /*TEMP*/
