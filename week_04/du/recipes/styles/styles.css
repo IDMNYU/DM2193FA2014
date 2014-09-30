@@ -1,0 +1,97 @@
+*{
+	margin:0 ;
+	padding:0;
+
+	font-size: 100%;
+	font : inherit;
+	font-weight: normal ;
+	line-height: 1.5 ;
+
+
+
+}
+
+.h1 {
+	font-family: times normal
+}
+.heading {
+	font-size: 55px;
+	color: orange
+
+}
+
+.heading-anchor{
+	text-decoration: none;
+	color: #888
+}
+
+.heading-anchor:hover {
+	color: orange
+
+}
+
+.babyheading {
+	color: red
+
+}
+
+.recipe-subheading {
+	font-size:35px;
+	color:darkorange;
+	font-family: serif;
+}
+
+
+.instruction-tip {
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+.instruction {
+	margin-left: 100px;
+	margin-right: 100px;
+	
+}
+
+
+
+.pagetitle {
+	font-family: impact;
+	font-size: 30px;
+
+}
+
+.heading-anchor {
+
+}
+
+
+.recipe-navigation {
+    width: 85%;
+    padding: 8px 4px;
+    margin: 20px auto;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.067);
+}
+
+.recipe-navigation .nav-item {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 3px 4px;
+    margin: 0 4px;
+    white-space: nowrap;
+}
+
+.recipe-navigation .nav-item:hover {
+    background: rgba(0,0,0,0.12);
+    border-radius: 3px;
+}
+
+.recipe-navigation .nav-item.current-page,
+.recipe-navigation .nav-item:hover {
+    color: #333;
+}
+
+
+
