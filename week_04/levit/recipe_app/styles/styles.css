@@ -70,13 +70,13 @@ body {
 
 .title-text {
     text-align: center;
-    font-style: italic;
-    font-size: 35px;
-    color: grey;
-    background-color: rgba(255, 255, 255, .28);
-    width: 250px;
-    margin-left: 135px;
+    font-family: arial;
+    font-size: 30px;
+    color: white;
+    width: 275px;
+    margin-left: 125px;
     display: inline-block;
+    position: fixed;
 }
 
 .recipe{
@@ -103,9 +103,10 @@ body {
 
 .image {
     margin: 0px, 0px, 0px, 0px;
-    position: absolute;
-    clip: rect(0px, 400px, 450px, 125px);
+    position: fixed;
+    clip: rect(0px, 400px, 350px, 125px);
     z-index: -1;
+    border-radius: 40px;
 }
 
 .recipe {
