@@ -20,6 +20,16 @@
 
 }
 
+.heading-anchor{
+	text-decoration: none;
+	color: #888
+}
+
+.heading-anchor:hover {
+	color: orange
+
+}
+
 .babyheading {
 	color: red
 
@@ -31,9 +41,7 @@
 	font-family: serif;
 }
 
-.boxed {
-	border: 1px solid lightblue;
-}
+
 .instruction-tip {
 	font-size: 10px;
 	font-family: sans-serif;
@@ -45,13 +53,7 @@
 	
 }
 
-.bigger {
-	background-color: lightgrey;
-	border: 6px solid pink;
-	margin: 10px;
-	font-size: 20px;
 
-}
 
 .pagetitle {
 	font-family: impact;
@@ -59,7 +61,37 @@
 
 }
 
+.heading-anchor {
 
+}
+
+
+.recipe-navigation {
+    width: 85%;
+    padding: 8px 4px;
+    margin: 20px auto;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.067);
+}
+
+.recipe-navigation .nav-item {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 3px 4px;
+    margin: 0 4px;
+    white-space: nowrap;
+}
+
+.recipe-navigation .nav-item:hover {
+    background: rgba(0,0,0,0.12);
+    border-radius: 3px;
+}
+
+.recipe-navigation .nav-item.current-page,
+.recipe-navigation .nav-item:hover {
+    color: #333;
+}
 
 
 
