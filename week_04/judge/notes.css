@@ -1,0 +1,36 @@
+/* W3schools.com */
+
+/*RGBA color format for background images leaves text readable*/
+
+/*link : things must be in this order: link, visited, hover, active*/
+
+/*:target*/
+
+.main {
+max-width: 600px;
+margin: 0 auto;
+
+/*0 is top and bottom, auto is right/left */
+
+
+
+}
+
+/*
+
+learnlayout.com
+w3schools.com
+position: static, relative, absolute,
+
+text-decoration
+width
+background (size, image)
+border-radius
+z=index
+opacity
+overflow
+:target pseudo-selector
+:lastchild pseudo;
+
+
+*/
