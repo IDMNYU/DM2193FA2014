@@ -64,28 +64,33 @@
 .heading-anchor {
 
 }
-
-
 .recipe-navigation {
-    width: 85%;
-    padding: 8px 4px;
-    margin: 20px auto;
-    border-radius: 4px;
-    background: rgba(0,0,0,0.067);
+	background: rgba(0,0,0,0.12);
+    border-radius: 3px;
+	font-weight: bold;
+	
+	color: red;
+
+
 }
 
-.recipe-navigation .nav-item {
+.nav-item {
     text-decoration: none;
     color: #666;
-    font-weight: bold;
     padding: 3px 4px;
     margin: 0 4px;
     white-space: nowrap;
+    background: rgba(0,0,0,0.067);
+
 }
 
-.recipe-navigation .nav-item:hover {
+.nav-item:hover {
     background: rgba(0,0,0,0.12);
     border-radius: 3px;
+	font-weight: bold;
+	color: red;
+
+
 }
 
 .recipe-navigation .nav-item.current-page,
