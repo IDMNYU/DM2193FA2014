@@ -41,3 +41,16 @@ body {
  *
  *  Styles for your website!
  */
+
+
+.heading {
+    font-size: 48 px;
+    color: #666;
+
+}
+
+.heading-anchor:hover {
+    text-decoration: none;
+    color: #333;
+
+}
