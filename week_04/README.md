@@ -42,21 +42,26 @@
 
 #### Thursday
 
-De will be covering this class for me!
+De will be covering this class!
 
-* In-Class Coding
-  * Single Page Recipe Site
-    * Start fresh with a copy of my markup, [get it here](https://github.com/IDMNYU/DM2193FA2014/raw/master/week_04/johnny/recipe_app.zip)
-    * Exact the contents and *copy* into a folder in your `week_04/your_name` directory
-    * Make an initial commit to GitHub
-      * "My initial commit for single page recipe site"
-      * Sync with Github
-    * Spend a few minutes familiarizing yourself with the markup and class names
-      * Styling things goes faster when you know how the markup is put together!
-    * We are going to style the recipes to look like cards and you can flip between them
-    * This will be the basis of our introduction to Javascript for next class so be sharp!
-    * Open up the empty stylesheet and take it away!
-    * Thanks De :)
+* CSS Properties
+  * border-radius
+  * z-index
+  * opacity vs. background-color: rgba(x,x,x,x);
+  * overflow
+  * :target pseudo selector
+  * :last-child pseudo selector
+  * anchor pseudo selectors
+  * pseudo classes working in conjunction with css classes
+  * max-height
+  * Positioning (Static, Absolute, Relative, Fixed)
+  * Float & Clear
+  * Vendor Prefixes
+  * Transitions
+
+##### http://Learnlayout.com
+##### http://learnlayout.com/toc.html
+##### http://learn.shayhowe.com
 
 ### Q + A
 *10min at the end of class for any unanswers questions*
@@ -64,5 +69,3 @@ De will be covering this class for me!
 ### Homework
 * Tuesday
   * Media Queries & Meta Viewport: Finish styling the recipe site to work with Mobile, Tablet, and Desktop
-* Thursday
-  * Make sure your single-page version of the recipe site is in a healthy state for Tuesday. We dig into Javascript!
