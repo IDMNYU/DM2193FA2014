@@ -41,3 +41,94 @@ body {
  *
  *  Styles for your website!
  */
+
+.heading{
+    font-size: 48px;
+    /*
+        font-size: 5em;
+        font-size: 5rem;
+        font-size: 2in; ;)
+    */
+    text-decoration: underline;
+    text-align: center;
+    margin: 10px;
+}
+
+.heading-anchor{
+    text-decoration: none;
+    color: #666;
+    
+}
+
+.heading-anchor:hover{
+    text-decoration: none;
+    color: #333;
+}
+
+/*[Navigation Styles]*/
+
+.recipe-navigation{
+    width: 720px; 
+    margin: 20px auto;   
+    /* 
+        Margin Shorthand written out:
+        margin: top right bottom left | top& bottom right&left;
+        TRBL
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    */
+    padding: 8px 4px;
+    background: rgba(0,0,0,0.25);
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 3px 4px;
+}
+
+.nav-item:hover{
+    background-color: rgba(0,0,0,0.25);
+    color: #000;
+}
+
+/*[Recipe Cards]*/
+
+.recipes {
+    position: relative;
+    width: 720px;
+    height: 480px;
+    margin: auto;
+}
+
+.recipe {
+    position: absolute;
+    height: 100%;
+    background: #e2e2e2;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+.recipe:target{
+    z-index: 2;
+    opacity: 1;
+}
+
+.recipe-label {
+    width: 25%;
+    /*float: left;*/
+    /*background: blue;*/
+}
+
+.recipe-body {
+    /*width: 75%;*/
+    /*float: left;*/
+    /*background: red;*/
+    padding: 20px 40px;
+    margin-left: 25%;
+}
+    
