@@ -63,7 +63,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.01);;
     border-radius: 10px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.02);
+    background: rgba(0, 0, 0, 0.05);
 
 
 }
@@ -84,21 +84,34 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.03);
  
 }
-.recipe{
-    display: none;
-}
-:target {
-    display: block
-}
-.recipe {
-    margin-top: 2px;
+
+.recipes {
+    position: relative;
+    height: 500px;
     max-width: 680px;
+
+    margin: auto;
+}
+
+.recipe {
+    position: absolute;
+
+    height: 100%;
+
+    margin-top: 2px;
+
     margin-left: auto;
     margin-right: auto;
-    height: 500px;
-    position: relative;
-    overflow: auto;
+
+    opacity: 0;
+    transition: opacity 500ms ease;
 }
+.recipe:target {
+    opacity: 1;
+    z-index: 2;
+}
+
+
 .recipe-label {
     font-style: bold;
     text-align: center;
@@ -120,6 +133,9 @@ body {
 .recipe-body {
     margin-top: -60px;
     margin-left: 320px;
+
+    max-height: 100%;
+    overflow: auto;
 }
 
 
@@ -142,6 +158,10 @@ body {
     padding-bottom: 6px ;
 
 }
+#home {
+   float: left;
+}
+
 
 
 
