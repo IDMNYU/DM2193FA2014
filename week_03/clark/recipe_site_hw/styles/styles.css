@@ -1,47 +1,74 @@
-* {
+*{
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
 	font: inherit;
 	font-weight: normal;
-	line-height: 1.5;
+	line-height: 1.5; 
+	background-color: #A0522D;
+	/*line-height: 150%; is the same as line-height: 1.5;*/
 }
 
 body{
-	background:	#A0522D;
-	color: white;
-	font-family: "Arial"
+	/*
+	Example of Font Shorthand
+
+	font: 12px/18px bold italic Arial;
 	font-size: 12px;
+	font-family: bold;
+	font-style: italic;
+	line-height: 18px;
+	font-family: Arial;
+	*/
+
+	font-family: helvetica, arial, sans-serif;
+	margin: 
 }
-/*.heading,
+
+.heading{
+	font-size: 48px;
+	text-align: center;
+}
+
 .subheading{
-	font-family: "Arial"
-}*/
-.heading {
 	font-size: 36px;
-	margin: 10px;
 	text-align: center;
+	color: white;
 }
 
-.heading-words{
-	color: black;
+.heading-anchor{
+	color: #ff8c00;
+	text-decoration: none;
+	transition: all 500ms linear;
 }
 
-.subheading{
-	font-size: 24px;
-	background: black;
-	width: 100%;
-	border-radius: 5px;
-	text-align: center;
+.heading-anchor:hover {
+	opacity: 0.67;
+	/*Hw loop up css vender prefixes*/
 }
 
-.subheading .nav-item{
+.recipe-navigation{
+	background-color: rgba(0,0,1,1);
+	/*a = aplha and means transperancy
+		png has alpha, jpeg doesn't
+		dithering will purposely pixal pictures
+	*/
+	width: 70%;
+	padding: 4px, 6px;
+	margin:	auto;
+	border-radius: 6px;
+
+}
+
+.recipe-navigation .nav-item{
 	color: white;
 	padding: 4px, 4px;
+	margin: 5px;
+	white-space: nowrap;
 }
 
-.image-banner  {
-    width: 55%;
+.recipe-home-banner{
+	width: 55%;
     height: 360px;
     margin: auto;
     border-radius: 10px;
@@ -49,12 +76,19 @@ body{
     background-size: cover;
 }
 
-.ingredients{
-	list-style: none;
+.recipe-home-banner-label{
+	line-height: 2;
+	text-align: center;
+	color: white;
 }
 
 .ingredient{
-	color:black;
+	list-style: none;
+	color: white;
+}
+
+.ingredients{
+	color: black;
 	margin-bottom: 12px;
 }
 
@@ -63,33 +97,18 @@ body{
 }
 
 .instruction{
-	color:white;
+	color: black;
 	margin-bottom: 5px;
 }
 
-
-/*commas let you you group selectors together to have the same properties applied to them*/
-/*Commas are "and"'s as html is to English*/
-/*The normal class is the equivalent to the commas and classes*/
-
-/*.normal{
-	font-family: "Arial"
-}/
-
-/*
-	Spaces let you target elements that are children of other elements
-	You have to read them in reverse.
-
-	"Give me all of the children IN this parent"
-
-
-*/
-
-
-/*
-	Specificity
-	Elements: 1;
-	CLassees: 10;
-	Ids: 100;
-
-*/
+@media (max-width: 640px){
+	.recipe-navigation{
+		width: 100%;
+		border-radius 0;
+	}
+	.recipe-navigation .nav-item{
+		display: block;
+		border-radius: 0;
+		padding: 10px 35px;
+	}
+}

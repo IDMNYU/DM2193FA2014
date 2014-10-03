@@ -13,7 +13,7 @@ remember trying to figure out which of our top friends would go in our list and 
 people's friends' list but other than that myspace has gotten a makeover. I see more advertisements and artists looking for people to notice 
 their work rather that teenagers complaining about having sooooooooooooo much homework over the weekend. This goes to show that just because a
 website is launched, doesn't mean it stopped evolving or that it has to be that type of website forever. In fact even a dead social network
-can get a facelift and become something much different
+can get a facelift and become something much different.
 
 ### Reading Response
 http://www.smashingmagazine.com/2011/06/22/following-a-web-design-process/
