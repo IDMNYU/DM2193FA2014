@@ -1,4 +1,4 @@
-/**
+//**
  *  [Reset Styles]
  *
  *  Undo browser-specific styles
@@ -44,108 +44,158 @@ body {
 
 
 /**
- *  [ Heading Styles ]
+ * [ Heading Styles ]
  */
 
 .heading {
+    /*
+        <h1> tags are block elements
+     */
     font-size: 48px;
+    /*
+        font-size: 5em;
+        font-size: 5rem;
+        font-size: 2in; ;) just kidding
+     */
     text-align: center;
     margin: 10px;
-
 }
-.heading-anchor: {
+
+.heading-anchor {
+    /*
+        <a> anchor tags are `inline` elements
+     */
     text-decoration: none;
+    /*
+        text-decoration: underline | line-through;
+     */
     color: #666;
-    display: block;
-    
+    /*
+        color: #000000;
+        color: rgb(255,255,255);
+        color: rgba(123,123,123,0.33);
+        color: red;
+     */
 }
-.heading-anchor:hover {
-    color: orange;
 
+.heading-anchor:hover {
+    color: #333;
 }
+
+
 
 /**
- *  [ Navigation Styles ]
+ * [ Navigation Styles ]
  */
 
- .recipe-navigation{
+.recipe-navigation {
     width: 720px;
     margin: 20px auto;
-    background: rgba(0,0,0,0.25); 
- }
+    /*
+        Margin Shorthand written out:
+        margin: top right bottom left | top&bottom left&right
+        TRBL Terrible Trouble
+        margin: 20px auto 20px auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+     */
+    padding: 8px 4px;
+    background: rgba(0,0,0,0.25);
+}
 
-.nav-item{
+.nav-item {
     text-decoration: none;
     color: #666;
     font-weight: bold;
     padding: 3px 4px;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     background: rgba(0,0,0,0.12);
+    /*
+        background: #333;
+     */
     color: #000;
 }
 
 /**
- *  [ Recipe Cards ]
-
- *Object oriented CSS
-
+ * [ Recipe Cards ]
+ * This is the stuff
+ * Object Oriented CSS
  */
 
-.recipes{
+.recipes {
+    position: relative;
     /*
-        Defining the
-        dimensions of the 
-        recipe cards container
+        position relative here works to contain 
+        the absolutely positioned recipe cards `.recipe`
+     */
+    /*
+        Defining the dimenions of the recipe cards container 
         (and the cards themselves)
-    */
-
+     */
     width: 720px;
     height: 480px;
+
     margin: auto;
-    position: relative;
+    /*
+        margin: auto auto auto auto;
+     */
 }
 
-.recipe{
-    background: #f2f2f2;
-    height: 100%;
+.recipe {
+    
     position: absolute;
+    
+    height: 100%; 
+    /*
+        This height 100% takes its size from the parent element
+        Most percentage values behave this way in CSS
+        % has to be based off of -something-
+
+        In this specific instance, .recipe is a child of .recipes
+        .recipes is explcitly 480px
+        therefore so is this thing
+     */
+    
+    background: #e2e2e2;
+
     overflow: hidden;
 
+    /*
+        background: rgb(240,240,240);
+     */
     opacity: 0;
 
+    /* transitions are cool */
     transition: opacity 500ms ease;
-}
 
-recipe:target {
+}
+.recipe:target {
     opacity: 1;
     z-index: 2;
-
 }
 
-.recipe-label{
+.recipe-label {
     position: absolute;
     width: 25%;
-    background: blue;
 }
 
-.recipe-name{
+.recipe-name {}
 
-}
-
- .recipe-body{
+.recipe-body {
     margin-left: 25%;
-    background: red;
     padding: 20px 40px;
-    max-height: 100%;
+
+    /*
+        Makes the recipe body scrollable
+     */
     overflow: auto;
- }
+    max-height: 100%;
+}
 
- .recipe-section{
+.recipe-section {}
 
- }
-
- .recipe-subheading{
-
- }
+.recipe-subheading {}
