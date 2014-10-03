@@ -150,6 +150,16 @@ body {
     position: absolute;
     
     height: 100%; 
+    width: 100%;
+
+    /*
+        Similar to height/width 100%
+        I call it "Pinning"
+     */
+    /*top: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
     /*
         This height 100% takes its size from the parent element
         Most percentage values behave this way in CSS
@@ -181,9 +191,57 @@ body {
 .recipe-label {
     position: absolute;
     width: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    /*
+        We set the background images below
+        scoping the property to the specific .recipe card
+        
+        We set other background properties here
+        to be shared by all of them
+
+        background-size
+            cover "fill the whole thing"
+            contain "fit my background in the available space"
+     */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.recipe-home-banner .recipe-label  {
+    background-image: url('../images/pizza.gif');
+}
+.recipe-baked-ziti .recipe-label {
+    /* 
+        In the .recipe-baked-ziti element 
+        apply a background to the .recipe-label 
+    */
+    background-image: url('../images/recipe-baked-ziti.jpg');
+}
+.recipe-chocolate-chip-cookies .recipe-label {
+    /* 
+        In the .recipe-chocolate-chip-cookies element 
+        apply a background to the .recipe-label 
+    */
+    background-image: url('../images/recipe-chocolate-chip-cookies.jpg');
+}
+.recipe-chunky-cheesecake-brownies .recipe-label {
+    /* 
+        In the .recipe-chunky-cheesecake-brownies element 
+        apply a background to the .recipe-label 
+    */
+    background-image: url('../images/recipe-chunky-cheesecake-brownies.jpg');
 }
 
-.recipe-name {}
+.recipe-name {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(0,0,0,0.25);
+    color: #fff;
+}
 
 .recipe-body {
     margin-left: 25%;
@@ -191,12 +249,55 @@ body {
 
     /*
         Makes the recipe body scrollable
+        These two properties work in tandem
+        If the contents of this element are taller than 
+        the available space provided by the parent
+
+        overflow auto kicks in when the max-height is hit.
      */
     overflow: auto;
     max-height: 100%;
 }
 
-.recipe-section {}
+.recipe-section {
+    margin-bottom: 20px;
+}
+.recipe-section:last-child {
+    margin-bottom: 0;
+}
+.recipe-subheading {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.2323213123);
+    margin-bottom: 5px;
+}
 
-.recipe-subheading {}
+
+.recipe-home-banner-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* 
+    Examples of scoping styles based on the HTML Tag
+    <html class="class-name"> 
+*/
+/*.home .heading {
+    background-color: #f00;
+}
+.other-page .heading {
+    background-color: #00f;
+}
+*/
+
+
+
+
+
+
+
+
 
