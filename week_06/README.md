@@ -18,10 +18,38 @@
     It's through mistakes that you actually can grow. You have to get bad in order to get good.
         — Paula Scher
 
-### In-Class
-* [Midterm Midterm Midterm](../midterm/README.md)
-* Introduction
-* Working Period
+### In-Class Tuesday
+* Javascript
+  * Native Objects
+    * Window
+    * Document
+  * Events
+    * Load vs. Ready
+    * Click vs. Mouse Down
+    * Hover vs. Mouse Over
+    * Event Bubbling
+      * http://www.quirksmode.org/js/events_order.html
+    * Event Object
+  * Scope
+  * Classical Inheritance vs. Prototypal Inheritance
+  * [Javascript Cheat Sheet](http://overapi.com/javascript)
+  * Libraries & Utilities
+    * jQuery
+      * [jQuery Cheat Sheet](http://oscarotero.com/jquery)
+    * Underscore
+    * Prototype, MooTools, YUI
+  * Application Frameworks
+    * Ember
+    * Knockout
+    * Angular
+    * Backbone
+  * Review Chrome Developer Tools Again!
+  * ![DevTools](http://j-hnnybens-n.com/capture/cwqvi.png)
+    * Javascript console
+    * Network Requests
+
+### In-Class Thursday
+* JS Coding Exercises
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

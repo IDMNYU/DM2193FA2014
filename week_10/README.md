@@ -16,6 +16,8 @@
 ## Week 10
 
 ### In-Class
+* Introduce to Final Project 
+
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

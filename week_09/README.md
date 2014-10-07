@@ -16,6 +16,7 @@
 ## Week 9
 
 ### In-Class
+* Advanced Interface Examples Part 2
 
 ### Q + A
 *10min at the end of class for any unanswers questions*
