@@ -36,34 +36,7 @@
 * Finish up the Single Page Recipe Site
   * There's still a few good pieces of CSS that we should apply based on last Thursday's class and where we left off on Tuesday.
   * We're going to spend half the class wrapping this up so we have a good finished example of the techniques in this exercise.
-* Javascript
-  * Native Objects
-    * Window
-    * Document
-  * Events
-    * Load vs. Ready
-    * Click vs. Mouse Down
-    * Hover vs. Mouse Over
-    * Event Bubbling
-      * http://www.quirksmode.org/js/events_order.html
-    * Event Object
-  * Scope
-  * Classical Inheritance vs. Prototypal Inheritance
-  * [Javascript Cheat Sheet](http://overapi.com/javascript)
-  * Libraries & Utilities
-    * jQuery
-      * [jQuery Cheat Sheet](http://oscarotero.com/jquery)
-    * Underscore
-    * Prototype, MooTools, YUI
-  * Application Frameworks
-    * Ember
-    * Knockout
-    * Angular
-    * Backbone
-  * Review Chrome Developer Tools Again!
-  * ![DevTools](http://j-hnnybens-n.com/capture/cwqvi.png)
-    * Javascript console
-    * Network Requests
+
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

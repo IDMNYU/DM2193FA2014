@@ -15,6 +15,9 @@
 
 ## Week 7
 
+    Design cannot rescue failed content.
+        ― Edward R. Tufte
+
 ### In-Class
 * [Midterm Midterm Midterm](../midterm/README.md)
 * Introduction to Midterm

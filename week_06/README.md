@@ -49,6 +49,7 @@
     * Network Requests
 
 ### In-Class Thursday
+* jQuery
 * JS Coding Exercises
 
 ### Q + A

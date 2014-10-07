@@ -15,6 +15,9 @@
 
 ## Week 8
 
+    Above all else show the data.
+        ― Edward R. Tufte, The Visual Display of Quantitative Information
+
 ### In-Class
 * Midterm Critique
 * Advanced Interface Examples
