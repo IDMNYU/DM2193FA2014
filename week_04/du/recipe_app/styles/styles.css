@@ -41,107 +41,202 @@ body {
  *
  *  Styles for your website!
  */
-.heading{
-    font-size: 45px;
 
+
+/**
+ * [ Heading Styles ]
+ */
+
+.heading {
+    /*
+        <h1> tags are block elements
+     */
+    font-size: 48px;
+    /*
+        font-size: 5em;
+        font-size: 5rem;
+        font-size: 2in; ;) just kidding
+     */
     text-align: center;
     margin: 10px;
-
-
-    }
-
-
-.heading-anchor {
-    text-decoration: none;
-    color: #666
-    }
-
-.heading-anchor:hover{
-    color: orange
 }
 
+.heading-anchor {
+    /*
+        <a> anchor tags are `inline` elements
+     */
+    text-decoration: none;
+    /*
+        text-decoration: underline | line-through;
+     */
+    color: #666;
+    /*
+        color: #000000;
+        color: rgb(255,255,255);
+        color: rgba(123,123,123,0.33);
+        color: red;
+     */
+}
+
+.heading-anchor:hover {
+    color: #333;
+}
+
+
+
+/**
+ * [ Navigation Styles ]
+ */
 
 .recipe-navigation {
     width: 720px;
     margin: 20px auto;
+    /*
+        Margin Shorthand written out:
+        margin: top right bottom left | top&bottom left&right
+        TRBL Terrible Trouble
+        margin: 20px auto 20px auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+     */
+    padding: 8px 4px;
     background: rgba(0,0,0,0.25);
-    padding: 8px  4px;
 }
 
 .nav-item {
     text-decoration: none;
     color: #666;
-    font-weight:bold;
+    font-weight: bold;
     padding: 3px 4px;
-    
-
 }
 
-.nav-item:hover{
+.nav-item:hover {
     background: rgba(0,0,0,0.12);
-    color: black;
-    padding: 3px 4px;
-
+    /*
+        background: #333;
+     */
+    color: #000;
 }
 
+/**
+ * [ Recipe Cards ]
+ * This is the stuff
+ * Object Oriented CSS
+ */
 
 .recipes {
+    position: relative;
+    /*
+        position relative here works to contain 
+        the absolutely positioned recipe cards `.recipe`
+     */
+    /*
+        Defining the dimenions of the recipe cards container 
+        (and the cards themselves)
+     */
     width: 720px;
-    margin:auto;
+    height: 480px;
+
+    margin: auto;
+    /*
+        margin: auto auto auto auto;
+     */
 }
-
-
 
 .recipe {
-    background: #e2e2e2; 
-}
-
-.recipe-label{
-    width: 25%;
+    
     position: absolute;
     
+    height: 100%; 
+    /*
+        This height 100% takes its size from the parent element
+        Most percentage values behave this way in CSS
+        % has to be based off of -something-
+
+        In this specific instance, .recipe is a child of .recipes
+        .recipes is explcitly 480px
+        therefore so is this thing
+     */
+    
+    background: #e2e2e2;
+
+    overflow: hidden;
+
+    /*
+        background: rgb(240,240,240);
+     */
+    opacity: 0;
+
+    /* transitions are cool */
+    transition: opacity 500ms ease;
 
 }
-
-.recipe-name{
-
+.recipe:target {
+    opacity: 1;
+    z-index: 2;
 }
 
-.recipe-body{
+.recipe-label {
+    position: absolute;
+    width: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 40% 60%;
+
+}
+.recipe-baked-ziti .recipe-label
+    {
+        background-image: url(../images/recipe-baked-ziti.jpg);
+    }
+.recipe-chocolate-chip-cookies .recipe-label
+    {
+        background-image: url(../images/recipe-chocolate-chip-cookies.jpg);
+    }
+.recipe-chunky-cheesecake-brownies .recipe-label
+    {
+        background-image: url(../images/recipe-chunky-cheesecake-brownies.jpg);
+    }
+
+.recipe-name {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(0,0,0,0.25);
+    color: #D2691E
+}
+
+.recipe-body {
     margin-left: 25%;
     padding: 20px 40px;
-    position: relative;
+
+    /*
+        Makes the recipe body scrollable
+     */
+    overflow: auto;
+    max-height: 100%;
+}
+
+.recipe-section {
+    margin-bottom: 20px;
+
+}
+
+.recipe-subheading {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px  solid:  ;
+    margin-bottom: 5px;
+
+
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.alert: a;
 
 
 
