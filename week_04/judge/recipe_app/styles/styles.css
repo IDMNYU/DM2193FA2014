@@ -1,45 +1,16 @@
-/**
- *  [Reset Styles]
- *
- *  Undo browser-specific styles
- */
 
-* { margin: 0;
+*{ margin: 0;
     padding: 0;
-
     font-size: 100%;
     font: inherit;
     font-weight: normal;
     line-height: 1.5;
-
     box-sizing: border-box;}
 
-
-
-
-/**
- *  [Global Styles]
- *
- *  Styles that affect everything on the page!
- */
-
 body {
-    
-    /*
-        It is OK to apply styles to the body tag
-        for properties that you want to be shared
-        across all of your pages!
-     */
-    
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 14px;
     color: #333;}
-
-/**
- *  [Site Styles]
- *
- *  Styles for your website!
- */
 
 /*HEADING*/
 
@@ -91,16 +62,39 @@ body {
     background: #f2f2f2;
     position: absolute;
     height: 100%;
+    width: 100%;
     overflow: hidden;
     opacity: 0;
-transition: opacity 500ms ease;}
+    transition: opacity 500ms ease;}
 
 .recipe-label {
     position: absolute;
     width: 25%;
-    color: brown;}
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;}
 
-.recipe-name {}
+.recipe-baked-ziti .recipe-label {
+    background-image: url('../images/recipe-baked-ziti.jpg');
+}
+
+.recipe-chocolate-chip-cookies .recipe-label {
+    background-image: url('../images/recipe-chocolate-chip-cookies.jpg');
+}
+
+.recipe-chunky-cheesecake-brownies .recipe-label {
+    background-image: url('../images/recipe-chunky-cheesecake-brownies.jpg');
+}
+
+.recipe-name {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(0,0,0,0.25);}
 
 .recipe-body {
     margin-left: 25%;
@@ -108,6 +102,40 @@ transition: opacity 500ms ease;}
     max-height: 100%;
     overflow: auto;}
 
-.recipe-section {}
+.recipe-section:last-child {}
 
-.recipe-subheading {}
+.recipe-subheading {
+    font-size: 20px;
+    font-weight: bold;
+    font-color: #e2e2e2;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    margin-bottom: 5px;}
+
+.recipe-home-banner-heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;}
+
+.recipe-home-banner .recipe-label {
+    background-image: url('../images/pizza.gif')
+}
+
+/*.recipe-chunky-cheesecake-brownies .nav-chunky-cheesecake-brownies,*/
+
+navItem: current
+
+
+/*.home .heading {
+    background-color: #f00;}
+
+.home .something-else {}
+
+.different .heading {}
+
+.different .something-else {}*/
+
+
+
+
+
