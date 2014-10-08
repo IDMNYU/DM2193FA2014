@@ -97,11 +97,6 @@ body {
     Object-Oriented CSS
 */
 
-.recipe-chunky-cheesecake-brownies, .recipe-chocolate-chip-cookies, .recipe-baked-ziti{
-    color: #000;
-    background-color: rgba(0,0,0,0.25);
-}
-
 .recipes{
     /* Define the dimensions of recipe card container*/
     width: 720px;

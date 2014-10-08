@@ -97,11 +97,6 @@ body {
     Object-Oriented CSS
 */
 
-.recipe-chunky-cheesecake-brownies, .recipe-chocolate-chip-cookies, .recipe-baked-ziti{
-    color: #000;
-    background-color: rgba(0,0,0,0.25);
-}
-
 .recipes{
     /* Define the dimensions of recipe card container*/
     width: 720px;
@@ -114,7 +109,6 @@ body {
     background: #e2e2e2;
     position: absolute;
     height: 100%;
-    width: 100%;
     overflow: hidden;
     opacity: 0;
     transition: opacity 500ms ease;
@@ -127,42 +121,11 @@ body {
 
 .recipe-label{
     width: 25%;
-    position: absolute; /* placed in coordinates to parent*/
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-}
-
-.recipe-baked-ziti .recipe-label{
-    /* Applying background to .recipe-label in the .recipe-baked-ziti*/
-    background-image: url('../images/recipe-baked-ziti.jpg');
-}
-
-.recipe-chocolate-chip-cookies .recipe-label{
-    /* Applying background to .recipe-label in the .recipe-baked-ziti*/
-    background-image: url('../images/recipe-chocolate-chip-cookies.jpg');
-}
-
-.recipe-chunky-cheesecake-brownies .recipe-label{
-    /* Applying background to .recipe-label in the .recipe-baked-ziti*/
-    background-image: url('../images/recipe-chunky-cheesecake-brownies.jpg');
-}
-
-.recipe-home-banner .recipe-label{
-    /* Applying background to .recipe-label in the .recipe-baked-ziti*/
-    background-image: url('../images/pizza.gif');
+    position: absolute;
 }
 
 .recipe-name{
-    margin-left: 25%;
-    font-weight: bold;
-    font-size: 24px;
-    color: white;
-    padding: 10px;
-    background-color: rgba(0,0,0,0.25);
+
 }
 
 .recipe-body{
@@ -176,25 +139,21 @@ body {
 }
 
 .recipe-section{
-    margin-bottom: 20px;
-}
 
-.recipe-section:last-child{
-    margin-bottom: 0px;
 }
 
 .recipe-subheading{
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    border-bottom: 1px solid rbga(0,0,0,0.232323232323);
+
 }
 
-.recipe-home-banner-subheading{
-    font-size: 24px;
-    text-align: center;
-    font-weight: bold;
+@media (max-width: 640px){
+	.recipe-navigation{
+		width: 100%;
+		border-radius 0;
+	}
+	.recipe-navigation .nav-item{
+		display: block;
+		border-radius: 0;
+		padding: 10px 35px;
+	}
 }
-
-
-
