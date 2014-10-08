@@ -120,28 +120,6 @@ body {
     color: #000;
 }
 
-.recipe-chunky-cheesecake-brownies .nav-chunky-cheesecake-brownies,
-.recipe-chocolate-chip-cookies .nav-chocolate-chip-cookies,
-.recipe-baked-ziti .nav-baked-ziti {
-    color: #000;
-    background-color: rgba(0,0,0,0.25);
-}
-
-.nav-item.current {
-    color: #000;
-    background-color: rgba(0,0,0,0.25);
-}
-
-body.recipe-chunky-cheesecake-brownies {
-    background-color: rgba(0,255,0,0.25);
-}
-body.recipe-chocolate-chip-cookies {
-    background-color: rgba(0,0,255,0.25);
-}
-body.recipe-baked-ziti {
-    background-color: rgba(255,0,0,0.25);
-}
-
 /**
  * [ Recipe Cards ]
  * This is the stuff
@@ -210,7 +188,7 @@ body.recipe-baked-ziti {
     z-index: 2;
 }
 
-.recipe-home-banner-label {
+.recipe-label {
     position: absolute;
     width: 25%;
     top: 0;

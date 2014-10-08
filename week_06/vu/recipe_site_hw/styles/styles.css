@@ -1,0 +1,350 @@
+/* Reset Style Sheet */
+
+/**{
+	margin:0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+}
+
+/*Commas let you group selectors together to have the same properties applied to them.
+Commas are "and's"
+
+.heading,
+.subheading{
+	font-family: "Helvetica Neue", Hevitica, Arial, Sans-serif;
+}
+*/
+
+/*Spaces let you target elements that are children of other elements
+you have to read them in reverse
+	
+*/
+
+/*
+Class notes
+
+.normal{
+	font-family:"Helvetica Neue", Hevitica, Arial, Sans-serif;
+	font-size: 100px;
+}
+
+.heading{
+	font-size: 48px;
+}
+
+.subheading{
+	font-size: 36px;
+}
+
+h2{
+	font-size: 36px
+}
+
+#logo{
+	color: darkorange;
+}
+
+.ingredients .ingredient{
+	margin-bottom: 10px;
+
+}
+*/
+/* Target the child that is in that class */
+
+/*body{
+    font-family: 'Italianno',cursive;
+    font-size: 25px;
+    background-color: black;
+    color: red;
+}
+
+
+.heading {
+    font-size: 72px;
+    text-align: center;
+    margin: 10px;
+}
+
+.heading-stay {
+    text-decoration: underline;
+    color: #CC0000; 
+    font-family: 'Niconne', cursive;
+}
+
+.heading-stay:hover {
+    color: #FF33cc;
+}
+
+
+    [Navigation Styles]
+ 
+
+.recipe-navigation {
+    width: 85%;
+    padding: 8px 4px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background: red;
+    text-align: center;
+}
+
+.recipe-navigation .nav-item {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 6px 25px;
+    margin: 0 4px;
+    white-space: nowrap;
+    
+}
+
+.recipe-navigation .nav-item:hover {
+    background: black;
+    border-radius: 20px;
+    color: red;
+}
+
+.recipe-navigation .nav-item.current-page,
+.recipe-navigation .nav-item:hover {
+    color: #333;
+}
+
+/*
+    [Home Styles]
+ */
+/*
+.recipe-home-banner  {
+    width: 85%;
+    height: 100%;
+    padding: 8px 4px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background: url("../images/food-sin.jpg");
+    background-size: 100% 100%;
+    vertical-align: center;
+}
+
+.recipe-home-banner-label {
+    white-space: nowrap;
+    text-align: center;
+    color: #FF3300;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10pxpx rgba(0,0,0,0.2);
+    font-family: 'Italianno', cursive;
+    font-size: 48px;
+}*/
+
+/**
+ *  [Reset Styles]
+ *
+ *  Undo browser-specific styles
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+
+/**
+ *  [Global Styles]
+ *
+ *  Styles that affect everything on the page!
+ */
+
+body {
+    
+    /*
+        It is OK to apply styles to the body tag
+        for properties that you want to be shared
+        across all of your pages!
+     */
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/**
+ *  [Site Styles]
+ *
+ *  Styles for your website!
+ */
+
+
+/**
+ * [ Heading Styles ]
+ */
+
+.heading {
+    /*
+        <h1> tags are block elements
+     */
+    font-size: 48px;
+    /*
+        font-size: 5em;
+        font-size: 5rem;
+        font-size: 2in; ;) just kidding
+     */
+    text-align: center;
+    margin: 10px;
+}
+
+.heading-stay {
+    /*
+        <a> anchor tags are `inline` elements
+     */
+    text-decoration: none;
+    /*
+        text-decoration: underline | line-through;
+     */
+    color: #666;
+    /*
+        color: #000000;
+        color: rgb(255,255,255);
+        color: rgba(123,123,123,0.33);
+        color: red;
+     */
+}
+
+.heading-stay:hover {
+    color: #333;
+}
+
+
+
+/**
+ * [ Navigation Styles ]
+ */
+
+.recipe-navigation {
+    width: 720px;
+    margin: 20px auto;
+    /*
+        Margin Shorthand written out:
+        margin: top right bottom left | top&bottom left&right
+        TRBL Terrible Trouble
+        margin: 20px auto 20px auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+     */
+    padding: 8px 4px;
+    background: rgba(0,0,0,0.25);
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 3px 4px;
+}
+
+.nav-item:hover {
+    background: rgba(0,0,0,0.12);
+    /*
+        background: #333;
+     */
+    color: #000;
+}
+
+/*
+    [Recipe Styles]
+ */
+
+.recipes {
+    position: relative;
+    width: 720px;
+    height: 480px;
+    margin: auto;
+}
+
+.recipe {
+    position: absolute;
+    height: 100%; 
+    width: 100%;    
+    background: #e2e2e2;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease;
+
+}
+.recipe:target {
+    opacity: 1;
+    z-index: 2;
+}
+
+.recipe-label {
+    position: absolute;
+    width: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.recipe-home-banner-label .recipe-label  {
+    background-image: url('../images/food-sin.jpg');
+}
+.choco-chip-cookie-dough-truffles .recipe-label {
+
+    background-image: url('../images/choco-chip-cookie-dough-truffles.jpg');
+}
+.oreo-truffles .recipe-label {
+
+    background-image: url('../images/oreo-truffles.jpg');
+}
+.sugar-cookies .recipe-label {
+
+    background-image: url('../images/sugar-cookies.jpg');
+}
+
+.recipe-name {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(0,0,0,0.25);
+    color: #fff;
+}
+
+.recipe-body {
+    margin-left: 25%;
+    padding: 20px 40px;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.recipe-section {
+    margin-bottom: 20px;
+}
+.recipe-section:last-child {
+    margin-bottom: 0;
+}
+.recipe-subheading {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.2323213123);
+    margin-bottom: 5px;
+}
+
+
+.recipe-home-banner-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
