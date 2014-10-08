@@ -33,7 +33,7 @@ body {
     
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 14px;
-    color: #333;
+    color: #666;
 }
 
 /**
@@ -52,14 +52,14 @@ body {
     color: #666;   
 }
 .heading-anchor:hover {
-    color: darkgrey;
+    color: #474747;
 }
 .recipe-navigation {
-    width: 85%;
+    width: 65%;
     padding: 8px 4px;
     margin: 20px auto;
     border-radius: 4px;
-    background: lightgrey;
+    background: rgba(0,0,0,0.06);
 }
 .recipe-navigation .nav-item {
     text-decoration: none;
@@ -69,31 +69,37 @@ body {
     margin: 0 4px;
     white-space: nowrap;
 }
-.recipe-navigation .nav-item:hover {
-    background: grey;
+.recipe-navigation .nav-item:hover, .recipe-navigation .active {
+    background: rgba(0,0,0,0.25);
     border-radius: 3px;
-    color: #333;
+    color: #474747;
 }
 .recipes {
-    padding-right: 15px;
-    padding-left: 15px;
+	height: 450px;
+    width: 64%;
     margin-right: auto;
     margin-left: auto;
-    width: 64%;
     margin-bottom: 2em;
 }
 .recipe {
-    height: 500px;
+    height: 450px;
     position: absolute;
     width: inherit;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+.recipe:target {
+    opacity: 1;
+    z-index: 2;
 }
 .recipe-label {
     border-radius: 10px;
     display: inline-block;
     vertical-align: top;
-    height: 500px;
+    height: 450px;
     width: 250px;
     background-repeat: no-repeat;
     background-position: center;
@@ -101,14 +107,16 @@ body {
     border-radius: 10px;
     margin-right: 5px
 }
-.recipe-baked-ziti {
-    z-index: 2;
+.recipe-home-banner .recipe-label {
+    display: none;
 }
-.recipe-chocolate-chip-cookies {
-    z-index: 3;
-}
-.recipe-chunky-cheesecake-brownies {
-    z-index: 4;
+.recipe-home-banner .recipe-body {
+    margin-right: auto;
+    margin-left: auto;
+    float: center;
+    text-align: center;
+    font-size: 2em;
+    background: transparent;
 }
 .recipe-baked-ziti .recipe-label {
     background-image: url(../images/recipe-baked-ziti.jpg);
@@ -126,15 +134,16 @@ body {
     background: rgba(0,0,0,0.5);
     color: white;
     border-radius: 10px;
+    width: inherit;
 }
 .recipe-body {
     vertical-align: top;
     overflow: auto;
     float: right;
     border-radius: 10px;
-    background: lightgrey;
+    background: #f2f2f2;
     width: 600px;
-    height: 500px;
+    height: 450px;
     padding: 10px;
     margin-left: 5px;
 }
@@ -157,14 +166,32 @@ body {
 
 }
 /* Smartphones (portrait and landscape) ----------- */
-@media (min-width : 320px) and (max-width : 480px) {
-.recipe-label, .recipe-body {
-    width: auto;
-}
+@media (max-width : 320px) {
+	.recipe-label {
+		width: 100px;
+	    float: left;
+	    display: inline-block;
+	}
+	.recipe-body {
+	    width: 150px;
+	    float: right;
+	    right: 0;
+	    display: inline-block;
+	}
 }
 /* iPads (portrait and landscape) ----------- */
-@media (min-width : 768px) and (max-width : 1024px) {
-.recipe-label, .recipe-body {
-    width: auto;
-}
+@media (max-width : 768px) {
+	.recipe-label {
+		width: 100px;
+	    float: left;
+	    margin-right: 1px;
+	    display: inline-block;
+	}
+	.recipe-body {
+	    width: 225px;
+	    float: right;
+	    right: 0;
+	    margin-left: 1px;
+	    display: inline-block;
+	}
 }
