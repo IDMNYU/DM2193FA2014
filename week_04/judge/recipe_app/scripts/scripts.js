@@ -28,16 +28,20 @@ var navOnClickHandler = function(e){
 };
 
 
-navCheeseCake.onClick = navOnClickHandler;
-navBakedZiti.onClick = navOnClickHandler;
-navChocolateChipCookies.onClick = navOnClickHandler;
+navCheeseCake.onClick = navOnClickHandler2;
+navBakedZiti.onClick = navOnClickHandler2;
+navChocolateChipCookies.onClick = navOnClickHandler2;
 
 
 
 var navOnClickHandler2 = function(e){
 	var navItem = e.target;
 	var navItems = document.querySelectAll('.nav-item');
-	console.log(navItems);
+	//console.log(navItems);
+	for (var i = navItems.length - 1; i >= 0; i--) {
+		navItems[i].classList.remove('current');
+		navItems[i].classList.add('current');
+	}
 }
 
 
