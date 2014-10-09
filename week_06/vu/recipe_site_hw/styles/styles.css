@@ -295,10 +295,10 @@ body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
-.recipe-home-banner-label .recipe-label  {
+.recipe-home-banner .recipe-label  {
     background-image: url('../images/food-sin.jpg');
 }
-.choco-chip-cookie-dough-truffles .recipe-label {
+.choc-chip-cookie-dough-truffles .recipe-label {
 
     background-image: url('../images/choco-chip-cookie-dough-truffles.jpg');
 }

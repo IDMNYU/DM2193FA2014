@@ -23,13 +23,14 @@ var navCheeseCake = document.getElementById('nav-chunky-cheesecake-brownies');
 var navBakedZiti = document.getElementById('nav-baked-ziti');
 var navChocoloateChipCookies = document.getElementById('nav-baked-ziti');
 
-
+//e is an event object
 navCheeseCake.onclick = function(e){
     // alert('hahahahahaha no');
     // return false;
 
     // Show the event object
-    // console.log(e);
+    //console.log(e);
+    //This special thing
     var navItem = e.target;
 
     var hashCheeseCake = navCheeseCake.hash;
@@ -38,8 +39,14 @@ navCheeseCake.onclick = function(e){
     var newId = hashCheeseCake.substring(1, hashCheeseCake.length-1);
     // console.log(newId);
     // Add the newId to the classList of Body
+    document.bodyclassNae = '';
     document.body.classList.add(newId);
 };
+var navOnClickHandler2 = function(e){
+    var navItem = e.target;
+    var navItems = document.querySelectorAll('.nav-item');
+    for (var i = navItems.length - 1; i > 0)
+}
 
 navCheeseCake.onclick = navOnClickHandler;
 navBakedZiti.onlcik = navOnClickHandler;

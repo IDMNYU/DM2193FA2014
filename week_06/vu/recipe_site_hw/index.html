@@ -8,34 +8,39 @@
 	<meta name = "viewport" content="width=device-width">
 </head>
 <body>
+
 	<h1 class = "heading">
 		<a class = "heading-stay" href = "#home"> My Drool Inducing Favorite Recipes </a>
 	</h1>
 
 	<nav class = "recipe-navigation">
-		<a class ="nav-item nav-item-cookie-dough-truffles" href="#choc-chip-cookie-dough-truffles">
+		<a id = "nav-choc-chip-cookies" class ="nav-item-cookie-dough-truffles nav-item" href="#choc-chip-cookie-dough-truffles">
 			Choco-Chip Cookie Dough Truffles
 		</a>
-		<a class ="nav-item nav-item-oreo-truffles" href="#oreo-truffles">
+		<a class ="nav-item-oreo-truffles nav-item" id="nav-item-oreo-truffles" href="#oreo-truffles">
 			Oreo Truffles
 		</a>
-		<a class ="nav-item nav-item-sugar-cookies" href="#sugar-cookies">
+		<a class ="nav-item-sugar-cookies nav-item" id= "nav-item-sugar-cookies" href="#sugar-cookies">
 			Sugar Cookies
 		</a>
 	</nav>
 <div class = "recipes">
-	<div class = "recipe-home-banner">
+
+	<div class = "recipe recipe-home-banner" id = "home">
 		<div class= "recipe-label"></div>
 		<div class = "recipe-body">
 			<h2 class="recipe-home-banner-heading">Some awesome recipes. Choose your sin. </h2>
 		</div>
 	</div>
-	<div class = "recipe choc-chip-cookie-dough" id="choc-chip-cookie-dough-truffles">
+
+	<div class = "recipe choc-chip-cookie-dough-truffles" id="choc-chip-cookie-dough-truffles">
+
 	    <div class = 'recipe-label'>
-		<h2 class = "recipe-name">Chocolate Chip Cookie Dough Truffles</h2></div>
-		<div class = 'recipe-section'></div>
-		<h3 class = "recipe-subheading">Ingredients</h3>
+			<h2 class = "recipe-name">Chocolate Chip Cookie Dough Truffles</h2>
+		</div>
+		<div class = "recipe-body">
 		<section class = 'recipe-section'>
+		<h3 class = "recipe-subheading">Ingredients</h3>
 		<ul class = "ingredients">
 			<li class = "ingredient">1/2 cup (1 stick) unsalted butter, room temperature</li>
 			<li class = "ingredient">1/4 cup granulated sugar</li>
@@ -67,14 +72,16 @@
 		<br>
 		<p class = "source"> Find more at <a href = "http://www.bakerella.com/chocolate-chip-cookie-dough-truffles/#hkEVPhI6RMbCkW77.99"> Bakerella </a> </p>
 	</div>
+	</div>
 
-	<div class = "recipe oreo-truffles" id="oreo-truffles">
+	<div class = "recipe recipe oreo-truffles" id="oreo-truffles">
 		<div class = "recipe-label">
 		<h2 class = "recipe-name">Oreo Truffles</h2>
 	</div>
-		<div class = 'recipe-body'
+		<div class = 'recipe-body'>
+		<section class = "recipe-section">
 		<h3 class = "recipe-subheading">Ingredients</h3>
-			<ul>
+			<ul class = "ingredients">
 				<li class = "ingredient">1 lb Oreo cookies (3 sleeves)</li>
 
 				<li class = "ingredient">8 ounces cream cheese, room temperature</li>
@@ -86,7 +93,9 @@
 				<li class = "ingredient">1/2 lb white chocolate</li>
 
 			</ul>
+		</section>
 		<br>
+		<section class = "recipe-section">
 		<h3 class = "recipe-subheading">Directions</h3>
 			<ol class = "instructions">
 				<li class = "instruction">Using a food processor, grind cookies to a fine powder. With a mixer, blend cookie powder, cream cheese and vanilla extract until thoroughly mixed (there should be no white traces of cream cheese).</li>
@@ -96,17 +105,17 @@
 				<li class = "instruction">Store in airtight container, in refrigerator.</li>
 				<li class = "instruction">Note: When I am exceedingly lazy (most often the case these days), I forego the chocolate 'dip' and merely roll my truffles into various mixtures - chopped nuts, chocolate sprinkles, vari-coloured candy sprinkles, cocoa powder, chocolate shavings, coloured sugars -- still pretty -- less work.</li>
 			</ol>
+		</section>
 		<br>
 		<p class = "source"> Find more at <a href = "http://www.food.com/recipe/oreo-truffles-87967"> Food.com </a> </p>
 	</div>
 	</div>
 
 	<div class = "recipe sugar-cookies" id="sugar-cookies">
-
-		<h2 class = "recipe-name">Sugar Cookies</h2>
-		<div class="recipe-image">
-            <img src="./images/sugar-cookies.jpg">
-        </div>
+		<div class = "recipe-label">
+		<h2 class = "recipe-name">Sugar Cookies</h2></div>
+		<div class="recipe-body">
+		<section class = "recipe-section">
 		<h3 class = "recipe-subheading">Ingredients</h3>
 			<ul class = "ingredients">
 				<li class = "ingredient">1 1/2 cups butter</li>
@@ -120,7 +129,9 @@
  				<li class = "ingredient">1 1/2 teaspoons cream of tartar</li>
  				<li class = "ingredient">1/2 teaspoon salt</li>
 			</ul>
+		</section>
 		<br>
+		<section class = "recipe-section">
 		<h3 class = "recipe-subheading">Instructions</h3>
 			<ol class = "instructions">
 				<li class = "instruction">Cream butter, shortening and sugars until light and fluffy. </li>
@@ -131,10 +142,13 @@
 				<li class = "instruction">Place on lightly greased cookie sheet. Flatten slightly with the bottom of a water glass.</li>
 				<li class = "instruction">Bake at 375 degrees F (190 degrees C) for 10-12 minutes. *Larger cookies bake at 350 degrees F (175 degrees C) for 15 minutes.</li>
 			</ol>
+		</section>
 		<br>
 		<p class = "source"> Find more at <a href = "http://allrecipes.com/Recipe/Tender-Crisp-Sugar-Cookies/Detail.aspx"> AllRecipes.com </a> </p>
 	</div>
+</div>
 
 </div>
+<script src="./scripts/scripts.js"></script>
 </body>
 </html>
