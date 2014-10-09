@@ -1,3 +1,52 @@
+// var navCheeseCake = document.getElementById('nav-chunky-cheesecake-brownies');
+// var navBakedZiti = document.getElementById('nav-baked-ziti');
+// var navChocoloateChipCookies = document.getElementById('nav-baked-ziti');
+
+// navCheeseCake.onclick = function(e){
+//     var navItem = e.target;
+
+//     var hashCheeseCake = navCheeseCake.hash;
+//     // console.log(hashCheeseCake);
+//     // console.log(typeof(hashCheeseCake));
+//     var newId = hashCheeseCake.substring(1, hashCheeseCake.length-1);
+//     // console.log(newId);
+//     document.bodyclassNae = '';
+//     document.body.classList.add(newId);
+// };
+// var navOnClickHandler2 = function(e){
+//     var navItem = e.target;
+//     var navItems = document.querySelectorAll('.nav-item');
+//     for (var i = navItems.length - 1; i > 0)
+// }
+
+// navCheeseCake.onclick = navOnClickHandler;
+// navBakedZiti.onlcik = navOnClickHandler;
+// navChocolateChipCookies.onclick = navOnClickHandler;
+
+// navBakedZiti.onclick = function(e){
+//     // console.log(e);
+//     var navItem = e.target;
+
+//     var hashBakedZiti = navBakedZiti.hash;
+//     // console.log(hashCheeseCake);
+//     // console.log(typeof(hashCheeseCake));
+//     var newId = hashBakedZiti.substring(1, hashBakedZiti.length-1);
+//     // console.log(newId);
+//     document.body.classList.add(newId);
+// };
+
+
+// navChocoloateChipCookies.onclick = function(e){
+//     var navItem = e.target;
+
+//     var hashChocolateChipCookies = navChocoloateChipCookies.hash;
+//     // console.log(hashCheeseCake);
+//     // console.log(typeof(hashCheeseCake));
+//     var newId = hashChocolateChipCookies.substring(1, hashChocolateChipCookies.length-1);
+//     // console.log(newId);
+//     document.body.classList.add(newId);
+// };
+
 // Coming in Week 5!
 
 // alert('lol');
@@ -15,70 +64,76 @@
 // Read Attribute
 // Write Attribute
 // 
-// "Listen for a Click Event"
+// "Listen for a Click Event on .nav-item"
 // "Read the HREF attribute from the <A>"
-// "Write the HREF attribute value as a class to <HTML>"
+// "Write the HREF attribute value as a class name to <HTML> or <BODY>"
 
-var navCheeseCake = document.getElementById('nav-chunky-cheesecake-brownies');
-var navBakedZiti = document.getElementById('nav-baked-ziti');
-var navChocoloateChipCookies = document.getElementById('nav-baked-ziti');
+// Fetch the element out of the DOM by it's Id
+var navCookieDoughTruffles = document.getElementById('nav-item-cookie-dough-truffles');
+var navOreoTruffles = document.getElementById('nav-item-oreo-truffles');
+var navSugarCookies = document.getElementById('nav-item-sugar-cookies');
 
-//e is an event object
-navCheeseCake.onclick = function(e){
-    // alert('hahahahahaha no');
-    // return false;
-
-    // Show the event object
-    //console.log(e);
-    //This special thing
+// Click Handler for Navigation
+var navOnClickHandler = function(e){
+    // e is an Event Object
+    // Log the Event Object into the Console
+    // console.log(e);
+    // This special thing
     var navItem = e.target;
-
-    var hashCheeseCake = navCheeseCake.hash;
-    // console.log(hashCheeseCake);
-    // console.log(typeof(hashCheeseCake));
-    var newId = hashCheeseCake.substring(1, hashCheeseCake.length-1);
+    var hasClassName = navItem.hash;
+    // console.log(hasClassName);
+    // console.log(typeof(hasClassName));
+    var newId = hasClassName.substring(1, hasClassName.length);
     // console.log(newId);
     // Add the newId to the classList of Body
-    document.bodyclassNae = '';
+    // Applying statefulness to the <BODY> of the Page
+    document.body.className = '';
     document.body.classList.add(newId);
 };
+
+// Pseudo Code Language
+// Listen for Click Event on Navigation
+// Apply a .current Class to the navigation clicked on
+// Remove any .current classes from any other navigation
+// Click Handler for Navigation
 var navOnClickHandler2 = function(e){
+
+    // Grab the Nav Item you clicked on
     var navItem = e.target;
+
+    // Grab all of the nav items and loop over them
+    // document.querySelectorAll() is similar to document.getElementById()
+    // except that it uses CSS selectors and it will match and return 
+    // multiple DOM elements as results in an array
     var navItems = document.querySelectorAll('.nav-item');
-    for (var i = navItems.length - 1; i > 0)
-}
+    for (var i = navItems.length - 1; i >= 0; i--) {
+        // Remove the Current Class Name
+        navItems[i].classList.remove('current');
+    }
 
-navCheeseCake.onclick = navOnClickHandler;
-navBakedZiti.onlcik = navOnClickHandler;
-navChocolateChipCookies.onclick = navOnClickHandler;
-
-navBakedZiti.onclick = function(e){
-    // console.log(e);
-    var navItem = e.target;
-
-    var hashBakedZiti = navBakedZiti.hash;
-    // console.log(hashCheeseCake);
-    // console.log(typeof(hashCheeseCake));
-    var newId = hashBakedZiti.substring(1, hashBakedZiti.length-1);
-    // console.log(newId);
-    // Add the newId to the classList of Body
-    document.body.classList.add(newId);
+    // Re-apply current class to the nav item you clicked
+    navItem.classList.add('current');
 };
 
+// Last restort syntax
+// navCheeseCake.onclick = navOnClickHandler2;
+// navBakedZiti.onclick =  navOnClickHandler2;
+// navChocolateChipCookies.onclick =  navOnClickHandler2;
 
-navChocoloateChipCookies.onclick = function(e){
-    // alert('hahahahahaha no');
-    // return false;
+// navCheeseCake.addEventListener('click', function(e){
+//     navOnClickHandler(e);
+//     navOnClickHandler2(e);
+//     // ...
+//     // Add as many methods in here as needed
+// });
 
-    // Show the event object
-    // console.log(e);
-    var navItem = e.target;
+navCookieDoughTruffles.addEventListener('click', navOnClickHandler);
+navCookieDoughTruffles.addEventListener('click', navOnClickHandler2);
 
-    var hashChocolateChipCookies = navChocoloateChipCookies.hash;
-    // console.log(hashCheeseCake);
-    // console.log(typeof(hashCheeseCake));
-    var newId = hashChocolateChipCookies.substring(1, hashChocolateChipCookies.length-1);
-    // console.log(newId);
-    // Add the newId to the classList of Body
-    document.body.classList.add(newId);
-};
+navOreoTruffles.addEventListener('click', navOnClickHandler);
+navOreoTruffles.addEventListener('click', navOnClickHandler2);
+
+navSugarCookies.addEventListener('click', navOnClickHandler);
+navSugarChipCookies.addEventListener('click', navOnClickHandler2);
+
+
