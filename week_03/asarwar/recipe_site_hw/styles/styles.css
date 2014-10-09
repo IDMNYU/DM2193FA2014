@@ -1,61 +1,46 @@
 /*
 Reset Style Sheet
 */
-	*{
-		margin: 0;
-		padding: 0;
-		font-size: 100%;
-		font-weight: normal;
-	}
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
 
-	.nav-sidebar{
-		line-height: 480px;
-    white-space: nowrap;
-    text-align: center;
-    color: #fff;
-    font-size: 24px;
+#heading{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+	padding-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 35px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    float: left;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 400px;
     font-weight: bold;
-    text-shadow: 1px 1px 10pxpx rgba(0,0,0,0.2);
-	}
+    color: #000;
+    background-color: #F00;
+    text-align: center;
+    font-weight: bolder;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-right: 1px solid white;
+}
 
-	.picture{
-		display: block;
-    	max-width: 100%;
-    	max-height: 350px;
-    	height: auto;
-	}
-
-	.listtype{
-		list-style-type: decimal;
-	}
-	.docutils.literal{
-		color: hsla(40, 88%, 36%, 1);
-		padding: 0.1em 0.3em;
-		background-color: hsla(48, 20%, 96%, 1);
-		border: 1px dashed hsla(40, 88%, 6%, 0.4);
-		border-radius: 0.5em;
-		text-shadow: 1px 1px white;
-	}
-
-	.heading,
-	.subheading {
-		font-weight: bold;
-		padding-top: 10;
-		padding-bottom: 10;
-		font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
-	}
-	.subheading{
-		font-size: 20px;
-		text-align: left;
-	}
-	.heading{
-		font-size: 30px;
-		text-align: center;
-	}
-
-	.subsubheading{
-		font-weight: bold; 
-	}
-
-
-
+a:hover, a:active {
+    background-color: #0F0;
+}

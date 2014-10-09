@@ -1,9 +1,48 @@
 <!DOCTYPE html>
+
+<!-- 
+This is my first HTML file for this class. 
+Purpose: Play around with a different tags and attributes
+-->
+
 <html>
-  <head>
-    <title>This is a title</title>
-  </head>
-  <body>
-    Hello, world!
-   </body>
+	<head>
+		<title>This is a title!</title>
+
+		<hgroup id="header-group">
+		<h1> This is a Header with size H1 </h1>
+		<h1> This is a Header with size H2 </h1>
+	</hgroup>
+	</head>
+	<body>
+		<nav id="top-menu">
+			<ul>
+				<li> <a href="#header-group">Home</a> </li>
+				<li> <a href="#History-of-HTML">History</a> </li>
+				<li> <a href="#HTML-Source">Source</a> </li>
+				<li> <a href="#Teaching-HTML">Picture</a> </li>
+			</ul>
+		</nav>
+
+	<article id="History-of-HTML">
+		<h2> History of HTML </h2>
+		<h3> 1989: Tim Berners-Lee invents the Web with HTML as its publishing language </h3>
+		<p>
+			The World Wide Web began life in the place where you would least expect it: at CERN, the European Laboratory for Particle Physics in Geneva, Switzerland. CERN is a meeting place for physicists from all over the world, where highly abstract and conceptual thinkers engage in the contemplation of complex atomic phenomena that occur on a minuscule scale in time and space. This is a surprising place indeed for the beginnings of a technology which would, eventually, deliver everything from tourist information, online shopping and advertisements, financial data, weather forecasts and much more to your personal computer.
+		</p>	
+		<p>
+			Tim Berners-Lee is the inventor of the Web. In 1989, Tim was working in a computing services section of CERN when he came up with the concept; at the time he had no idea that it would be implemented on such an enormous scale. Particle physics research often involves collaboration among institutes from all over the world. Tim had the idea of enabling researchers from remote sites in the world to organize and pool together information. But far from simply making available a large number of research documents as files that could be downloaded to individual computers, he suggested that you could actually link the text in the files themselves.
+		</p>
+		<p>
+			In other words, there could be cross-references from one research paper to another. This would mean that while reading one research paper, you could quickly display part of another paper that holds directly relevant text or diagrams. Documentation of a scientific and mathematical nature would thus be represented as a `web' of information held in electronic form on computers across the world. This, Tim thought, could be done by using some form of hypertext, some way of linking documents together by using buttons on the screen, which you simply clicked on to jump from one paper to another. Before coming to CERN, Tim had already worked on document production and text processing, and had developed his first hypertext system, `Enquire', in 1980 for his own personal use.
+		</p>
+		Tim's prototype Web browser on the NeXT computer came out in 1990.
+	</article>
+
+	<p>
+		<a id="HTML-Source" href="http://www.w3.org/People/Raggett/book4/ch02.html"> Link to History of HTML article </a>
+	</p>
+
+	<img src="HTML.jpg" id="Teaching-HTML" alt="fancyHTML" width="240" height="240"/>
+</body>
 </html>

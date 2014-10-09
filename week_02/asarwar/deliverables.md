@@ -31,45 +31,17 @@ For his part, Jeff says he didn't want our new venture to feel "Like work" - tha
 ---
 ---
 
-The user experience development process is all about ensuring that no aspect of the user's experience with your site happens without your conscious, explicit intent.
+The user experience development process is all about ensuring that no aspect of the user's experience with your site happens without your conscious, explicit intent. 
 
-The Scope Plane The structure deﬁnes the way in which the various features and functions of the site ﬁt together.
+The Scope Plane defines the way in which the various features and functions of the site fit together.
 
-Building from Bottom to Top These ﬁve planes-strategy, scope, structure, skeleton, and surface- provide a conceptual framework for talking about user experience problems and the tools we use to solve them.
+Building from Bottom to Top These five planes-strategy, scope, structure, skeleton, and surface- provide a conceptual framework for talking about user experience problems and the tools we use to solve them. Each plane is dependent on the planes below it.
 
-Each plane is dependent on the planes below it.
+This model, divided up into neat boxes and planes, is a convenient way to think about user experience problems. Requiring work on each plane to finish before work on the next can start leads to unsatisfactory results for you and your users. Instead, you should plan your project so that work on any plane cannot finish before work on lower planes has finished. By breaking each plane down into its component elements, we'll be able to take a closer look at how all the pieces fit together to create the whole user experience.
 
-Even worse, when the site ﬁnally does launch, the users will hate it.
+User needs are the goals for the site that come from outside our organization-specifically from the people who will use our site. Balanced against user needs are our own objectives for the site. With the advent of commercial interests on the Web, applications such as electronic commerce, community forums, and online banking, among others are crucial to most websites. 
 
-Instead, you should plan your project so that work on any plane cannot ﬁnish before work on lower planes has ﬁnished.
-
-Requiring work on each plane to ﬁnish before work on the next can start leads to unsatisfactory results for you and your users.
-
-One person might use "Information design" to refer to what another knows as "Information architecture." And what's the difference between "Interface design" and "Interaction design?" Is there one? Fortunately, the ﬁeld of user experience seems to be moving out of this Babel-like state.
-
-With the advent of commercial interests on the Web, this application functionality found a wide range of uses, such as electronic commerce, community forums, and online banking, among others.
-
-On the hypertext side, our concern is information-what information the site offers and what it means to our users.
-
-By breaking each plane down into its component elements, we'll be able to take a closer look at how all the pieces ﬁt together to create the whole user experience.
-
-User needs are the goals for the site that come from outside our organization-speciﬁcally from the people who will use our site.
-
-Balanced against user needs are our own objectives for the site.
-
-The Structure Plane The scope is given structure on the software side through interaction design, in which we deﬁne how the system behaves in response to the user.
-
-This model, divided up into neat boxes and planes, is a convenient way to think about user experience problems.
-
-Users don't visit Web sites to experience the joy of navigation.
-
-In the case of our bookstore site example, we might decide that we want the users to be able to see cover images of all the books we sell.
-
-If we can get them, will we have a way to catalog them, keep track of them, and keep them up to date? And what if we can't get photos of the book covers at all? These content questions are essential to the ultimate user experience of the site.
-
-As the technology has advanced databases have become more widely used to drive Web sites.
-
-We'll see what the elements on each plane have in common, what makes each one different, and how they affect each other to create the total user experience.
+On the hypertext side, the concern is information - what information the site offers and what it means to our users.
 
 [The Elements of the User Experience by Jesse James Garrett]:http://www.jjg.net/elements/pdf/elements_ch02.pdf
 [Visible Narratives: Understanding Visual Organization by LukeW]:http://www.lukew.com/ff/entry.asp?981
