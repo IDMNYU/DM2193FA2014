@@ -19,6 +19,7 @@
 // "Read the HREF attribute from the <A>"
 // "Write the HREF attribute value as a class to <HTML>"
 
+
 var navCheeseCake = document.getElementById('nav-chunky-cheesecake-brownies');
 var navBakedZiti = document.getElementById('nav-baked-ziti');
 navCheeseCake.onclick = function(e){
