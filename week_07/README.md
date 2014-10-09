@@ -21,7 +21,20 @@
 ### In-Class
 * [Midterm Midterm Midterm](../midterm/README.md)
 * Introduction to Midterm
+  * [A collection of wireframes](http://wireframes.tumblr.com)
 * In-Class Working Period
+
+### Resources
+
+Some wireframe and responsive design tools to scope out
+
+* http://moqups.com
+* http://quirktools.com
+
 
 ### Q + A
 *10min at the end of class for any unanswers questions*
+
+
+### Homework
+* Read: [An argument for sketched sitemaps and wireframes/schematics](http://www.slideshare.net/pubsmith/sketching-interfaces-workshop-interactions12-dublin)

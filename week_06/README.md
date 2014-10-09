@@ -18,7 +18,7 @@
     It's through mistakes that you actually can grow. You have to get bad in order to get good.
         — Paula Scher
 
-### In-Class Tuesday
+### In-Class
 * Javascript
   * Native Objects
     * Window
@@ -35,7 +35,6 @@
   * [Javascript Cheat Sheet](http://overapi.com/javascript)
   * Libraries & Utilities
     * jQuery
-      * [jQuery Cheat Sheet](http://oscarotero.com/jquery)
     * Underscore
     * Prototype, MooTools, YUI
   * Application Frameworks
@@ -47,15 +46,19 @@
   * ![DevTools](http://j-hnnybens-n.com/capture/cwqvi.png)
     * Javascript console
     * Network Requests
-
-### In-Class Thursday
-* jQuery
+* Intro to jQuery
+  * [jQuery Cheat Sheet](http://oscarotero.com/jquery)
 * JS Coding Exercises
 
 ### Q + A
 *10min at the end of class for any unanswers questions*
 
 ### Homework
-* Work on your midterm!
-  * Wireframes due Thursday
-  * Designs due Tuesday
+* Check out CodeAcademy
+  * [Do Intro to Javascript](http://www.codecademy.com/en/tracks/javascript)
+  * [Do Intro to jQuery](http://www.codecademy.com/en/tracks/javascript)
+* Review CSS Layout
+  * [Learn CSS Layout](http://learnlayout.com)
+* [Untrusted](http://alexnisnevich.github.io/untrusted)
+ * Whoever beats the game gets extra credit
+* Review the article: [How to Read a Wireframe](http://blog.fuzzymath.com/wp-content/uploads/2011/07/Fuzzy-Math-How-to-read-a-wireframe.pdf)
