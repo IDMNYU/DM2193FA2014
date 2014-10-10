@@ -45,3 +45,14 @@
     background: rgba(0,0,0,0.45);
     border-radius: 3px;
 }
+
+.item.collapse {
+    font-size: 0 ;
+    height: 60px;
+
+}
+
+.item.collapse  .item_icon {
+    left: 50%; 
+    margin-left: -15px;
+}
