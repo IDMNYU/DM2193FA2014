@@ -56,7 +56,7 @@
 ### Homework
 * Check out CodeAcademy
   * [Do Intro to Javascript](http://www.codecademy.com/en/tracks/javascript)
-  * [Do Intro to jQuery](http://www.codecademy.com/en/tracks/javascript)
+  * [Do Intro to jQuery](http://www.codecademy.com/en/tracks/jquery)
 * Review CSS Layout
   * [Learn CSS Layout](http://learnlayout.com)
 * [Untrusted](http://alexnisnevich.github.io/untrusted)
