@@ -10,24 +10,91 @@ div#title-box{
 	text-align: center;
 	width: 99%;
 	height: 12%;
-	border: 1px solid red !important;
+	/*border: 1px solid red !important;*/
+}
+
+div#home{
+	font-size: 24pt;
+	font-weight: bolder;
+	text-align: center;
+	position: absolute;
+	z-index: 1;
+	padding-top: 46%;
 }
 
 div#recipe-nav-box{
 	text-align: center;
-	position: absolute;
-	top: 10px;
+	position: relative;
+	/*top: px;*/
 	width: 25%;
-	height: 65%;
-	border: 1px solid red !important;
+	height: 85%;
+	border: 1px solid red 	!important;
+}
+
+div#recipe-one-button{
+	border: 1px solid blue	!important;
+}
+
+div#recipe-two-button{
+	border: 1px solid blue	!important;
+}
+
+div#recipe-three-button{
+	border: 1px solid blue	!important;
 }
 
 div#recipes-display-box{
 	text-align: left;
-	position: absolute;
-	top: -200px;
-	left: 255px;
-	width: 63%;
-	height: 60%;
+	position: relative;
+	/*top: -490px;*/
+	top: -85.2%;
+	left: 28%;
+	width: 70%;
+	height: 85%;
+	background-color: #fff;
 	border: 1px solid red !important;
+
 }
+
+div#first-recipe{
+	position: relative;
+	z-index: -1;
+	background-color: #fff;
+}
+
+div#second-recipe{
+	position: relative;
+	z-index: -1;
+	background-color: #fff;
+}
+
+div#third-recipe{
+	position: relative;
+	z-index: -1;
+	background-color: #fff;
+}
+
+h3{
+	padding-top: 8px;
+}
+
+h2{
+	padding-left: 10px;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+a:active{
+	text-decoration: none;
+}
+
