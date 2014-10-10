@@ -4,30 +4,21 @@
 // Assign a Click event to the items
 $('.item').on('mouseenter', function(){
 
-    // var $item = $(this);
+    var $item = $(this);
 
-    // alert('some text');
-
-    // "Give me the thing I just clicked"
-    // $(this)
-
-    // console.log($(this).text());
-    // console.log('MOUSE ENTER', $.trim($item.text()));
-
-    // Get the Text contents out of the DOM element
-    // $item.text();
-
-    // Get the HTML contents out of the DOM element
-    // $item.html();
-
-    // jQuery best practices
-    // Always assign $(this) to a variable
-    // "Caching"
-
+    $item.parent().animate({
+        'padding' : '20px'
+    }, 'slow');
 
 }).on('mouseleave', function(){
 
-    console.log('MOUSE LEAVE', $.trim($(this).text()));
+    var $item = $(this);
+
+    // console.log('MOUSE LEAVE', $.trim($(this).text()));
+
+    $item.parent().animate({
+        'padding' : '10px'
+    }, 'slow');
 
 }).on('click', function(){
 
@@ -46,3 +37,34 @@ $('.item').on('mouseenter', function(){
 
 // dragstart
 // dragstop
+
+
+// generative art ;)
+// $(window).on('mousemove', function(){
+//     var container_html = $('#container_1').html();
+//     $('body').prepend(container_html);
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
