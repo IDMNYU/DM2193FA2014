@@ -1,200 +1,50 @@
-/**
- *  [Reset Styles]
- *
- *  Undo browser-specific styles
- */
-
-* {
-    margin: 0;
-    padding: 0;
-
-    font-size: 100%;
-    font: inherit;
-    font-weight: normal;
-    line-height: 1.5;
-
+* 
+{
     box-sizing: border-box;
+    font-family: arial;
 }
 
-
-/**
- *  [Global Styles]
- *10
-
- *  Styles that affect everything on the page!
- */
-
-body {
-    
-    /*
-        It is OK to apply styles to the body tag
-        for properties that you want to be shared
-        across all of your pages!
-     */
-    
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
-    font-size: 14px;
-    color: #333;
-}
-
-/**
- *  [Site Styles]
- *
- *  Styles for your website!
- */
-
- /*
-    Heading Styles
- */
-
-.heading{
-    font-size: 48px;
-    text-align: center;
-    /* block elements */
-}
-
-.heading-anchor{
-    text-decoration: none;
-    color: #666;
-    /* anchor tages are 'inline' elements*/
-}
-
-.heading-anchor:hover{
-    color: #333;
-}
-
-/*
-    Navagation Styles
-*/
-
-.recipe-navigation{
-    width: 750px;
-    margin: 20px auto;
-    background-color: rgba(0,0,0,0.25);
-    padding: 8px 4px;
-    /*
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    */
-}
-
-.nav-item{
-    text-decoration: none;
-    color: #666;
-    font-weight: bold;
-    padding: 3px 4px;
-}
-.nav-item:hover{
-    background-color: rgba(0,0,0,0.12);
-    color: black;
-    padding: 3px 4px;
-}
-
-/*
-    Recipe Cards
-    Object-Oriented CSS
-*/
-
-.recipe-chunky-cheesecake-brownies, .recipe-chocolate-chip-cookies, .recipe-baked-ziti{
-    color: #000;
-    background-color: rgba(0,0,0,0.25);
-}
-
-.recipes{
-    /* Define the dimensions of recipe card container*/
-    width: 720px;
-    height: 480px;
-    margin: auto;
-    position: relative;
-}
-
-.recipe{
-    background: #e2e2e2;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 500ms ease;
-}
-
-.recipe:target{
-    opacity: 1;
-    z-index: 2;
-}
-
-.recipe-label{
-    width: 25%;
-    position: absolute; /* placed in coordinates to parent*/
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-}
-
-.recipe-baked-ziti .recipe-label{
-    /* Applying background to .recipe-label in the .recipe-baked-ziti*/
-    background-image: url('../images/recipe-baked-ziti.jpg');
-}
-
-.recipe-chocolate-chip-cookies .recipe-label{
-    /* Applying background to .recipe-label in the .recipe-baked-ziti*/
-    background-image: url('../images/recipe-chocolate-chip-cookies.jpg');
-}
-
-.recipe-chunky-cheesecake-brownies .recipe-label{
-    /* Applying background to .recipe-label in the .recipe-baked-ziti*/
-    background-image: url('../images/recipe-chunky-cheesecake-brownies.jpg');
-}
-
-.recipe-home-banner .recipe-label{
-    /* Applying background to .recipe-label in the .recipe-baked-ziti*/
-    background-image: url('../images/pizza.gif');
-}
-
-.recipe-name{
-    margin-left: 25%;
-    font-weight: bold;
-    font-size: 24px;
-    color: white;
+.container
+{
+    width: 20%;
+    margin: 100px auto;
     padding: 10px;
-    background-color: rgba(0,0,0,0.25);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
 }
 
-.recipe-body{
-    margin-left: 25%;
-    padding: 20px 40px;
-    /*
-        style below to see other recipes
-    */
-    overflow: auto;
-    max-height: 100%;
+.item
+{
+    position: relative;
+    height: 100px;
+    margin: 10px 0 0 0;
+    padding: 0 20px 0 80px;
+    background: #999;
+    line-height: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-radius: 3px;
+    font: bold 14px/100px Sans-serif;
+    color: #fff;
 }
 
-.recipe-section{
-    margin-bottom: 20px;
+.item:first-child
+{
+    margin-top: 0;
 }
 
-.recipe-section:last-child{
-    margin-bottom: 0px;
+.item_icon
+{
+    position: absolute;
+    top: 50%; left: 20px;
+    width: 30px; height: 30px;
+    margin: -15px 0 0 0;
+    background: rgba(0,0,0,0.45);
+    border-radius: 3px;
 }
 
-.recipe-subheading{
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    border-bottom: 1px solid rbga(0,0,0,0.232323232323);
-}
 
-.recipe-home-banner-subheading{
-    font-size: 24px;
-    text-align: center;
-    font-weight: bold;
-}
 
 
 
