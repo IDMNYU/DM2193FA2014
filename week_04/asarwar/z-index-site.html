@@ -6,26 +6,29 @@
 <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 <body>
 	<div id='recipe-box'>
-	<a href='#home'>
-		<div id='title-box' onclick="zIndexChanger('first-recipe')">
+	<h2>
+		<span id="title-box">&nbsp;</span>
+		</h2>
+	<a href='#title-box'>
+		<div id='title-box' onclick="zIndexChanger('home')">
 			<h1> My Recipes! </h1>
 		</div>
 	</a>
 		<div id='recipe-nav-box'>
 			<h3> Site Navigation</h3>
-			<a href='#first-recipe'>
+			<a href='#title-box'>
 				<div id='recipe-one-button' onclick="zIndexChanger('first-recipe')">
 					<h4>Spinach & Artichoke Wonderpot</h4>
 				</div>
 			</a>
 
-			<a href='#second-recipe'>
+			<a href='#title-box'>
 				<div id='recipe-two-button' onclick="zIndexChanger('second-recipe')">
 					<h4>One Pot Spicy &nbsp Chicken Riggies</h4>
 				</div>
 			</a>
 
-			<a href='#third-recipe'>
+			<a href='#title-box'>
 				<div id='recipe-three-button' onclick="zIndexChanger('third-recipe')">
 					<h4>¡DISASTER!</h4>
 				</div>
@@ -33,7 +36,7 @@
 
 		</div>
 		<div id='recipes-display-box'>
-			<div id='home'>
+			<div id='home' onclick="zIndexChanger('home')">
 				Click on the Recipes to Start Your Adventure!
 			</div>
 			<div id='first-recipe'>
@@ -51,19 +54,38 @@
 					<li>freshly cracked pepper (15-20 cranks)</li>
 					<li>4 oz. frozen cut spinach</li>
 				</ul>
-				<h2>Instructions</h2>
-				<ol>
-					<li><p>
-						Rinse the mushrooms to remove any dirt or debris. Slice the mushrooms thinly. Drain the can of artichoke hearts and roughly chop them into bite-sized pieces. Thinly slice the onion and garlic (you can mince the garlic if you don't want large slices).
-					</p></li>
-					<li><p>
-						Place the vegetable broth, olive oil, mushrooms, artichoke hearts, onions, and garlic in a large pot. Break the fettuccine in half and add it to the pot along with the oregano, thyme, and some freshly cracked pepper. Push the ingredients down under the broth as much as possible. Place a lid on the pot and bring it up to a rolling boil over high heat.
-					</p>
-				</li>
-			</ol>
 		</div>
 		<div id='second-recipe'>
-		Helllo, World!
+		<h2>Ingredients </h2>
+			<ul>
+				<li>2 tablespoons extra virgin olive oil</li>
+				<li>5 cloves garlic, smashed and chopped</li>
+				<li>1.5 lbs chicken breast, cut into small chunks</li>
+				<li>2 large roasted red peppers, sliced into thin strips</li>
+				<li>6 hot cherry peppers, chopped and deseeded</li>
+				<li>1 28 oz can crushed tomatoes</li>
+				<li>1 cup cooking sherry or white wine</li>
+				<li>1 cup water</li>
+				<li>1 lb Rigatoni</li>
+				<li>1 cup pecorino romano or parmesan cheese</li>
+				<li>½ stick butter</li>
+				<li>¼ cup heavy cream</li>
+				<li>2 teaspoons fresh basil</li>
+				<li>½ teaspoon sea salt</li>
+			</ul>
+		</div>
+		<div id='third-recipe'>
+			<h2>Ingredients </h2>
+			<ul>
+				<li>Be Relatively Young (Early-Mid 20's Recommended)</li>
+				<li>Be Of an Ethnically Majority Group</li>
+				<li>Work in the Service Industry</li>
+				<li>Be Passionate About the Philadelphia Eagles</li>
+				<li>Be Passionate About Hating Your rival team, the Dallas Cowboys</li>
+				<li>Don't Think Before Speaking</li>
+				<li>Be Quick to Appologize</li>
+				<li>Be Ready to Run Away (if needed)</li>
+			</ul>
 		</div>
 	</div>
 </div>

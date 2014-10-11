@@ -1,9 +1,8 @@
 div#recipe-box{
-	width: 80%;
-	height: 70%;
-	padding: 25px;
-	border: 1px solid red !important;
-	margin: 25px;
+	width: 100%;
+	height: 100%;
+/*	border: 1px solid red !important;
+*/	margin: 25px;
 }
 
 div#title-box{
@@ -11,6 +10,7 @@ div#title-box{
 	width: 99%;
 	height: 12%;
 	/*border: 1px solid red !important;*/
+	padding-top: 15px;
 }
 
 div#home{
@@ -19,13 +19,17 @@ div#home{
 	text-align: center;
 	position: absolute;
 	z-index: 1;
-	padding-top: 46%;
+	width: 100%;
+	height: 100%;
+	line-height: 2200%;
+	background-color: #fff;
 }
 
 div#recipe-nav-box{
 	text-align: center;
 	position: relative;
 	/*top: px;*/
+	padding-left: 25px;
 	width: 25%;
 	height: 85%;
 	border: 1px solid red 	!important;
@@ -47,31 +51,37 @@ div#recipes-display-box{
 	text-align: left;
 	position: relative;
 	/*top: -490px;*/
+	display: block;
 	top: -85.2%;
-	left: 28%;
+	left: 27%;
 	width: 70%;
 	height: 85%;
 	background-color: #fff;
 	border: 1px solid red !important;
-
 }
 
 div#first-recipe{
-	position: relative;
+	position: absolute;
 	z-index: -1;
 	background-color: #fff;
+	width: 100%;
+	height: 100%;
 }
 
 div#second-recipe{
-	position: relative;
+	position: absolute;
 	z-index: -1;
 	background-color: #fff;
+	width: 100%;
+	height: 100%;
 }
 
 div#third-recipe{
-	position: relative;
+	position: absolute;
 	z-index: -1;
 	background-color: #fff;
+	width: 100%;
+	height: 100%;
 }
 
 h3{
@@ -98,3 +108,8 @@ a:active{
 	text-decoration: none;
 }
 
+h2 span{
+	margin-top: -380px;
+	padding-bottom: 300px;
+	display: block; 
+}
