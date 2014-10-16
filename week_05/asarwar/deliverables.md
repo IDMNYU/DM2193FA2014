@@ -1,4 +1,4 @@
-[Classical Inheritance in JavaScript](http://javascript.crockford.com/inheritance.html)
+Reading Assignment: [Classical Inheritance in JavaScript](http://javascript.crockford.com/inheritance.html)
 ----
 
 Why use Inheritance?
@@ -25,3 +25,24 @@ Steps to make inheritance work:
 The return statement uses the function's apply method to invoke the function, explicitly setting this and passing an array of parameters.
 The arguments array is not a true array, so we have to use apply again to invoke the array slice method.
 
+# Show & Tell: [Pencil Project][penproj-link]
+-----
+# Likes:  #
+- Useful tool for Web-design
+- Open source
+- Simplistic UI
+- Easy-to-find 'Download' link
+- Clear demonstration of the software with a well-positioned image
+- Non-intrusive ad placement
+- Simple homepage with links to complex features
+
+# Dislikes: #
+- Borders on the side of the page (depends on viewing resolution)
+- Lack of links leading to tutorials on homepage
+- No 'Support Us' link
+
+# My Take-Away #
+ If I had to modify this site, I would definitely set some media queries in order to extend the background depending on DOM size. Or, at least have the background image be a similar shade with the default background color, that way the lack of media queries wouldn't be as jarring.
+
+
+[penproj-link]: http://pencil.evolus.vn/
