@@ -1,0 +1,197 @@
+/**
+ *  [Reset Styles]
+ *
+ *  Undo browser-specific styles
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+
+/**
+ *  [Global Styles]
+ *
+ *  Styles that affect everything on the page!
+ */
+
+body {
+    
+    /*
+        It is OK to apply styles to the body tag
+        for properties that you want to be shared
+        across all of your pages!
+     */
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+/**
+ *  [Site Styles]
+ *
+ *  Styles for your website!
+ */
+
+.heading {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px;
+}
+.heading-anchor {
+    text-decoration: none;
+    color: #666;   
+}
+.heading-anchor:hover {
+    color: #474747;
+}
+.recipe-navigation {
+    width: 65%;
+    padding: 8px 4px;
+    margin: 20px auto;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.06);
+}
+.recipe-navigation .nav-item {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 3px 4px;
+    margin: 0 4px;
+    white-space: nowrap;
+}
+.recipe-navigation .nav-item:hover, .recipe-navigation .active {
+    background: rgba(0,0,0,0.25);
+    border-radius: 3px;
+    color: #474747;
+}
+.recipes {
+	height: 450px;
+    width: 64%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2em;
+}
+.recipe {
+    height: 450px;
+    position: absolute;
+    width: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+.recipe:target {
+    opacity: 1;
+    z-index: 2;
+}
+.recipe-label {
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    height: 450px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 500px;
+    border-radius: 10px;
+    margin-right: 5px
+}
+.recipe-home-banner .recipe-label {
+    display: none;
+}
+.recipe-home-banner .recipe-body {
+    margin-right: auto;
+    margin-left: auto;
+    float: center;
+    text-align: center;
+    font-size: 2em;
+    background: transparent;
+}
+.recipe-baked-ziti .recipe-label {
+    background-image: url(../images/recipe-baked-ziti.jpg);
+}
+.recipe-chocolate-chip-cookies .recipe-label {
+    background-image: url(../images/recipe-chocolate-chip-cookies.jpg);
+}
+.recipe-chunky-cheesecake-brownies .recipe-label {
+    background-image: url(../images/recipe-chunky-cheesecake-brownies.jpg);
+}
+.recipe-name {
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 10px;
+    width: inherit;
+}
+.recipe-body {
+    vertical-align: top;
+    overflow: auto;
+    float: right;
+    border-radius: 10px;
+    background: #f2f2f2;
+    width: 600px;
+    height: 450px;
+    padding: 10px;
+    margin-left: 5px;
+}
+.recipe-section {
+    padding: 0px 20px;
+}
+.recipe-subheading {
+    font-size: 32px;
+}
+.ingredients {
+    font-size: 16px;
+}
+.ingredient {
+
+}
+.instructions {
+    font-size: 16px;
+}
+.instruction {
+
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media (max-width : 320px) {
+	.recipe-label {
+		width: 100px;
+	    float: left;
+	    display: inline-block;
+	}
+	.recipe-body {
+	    width: 150px;
+	    float: right;
+	    right: 0;
+	    display: inline-block;
+	}
+}
+/* iPads (portrait and landscape) ----------- */
+@media (max-width : 768px) {
+	.recipe-label {
+		width: 100px;
+	    float: left;
+	    margin-right: 1px;
+	    display: inline-block;
+	}
+	.recipe-body {
+	    width: 225px;
+	    float: right;
+	    right: 0;
+	    margin-left: 1px;
+	    display: inline-block;
+	}
+}
