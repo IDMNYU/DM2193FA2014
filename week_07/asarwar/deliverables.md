@@ -1,4 +1,4 @@
-[Naughty Little Scamps](http://www.slideshare.net/pubsmith/sketching-interfaces-workshop-interactions12-dublin)
+Reading Assignment: [Naughty Little Scamps](http://www.slideshare.net/pubsmith/sketching-interfaces-workshop-interactions12-dublin)
 --
 
 # Sketches
