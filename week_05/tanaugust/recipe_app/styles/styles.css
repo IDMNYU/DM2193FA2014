@@ -1,0 +1,169 @@
+/**
+ *  [Reset Styles]
+ *
+ *  Undo browser-specific styles
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+    
+    box-sizing: border-box;
+}
+
+
+/**
+ *  [Global Styles]
+ *
+ *  Styles that affect everything on the page!
+ */
+
+body {
+    
+    /*
+        It is OK to apply styles to the body tag
+        for properties that you want to be shared
+        across all of your pages!
+     */
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/**
+ *  [Site Styles]
+ *
+ *  Styles for your website!
+ */
+
+.heading{
+    font-size: 48px;
+    text-align: center;
+    margin: 10px;
+}
+
+.heading-anchor{
+    text-decoration: none;
+    color#666;
+    
+}
+
+.heading-anchor:hover{
+    color: #333;
+}
+
+.recipe-navigation{
+    width: 720px;
+    margin: 20px auto;
+    /*
+        margin-top:20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    */
+    padding: 8px 4px;
+    background: rgba(0,0,0,0.25);
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 3px 4px;
+}
+
+.nav-item:hover{
+    background: rgba(0,0,0,0.12);
+    color: #000;
+}
+
+/**
+Recipe Cardss
+Thisi s the stuff
+Object Oriented CSS
+*/
+
+.recipes{
+    width: 720px;
+    height: 480px;
+    margin: auto;
+    position: relative;
+        /*
+            position relative here works to contain the aboslutely positioned recipe cards
+        */
+    /*
+        margin: auto auto auto auto;
+        margin: 0 auto 0 auto;
+    */
+}
+
+.recipe{
+    /*
+        defining the dimensions of the recipe cards container
+    */
+    background: #e2e2e2;
+    position: absolute;
+    height: 100%;
+        /*Takes its size from parent element. 
+        Most percentage values behave this way in css. 
+        % has to based off something.*/
+    overflow: hidden;
+    /*
+        background: rgb(240,240,240);
+    */
+    opacity: 0;
+
+    /*transitions are cool*/
+    transition: opacity 500ms ease;
+}
+
+.recipe:target{
+    opacity: 1;
+    z-index: 2;
+}
+
+.recipe-label{
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+
+    /*background: blue;*/
+}
+
+.recipe-baked-ziti .recipe-label{
+    background-image: url('../images/recipe-baked-ziti.jpg');
+}
+
+.recipe-name{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(0,0,0,0.25);
+}
+
+.recipe-body{
+    margin-left: 25%;
+    padding: 20px 40px;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto;
+    /*background: red;*/
+}
+
+.recipe-section{}
+
+.recipe-subheading{}
+
+
+
+
+
+
