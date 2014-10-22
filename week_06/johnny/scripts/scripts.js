@@ -1,5 +1,6 @@
 // JS Coming Soon!
 
+<<<<<<< Updated upstream
 // Fetch all things with the .item
 // Assign a Click event to the items
 $('.item').on('mouseenter', function(){
@@ -67,4 +68,10 @@ $('.item').on('mouseenter', function(){
 
 
 
+=======
+$ ('#item_1').on('click',function(){
+	alert('hahahahaa whaaaa');
+});
+
+>>>>>>> Stashed changes
 

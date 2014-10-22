@@ -1,3 +1,4 @@
+/* CSS Coming Soon! */
 
 * 
 {
@@ -28,6 +29,8 @@
     border-radius: 3px;
     font: bold 14px/100px Sans-serif;
     color: #fff;
+
+    transition: height 1s ease;
 }
 
 .item:first-child
@@ -43,4 +46,13 @@
     margin: -15px 0 0 0;
     background: rgba(0,0,0,0.45);
     border-radius: 3px;
+}
+
+.item.collapse {
+    height:60px;
+    font-size:0;
+}
+.item.collapse .item_icon {
+    left: 50%;
+    margin-left: -15px;
 }
