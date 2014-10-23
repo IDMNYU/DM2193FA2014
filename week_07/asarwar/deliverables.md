@@ -20,6 +20,8 @@ Reading Assignment: [Naughty Little Scamps](http://www.slideshare.net/pubsmith/s
 
 ![Example 1][example-1]
 ![Example 2][example-2]
+### My Personal Attempt at Sketching: 
+![Personal Example][personal-example]
 
 ----------
 
@@ -45,6 +47,7 @@ Reading Assignment: [Naughty Little Scamps](http://www.slideshare.net/pubsmith/s
 
 [example-1]: https://i.imgur.com/mrMlkXU.png
 [example-2]: http://speckycdn.sdm.netdna-cdn.com/wp-content/uploads/2011/05/wireframe-sketch-01.jpg
+[personal-example]: https://i.imgur.com/BvtVkWH.png
 
 
 

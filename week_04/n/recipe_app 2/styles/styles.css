@@ -1,0 +1,125 @@
+/**
+ *  [Reset Styles]
+ *
+ *  Undo browser-specific styles
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+
+/**
+ *  [Global Styles]
+ *
+ *  Styles that affect everything on the page!
+ */
+
+body {
+    
+    /*
+        It is OK to apply styles to the body tag
+        for properties that you want to be shared
+        across all of your pages!
+     */
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.heading {
+    font-size:48px;
+    text-align: center;
+    margin: 10px;
+}
+.heading-anchor {
+    text-decoration: none;
+    color: #666;
+    color: lightgrey;
+}
+.heading-anchor:hover {
+    color: #333;
+}
+.recipe-navigation{
+    width: 720px;
+    margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    padding: 8px 4px;
+    background: rgba(0,0,0,0.25);
+}
+.navi-item {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding:3px 4px;
+}
+.nav-item:hover {
+    background: rgba(0,0,0,0.12);
+    color: #000;
+}
+
+.recipes {
+    width: 720px;
+    height: 480px;
+    margin: auto;
+}
+elemen.style {
+    z-index: 99;
+}
+.recipe {
+    position: relative;
+    background: #e2e2e2;
+    overflow: hidden;
+    transition: opacity 500ms ease;
+}
+.recipe-label {
+    width: 35%;
+    background: blue;
+}
+.recipe-chunky-cheesecake-brownies .recipe-label{
+    background-image: url(',./images/recipe-baked-ziti')
+}
+.recipe-baked-ziti .recipe-label{
+    background-image: url(',./images/recipe-baked-ziti');
+}
+.recipe-name  {
+    font-size:18px;
+    font-weight: bold;
+    padding: 10px;
+    background:rgba;
+
+}
+.recipe-body {
+    margin-left: 25%;
+    padding: 20px 40px;
+    background:red;
+    max-height: 100%;
+    overflow: auto;
+}
+.recipe-section last-child{
+    margin-bottom: 0;
+}
+.recipe-subheading {
+    font-size: 10px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid purple;
+}
+
+/**
+ *  [Site Styles]
+ *
+ *  Styles for your website!
+ */
