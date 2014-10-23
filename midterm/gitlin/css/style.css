@@ -58,7 +58,7 @@ h1 {
 */
 
 .header {
-	height: 120px;
+	min-height: 120px;
 	background-color: #fe5000;
 }
 
@@ -80,19 +80,24 @@ h1 {
 }
 
 .btn {
-	float: right;
 	border-style: solid;
 	border-width: 0px;
 	border-radius: 3px;
 	background-color: white;
 	border-color: #404040;
 	color: #333333;
+	padding-top: .25rem;
+	padding-right: .65rem;
+	padding-bottom: .25rem;
+	padding-left: .65rem;
+	transition: background-color 300ms ease-out;
+}
+
+.btn-large {
 	padding-top: .75rem;
 	padding-right: 1.25rem;
 	padding-bottom: .75rem;
 	padding-left: 1.25rem;
-	
-	transition: background-color 300ms ease-out;
 }
 
 .btn:hover {
@@ -101,7 +106,8 @@ h1 {
 }
 
 .header-login-btn {
-	margin: 40px 75px 0px 75px;
+	float: right;
+	margin: 36px 75px;
 }
 
 .nav {
@@ -114,6 +120,8 @@ h1 {
 	display: inline-block;
 	height: inherit;
 	margin: 0px 5px;
+    line-height: 50px;
+    height: 50px;
 }
 
 .nav .nav-item {
@@ -121,8 +129,8 @@ h1 {
     font-weight: bold;
     white-space: nowrap;
     font-size: large;
-    line-height: 50px;
     padding: 0px 10px;
+    margin: 0px;
 }
 
 .nav .nav-form {
@@ -161,12 +169,14 @@ h1 {
 .container {
 	margin: 0px auto;
 	padding: 20px 0px;
-	width: 66%; 
+	width: 66%;
+	display: block; 
 }
 
 .row {
+	display: block;
 	width: 100%;
-	height: 250px;
+	min-height: 250px;
 }
 
 .well {
@@ -185,7 +195,7 @@ h1 {
 	text-align: left;
 	font-size: .825em;
 	position: relative;
-	bottom: -1em;
+	bottom: -.5em;
 }
 
 .top-well .news-heading {
@@ -198,6 +208,7 @@ h1 {
 	display: inline-block;
 	position: absolute;
 	width: 550px;
+	height: 180px;
 	margin: 20px 0px;
 	height: inherit;
 
@@ -206,13 +217,18 @@ h1 {
 .sub-well {
 	display: inline-block;
 	height: 220px;
-	width: 45%;
+	width: 400px;
 }
 
-.sub-well img {
+.sub-well .img-bg img {
 	display: inline;
-	height: 100%;
+	height: 220px;
 	width: 100%;
+}
+
+.news-label a {
+	display: inline;
+	color: white;
 }
 
 .sub-well .news-label {
@@ -223,17 +239,21 @@ h1 {
     padding: 0px 1.5rem;
     height: 90px;
     bottom: 97px;
+    width: 100%;
 }
 
-.sub-news-heading {
-    font-size: 1em;
+.sub-well .news-label .sub-news-heading {
+    font-size: 12pt;
 }
 
-.sub-well .comments {
+.site-ref {
+    font-size: 10pt;
+}
+
+.sub-well .news-label .comments {
 	text-align: center;
 	font-size: .825em;
 }
-
 
 .job-well {
 	height: 120px;
