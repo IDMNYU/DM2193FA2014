@@ -1,0 +1,319 @@
+/*
+  Reset Styles
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+
+/*
+  Global Styles
+ */
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 12pt;
+    color: #666;
+    background-color: #F2F2F2;
+}
+
+header {
+	margin-bottom: 20px;
+}
+
+footer {
+	margin-top: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+a:visited {
+	color: #666;
+}
+
+hr {
+	color: rgb(255, 102, 0);
+	border-top: 1px solid rgb(255, 102, 0);
+	margin: 10px 0px;
+}
+
+h1 {
+	font-size: 36pt;
+}
+
+/*
+  Header Classes
+*/
+
+.header {
+	min-height: 120px;
+	background-color: #fe5000;
+}
+
+.header-img {
+	height: 120px;
+	width: 120px;
+	margin-left: 50px;
+	display: inline-block;
+}
+
+.main-heading {
+	display: inline-block;
+	font-size: 48pt;
+	color: white;
+	height: 120px;
+	line-height: 120px;
+	margin-left: 20px;
+	position: absolute;
+}
+
+.btn {
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 3px;
+	background-color: white;
+	border-color: #404040;
+	color: #333333;
+	padding-top: .25rem;
+	padding-right: .65rem;
+	padding-bottom: .25rem;
+	padding-left: .65rem;
+	transition: background-color 300ms ease-out;
+}
+
+.btn-large {
+	padding-top: .75rem;
+	padding-right: 1.25rem;
+	padding-bottom: .75rem;
+	padding-left: 1.25rem;
+}
+
+.btn:hover {
+	background-color: #666;
+	color: white;
+}
+
+.header-login-btn {
+	float: right;
+	margin: 36px 75px;
+}
+
+.nav {
+	height: 50px;
+	background-color: #666;
+}
+
+.nav > ul > li{
+	list-style: none;
+	display: inline-block;
+	height: inherit;
+	margin: 0px 5px;
+    line-height: 50px;
+    height: 50px;
+}
+
+.nav .nav-item {
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: large;
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+.nav .nav-form {
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: large;
+    line-height: 50px;
+    padding: 10px 0px;
+}
+
+.nav .nav-item > a {
+    color: white;
+}
+
+.nav .nav-item:hover {
+    background: rgba(0,0,0,0.25);
+    color: #474747;
+    height: 100%;
+}
+
+.nav-left  {
+	margin-left: 50px;
+	float: left;
+}
+
+.nav-right  {
+	margin-right: 10px;
+	float: right;
+}
+
+/*
+  Body Classes
+*/
+
+.container {
+	margin: 0px auto;
+	padding: 20px 0px;
+	width: 66%;
+	display: block; 
+}
+
+.row {
+	display: block;
+	width: 100%;
+	min-height: 250px;
+}
+
+.well {
+	height: 220px;
+	background-color: white;
+	box-shadow: 5px 5px 5px #888;
+	margin: 21px;
+}
+
+.top-well img {
+	margin: 20px;
+	height: 180px;
+}
+
+.top-well .comments {
+	text-align: left;
+	font-size: .825em;
+	position: relative;
+	bottom: -.5em;
+}
+
+.top-well .news-heading {
+	width: 70%;
+	font-size: 22pt;
+	white-space: pre;
+}
+
+.top-well .news-desc {
+	display: inline-block;
+	position: absolute;
+	width: 550px;
+	height: 180px;
+	margin: 20px 0px;
+	height: inherit;
+
+}
+
+.sub-well {
+	display: inline-block;
+	height: 220px;
+	width: 400px;
+}
+
+.sub-well .img-bg img {
+	display: inline;
+	height: 220px;
+	width: 100%;
+}
+
+.news-label a {
+	display: inline;
+	color: white;
+}
+
+.sub-well .news-label {
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    width: inherit;
+    padding: 0px 1.5rem;
+    height: 90px;
+    bottom: 97px;
+    width: 100%;
+}
+
+.sub-well .news-label .sub-news-heading {
+    font-size: 12pt;
+}
+
+.site-ref {
+    font-size: 10pt;
+}
+
+.sub-well .news-label .comments {
+	text-align: center;
+	font-size: .825em;
+}
+
+.job-well {
+	height: 120px;
+}
+
+.job-well img {
+	height: 100px;
+	margin: 10px;
+	display: inline-block;
+}
+
+.job-desc {
+	display: inline-block;
+	position: absolute;
+	margin: auto 0px;
+	height: inherit;
+	padding: 5px 0px;
+}
+
+.job-heading {
+	display: inline-block;
+	font-size: 20pt;
+	width: 70%;
+}
+
+.question {
+	font-size: 14pt;
+	margin: 15px 0px 5px 0px;
+}
+
+.disclaimer {
+	width: 80%;
+	margin: auto;
+}
+
+.bottom-row {
+	height: 50px;
+	width: 161px;
+	margin: 0px auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+/*
+  Footer Classes
+*/
+
+.nav-footer {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 10.5pt;
+}
+
+.nav-footer > ul > li {
+	list-style: none;
+	display: inline-block;
+	height: inherit;
+	margin: 0px 5px;
+}
+
+.footer-form {
+	float: right;
+}
