@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Hacker News | Jobs</title>
 	<link rel="icon" href="./favicon.ico">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
 </head>
@@ -11,7 +12,7 @@
 	<header>
 		<div class="header">
 			<a href="./index.html" title="News"><img src="./img/hn.png" alt="" class="header-img"></a>
-			<h1 class="main-heading">Hacker News</h1>
+			<div class="main-heading">Hacker News</div>
 			<a href="#" data-target=".bs-modal-md" class="btn btn-large header-login-btn">Login / Sign Up</a>
 		</div>
 		<nav class="nav">
@@ -24,10 +25,10 @@
 			</ul>
 			<ul class="nav-right">
 				<li class="nav-form">
-					<form>
-						Search HN:
-						<input type="search"name="hnsearch">
-					</form>
+					<div class="input-group">
+						<input type="text">
+						<button class="btn btn-search"><span class="glyphicon glyphicon-search"></span></button>
+					</div>
 				</li>
 			</ul>
 		</nav>
@@ -38,7 +39,7 @@
 			All the jobs listed here are at startups that were at some point funded by Y Combinator. Some are now established companies. Others may be only a few weeks old.
 		</p>
 		<hr>
-		<div class="well job-well">
+		<div class="tile tile-jb">
 			<a href="./index.html" target="_blank"><img src="./img/g.png" alt=""></a>
 			<div class="job-desc">
 				<a class="job-heading" href="" target="_blank">TrueVault (YC W14) hiring a lead engineer to shape the landscape of secure data  </a>
@@ -47,7 +48,7 @@
 				
 			</div>
 		</div>
-		<div class="well job-well">
+		<div class="tile tile-jb">
 			<a href="./index.html" target="_blank"><img src="./img/g.png" alt=""></a>
 			<div class="job-desc">
 				<a class="job-heading" href="" target="_blank">TrueVault (YC W14) hiring a lead engineer to shape the landscape of secure data  </a>
@@ -55,7 +56,7 @@
 				<div class="site-ref">(goo.gl) | 5 hours ago</div>
 			</div>
 		</div>
-		<div class="well job-well" target="_blank">
+		<div class="tile tile-jb" target="_blank">
 			<a href="./index.html"><img src="./img/g.png" alt=""></a>
 			<div class="job-desc">
 				<a class="job-heading" href="" target="_blank">TrueVault (YC W14) hiring a lead engineer to shape the landscape of secure data  </a>
@@ -63,7 +64,7 @@
 				<div class="site-ref">(goo.gl) | 5 hours ago</div>
 			</div>
 		</div>
-		<div class="well job-well" target="_blank">
+		<div class="tile tile-jb" target="_blank">
 			<a href="./index.html"><img src="./img/g.png" alt=""></a>
 			<div class="job-desc">
 				<a class="job-heading" href="" target="_blank">TrueVault (YC W14) hiring a lead engineer to shape the landscape of secure data  </a>
@@ -71,7 +72,7 @@
 				<div class="site-ref">(goo.gl) | 5 hours ago</div>
 			</div>
 		</div>
-		<div class="well job-well" target="_blank">
+		<div class="tile tile-jb" target="_blank">
 			<a href="./index.html"><img src="./img/g.png" alt=""></a>
 			<div class="job-desc">
 				<a class="job-heading" href="" target="_blank">TrueVault (YC W14) hiring a lead engineer to shape the landscape of secure data  </a>
@@ -80,7 +81,7 @@
 			</div>
 		</div>
 		<div class="bottom-row">
-			<a href="#" class="btn btn-large">Load More Jobs</a>
+			<button class="btn btn-large">Load More Jobs</button>
 		</div>
 	</div>
 	<footer>

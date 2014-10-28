@@ -4,14 +4,15 @@
 	<meta charset="utf-8">
 	<title>Hacker News | News</title>
 	<link rel="icon" href="./favicon.ico">
-	<link rel="stylesheet" href="./css/style.css">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
 </head>
 <body>
 	<header>
 		<div class="header">
 			<a href="./index.html" title="News"><img src="./img/hn.png" alt="" class="header-img"></a>
-			<h1 class="main-heading">Hacker News</h1>
+			<div class="main-heading">Hacker News</div>
 			<a href="#" data-target=".bs-modal-md" class="btn btn-large header-login-btn">Login / Sign Up</a>
 		</div>
 		<nav class="nav">
@@ -24,16 +25,16 @@
 			</ul>
 			<ul class="nav-right">
 				<li class="nav-form">
-					<form>
-						Search HN:
-						<input type="search"name="hnsearch">
-					</form>
+					<div class="input-group">
+						<input type="text">
+						<button class="btn btn-search"><!-- <span class="glyphicon glyphicon-search"> -->Search</span></button>
+					</div>
 				</li>
 			</ul>
 		</nav>
 	</header><!-- /header -->
 	<div class="container">
-		<div class="well top-well">
+		<div class="tile tile-lg">
 			<a href="http://techcrunch.com/2014/10/21/and-the-winner-of-techcrunch-disrupt-europe-2014-is-crate/" target="_blank"><img src="./img/main.jpg" alt=""></a>
 			<div class="news-desc">
 				<div class="content">
@@ -42,92 +43,82 @@
 					<p>
 					The competition was incredibly fierce at the inaugural TechCrunch Disrupt London. At the very beginning, there were 15 amazing companies presenting in front of multiple groups of industry leaders serving as judges. The startups were competing for £30,000 and the highly coveted Disrupt Cup.
 					</p>
-					<div class="comments">
+					<p class="comments">
 						181 points by calvin_c 4 hours ago | 76 comments
-					</div>
-				</div>
-
-			</div>
-			
-		</div>
-		<div class="row">
-			<div class="well sub-well">
-				<div class="img-bg">
-					<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank">
-						<img src="./img/sub.jpg" alt="">
-					</a>
-				</div>
-				<div class="news-label">
-					<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank">
-						<div class="sub-news-heading">
-							Bango Inks Global Samsung Deal To Power Carrier Billing In Galaxy Apps Store
-						</div>
-						<div class="site-ref">(techcrunch.com)</div>
-						<div class="comments">
-							181 points by calvin_c 4 hours ago | 76 comments
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="well sub-well">
-				<div class="img-bg">
-					<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank">
-						<img src="./img/sub.jpg" alt="">
-					</a>
-				</div>
-				<div class="news-label">
-					<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank">
-						<div class="sub-news-heading">
-							Bango Inks Global Samsung Deal To Power Carrier Billing In Galaxy Apps Store
-						</div>
-						<div class="site-ref">(techcrunch.com)</div>
-						<div class="comments">
-							181 points by calvin_c 4 hours ago | 76 comments
-						</div>
-					</a>
+					</p>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="well sub-well">
-				<div class="img-bg">
-					<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank">
-						<img src="./img/sub.jpg" alt="">
-					</a>
-				</div>
-				<div class="news-label">
-					<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank">
-						<div class="sub-news-heading">
-							Bango Inks Global Samsung Deal To Power Carrier Billing In Galaxy Apps Store
-						</div>
-						<div class="site-ref">(techcrunch.com)</div>
-						<div class="comments">
-							181 points by calvin_c 4 hours ago | 76 comments
-						</div>
-					</a>
+		<div class="tile tile-sm">
+			<div class="news-label">
+				<div class="content">
+				<p class="comments">
+						181 points by calvin_c 4 hours ago | 76 comments
+					</p>
+					<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank" class="news-heading">Bango Inks Global Samsung Deal To Power Carrier Billing In Galaxy Apps Store</a>
+					<p class="site-ref">(techcrunch.com)</p>
+					
 				</div>
 			</div>
-			<div class="well sub-well">
-				<div class="img-bg">
-					<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank">
-						<img src="./img/sub.jpg" alt="">
-					</a>
+			<div class="img-bg">
+				<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank">
+					<img src="./img/sub.jpg" class="tile-sm-img" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="tile tile-sm">
+			<div class="news-label">
+				<div class="content">
+					<p class="comments">
+						181 points by calvin_c 4 hours ago | 76 comments
+					</p>
+					<a href="http://www.newsweek.com/assange-google-not-what-it-seems-279447" target="_blank" class="news-heading">Assange: Google Is Not What It Seems</a>
+					<p class="site-ref">(newsweek.com)</p>
+					
 				</div>
-				<div class="news-label">
-					<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank">
-						<div class="sub-news-heading">
-							Bango Inks Global Samsung Deal To Power Carrier Billing In Galaxy Apps Store
-						</div>
-						<div class="site-ref">(techcrunch.com)</div>
-						<div class="comments">
-							181 points by calvin_c 4 hours ago | 76 comments
-						</div>
-					</a>
+			</div>
+			<div class="img-bg">
+				<a href="http://www.newsweek.com/assange-google-not-what-it-seems-279447" target="_blank">
+					<img src="./img/sub.jpg" class="tile-sm-img" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="tile tile-sm">
+			<div class="news-label">
+				<div class="content">
+				<p class="comments">
+						181 points by calvin_c 4 hours ago | 76 comments
+					</p>
+					<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank" class="news-heading">Bango Inks Global Samsung Deal To Power Carrier Billing In Galaxy Apps Store</a>
+					<p class="site-ref">(techcrunch.com)</p>
+					
 				</div>
+			</div>
+			<div class="img-bg">
+				<a href="http://techcrunch.com/2014/10/22/bango-inks-global-samsung-deal-to-power-carrier-billing-in-galaxy-apps-store/" target="_blank">
+					<img src="./img/sub.jpg" class="tile-sm-img" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="tile tile-sm">
+			<div class="news-label">
+				<div class="content">
+					<p class="comments">
+						181 points by calvin_c 4 hours ago | 76 comments
+					</p>
+					<a href="http://www.newsweek.com/assange-google-not-what-it-seems-279447" target="_blank" class="news-heading">Assange: Google Is Not What It Seems</a>
+					<p class="site-ref">(newsweek.com)</p>
+					
+				</div>
+			</div>
+			<div class="img-bg">
+				<a href="http://www.newsweek.com/assange-google-not-what-it-seems-279447" target="_blank">
+					<img src="./img/sub.jpg" class="tile-sm-img" alt="">
+				</a>
 			</div>
 		</div>
 		<div class="bottom-row">
-			<a href="#" class="btn btn-large">Load More News</a>
+			<button class="btn btn-large">Load More News</button>
 		</div>
 	</div>
 	<footer>

@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Hacker News | FAQ</title>
 	<link rel="icon" href="./favicon.ico">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
 </head>
@@ -11,7 +12,7 @@
 	<header>
 		<div class="header">
 			<a href="./index.html" title="News"><img src="./img/hn.png" alt="" class="header-img"></a>
-			<h1 class="main-heading">Hacker News</h1>
+			<div class="main-heading">Hacker News</div>
 			<a href="#" data-target=".bs-modal-md" class="btn btn-large header-login-btn">Login / Sign Up</a>
 		</div>
 		<nav class="nav">
@@ -24,10 +25,10 @@
 			</ul>
 			<ul class="nav-right">
 				<li class="nav-form">
-					<form>
-						Search HN:
-						<input type="search"name="hnsearch">
-					</form>
+					<div class="input-group">
+						<input type="text">
+						<button class="btn btn-search"><span class="glyphicon glyphicon-search"></span></button>
+					</div>
 				</li>
 			</ul>
 		</nav>
