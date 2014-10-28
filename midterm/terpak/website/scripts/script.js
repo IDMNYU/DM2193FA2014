@@ -36,6 +36,7 @@ $(document).ready(function(){
 		$('.header-register').slideUp();
 	});
 
+	/* USE FOR JOBS PAGE
 	$('.section-toggle').on('click', function(){
 		var body = $(this).parent().parent().children('.section-body');
 
@@ -90,5 +91,5 @@ $(document).ready(function(){
 			chatbox.append('<strong>Anonymous</strong>: ' + msg + '</br>');
 			chatbox.scrollTop(chatbox.offset().top);
 	    }
-	});
+	});*/
 });
