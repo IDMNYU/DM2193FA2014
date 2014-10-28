@@ -5,12 +5,10 @@
 * {
     margin: 0;
     padding: 0;
-
     font-size: 100%;
     font: inherit;
     font-weight: normal;
     line-height: 1.5;
-
     box-sizing: border-box;
 }
 
@@ -26,15 +24,11 @@ body {
     background-color: #F2F2F2;
 }
 
-header {
-	margin-bottom: 20px;
-}
-
 footer {
 	margin-top: 10px;
 }
 
-a {
+a, a:hover {
 	text-decoration: none;
 	color: #666;
 }
@@ -44,13 +38,17 @@ a:visited {
 }
 
 hr {
-	color: rgb(255, 102, 0);
+	color: #fe5000;
 	border-top: 1px solid rgb(255, 102, 0);
 	margin: 10px 0px;
 }
 
 h1 {
 	font-size: 36pt;
+}
+
+button {
+	color: #666;
 }
 
 /*
@@ -71,7 +69,7 @@ h1 {
 
 .main-heading {
 	display: inline-block;
-	font-size: 48pt;
+	font-size: 40pt;
 	color: white;
 	height: 120px;
 	line-height: 120px;
@@ -107,7 +105,7 @@ h1 {
 
 .header-login-btn {
 	float: right;
-	margin: 36px 75px;
+	margin: 36px 80px;
 }
 
 .nav {
@@ -139,7 +137,7 @@ h1 {
     white-space: nowrap;
     font-size: large;
     line-height: 50px;
-    padding: 10px 0px;
+    padding: 7px 0px;
 }
 
 .nav .nav-item > a {
@@ -153,13 +151,46 @@ h1 {
 }
 
 .nav-left  {
-	margin-left: 50px;
+	margin-left: 70px;
 	float: left;
 }
 
 .nav-right  {
-	margin-right: 10px;
+	margin-right: 70px;
 	float: right;
+}
+
+.input-group {
+	display: inline-block;
+	border: 1px solid #666;
+	width: auto;
+	height: auto;
+	overflow:hidden;
+}
+.input-group > input {
+	display: inline-block;
+	border: none;
+	margin: 0;
+	padding: 3px;
+}
+.input-group > button {
+	display: inline-block;
+	border: none;
+	color: #666;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+	line-height: 1.5;
+	margin: 0px -4px;
+	padding: 3px 10px;
+}
+
+.btn-search {
+	border: 1px solid #666;
+	border-radius: 0px;
+	position: relative;
+	left: -5px;
 }
 
 /*
@@ -179,32 +210,32 @@ h1 {
 	min-height: 250px;
 }
 
-.well {
+.tile {
 	height: 220px;
 	background-color: white;
-	box-shadow: 5px 5px 5px #888;
-	margin: 21px;
+	/*box-shadow: 5px 5px 5px #888;*/
+	margin: 20px;
 }
 
-.top-well img {
+.tile-lg img {
 	margin: 20px;
 	height: 180px;
 }
 
-.top-well .comments {
+.tile-lg .comments {
 	text-align: left;
 	font-size: .825em;
 	position: relative;
 	bottom: -.5em;
 }
 
-.top-well .news-heading {
+.tile-lg .news-heading {
 	width: 70%;
 	font-size: 22pt;
 	white-space: pre;
 }
 
-.top-well .news-desc {
+.tile-lg .news-desc {
 	display: inline-block;
 	position: absolute;
 	width: 550px;
@@ -214,16 +245,24 @@ h1 {
 
 }
 
-.sub-well {
+.tile-sm {
 	display: inline-block;
-	height: 220px;
+	height: 250px;
 	width: 400px;
+	overflow: hidden;
+	margin: 0px 20px 20px 20px;
 }
 
-.sub-well .img-bg img {
+.tile-sm .img-bg {
 	display: inline;
-	height: 220px;
-	width: 100%;
+	position: relative;
+	top: -100px;
+}
+
+.tile-sm .img-bg .tile-sm-img {
+	display: inline;
+	height: 250px;
+	width: 400px;
 }
 
 .news-label a {
@@ -231,35 +270,47 @@ h1 {
 	color: white;
 }
 
-.sub-well .news-label {
+.tile-sm .news-label {
     position: relative;
     background: rgba(0,0,0,0.5);
     color: white;
-    width: inherit;
     padding: 0px 1.5rem;
-    height: 90px;
-    bottom: 97px;
-    width: 100%;
+    height: 100px;
+    top: 150px;
+    width: 400px;
+    list-style: none;
+    z-index: 2;
 }
 
-.sub-well .news-label .sub-news-heading {
+.news-label .content {
+	height: 100px;
+}
+
+.news-label .news-heading {
     font-size: 12pt;
+    font-weight: bold;
+    position: relative;
+	top: -10px;
 }
 
-.site-ref {
+.news-label .site-ref {
     font-size: 10pt;
+    position: relative;
+    top: -15px;
 }
 
-.sub-well .news-label .comments {
+.news-label .comments {
 	text-align: center;
 	font-size: .825em;
+	position: relative;
+	top: 75px;
 }
 
-.job-well {
+.tile-jb {
 	height: 120px;
 }
 
-.job-well img {
+.tile-jb img {
 	height: 100px;
 	margin: 10px;
 	display: inline-block;
