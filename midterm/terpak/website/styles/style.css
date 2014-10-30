@@ -29,7 +29,7 @@ header {
 	position: relative;
 	height: 47px;
 
-	background: #F60;
+	background: #FE5000;
 	border-bottom: 2px solid #BBB;
 }
 .logo {
@@ -61,7 +61,7 @@ header {
 	font-size: 2.5em;
 	float: right;
 
-	background: #FF6600;
+	background: #FE5000;
 	color: white;
 }
 .title-wrapper {
@@ -106,7 +106,7 @@ header {
 	border-radius-bottom-right: 3px;
 	padding: 7px;
 
-	background: #F60;
+	background: #FE5000;
 }
 .header-register {
 	display: inline-block;
@@ -117,7 +117,7 @@ header {
 	border-radius-bottom-right: 3px;
 	padding: 7px;
 
-	background: #F60;
+	background: #FE5000;
 }
 .form-control {
 	overflow: hidden;
@@ -154,7 +154,7 @@ footer {
 	height: auto;
 	width: 100%;
 
-	background: #FF6600;
+	background: #FE5000;
 }
 .footer-list {
 	display: block;
@@ -176,6 +176,7 @@ footer {
 .container {
 	display:block;
 	height:100%;
+	margin: 35px 250px;
 }
 
 .page-header {
@@ -184,8 +185,101 @@ footer {
 	font-size: 2em;
 	font-family: Verdana, Geneva, sans-serif;
 	border-bottom: 1px solid black;
+	border-radius: 10px;
+	background: #FE5000;
+	color: #FE5000;
+
+	text-shadow: 	-1px -1px 3px #FFF,
+				    1px  -1px 3px #FFF,
+				    -1px 1px  3px #FFF,
+				    1px  1px  3px #FFF;
 }
 
+.news {
+	display: block;
+	border: 1px solid black;
+	margin: 30px 0;
+}
+
+.news-banner {
+	display: block;
+	padding: 0 10px;
+	font-size: 1.6em;
+}
+.banner-popular {
+	border-bottom: 1px solid black;
+}
+.banner-other {
+	border-top: 1px solid black;
+}
+
+.news-popular {
+	padding: 10px;
+}
+.article-main {
+	display: inline-block;
+	margin: 10px;
+	width: 60%;
+	height: 0;
+	padding-top: 35%;
+	background: red;
+}
+.article-side-container {
+	display: inline-block;
+	position: absolute;
+	margin: 10px;
+	width: 21%;
+	height: 0;
+	padding-top: 21.5%;
+}
+.article-side {
+	display: block;
+	height: 0;
+	padding-top: 35%;
+	background: red;
+}
+.article-sub {
+	display: inline-block;
+	margin: 10px;
+	width: 30%;
+	height: 150px;
+	background: red;
+}
+
+.news-other {
+
+}
+
+.input-group {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	border: 1px solid black;
+	border-radius: 5px;
+	overflow:hidden;
+	margin: 50px;
+}
+.input-group > input {
+	display: inline-block;
+	border: none;
+	margin: 0;
+	padding: 3px;
+}
+.input-group > button {
+	display: inline-block;
+	border: none;
+	height: 100%;
+	margin: 0;
+	padding: 3px;
+}
+.input-group > button:hover {
+	background: #CCC;
+}
+.input-group > button:active {
+	background: #BBB;
+}
+
+/*
 .section {
 	display: block;
 	border-bottom: 1px solid black;
@@ -318,4 +412,4 @@ footer {
 	background-color: #ccc;
 }.message-submit:active {
 	background-color: #bbb;
-}
+}*/
