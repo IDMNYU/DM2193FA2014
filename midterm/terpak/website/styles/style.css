@@ -11,9 +11,6 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-*:focus {
-	outline: none;
-}
 
 hr {
 	margin: 6px 2px;
@@ -26,17 +23,21 @@ strong {
 
 header {
 	display: block;
-	position: relative;
+	position: absolute;
+	top: 0;
 	height: 47px;
+	width: 100%;
 
 	background: #FE5000;
 	border-bottom: 2px solid #BBB;
 }
 .logo {
 	display: inline;
-	height: 100%;
-	width: auto;
-	border: 1px solid black;
+	margin: 0 5px 0 10px;
+	font-size: 3em;
+	font-family: "Lucida Bright", Georgia, serif;
+	line-height: 95%;
+	color: white;
 	float: left;
 }
 .logo-title {
@@ -51,106 +52,22 @@ header {
 				    -1px 1px  0 #000,
 				    1px  1px  0 #000;
 }
-.site-select {
-	display:inline;
-	border: 0;
-	border-left: 2px solid rgba(0,0,0,0.3);
-	border-right: 2px solid rgba(0,0,0,0.3);
-	height: 100%;
-	width: auto;
-	font-size: 2.5em;
-	float: right;
-
-	background: #FE5000;
-	color: white;
-}
 .title-wrapper {
 	position: absolute;
 	top: 0;
 	height: 100%;
 }
-.header-controls {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 0 45px;
-	height: 100%;
-	font-family: Verdana, Geneva, sans-serif;
-	z-index: 999;
-}
-.header-controls ul {
-	display: block;
+.search-wrapper {
+	display: inline-block;
+	float: right;
 	height: 100%;
 }
-.header-controls ul li {
-	padding: 0 5px;
-	display: inline-block;
-	list-style-type: none;
-	height: 100%;
-	font-size: 1.5em;
-	line-height: 200%;
-}
-.header-controls ul li a:hover {
-	text-shadow: 0 0 4px #000;
-}
-.header-controls ul li a {
-	text-decoration: none;
-	color: #FFF;
-}
-.header-login {
-	display: inline-block;
-	float: left;
-	max-width: 200px;
-	max-height: 250px;
-	border-radius-bottom-left: 3px;
-	border-radius-bottom-right: 3px;
-	padding: 7px;
-
-	background: #FE5000;
-}
-.header-register {
-	display: inline-block;
-	float: left;
-	max-width: 200px;
-	max-height: 250px;
-	border-radius-bottom-left: 3px;
-	border-radius-bottom-right: 3px;
-	padding: 7px;
-
-	background: #FE5000;
-}
-.form-control {
-	overflow: hidden;
-	border-left: 2px solid #BBB;
-	border-right: 2px solid #BBB;
-	border-bottom: 2px solid #BBB;
-}
-.form-control input {
-	display: block;
-	margin: 3px 0;
+.search-wrapper > input {
 	width: 100%;
-	height: auto;
-	border-radius: 3px;
-}
-.form-control button {
-	display: block;
-	margin: 3px 0;
-	padding: 5px;
-	width: 100%;
-	height: auto;
-	border: none;
-	background-color: #FFBB00;
-}
-.form-control button:hover {
-	background-color: #FFAA00;
-}
-.form-control button:active {
-	background-color: #FF9900;
+	height: 100%;
 }
 
 footer {
-	position: fixed;
-	bottom: 0;
 	height: auto;
 	width: 100%;
 
@@ -176,7 +93,7 @@ footer {
 .container {
 	display:block;
 	height:100%;
-	margin: 35px 250px;
+	margin: 70px 250px;
 }
 
 .page-header {
@@ -200,7 +117,6 @@ footer {
 	border: 1px solid black;
 	margin: 30px 0;
 }
-
 .news-banner {
 	display: block;
 	padding: 0 10px;
@@ -217,30 +133,16 @@ footer {
 	padding: 10px;
 }
 .article-main {
-	display: inline-block;
-	margin: 10px;
-	width: 60%;
-	height: 0;
-	padding-top: 35%;
-	background: red;
-}
-.article-side-container {
-	display: inline-block;
-	position: absolute;
-	margin: 10px;
-	width: 21%;
-	height: 0;
-	padding-top: 21.5%;
-}
-.article-side {
 	display: block;
+	margin: 10px auto;
+	width: 80%;
 	height: 0;
 	padding-top: 35%;
 	background: red;
 }
 .article-sub {
 	display: inline-block;
-	margin: 10px;
+	margin: 10px 12px;
 	width: 30%;
 	height: 150px;
 	background: red;
@@ -249,167 +151,7 @@ footer {
 .news-other {
 
 }
-
-.input-group {
-	display: inline-block;
-	width: auto;
-	height: auto;
-	border: 1px solid black;
-	border-radius: 5px;
-	overflow:hidden;
-	margin: 50px;
-}
-.input-group > input {
-	display: inline-block;
-	border: none;
-	margin: 0;
-	padding: 3px;
-}
-.input-group > button {
-	display: inline-block;
-	border: none;
-	height: 100%;
-	margin: 0;
-	padding: 3px;
-}
-.input-group > button:hover {
-	background: #CCC;
-}
-.input-group > button:active {
-	background: #BBB;
-}
-
-/*
-.section {
-	display: block;
+.article-other {
+	min-height: 1.5em;
 	border-bottom: 1px solid black;
-	height: auto;
 }
-.section-banner {
-	display: block;
-	position: relative;
-	border-bottom: 1px solid black;
-	max-height: 30px;
-
-	background: -webkit-linear-gradient(rgba(255,100,0,0.3), #FF3300);
-	background: -o-linear-gradient(rgba(255,100,0,0.3), #FF3300);
-	background: -moz-linear-gradient(rgba(255,100,0,0.3), #FF3300);
-	background: linear-gradient(rgba(255,100,0,0.3), #FF3300);
-}
-.section-title {
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	height: 100%;
-	font-size: 1.4em;
-	font-weight: bold;
-}
-.section-toggle {
-	display: inline-block;
-	max-height: 100%;
-	width: auto;
-	margin-right: 10px;
-	margin-left: 5px;
-	cursor:pointer;
-}
-.section-body {
-	display: block;
-	max-height: 700px;
-	height: auto;
-	background: rgba(255,150,50,0.25);
-	padding:5px;
-}
-
-.item {
-	display: block;
-	margin: 0px 10px 5px 10px;
-	box-shadow: 3px 3px 3px #bbb;
-	border: 1px solid black;
-	border-radius: 5px;
-	height: auto;
-	overflow: hidden;
-	background: white;
-}
-.item-banner {
-	display: block;
-	position: relative;
-	border-bottom: 1px solid black;
-	max-height: 30px;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-
-	background: -webkit-linear-gradient(#fff, #f00);
-	background: -o-linear-gradient(#fff, #f00);
-	background: -moz-linear-gradient(#fff, #f00);
-	background: linear-gradient(#fff, #f00);
-}
-.item-title {
-	display: inline-block;
-	position: absolute;
-	cursor: pointer;
-	color: #000;
-	top: 0;
-	height: 100%;
-	font-size: 1.4em;
-	text-decoration: none;
-}
-.item-title:hover {
-	font-weight: bold;
-}
-.item-source {
-	display: inline-block;
-	font-size: 0.75em;
-	float: right;
-	margin: 5px;
-}
-.item-toggle {
-	display: inline-block;
-	cursor:pointer;
-	max-height: 100%;
-	width: auto;
-	border-right: 1px solid black;
-	margin-right: 10px;
-
-	background: -webkit-linear-gradient(#fff, #aaa);
-	background: -o-linear-gradient(#fff, #aaa);
-	background: -moz-linear-gradient(#fff, #aaa);
-	background: linear-gradient(#fff, #aaa);
-}
-.item-body {
-	display:block;
-	height: auto;
-}
-.chatbox {
-	display: block;
-	border-bottom: 1px solid black;
-	height:100px;
-	overflow-y: scroll;
-	padding: 0 5px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.input-area {
-	overflow: hidden;
-}
-.message-span {
-	display: block;
-	overflow: hidden;
-	margin: 3px;
-}
-.message {
-	width:100%;
-	border:none;
-}
-.message-submit {
-	float: right;
-	cursor:pointer;
-	height: 35px;
-	padding: 0 10px;
-	border: none;
-	background-color: #ddd;
-}
-.message-submit:hover {
-	background-color: #ccc;
-}.message-submit:active {
-	background-color: #bbb;
-}*/
