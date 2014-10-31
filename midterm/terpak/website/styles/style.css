@@ -104,6 +104,12 @@ header{
 	background: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.4));
 	background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
+.active{
+	background: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.4));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.4));
+	background: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.4));
+	background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.4));
+}
 .nav-menu > li > a{
 	font-size: 1.75em;
 	font-weight: bold;
