@@ -4,58 +4,156 @@
 		<title>HackerNEWS</title>
 
 		<link rel="stylesheet" type="text/css" href="./styles/style.css">
-		<script src="./scripts/jquery-1.11.1.min.js"></script>
-		<script src="./scripts/news.js" type="text/javascript"></script>
-		<script src="./scripts/script.js" type="text/javascript"></script>
 	</head>
 
 	<body>
 		<header>
-			<div class="title-wrapper">
-				<h1 class="logo">Y</h1>
-				<h1 class="logo-title">HackerNEWS</h1>
+			<div class="header-banner">
+				<div class="title-container">
+					<h1 class="title">HackerNEWS</h1>
+					<h3 class="subtitle">With full anonymity, what could go wrong?</h3>
+				</div>
+				<div class="logo-container">
+					<img class="logo" alt="logo" src="./images/logo.png"/>
+				</div>
+				<div class="clearfix"></div>
 			</div>
-			<div class="search-wrapper">
-				<input type="text" placeholder="Search">
+			<div class="header-menu">
+				<ul class="nav-menu">
+					<li><a href="#news">NEWS</a></li>
+					<li><a href="#jobs">JOBS</a></li>
+					<li><a href="#faq">FAQ</a></li>
+				</ul>
+				<div class="search-container">
+					<input type="text">
+					<button>Search</button>
+				</div>
+				<div class="clearfix"></div>
 			</div>
-			<div class="clearfix"></div>
 		</header>
 
-		<div class="container">
-			<h2 class="page-header">We Know Things You Don't... Yet.</h2>
-			<div class="news">
-				<h1 class="news-banner banner-popular">
-					Popular Stories
-				</h1>
-
-				<div class="news-popular">
-					<div class="article-main">
-
-					</div>
-					<div class="row">
-						<div class="article-sub">
-
+		<div class="container" id="news">
+			<div class="news-main">
+				<div class="top-story">
+					<div class="top-story-header">TOP STORY</div>
+					<div class="top-story-info">
+						<div class="top-story-title">
+						Ebola kills every single person you've ever met ever!
 						</div>
-						<div class="article-sub">
-
-						</div>
-						<div class="article-sub">
-
+						<div class="top-story-description">
+						Ebola has higher mortality rate than poisonous shark terrorists, a recent study finds.
 						</div>
 					</div>
 				</div>
-
-				<h1 class="news-banner banner-other">
-					In other news...
-				</h1>
-				<div class="news-other">
-					<div class="article-other"></div>
-					<div class="article-other"></div>
-					<div class="article-other"></div>
-					<div class="article-other"></div>
-					<div class="article-other"></div>
-					<div class="article-other"></div>
+				<div class="story">
+					<img class="story-img" src="./images/cooper.png"/>
+					<span class="story-container">
+						<span class="story-title">Anderson Cooper eats 53 ghost peppers, cries like a bitch</span>
+						<span class="story-description">A-Coops was seen eating over 50 ghost peppers after watching a viral Internet video. Sources say that Cooper cried that he "Needs his mommy and something to drink."</span>
+					</span>
 				</div>
+				<div class="story">
+					<img class="story-img" src="./images/obama.png"/>
+					<span class="story-container">
+						<span class="story-title">Regan comes back to life, refuses to stop whistling in Obama's face</span>
+						<span class="story-description">According to the White House, former-President Ronald Reagan has returned to life and refuses to stop whistling in Obama's face until ObamaCare is repealed.</span>
+					</span>
+				</div>
+			</div>
+			<div class="news-other">
+				<div class="other-banner">Other News</div>
+
+				<div class="other-container">
+					<ul class="other-stories">
+						<li class="other-header">Entertainment</li>
+						<li class="other-story"><a>Somebody remembers that Paris Hilton exists</a></li>
+						<li class="other-story"><a>Kim Kardashian learns to coult like a big girl without using her fingers</a></li>
+						<li class="other-header">Sports</li>
+						<li class="other-story"><a>Studies show America's national sport is Extreme Skipping</a></li>
+						<li class="other-story"><a>Wayne Gretzky swishes a 3-pointer from the 20-yard line after getting stuck in a sand pit</a></li>
+						<li class="other-header">Politics</li>
+						<li class="other-story"><a>John McCain announces that money no longer has any influence in politics while sporting sexy new watch</a></li>
+						<li class="other-story"><a>Congress passes bill to nuke border</a></li>
+						<li class="other-header">Misc</li>
+						<li class="other-story"><a>If your news story is so out of place that it goes in the misc section, cry</a></li>
+						<li class="other-story"><a>This just in: nothing</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="container" id="jobs">
+			<div class="newest">
+				<div class="header">Newest</div>
+
+				<div class="job">
+					<div class="overlay"></div>
+					<h1 class="title">Looking for person to listen to my feelings - $15/hr</h1>
+					<p class="description">I just have all of these feelings and I need someone to listen so I can stop having all these feelings, yo.</p>
+				</div>
+				<div class="job">
+					<div class="overlay"></div>
+					<h1 class="title">Hiring people to be Matt Gitlin's friend - $10/dy</h1>
+					<p class="description">Matt Gitlin won't stop following me around, so I'm hiting someone to be his friend so he will leave me alone.</p>
+				</div>
+				<div class="job">
+					<div class="overlay"></div>
+					<h1 class="title">Someone please build my deck!</h1>
+					<p class="description">When it comes to building stuff, I am a disgrace to my family. Help me get my honor back by building my deck for me.</p>
+				</div>
+			</div>
+			<div class="popular">
+				<div class="header">Popular</div>
+				<div class="job">
+					<div class="overlay"></div>
+					<h1 class="title">Hiring someone to hold all of my money - $0.01/mo</h1>
+					<p class="description">I have so much goddamn money, I need someone to carry it for me. You can work from home. Must pinky promise not to steal.</p>
+				</div>
+				<div class="job">
+					<div class="overlay"></div>
+					<h1 class="title">Looking for someone to remember my passwords for me - $3/password</h1>
+					<p class="description">I'm hiring someone to remember my passwords so I can stop being so forgetful with my secure information.</p>
+				</div>
+				<div class="job">
+					<div class="overlay"></div>
+					<h1 class="title">Hiring someone to hack the gibson - $3000</h1>
+					<p class="description">Hack the planet!</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="container" id="faq">
+			<div class="faq-title">
+				Frequently Asked Questions
+			</div>
+			<div class="faq-container">
+				<div class="question">
+					<img alt="Q" src="./images/question.png"/>
+					<span class="question-text">Why are you making this website?</span>
+				</div>
+				<div class="answer">
+					<span class="answer-text">Because I don't want to fail this class.</span>
+					<img alt="A" src="./images/answer.png"/>
+				</div>
+				<div class="question">
+					<img alt="Q" src="./images/question.png"/>
+					<span class="question-text">What is a gluon?</span>
+				</div>
+				<div class="answer">
+					<span class="answer-text">A subatomic particle that is responsible for the strong nuclear force.</span>
+					<img alt="A" src="./images/answer.png"/>
+				</div>
+				<div class="question">
+					<img alt="Q" src="./images/question.png"/>
+					<span class="question-text">How old are you?</span>
+				</div>
+				<div class="answer">
+					<span class="answer-text">Exactly 20.0465753424657534246 years old.</span>
+					<img alt="A" src="./images/answer.png"/>
+				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 
@@ -63,7 +161,7 @@
 			<ul class="footer-list">
 				<li><a href="#">Guidelines</a></li>
 				<li>|</li>
-				<li><a href="#">FAQ</a></li>
+				<li><a href="#faq">FAQ</a></li>
 				<li>|</li>
 				<li><a href="#">Bugs and Feature Requests</a></li>
 				<li>|</li>
@@ -72,5 +170,8 @@
 				<li><a href="#">Library</a></li>
 			</ul>
 		</footer>
+
+		<script src="./scripts/jquery-1.11.1.min.js"></script>
+		<script src="./scripts/script.js" type="text/javascript"></script>
 	</body>
 </html>
