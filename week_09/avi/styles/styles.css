@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+
+.tooltip{
+	display: inline-block;
+
+	background: #222
+	color: #fff;
+	border-radius: 3px;
+	padding: 0 8px;
+
+	font-size: 11px;
+	line-height: 20px;
+	white-space: nowrap;
+}
+
+.tooltip:after {
+	content: ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	
+
+}
+
+transform: translateX(-50%);
+
+height: 0;
+width: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
