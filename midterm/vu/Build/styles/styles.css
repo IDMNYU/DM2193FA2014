@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+body {
+    
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    color: black;
+}
+
+.heading{
+	color: black;
+}
+
+.logo{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 48px;
+	display: inline-block;
+}
+
+.logo-anchor{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+}
+
+
+.town-anchor{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24px;
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+}
+
+.town-anchor:hover{
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-radius: 5px;
+}
+
+
+.heading:hover #menu{
+	display: block;
+}
+
+
+
+.town-menu{
+	border: 1px solid black;
+	border-radius: 5px;
+	position: relative;
+	margin-left: 194px;
+	margin-right: 55%;
+	display: none;
+}
+
+.town-search{
+	margin: 5%;
+	border-radius: 5px;
+	font-size: 15px;
+	width: 40%;
+}
+
+.search-button{
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+.nearby{
+	display: inline-block;
+	margin-left: 5%;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.recent-searches{
+	display: inline-block;
+	margin-left: 5%;
+	margin-bottom: 50px;
+	font-size: 15px;
+}
+
+.subtowns{
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 50px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.town-title{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+ul{
+	list-style-type: none;
+}
