@@ -298,7 +298,7 @@ header{
 	position: relative;
 	background-color:#F7F7E4;
 	margin: 20px 0;
-	height: 150px;
+	min-height: 150px;
 	cursor: pointer;
 }
 .overlay{
@@ -306,29 +306,26 @@ header{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	right: 0;
+	bottom: 0;
 	background: none;
 }
 .overlay:hover{
 	background: url('../images/apply.png');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 .job > .title{
 	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: auto;
-	padding: 15px;
+	padding: 0 15px;
 	pointer-events: none;
 	font-size: 1.5em;
 }
 .job > .description{
 	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	width: 100%;
 	height: auto;
 	padding: 15px;
@@ -408,4 +405,75 @@ footer {
 }
 .footer-list > li > a:hover {
 	color: #EEE;
+}
+
+@media screen and (max-width: 500px){
+	.faq-title {
+		font-size: 1.25em;
+	}
+	.answer-text {
+		font-size: 0.75em;
+	}
+	.question-text {
+		font-size: 0.75em;
+	}
+}
+@media screen and (max-width: 600px){
+	.subtitle{
+		display:none;
+	}
+	.logo{
+		height: 55px;
+		width: auto;
+	}
+	.header-banner {
+		height: 60px;
+	}
+}
+@media screen and (max-width: 700px){
+	.container {
+		margin: 5px 10px;
+	}
+	.faq-container{
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 750px){
+	.search-container {
+		display: none;
+	}
+	.nav-menu {
+		margin: 0;
+	}
+}
+@media screen and (max-width: 950px){
+	.search-container {
+		display: none;
+	}
+	.nav-menu {
+		margin: 0;
+	}
+	.newest, .popular {
+		display: block;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1000px){
+	.faq-container{
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 1300px){
+	.news-other, .news-main {
+		display: block;
+		width: 100%;
+	}
+	.story, .top-story{
+		display: block;
+		margin: 5px auto;
+	}
 }
