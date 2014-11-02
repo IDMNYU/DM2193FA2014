@@ -384,7 +384,7 @@ header{
 
 footer {
 	background-color: #FD5000;
-	height: 30px;
+	height: auto;
 	width: 100%;
 }
 .footer-list{
