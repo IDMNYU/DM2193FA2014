@@ -1,0 +1,127 @@
+html
+{
+	background: url(skyline.jpg);
+	webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.topSection
+{
+	display:inline;
+}
+
+.mobileLink
+{
+	margin-right: 20px;
+	margin-left:15%;
+}
+
+.register
+{
+	float:right;
+	margin-right:15%;
+}
+
+.login
+{
+	float:right;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.craigslistSites
+{
+	float: right;
+	height:1px;
+}
+
+.languageArea
+{
+	border-style: solid;
+	float:right;
+}
+
+.language
+{
+	float:left;
+	width:200px;
+	height:28px;
+}
+
+.locationArea
+{
+	border-style: solid;
+	clear:both;
+	float:right;
+}
+
+.location
+{
+	float:left;
+	width:200px;
+	height:28px;
+	margin-left:-40px;
+
+}
+
+.calendarArea
+{
+	border-style: solid;
+}
+
+.logoPart
+{
+	margin-left: 15%;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	border-style: solid;
+	background-color: white;
+}
+
+.logo
+{
+	font-size: 42px;
+	border-style: solid;
+	margin-right:80px;
+	float:left;
+	clear:both;
+	width:30%;
+}
+
+.searchArea
+{
+	float:right;
+	width:70%;
+	border-style: solid;
+}
+
+.navigation
+{
+	border-style:solid;
+	margin-left:15%;
+	width:70%;
+}
+.navigationMenu
+{
+	width:83%;
+}
+
+
+.recentPosts
+{
+	border-style: solid;
+	width:70%;
+	height:70%;
+	margin-left: 15%;
+	background-color: white;
+}
+
+.postings
+{
+	border-style:solid;
+	width:65%;
+	margin-left:9%;
+}
