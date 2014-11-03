@@ -51,6 +51,7 @@ Keep primary audience in mind. Think about how you use the sites and any frustra
   * Responsive & Mobile First
 
 * Deliverables
+  * Checkout the [Midterm Deliverables Template Folder](./johnny)
   * Wireframes for three different views (Thurs)
     * Label sections for heirarchy and by class 
   * Designs for three different views (Next Tues)
@@ -59,6 +60,10 @@ Keep primary audience in mind. Think about how you use the sites and any frustra
       * Craigslist List View
       * Craigslist Item View
   * Use any tools you like to produce the wireframes and designs as long as they end up in Github in .PNG format
+  * Build 
+    * HTML
+    * CSS
+  * Documentation PDF
 
 * Critique
   * Be prepared to talk about your work in front of the class
