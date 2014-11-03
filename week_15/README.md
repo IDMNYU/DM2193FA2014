@@ -13,10 +13,10 @@
 
 ---
 
-## Week 11
+## Week 13
 
 ### In-Class
-* Advanced Interface - Lightbox
+* Final Project Work Sessions
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

@@ -13,10 +13,10 @@
 
 ---
 
-## Week 11
+## Final Deliverables
 
-### In-Class
-* Advanced Interface - Lightbox
+### Designs
 
-### Q + A
-*10min at the end of class for any unanswers questions*
+Include all iterations clearly labeled in folders or by filenames.
+
+Three different views, at least two iterations.

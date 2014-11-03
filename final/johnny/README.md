@@ -13,10 +13,11 @@
 
 ---
 
-## Week 11
+## Final Deliverables
 
-### In-Class
-* Advanced Interface - Lightbox
+This folder is a template for your deliverables. It contains individual README files for each section.
 
-### Q + A
-*10min at the end of class for any unanswers questions*
+1. [Wireframes](./wireframes)
+2. [Designs](./designs)
+3. [Build](./build)
+4. [Documentation](./documentation)

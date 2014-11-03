@@ -16,6 +16,8 @@
 ## Week 12
 
 ### In-Class
-
+* Frameworks
+  * Twitter Bootstrap
+  
 ### Q + A
 *10min at the end of class for any unanswers questions*

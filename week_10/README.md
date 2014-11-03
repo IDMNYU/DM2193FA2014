@@ -16,8 +16,8 @@
 ## Week 10
 
 ### In-Class
-* Introduce to Final Project 
-
+* Advanced Interface - Responsive Layouts 
+* Advanced Interface - Modals
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

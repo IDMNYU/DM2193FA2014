@@ -15,7 +15,7 @@
 
 ## Midterm Deliverables
 
-This folder is a template for your midterm deliverables. It contains individual README files for each section of the midterm.
+This folder is a template for your deliverables. It contains individual README files for each section.
 
 1. [Wireframes](./wireframes)
 2. [Designs](./designs)

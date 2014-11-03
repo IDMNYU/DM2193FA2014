@@ -13,10 +13,11 @@
 
 ---
 
-## Week 11
+## Week 13
 
 ### In-Class
-* Advanced Interface - Lightbox
+* Final Project Critiques
+* Produce & Deliver all of the documentation necessary for this course
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

@@ -13,10 +13,14 @@
 
 ---
 
-## Week 11
+## Midterm Deliverables
 
-### In-Class
-* Advanced Interface - Lightbox
+### Build
 
-### Q + A
-*10min at the end of class for any unanswers questions*
+Static HTML Build of your final designs for the three views
+
+- 3 HTML Documents
+- 1 Stylesheet
+- Any supporting images
+- Each view should link to the next view
+- Javascript is not necessary

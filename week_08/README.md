@@ -20,7 +20,6 @@
 
 ### In-Class
 * Midterm Critique
-* Advanced Interface Examples
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

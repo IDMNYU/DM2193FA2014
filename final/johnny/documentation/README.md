@@ -13,7 +13,7 @@
 
 ---
 
-## Midterm Deliverables
+## Final Deliverables
 
 ### Documentation
 
@@ -23,18 +23,19 @@ A PDF that documents the entire project.
   * Your name
   * Course name
   * Overview Paragraph
-    * What site did you redesign?
-    * What are you changing about the site in your design?
-    * How is your design better?
-    * This is your opportunity to justify your decisions and reiterate things discussed during in-class critique!
-2. A page per view
+    * Give your theme a name
+    * Describe your theme
+    * Who is the intended audience for your theme
+    * Justify your process, go nuts!
+2. A page per view, a page per post type
   * Each page contains: 
     * Final wireframe
     * Final design
     * Screenshot in browser
-3. That's five pages
 
 ### Tips
+
+Re-use your midterm documentation as a template for this documentation! That makes for consistent presentation.
 
 Adobe InDesign is a fantastic program to use to build this documentation. 
 Suggest using 11x17" document size.
