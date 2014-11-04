@@ -2,10 +2,16 @@
 <html>
 <head>
 
+<title>Tooltips</title>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
+
 <body>
+<h1 class="heading">Tooltips</h1>
 
+<button class="btn"> I'm a little button </button>
 
+<img class="img" src="images/khan.jpg"/>
 
 
 <script src="scripts/jquery-2.1.1.js"></script>
