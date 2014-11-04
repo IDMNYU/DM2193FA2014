@@ -2,9 +2,9 @@ html
 {
 	background: url(skyline.jpg);
 	webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 .topSection
@@ -12,16 +12,37 @@ html
 	display:inline;
 }
 
+.topLine
+{
+	border-color: black;
+}
+
+.postOnCraigslist
+{
+	text-decoration:none;
+	font-size: 18px;
+	color: #172442;
+	font-weight: bold;
+}
+
 .mobileLink
 {
 	margin-right: 20px;
 	margin-left:15%;
+	text-decoration:none;
+	font-size: 18px;
+	color: #172442;
+	font-weight: bold;
 }
 
 .register
 {
 	float:right;
 	margin-right:15%;
+	text-decoration:none;
+	font-size: 18px;
+	color: #172442;
+	font-weight: bold;
 }
 
 .login
@@ -29,6 +50,10 @@ html
 	float:right;
 	margin-right: 20px;
 	margin-left: 20px;
+	text-decoration:none;
+	font-size: 18px;
+	color: #172442;
+	font-weight: bold;
 }
 
 .craigslistSites
@@ -78,7 +103,7 @@ html
 	margin-bottom:50px;
 	width:70%;
 	border-style: solid;
-	background-color: white;
+	background-color: #A2B9D1;
 }
 
 .logo
@@ -104,24 +129,63 @@ html
 	margin-left:15%;
 	width:70%;
 }
+
 .navigationMenu
 {
 	width:83%;
 }
 
-
 .recentPosts
 {
 	border-style: solid;
 	width:70%;
-	height:70%;
+	height:950px;
 	margin-left: 15%;
-	background-color: white;
+	background-color: #98AFC7;
+}
+
+.postHeading
+{
+	font-size: 32px;
+	margin-left:5%;
+}
+
+.blankSpacing1
+{
+	height:2%;
+}
+
+.blankSpacing2
+{
+	height:2%;
 }
 
 .postings
 {
 	border-style:solid;
-	width:65%;
-	margin-left:9%;
+	width:80%;
+	margin-left:10%;
+	height:125px;
+	clear:both;
+}
+
+.postInfo
+{
+	margin-left:400px;
+	clear:both;
+}
+
+.post
+{
+	height:125px;
+	margin-top:50px;
+	margin-left:50px;
+	font-size:18px;
+	width:400px;
+}
+
+.links
+{
+	color: #FFEBCD;
+	text-decoration:none;
 }
