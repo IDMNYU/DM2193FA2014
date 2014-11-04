@@ -46,12 +46,6 @@ body{
 
 }
 
-.recipe-navigation{
-	text-align: right;
-	text-decoration: none;
-	
-}
-
 	/* unvisited link */
 
 a:link {
@@ -72,32 +66,89 @@ a:active {
     color: #0000FF;
 }
 
-.nav-time{
-
-}
-
-.recipe-home-banner{
+.craigslist-home-banner{
 	font-family: optima;
 	font-size: 12px;
+	margin-bottom: 0px;
 }
 
-.recipe-navigation{
-	margin-bottom: 50px;
-}
-
-.recipe-home-banner-label{
-
-}
-.recipe-subheading{
-	color: lightblue;
-	font: georgia;
-}
-.instructions{
-	font-family: "HelveticaNeue-Light, Helvetica, Arial, "Lucida Grande", sans-serif; 
-	color: pink;
+.craigslist-navigation{
 	text-align: right;
 }
 
-.ingredients{
-	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+.opaque-box{
+	width: 350px;
+  	height: 398px;
+  	margin: -405px 180px;
+  	background-color: #ffffff;
+  	border: 1px solid black;
+  	opacity:0.5;
 }
+
+.nav-nyc{
+	text-align: center;
+	list-style-type: none;
+	margin: 5em 0;
+	font-size: 20px;
+}
+
+.opaque-forsale-box{
+	width: 350px;
+  	height: 398px;
+  	margin: -405px 180px;
+  	background-color: #ffffff;
+  	border: 1px solid black;
+  	opacity:0.5;
+}
+
+.for-sale{
+	text-align: center;
+	list-style-type: none;
+	font-size: 20px;
+}
+
+.opaque-subbox{
+	width: 200px;
+  	height: 400px;
+  	margin: 560px;
+  	margin-top: -390px;
+  	background-color: #ffffff;
+  	border: 1px solid black;
+  	opacity:0.8;
+}
+
+.forsale-section-box{
+	width: 450px;
+  	height: 500px;
+  	margin: -405px 180px;
+  	background-color: #ffffff;
+  	opacity:0.9;
+}
+
+.forsale-section-prices-box{
+	width: 350px;
+  	height: 0px;
+  	margin: -500px 515px;
+  	background-color: #ffffff;
+  	opacity:0.9;
+}
+
+.healthandbeauty-products{
+	text-align: left;
+	list-style-type: none;
+}
+
+.healthandbeauty-prices{
+	text-align: right;
+	list-style-type: none;
+}
+
+.product-box{
+	width: 450px;
+  	height: 500px;
+  	margin: -405px 180px;
+  	background-color: #ffffff;
+  	opacity:0.9;
+  	text-align: center;
+}
+	
