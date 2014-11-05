@@ -59,6 +59,7 @@ ul {
     margin-bottom: auto;
     text-align: center;
     white-space: nowrap;
+    min-width: 100%;
 }
 
 .city-navigation,
@@ -86,7 +87,7 @@ ul {
 .search-section {
 	text-align: center;
 	margin-top: 225px;
-	width: 20%;
+	width: 10%;
 	float: left;
 	margin-left: 310px;
 }
