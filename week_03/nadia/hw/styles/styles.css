@@ -1,0 +1,151 @@
+
+* {
+    margin: 1;
+    padding: 1;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 2.5;
+
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 24px;
+}
+
+.heading {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px;
+}
+
+.heading-anchor {
+    text-decoration: none;
+    color: #666;   
+}
+
+.heading-anchor:hover {
+    color: blue;
+}
+
+
+.recipe-navigation {
+    width: 85%;
+    padding: 10px 6px;
+    margin: 20px auto;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.067);
+}
+
+.recipe-navigation .nav-item {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 3px 4px;
+    margin: 0 4px;
+    white-space: nowrap;
+}
+
+.recipe-navigation .nav-item:hover {
+    background: rgba(0,0,0,0.12);
+    border-radius: 3px;
+}
+
+.recipe-navigation .nav-item.current-page,
+.recipe-navigation .nav-item:hover {
+    color: #333;
+}
+
+
+.recipe-home-banner  {
+    width: 65%;
+    height: 700px;
+    margin: auto;
+    border-radius: 8px;
+    background: url('file:///Users/soicle/Sites/DM2193FA2014/week_03/nadia/hw/images/080811170752d.jpg');
+    background-size: cover;
+}
+
+.recipe-home-banner-label {
+   
+    line-height: 480px;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10pxpx rgba(0,0,0,0.2);
+}
+
+
+
+.recipe {
+    margin: 50px;
+}
+
+.recipe-name {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.recipe-subheading {
+    font-size: 18px;
+  
+   margin-top: 50px;
+   margin-right: 0;
+   margin-bottom: 10px;
+   margin-left: 0;
+}
+
+.recipe-image > img {
+    
+    display: block;
+    max-width: 100%;
+    max-height: 480px;
+    height: auto;
+}
+
+.ingredients {
+    list-style: none;
+}
+
+.ingredient {
+    margin-bottom: 10px;
+}
+
+.instruction-heading {
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.instruction-heading,
+.instruction-body {
+    margin-bottom: 5px;
+}
+
+.instruction-tip {
+    font-size: 12px;
+    color: #999999;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+
+@media (max-width: 640px) {
+
+
+    .recipe-navigation {
+        width: 100%;
+        border-radius: 0;
+    }
+    .recipe-navigation .nav-item {
+        display: block;
+        border-radius: 0;
+        padding: 10px 35px;
+    }
+
+}

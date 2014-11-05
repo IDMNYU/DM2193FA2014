@@ -1,0 +1,204 @@
+html
+{
+	background: url(skyline.jpg);
+	webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.topSection
+{
+	display:inline;
+}
+
+.topLine
+{
+	border-color: black;
+}
+
+.postOnCraigslist
+{
+	text-decoration:none;
+	font-size: 18px;
+	color: #172442;
+	font-weight: bold;
+}
+
+.mobileLink
+{
+	margin-right: 20px;
+	margin-left:15%;
+	text-decoration:none;
+	font-size: 18px;
+	color: #172442;
+	font-weight: bold;
+}
+
+.register
+{
+	float:right;
+	margin-right:15%;
+	text-decoration:none;
+	font-size: 18px;
+	color: #172442;
+	font-weight: bold;
+}
+
+.login
+{
+	float:right;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-decoration:none;
+	font-size: 18px;
+	color: #172442;
+	font-weight: bold;
+}
+
+.craigslistSites
+{
+	float: right;
+	height:1px;
+}
+
+.languageArea
+{
+	float:right;
+}
+
+.language
+{
+	float:left;
+	width:150px;
+	height:28px;
+	margin-right:50px;
+}
+
+.locationArea
+{
+	clear:both;
+	float:right;
+}
+
+.location
+{
+	float:left;
+	width:150px;
+	height:28px;
+	margin-left:-40px;
+
+}
+
+.calendarArea
+{
+	
+}
+
+.logoPart
+{
+	margin-left: 15%;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color: #A2B9D1;
+	border-style: solid;
+}
+
+.logo
+{
+	font-size: 42px;
+	float:left;
+	clear:both;
+	width:30%;
+	margin-left:50px;
+	margin-top:20px;
+}
+
+.searchArea
+{
+	float:right;
+	width:70%;
+}
+
+.navigation
+{
+	border-style:solid;
+	margin-top:5%;
+	margin-left:15%;
+	width:70%;
+	height:70px;
+	margin-bottom:3%;
+	background-color: #A2B9D1;;
+}
+
+.navigationMenu
+{
+}
+
+.navItem
+{
+	font-size: 20px;
+	color:#172442;
+	text-decoration: none;
+	margin-left:27.5px;
+}
+
+.recentPosts
+{
+	border-style: solid;
+	width:70%;
+	height:900px;
+	margin-left: 15%;
+	background-color: #98AFC7;
+}
+
+.postHeading
+{
+	font-size: 32px;
+	margin-left:5%;
+}
+
+.blankSpacing1
+{
+	height:2%;
+}
+
+.blankSpacing2
+{
+	height:2%;
+}
+
+.postings
+{
+	border-style:solid;
+	width:80%;
+	margin-left:10%;
+	height:125px;
+	clear:both;
+}
+
+.postInfo
+{
+	margin-left:400px;
+	clear:both;
+}
+
+.post
+{
+	height:125px;
+	margin-top:50px;
+	margin-left:50px;
+	font-size:18px;
+	width:400px;
+}
+
+.links
+{
+	color: #FFEBCD;
+	text-decoration:none;
+	float:right;
+	margin-top:50px;	
+	margin-right:20px;
+	margin-bottom:20px;
+}

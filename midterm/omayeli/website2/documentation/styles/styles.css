@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+}
+body {
+    font-family: "Open Sans Condensed", Helvetica;
+    color: black;
+}
+
+.heading {
+	font-size: 65px;
+	margin: 30px;
+	width: 250px;
+	border-bottom-style: solid; 
+	border-width: 5px;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+	text-decoration: none;
+	color:black;
+	display: block;
+}
+
+.menu-nav {
+	width: 200px;
+	margin-top: 22px;
+	margin-left: 100px;
+}
+.nav-item {
+	padding: 10px;
+}
+.display-block {
+	position: absolute;
+	top: 170px;
+	bottom:100px;
+	margin-left: 300px;
+  	width: 900px;
+ 	height: 529px;
+ 	border-bottom-style: solid;
+ 	border-top-style: solid;
+ 	border-left: 5px;
+ 	border-top: 20px;
+ 	border-bottom: 10px;
+ 	border-left-style: solid;
+}
+.submit {
+	position:absolute;
+	margin-left: 800px;
+}
+.display {
+    position: absolute;
+    height: 100%; 
+    width: 100%;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+.display:target {
+    opacity: 1;
+    z-index: 2;
+}
+.nav-item-list  {
+	margin-left:6px;
+	margin-right:6px;
+	padding: 20px;
+}
+.gig{
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.gig:hover {
+	background: rgba(0,0,0,0.12);
+}
+
+.checklist {
+	position:absolute;
+}
+.checkbox {
+}
+
+/*
+	//background image not displaying + what url should i use
+	//get picture to display at start without clicking craigslist
+*/
+.search {
+	position:fixed;
+	top: 117px;
+	left:390px;
+	background-image: url("/images/search_icon.png");
+	color: black;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom: 4px solid black;
+}
+.search:focus {
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+
+
+.extra-links {
+	width:100%;
+	height:20px;
+	position:absolute;
+	bottom:0;
+	margin-left:870px;
+	border-top-style: solid;
+	border-top-width: 5px;
+}
+.footer-item {
+	display: inline-block;
+	padding: 10px;
+	font-size: 14px;
+}

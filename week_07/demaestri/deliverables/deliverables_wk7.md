@@ -1,27 +1,24 @@
 ### DM2193
 
-# Intro to Web Development
 
-![NYU](http://j-hnnybens-n.com/capture/imami.png)
+W E E K  7  D E L I V E R A B L E S : 
 
-    Johnny Benson • Fall 2014
-    Tuesday & Thursday • 7:30-9:20PM
-    Rm 813 • 3 credit hrs
-    Office hours by appointment or directly after class
-    Email <johnny.benson@nyu.edu>
-    Class Website <https://github.com/IDMNYU/DM2193FA2014>
 
----
-
-## Weekly Deliverables Template
-
-*Copy this template into your weekly folder to use for various homework deliverables. 
-Assignments change week-to-week based on in class work.*
+# Intro to Web DevelopmenT
 
 ### Show & Tell
-<!-- * [Name](http://link-to-cool-thing) -->
+
+
 ### Reading Responses
-<!-- #### [Title, Author](http://link-to-article) -->
+
+Reading: Sketches Slide Show (http://www.slideshare.net/pubsmith/sketching-interfaces-workshop-interactions12-dublin )
+
+Response: 
+I have never thought so hard and in-depth about sketches as this slideshow presented. 
+I had no idea there were so many rules about sketches (and techniques)!
+Pretty interesting. 
+
+
 ### Coding Exercise
 <!-- #### [Excercise Name](./link/to/exercise.html) -->
 

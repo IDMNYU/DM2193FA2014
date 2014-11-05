@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+    box-sizing: border-box;}
+
+body{
+    font-family: Georgia;
+    font-size: 14px;
+    color: #000;
+	text-decoration: none;}
+
+a.link{
+	color: #0099FF;
+    font-size: 24px;
+	text-decoration: none;}
+
+a.visited{
+	color: #0099FF;
+    font-size: 24px;
+	text-decoration: none;}
+
+a.hover{
+	text-decoration: none;
+	color: #BABABA;}
+
+a.active{
+	color: #808080;
+    font-size: 24px;
+	text-decoration: none;}
+
+.header{
+	width: 900px;
+	float: center;
+	padding-bottom: 14px;
+	margin-left: 10px;
+	border-bottom: 1px solid black;}
+
+.logo{
+	font-size: 48px;
+	text-align: left;
+	margin-top: 30px;
+	margin-left: 10px;}
+
+.location{
+	font-size: 26px;
+	text-align: center;
+	position: relative;
+	margin-left: -90px;
+	margin-top: -50px;}
+
+.search{
+	font-size: 20px;
+	font-color: #000000;
+	text-align: center;
+	position: relative;
+	margin-top: -32px;
+	margin-left: 460px;}
+
+.searchbox{
+	background: rgba(0,0,0,0.09);
+	width: 180px;
+	height: 20px;
+	border: 1px solid black;
+	margin-top: -25px;
+	margin-left: 715px;}
+
+.sidebar{
+	width: 200px;
+	height: 1420px;
+	float: left;
+	position: relative;
+	margin-top: -43px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-right: 1px solid black;}
+
+.sidebar-item{
+	font-size: 30px;
+	font-color: gray;
+	background: rgba(0,0,0,0.1);
+	text-decoration: none;
+	text-align: center;
+    padding: 6px 8px;
+    margin-right: -1px;
+	border: 1px solid black;}
+
+.sidebar-item:hover{
+	background: rgba(0,0,0,0.25);
+    color: #000;
+	text-decoration: none;}
+
+.sidebar-item:target{
+	background: rgba(0,0,0,0.5);
+	text-decoration: none;
+    color: #000;}
+
+.linkie{
+    font-size: 18px;
+    color: #0099FF;
+	text-align: center;
+    padding: 6px 8px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-right: -1px;
+	text-decoration: none;}
+
+.middlebit{
+	padding-top: 20px;
+	width: 702px;
+	position: relative;
+	padding: 3px;
+	margin-top: -43px;
+	margin-left: 209px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;}
+
+.ad-header{
+	font-size: 24px;
+	overflow: auto;
+	text-align: center;
+	padding: 8px;
+	border: 3px solid black;
+	width: 680px;
+	height: 60px;}
+
+.ad{
+	width: 680px;
+	height: 400px;
+	padding: 5px;
+	position: relative;
+	margin-top: -3px;
+	margin-left: 7px;
+	border-radius: 3px;
+	border: 3px solid black;}
+
+.thatcrapatthebottom{
+	width: 702px;
+	height: 100px;
+	position: absolute;
+	padding-top: 3px;
+	text-align: center;
+	margin-left: 209px;
+	margin-top: -1px;
+}
+

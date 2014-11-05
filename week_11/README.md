@@ -16,6 +16,7 @@
 ## Week 11
 
 ### In-Class
+* Advanced Interface - Lightbox
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

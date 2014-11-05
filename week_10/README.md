@@ -16,8 +16,13 @@
 ## Week 10
 
 ### In-Class
-* Introduce to Final Project 
+* Advanced Interface - Responsive Layouts 
+* Advanced Interface - Modals
 
+### Reading Assignments
+* [How to Get Started in Web Design](http://css-tricks.com/get-started-web-design)
+* [CSS Specificity Graph](http://csswizardry.com/2014/10/the-specificity-graph)
+* [Fun with Named Functions](http://raganwald.com/2014/10/24/fun-with-named-functions.html)
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

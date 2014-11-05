@@ -16,7 +16,10 @@
 ## Week 9
 
 ### In-Class
-* Advanced Interface Examples Part 2
+* Finish up Midterm
+  * Defined final deliverables for Midterm
+  * [Checkout out deliverables here](../midterm)
+* Advanced Interface - Tooltips
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

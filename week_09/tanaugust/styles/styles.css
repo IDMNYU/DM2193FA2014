@@ -1,0 +1,15 @@
+*
+{
+	box-siizng: border-box;
+	font-faimly: arial;	
+}
+
+body
+{
+	margin: 40px;
+}
+
+.heading
+{
+	margin: 0 0 25px;
+}

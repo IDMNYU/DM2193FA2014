@@ -1,0 +1,179 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+
+body {
+    
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.heading {
+   
+    font-size: 48px;
+   
+    text-align: center;
+    margin: 10px;
+}
+
+.heading-anchor {
+  
+    text-decoration:underline;
+  
+    color: #666;
+ 
+}
+
+.heading-anchor:hover {
+    color: #333;
+}
+
+.recipe-navigation {
+    width: 720px;
+    margin: 20px auto;
+  
+    padding: 8px 4px;
+    background: rgba(0,0,0,0.25);
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 3px 4px;
+}
+
+.nav-item:hover {
+    background: rgba(0,0,0,0.12);
+    
+    color: #000;
+}
+
+.recipe-thai-green-curry .nav-thai-green-curry,
+.recipe-chocolate-chip-cookies .nav-chocolate-chip-cookies,
+.recipe-garmonbozia .nav-garmonbozia {
+    color: #000;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.nav-item.current {
+    color: #000;
+    background-color: rgba(0,0,0,0.25);
+}
+
+body.recipe-thai-green-curry {
+    background-color: rgba(0,255,0,0.25);
+}
+body.recipe-chocolate-chip-cookies {
+    background-color: rgba(0,0,255,0.25);
+}
+body.recipe-garmonbozia {
+    background-color: rgba(255,0,0,0.25);
+}
+
+
+.recipes {
+    position: relative;
+ 
+    width: 720px;
+    height: 480px;
+
+    margin: auto;
+    
+}
+
+.recipe {
+    
+    position: absolute;
+    
+    height: 100%; 
+    width: 100%;
+    background: #e2e2e2;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition: opacity 500ms ease;
+
+}
+.recipe:target {
+    opacity: 1;
+    z-index: 2;
+}
+
+.recipe-home-banner-label {
+    position: absolute;
+    width: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.recipe-home-banner .recipe-label  {
+    background-image: url('../images/080811170752d.jpg');
+}
+.recipe-thai-green-curry .recipe-label {
+   
+    background-image: url('../images/curry.jpg');
+}
+.recipe-chocolate-chip-cookies .recipe-label {
+    
+    background-image: url('../images/cookiemonster2_fb.jpg');
+}
+.recipe-garmonbozia .recipe-label {
+   
+    background-image: url('../images/lodge.gif');
+}
+
+.recipe-name {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(0,0,0,0.25);
+    color: #fff;
+}
+
+.recipe-body {
+    margin-left: 25%;
+    padding: 20px 40px;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.recipe-section {
+    margin-bottom: 20px;
+}
+.recipe-section:last-child {
+    margin-bottom: 0;
+}
+.recipe-subheading {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.2323213123);
+    margin-bottom: 5px;
+}
+
+
+.recipe-home-banner-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+

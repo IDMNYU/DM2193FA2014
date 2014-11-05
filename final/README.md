@@ -23,8 +23,24 @@
 Custom Tumblr Theme
 Submitted to the Theme Garden
 
-More Info TBD
+* Wireframes for Theme
+  * Index Page
+  * Permalink Page
+    * 1 Wireframe for each post type (Text, Photo, Video, Audio, Chat, Quote, Link)
+* Designs for Theme
+  * Two iterations following in-class critique
+* Build for Theme
+  * Static Build of Theme
+  * Uses fake posts that you mark up with fake images. 
+  * It should feel as real as possible
+* "Themeified" version of build that uses Tumblr `{ThemeTags}`
+* Documentation PDF
 
-* Critique
+* Design Critique, Build Critique
   * Be prepared to talk about your work in front of the class
   * Use the language and vocabulary above to describe your decision making process / design process.
+
+### Tips
+
+* Work together, share ideas, and code!
+* Feel free to download and look at other themes for reference!
