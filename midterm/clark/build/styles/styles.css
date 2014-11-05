@@ -1,0 +1,207 @@
+/* css file */
+*{
+	background: #a6a6a6;
+	font-family: arial;
+
+}
+
+.logo{
+	background-color: white;
+	text-align: center;
+	font-family: arial;
+	font-size: 48px;
+	width: 100px;
+	height: 100px;
+	display: left;
+	top: 0px;
+	left: 0px;
+}
+
+.home{
+	text-align: center;
+	font-size: 24px;
+	color: black;
+	font-family: times;
+}
+
+.heading1{
+	text-align: center;
+	font-size: 14px;
+	color: black;
+	border: gray solid;
+	display: center inline;
+	margin-left: 25%;
+	width: 700px;
+	background-color: white;
+}
+
+.heading2{
+	text-align: center;
+	font-size: 34px;
+	color: black;
+	border: gray solid;
+	display: center inline;
+	margin-left: 35%;
+	width: 350px;
+	background-color: white;
+}
+
+.heading3_1{
+	text-align: left;
+	font-size: 28px;
+	color: black;
+	border: gray solid;
+	display: center inline;
+	margin-left: 15%;
+	width: 250px;
+	background-color: white;
+}
+
+.heading3_2{
+	text-align: left;
+	font-size: 28px;
+	color: black;
+	border: gray solid;
+	display: center inline;
+	margin-left: 65%;
+	width: 350px;
+	background-color: white;
+}
+
+.heading4{
+	text-align: center;
+	font-size: 24px;
+	color: black;
+	border: gray solid;
+	display: center inline;
+	margin-left: 25%;
+	width: 100px;
+	background-color: white;
+}
+
+
+.subheading{
+	text-align: left;
+	font-size: 16px;
+	color: black;
+	margin-left: 25%;
+}
+
+
+.btn1{
+	padding: 10px;
+	background: white;
+	border: 2px solid black;
+	outline: none;
+	border-radius: 4px;
+	cursor: pointer;
+	position: absolute;
+	right: 100px;
+}
+
+.menu{
+	font: bold 12px arial;
+  	display: inline-block;
+  	position: relative;
+  	padding: 15px 20px;
+  	background: #fff;
+  	cursor: pointer;
+  	transition: all 0.2s;
+}
+
+.listings{
+	background: #555; 
+  	display: block; 
+  	color: #fff;
+  	text-shadow: 0 -1px 0 #000;
+}
+
+.listing{
+	padding: 0;
+  	position: absolute;
+  	top: 48px;
+  	width: 200px;
+  	box-shadow: none;
+  	display: none;
+  	opacity: 0;
+  	-transition: opacity 0.2s;
+}
+
+.listings:hover{
+	display: block;
+  	opacity: 1;
+  	visibility: visible;
+}
+
+.homeImg{
+	margin-left: 55%;
+	margin-bottom: 45%;
+	margin-top: 0%;
+}
+
+.p{
+	margin-left: 25%;
+	text-align: center;
+	font-size: 10px;
+	font-family: arial;
+}
+
+.btn2{
+	padding: 10px;
+	background: white;
+	border: 2px solid black;
+	outline: none;
+	border-radius: 4px;
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+	margin-left: 45%;
+	margin-bottom: 10px;
+}
+
+.btn3{
+	padding: 10px;
+	background: white;
+	border: 2px solid black;
+	outline: none;
+	border-radius: 4px;
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+	margin-left: 15%;
+	margin-bottom: 10px;
+}
+
+
+.btn4{
+	padding: 10px;
+	background: white;
+	border: 2px solid black;
+	outline: none;
+	border-radius: 4px;
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+	margin-left: 75%;
+	margin-bottom: 10px;
+}
+
+.leftItemName{
+	text-align: left;
+	font-size: 14px;
+	color: black;
+	margin-left: 30%;
+}
+
+.rightItemName{
+	text-align: left;
+	font-size: 14px;
+	color: black;
+	margin-left: 75%;
+}
+
+.leftImg{
+	margin-left: 30%;
+	margin-bottom: 45%;
+	margin-top: 0%;
+}
