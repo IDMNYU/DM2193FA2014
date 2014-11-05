@@ -53,10 +53,7 @@ a {
  	border-bottom: 10px;
  	border-left-style: solid;
 }
-.submit {
-	position:absolute;
-	margin-left: 800px;
-}
+
 .display {
     position: absolute;
     height: 100%; 
@@ -69,6 +66,11 @@ a {
     opacity: 1;
     z-index: 2;
 }
+.submit {
+	position:absolute;
+	margin-left: 800px;
+}
+
 .nav-item-list  {
 	margin-left:6px;
 	margin-right:6px;
