@@ -1,4 +1,4 @@
-How To Get Started in Web Design
+[How To Get Started in Web Design](http://css-tricks.com/get-started-web-design/)
 ---
 This is going to cost a little money, just like learning to play the guitar requires buying a guitar and some accessories. It's about getting you to a place where you're doing web design for real and you can't help but learn! 
 I'm going to mention specific company names without linking to them, just to be clear this article isn't an affiliate marketing thing. 
@@ -24,7 +24,7 @@ You can imagine how the things you learn might apply to your real website.
 
 The hosting company is disincentive to help you with your domain if you try to switch.
 
-The Specificity Graph
+[The Specificity Graph](http://csswizardry.com/2014/10/the-specificity-graph/)
 --
 
 CSS, OOCSS, front-end architecture, performance and more, by Harry Roberts
@@ -56,7 +56,7 @@ Move all utility and helper classes to the very end of your CSS in order to intr
 
 Always try to maintain an upward trending Specificity Graph across your projects.
 
-Fun with Named Functions in JavaScript
+[Fun with Named Functions in JavaScript](http://raganwald.com/2014/10/24/fun-with-named-functions.html)
 --
 
 A named function is a function declaration if it appears as a statement.
