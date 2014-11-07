@@ -1,0 +1,598 @@
+/*
+  Reset Styles
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+
+/*
+  Global Styles
+ */
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 12pt;
+    color: #666;
+    background-color: #F2F2F2;
+}
+
+footer {
+	margin-top: 10px;
+}
+
+nav a, .tile a {
+	text-decoration: none;
+}
+
+
+a, a:hover {
+	color: #666;
+}
+
+a:visited {
+	color: #666;
+}
+
+hr {
+	color: #fe5000;
+	border-top: 1px solid rgb(255, 102, 0);
+	margin: 10px 0px;
+}
+
+h1 {
+	font-size: 36pt;
+}
+
+button, input {
+	color: #666;
+}
+
+/*
+  Header Classes
+*/
+
+.header {
+	height: 120px;
+	background-color: #fe5000;
+}
+
+.header-img {
+	height: 120px;
+	width: 120px;
+	margin-left: 50px;
+	display: inline-block;
+}
+
+.main-heading {
+	display: inline-block;
+	font-size: 40pt;
+	color: white;
+	height: 120px;
+	margin: 0 20px;
+	margin-top: 20px;
+	position: absolute;
+}
+
+.btn {
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 3px;
+	background-color: white;
+	border-color: #404040;
+	color: #666;
+	padding: .25rem .65rem;
+	text-decoration: none;
+	transition: background-color 300ms ease-out;
+}
+
+.btn-large {
+	padding: .75rem 1.25rem;
+}
+
+.btn:hover {
+	background-color: #666;
+	color: white;
+}
+
+.header-login-btn {
+	float: right;
+	margin: 36px 80px;
+}
+
+.nav {
+	height: 50px;
+	background-color: #666;
+}
+
+.nav > ul > li{
+	list-style: none;
+	display: inline-block;
+	height: inherit;
+	margin: 0px 5px;
+    line-height: 50px;
+    height: 50px;
+}
+
+.nav .nav-item {
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: large;
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+.nav-sub-item {
+    color: white;
+    white-space: nowrap;
+    font-size: large;
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+.nav-sub-item > a {
+	font-size: 12pt;
+}
+
+.nav .nav-form {
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: large;
+    line-height: 50px;
+    padding: 7px 0px;
+}
+
+.nav .nav-item a {
+    color: white;
+}
+
+.nav .nav-item:hover, .nav-left ul li:hover {
+    background: rgba(0,0,0,0.25);
+    color: #474747;
+    height: 100%;
+}
+
+.nav-left  {
+	margin-left: 70px;
+	float: left;
+}
+
+.nav-left ul {
+	position: absolute;
+	background-color: #666;
+	display: none;
+	list-style: none;
+	width: 98px;
+	margin-left: -10px;
+	/*border-bottom: 3px solid #fe5000;*/
+}
+
+.nav-right  {
+	margin-right: 70px;
+	float: right;
+}
+
+.input-group {
+	display: inline-block;
+	border: 1px solid #666;
+	width: auto;
+	height: auto;
+	overflow:hidden;
+}
+.input-group > input {
+	display: inline-block;
+	border: none;
+	margin: 0;
+	padding: 3px;
+	color: #666;
+}
+.input-group > button {
+	display: inline-block;
+	border: none;
+	color: #666;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+	font-size: 100%;
+	font: inherit;
+	font-weight: normal;
+	line-height: 1.5;
+	margin: 0px -5px;
+	padding: 3px 10px;
+}
+
+.btn-search {
+	border: 1px solid #666;
+	border-radius: 0px;
+	position: relative;
+	left: -5px;
+}
+
+@media (max-width: 819px) {
+	.nav-left, .nav-right {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 679px) {
+	.nav {
+		height: 100px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header-img {
+		margin-left: 0;
+	}
+	.header-login-btn {
+		margin-right: 20px;
+	}
+}
+
+.glass {
+	background: rgba(0,0,0,0.25);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	display: none;
+	z-index: 999;
+
+}
+
+.modal {
+	width: 60%;
+	min-width: 255px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 2%;
+	position: fixed;
+	display: none;
+	z-index: 1000;
+	top: 30%;
+	left: 20%;
+}
+
+.modal-header {
+	position: relative;
+	top: -35px;
+}
+
+.modal-left, .modal-right {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px;
+}
+
+.modal-left .modal-input, .modal-left label {
+	display: block;
+}
+
+.modal-left .modal-input {
+	margin-bottom: 10px;
+}
+
+.modal-btn, .modal-left a {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.modal-right {
+	float: right;
+	margin-right: 0;
+}
+
+.modal-img {
+	max-height: 250px;
+	width: auto;
+}
+
+.close-btn {
+	float: right;
+	position: relative;
+	right: -15px;
+	top: 15px;
+}
+
+@media (max-width: 910px) {
+	.modal-img {
+		display: none;
+	}
+}
+
+/*
+  Body Classes
+*/
+
+.container {
+	margin: 0px auto;
+	padding: 20px 0px;
+	width: 66%;
+	display: block; 
+}
+
+@media (max-width: 1296px) {
+	.container {
+		width: 78%;
+	}
+}
+
+@media (max-width: 1096px) {
+	.container {
+		width: 85%;
+	}
+}
+
+.row {
+	display: block;
+	width: 100%;
+	min-height: 250px;
+}
+
+.tile {
+	height: 220px;
+	background-color: white;
+	/*box-shadow: 5px 5px 5px #888;*/
+	margin: 20px 0;
+}
+
+.tile-lg {
+	box-shadow: 0px 5px 5px #888;
+	margin:	20px;
+}
+
+.tile-lg img {
+	margin: 20px;
+	height: 180px;
+}
+
+.tile-lg .comments {
+	text-align: left;
+	font-size: .825em;
+	position: relative;
+	bottom: -.5em;
+}
+
+.tile-lg .news-heading {
+	width: 70%;
+	font-size: 22pt;
+	white-space: pre;
+}
+
+.tile-lg .news-desc {
+	display: inline-block;
+	position: absolute;
+	width: 550px;
+	height: 180px;
+	margin: 20px 0px;
+	height: inherit;
+
+}
+
+.tile-md {
+	display: inline-block;
+	height: 250px;
+	width: 400px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	/*margin: 0px 10px 20px 10px;*/
+}
+
+@media (max-width: 1010px) {
+	.tile-md {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+}
+
+.tile-sm {
+	display: inline-block;
+	height: 100px;
+	width: inherit;
+	overflow: hidden;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+.tile-ask {
+	height: 80px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+.tile-md .img-bg {
+	display: inline;
+	position: relative;
+	top: -100px;
+}
+
+.tile-md .img-bg .tile-md-img {
+	display: inline;
+	height: 250px;
+	width: 400px;
+}
+
+.news-label a {
+	display: inline;
+	color: white;
+}
+
+.tile-md .news-label {
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 0px 1.5rem;
+    height: 100px;
+    top: 150px;
+    width: 400px;
+    list-style: none;
+    z-index: 2;
+}
+
+.news-label .content {
+	height: 100px;
+}
+
+.news-label .news-heading {
+    font-size: 12pt;
+    font-weight: bold;
+    position: relative;
+	top: -10px;
+}
+
+.news-label .site-ref {
+    font-size: 10pt;
+    position: relative;
+    top: -15px;
+}
+
+.news-label .comments {
+	font-size: .825em;
+	position: relative;
+	top: 75px;
+}
+
+.tile-jb {
+	height: 120px;
+}
+
+.tile-jb img {
+	height: 100px;
+	margin: 10px;
+	display: inline-block;
+}
+
+.tile-jb .site-ref {
+	/*position: relative;
+	bottom: -55px;*/
+	margin-top: 10px;
+}
+
+.job-desc, .ask-desc, .show-desc {
+	display: inline-block;
+	margin: auto 0px;
+	padding: 5px 0px;
+	width: 100%;
+}
+
+.job-desc {
+	position: relative;
+	margin-left: 125px;
+	top: -105px;
+}
+
+.job-heading {
+	display: inline-block;
+	font-size: 14pt;
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 60%;
+}
+
+.ask-heading, .show-heading {
+	display: inline-block;
+	font-size: 14pt;
+	margin: auto;
+	margin-left: 30px;
+	position: relative;
+	top: -25px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 85%;
+}
+
+.show-heading {
+	top: -15px;
+}
+
+.asks, .shows {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.tile-sm .site-ref {
+	margin-left: 30px;
+	position: relative;
+	top: -20px;
+}
+
+.tile-sm .comments {
+	margin-left: 30px;
+	position: relative;
+	bottom: -70px;
+}
+
+.tile-ask .comments {
+	margin: 0 30px;
+	position: relative;
+	bottom: -50px;
+}
+
+.question {
+	font-size: 14pt;
+	margin: 15px 0px 5px 0px;
+}
+
+.disclaimer {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.bottom-row {
+	height: 50px;
+	width: 161px;
+	margin: 0px auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.row {
+	margin: 0 auto;
+	width: 93%;
+}
+
+.hidden {
+	display: none;
+}
+
+.left {
+	margin-right: 10px;
+}
+
+.right {
+	margin-left: 10px;
+}
+
+/*
+  Footer Classes
+*/
+
+.nav-footer {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 10.5pt;
+}
+
+.nav-footer > ul > li {
+	list-style: none;
+	display: inline-block;
+	height: inherit;
+	margin: 0px 5px;
+}
+
+.footer-form {
+	float: right;
+}

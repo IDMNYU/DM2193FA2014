@@ -16,8 +16,8 @@
 ## Week 12
 
 ### In-Class
-* Frameworks
-  * Twitter Bootstrap
+* Introduction to Final Project
+* Wireframes and Designs due the next week
   
 ### Q + A
 *10min at the end of class for any unanswers questions*

@@ -1,0 +1,274 @@
+/* CSS Coming Soon! */
+
+* 
+    {box-sizing: border-box;
+    font-family: arial;}
+
+html, body{
+    min-height: 100%;}
+
+body{
+    margin: 40px;}
+
+.heading,
+.sub-heading,
+.section-heading{
+    margin: 0 0 25px;}
+
+/*
+    Demo Content
+ */
+
+.demo-nav {}
+
+.demo-nav-item{
+    display: block;}
+
+.demo-paragraph{}
+
+.demo-image{
+    display: block;
+    margin: 0 0 10px 0;
+    border-radius: 3px;}
+
+/*DEBUG Style*/
+
+.container > div{
+    /*border: 1px solid #f00;*/
+    /*background: rgba(0,0,0,0.123);*/
+    /*overflow: hidden;*/
+}
+
+/*
+    DEBUG STYLE
+ */
+
+.container {
+    background: rgba(0,0,0,0.123);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.container > div {
+
+}
+
+/*
+    Fixed Three Column Layout
+ */
+
+<<<<<<< Updated upstream
+.fixed-three-column { 
+    width: 1000px;
+    margin: auto;
+}
+
+.fixed-three-column .col-1 {
+    float: left;
+    width: 160px;
+}
+
+.fixed-three-column .col-2 {
+    float: left;
+    width: 560px;
+
+    /*
+        Visual Styling
+     */
+    padding: 10px;
+    background: rgba(0,0,0,0.123);
+    border-radius: 3px;
+    margin-right: 40px;
+}
+
+.fixed-three-column .col-3 {
+    float: left;
+    width: 200px;
+}
+=======
+.fixed-three-column{
+    width: 960px;
+    margin: auto;}
+
+
+.fixed-three-column .col-1{
+    float: left;
+    width: 160px;}
+
+.fixed-three-column .col-2{
+    float: left;
+    width: 560px;
+    padding: 10px;
+    background: rgba(0,0,0,0.123);
+    border-radius: 3px;
+    margin-right: 40px;}
+
+.fixed-three-column .col-3{
+    float: left;
+    width: 200px;}
+
+>>>>>>> Stashed changes
+
+
+/*
+    Fluid Three Column Layout
+ */
+
+<<<<<<< Updated upstream
+.fluid-three-column {
+    width: 80%;
+    margin: auto;
+}
+
+.fluid-three-column .col-1 {
+    float: left;
+    width: 17%;
+}
+.fluid-three-column .col-2 {
+    float: left;
+    width: 60.5%;
+    margin-right: 2%;
+}
+.fluid-three-column .col-3 {
+    float: left;
+    width: 20.5%;
+}
+
+.fluid-three-column .demo-image {
+    width: 100%;
+    height: auto; 
+}
+=======
+.fluid-three-column{
+    width: 80%;
+    margin: auto;}
+
+.fluid-three-column .col-1{
+    float: left;
+    width: 17%;}
+
+.fluid-three-column .col-2{
+    float: left;
+    width: 60.5%;
+    margin-right: 2%;}
+
+.fluid-three-column .col-3{
+    float: left;
+    width: 20.5%;
+    height: 500px;}
+
+.fluid-three-column .demo-image{
+    width: 100%;
+    height: auto;}
+>>>>>>> Stashed changes
+
+/*
+    Responsive Two Column
+ */
+
+<<<<<<< Updated upstream
+.responsive-two-column {
+    /*width: 100%; Implicit Value */
+    max-width: 960px;
+    margin: auto;
+}
+
+.responsive-two-column .col-1 {
+    float: left;
+    width: 20%;
+    max-width: 260px;
+    margin-right: 2%;
+}
+
+.responsive-two-column .col-2 {
+    float: left;
+    width: 78%;
+    max-width: 720px;
+}
+
+.responsive-two-column .demo-image {
+    max-width: 100%;
+    height: auto; 
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .responsive-two-column .col-1,
+    .responsive-two-column .col-2 {
+        float: none;
+        width: auto;
+        max-width: none;
+    }
+
+    .responsive-two-column .col-2 {
+        margin-top: 25px;
+    }
+
+    .responsive-two-column .demo-nav-item {
+        padding: 8px;
+        background: rgba(0,0,0,0.123);
+        margin: 0 0 4px;
+        text-decoration: none;
+    }
+
+    .responsive-two-column .demo-nav-item:active {
+        background: rgba(0,0,0,0.234);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+=======
+.responsive-two-column{
+    /*width: 960px;*/
+    max-width: 960px;
+    margin: auto;}
+
+.responsive-two-column .col-1{
+    float: left;
+    width: 20%;
+    max-width: 260px;
+    margin-right: 2%;}
+
+.responsive-two-column .col-2{
+    float: left;
+    width: 78%;
+    max-width: 720px;}
+
+.responsive-two-column .demo-image{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width: 480px){
+  .responsive-two-column .col-1,
+  .responsive-two-column .col-2{
+    float: none;
+    width: auto;
+    max-width: none;}
+
+
+.responsive-two-column .col-2{
+    margin-top: 25px;}
+
+.responsive-two-column .demo-nav-item{
+    padding: 8px;
+    background: rgba(0,0,0,0.123);
+    margin: 0 0 4px;
+    text-decoration: none;}
+
+}
+
+>>>>>>> Stashed changes

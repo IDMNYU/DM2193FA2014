@@ -16,7 +16,8 @@
 ## Week 11
 
 ### In-Class
-* Advanced Interface - Lightbox
+* Frameworks
+  * Twitter Bootstrap
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

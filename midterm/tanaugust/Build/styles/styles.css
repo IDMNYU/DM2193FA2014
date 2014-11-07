@@ -19,13 +19,6 @@ body{
     margin:0px auto;
     display: inline-block;
 }
-/*.content {
-    width:95%;
-    background: #fff;
-    border: none;   
-    height: 2000px;
-    margin: 70px auto;
-}*/
 .myButton {
     -moz-box-shadow:inset 0px 1px 0px 0px #efdcfb;
     -webkit-box-shadow:inset 0px 1px 0px 0px #efdcfb;
@@ -54,8 +47,6 @@ body{
     text-align:center;
     margin: 20px;
     display: inline-block;
-    /*margin: 0px 0px 20px auto;*/
-    /*margin: 50px 40px;*/
 }
 .myButton:hover {
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc80ea), color-stop(1, #dfbdfa));
@@ -85,15 +76,6 @@ body{
     display: inline-block;
     float: left;
 }
-/*      .logo{
-  display: inline-block
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: url("craigslist_logo.png") no-repeat;
-  width: 100%;
-  height: 100%;
-  padding-left: 180px;
-}*/
 
 .featured-container{
     margin-top: 130px;
@@ -113,7 +95,6 @@ body{
     text-align: center;
 }
 .featured-ad{
-
     display: inline-block;
     background: none repeat scroll 0% 0% #7094FF;
     height: 200px;
@@ -121,7 +102,7 @@ body{
     margin: auto 21px;
 }
 .main-ad-container{
-    margin-top: 50px;
+    
     margin-right: 100px;
     margin-left: 100px;
     margin-bottom: 50px;
@@ -130,9 +111,22 @@ body{
     font-size: 20px;
 }
 .main-ad-content{
-    padding-top: 30%;
+    
+    padding-bottom:30%;
     display: block;         
     background: none repeat scroll 0% 0% #fff;
+}
+.main-ad-tab-bar{
+    display: inline-block;
+    border: 2px solid #fff;
+    margin-left: 100px;
+    margin-bottom: -3px;
+    width: 89%;
+}
+.main-ad-tab{
+    display: inline-block;
+    border: 2px solid #ccc;
+    text-align: center;
 }
 footer{
     width: 100%;
@@ -141,16 +135,20 @@ footer{
     margin: 0px;
     background-color: #fff;
     text-align: center;
+    display: inline-block;
 }
 .footer-ingredient{
     margin: 0px 20px;
     display: inline-block;
     bottom: 0px;   
 }
-label{
+.login > label{
     width: 200px;
     height: 20px;
-
+}
+.search > label{
+    width: 200px;
+    height: 20px;
 }
 .arrow-right {
     margin-right: -200px;
@@ -159,7 +157,6 @@ label{
     height: 0; 
     border-top: 100px solid transparent;
     border-bottom:100px solid transparent;
-    
     border-left: 80px solid #9966FF;
 }
 .arrow-left {
@@ -169,6 +166,5 @@ label{
     height: 0; 
     border-top: 100px solid transparent;
     border-bottom:100px solid transparent;
-    
     border-right: 80px solid #9966FF;
 }
