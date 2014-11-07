@@ -1,41 +1,27 @@
 [How To Get Started in Web Design](http://css-tricks.com/get-started-web-design/)
 ---
-This is going to cost a little money, just like learning to play the guitar requires buying a guitar and some accessories. It's about getting you to a place where you're doing web design for real and you can't help but learn! 
-I'm going to mention specific company names without linking to them, just to be clear this article isn't an affiliate marketing thing. 
-I think it's preferable to separate your domain buying company and your hosting company. 
 
-Point the nameservers of your new domain to your new hosting.
-We need to change the nameservers for our domain over on Hover so that the domain properly points over to Media Temple.
-We're going to use it to transfer files from your computer to the web hosting server computer.
-When we bought the hosting, we told them we had our own domain.
-This will certainly vary from hosting company to hosting company.
-Html file there, that's what shows when you go to your domain in a web browser.
-Kinda like how it's more fun learning an instrument by playing a song you like rather than learning scales.
+1. Buy a domain name
+2. Buy some web hosting
+3. Point the nameservers of your new domain to your new hosting
+4. Get some FTP Software
+5. FTP into your Web Hosting
+6. Add the Domain to the Hosting
+7. Find the web root through FTP on your server
+8. Design your website. 
 
-Without any further training at all, you are smart enough to find words that you want to change and change them in HTML and see the results.
-That's how the vast majority of web designers started out.
-
-Now, everything else you learn you can learn in context of a actual site you're working on.
-You can imagine how the things you learn might apply to your real website.
-
-- Learning some jQuery to add advanced functionality and interaction.
-
-- Learn about running a web design business effectively.
-
-The hosting company is disincentive to help you with your domain if you try to switch.
+####Best tutorial on the internet can be found here: [Digital Ocean's Tutorial Page](https://www.digitalocean.com/community/tutorials/)
 
 [The Specificity Graph](http://csswizardry.com/2014/10/the-specificity-graph/)
 --
 
-CSS, OOCSS, front-end architecture, performance and more, by Harry Roberts
-As we all probably know by now, specificity is is one of CSS' most troublesome features, and is an area that soon becomes hard to manage on projects of any reasonable size.
+Specificity is is one of CSS' most troublesome features, and is an area that soon becomes hard to manage on projects of any reasonable size.
 
 Specificity is a trait best avoided, which is why we don't use IDs in CSS, and we don't nest selectors unless absolutely necessary. 
 We can't avoid specificity completely: there are types of selector that we have to use on projects that are inherently more or less specific than others.
 The Specificity Graph is something I have only been speaking about recently, and is a cornerstone of my currently unpublished architecture.
 Its aim is to give a very broad and general overview of the specificity of selectors across an entire project.
 
-One thing I would be keen to do is speak to Katie about putting the Specificity Graph into Parker one day.
 The Specificity Graph works by taking a look at your entire project's CSS, and plotting the specificity of all of its selectors on a simple line graph.
 On the x axis we plot Location in Stylesheet and on the y axis we plot the specificity of that selector.
 
