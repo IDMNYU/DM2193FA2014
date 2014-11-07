@@ -16,7 +16,8 @@
 ## Week 13
 
 ### In-Class
-* Introduce Final Project
+* Final Project Work Sessions
+* Static Build
 
 ### Q + A
 *10min at the end of class for any unanswers questions*

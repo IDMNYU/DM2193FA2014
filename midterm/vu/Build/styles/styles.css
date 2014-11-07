@@ -13,6 +13,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     font-size: 12px;
     color: black;
+    height: 100%
 }
 
 a{
@@ -21,7 +22,7 @@ a{
 
 .heading-nav{
 	position: relative;
-	margin: auto;
+	margin-left: 15px;
 }
 
 .heading{
@@ -117,14 +118,18 @@ a{
 }
 
 .log-sign{
-	display: inline;
+	display: inline-block;
 	float: right;
-	margin-right: 5em;
+	right: 5em;
+	position: fixed;
+	height:100%;
+	margin-top: 10px;
 }
 
-.entry{
-	border-right: 1px solid black;
-	font-size: 15px;
+.enter{
+	display: inline-block;
+	font-size: 20px;
+	right: 0;
 }
 
 .log{
@@ -171,6 +176,7 @@ a{
 
 .entries{
 	position: relative;
+	font-size: 15px;
 }
 
 .entry{
@@ -193,11 +199,15 @@ td{
 	border-radius: 5px;
 	margin-top: 16px;
 	font-size: 15px;
+	margin-left: 15px;
 }
 
 .container{
 	position: relative;
-	padding-bottom: 80px;
+	height: 100%;
+	width: 100%;
+	display:block;
+	margin-left: 15px;
 }
 
 .navigation{
@@ -343,7 +353,7 @@ td{
 	position: relative;
 }
 
-.category{
+div.category{
 	position: absolute;
 	background: white;
 	overflow: hidden;
@@ -362,11 +372,11 @@ td{
 .category-title{
 	text-decoration: bold;
 	font-size: 40px;
-	display: inline;
+	display: inline-block;
 }
 
 .all{
-	display: inline;
+	display: inline-block;
 	color: blue;
 }
 
@@ -388,15 +398,14 @@ td{
 	float: none;
 	right: 4em;
 	padding-left: 10px;
-
 }
 
 .post{
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .events{
-	font-size: 15px;
+	font-size: 20px;
 	display: block;
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -419,6 +428,7 @@ td{
 	padding: 5px;
 	display: block;
 	font-size: 15px;
+
 }
 
 .carousel{
@@ -426,6 +436,7 @@ td{
     overflow:hidden;
     width:100%;
 }
+
 .panes{
     list-style:none;
     position:relative;
@@ -442,6 +453,7 @@ td{
     width:100%;
     max-width:100%;
 }
+
 .carousel h2{
     font-size:1em;
     padding:0.5em;
@@ -455,16 +467,267 @@ td{
 }
 
 .footer{
-	width: 100%;
+	width: 90%;
+	display: block;
 	position: absolute;
 	bottom: 0;
-	left:0;
+	left:3em;
+	z-index: 999;
 }
 
 .bottom li{
-	display: inline;
-	padding: 0 4px;
-	overflow: hidden;
-	margin-right: 20px;
+	display: inline-block;
+	padding-right: 4px;
+	margin-right: 40px;
 	font-size: 15px;
 }
+
+
+/*for sale/ free all*/
+
+.post-fsf{
+	display: inline-block;
+	font-size: 30px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+
+.right-side-panel{
+	width: 30px;
+    background: black;
+    text-align: left;
+}
+
+.right-side-panel a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px;
+}
+
+#panel {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    top:10em;
+    bottom: 3em;
+    box-shadow: 0px 0px 15px black;
+    background: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: scaleX(0.00001);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    outline: 0;
+}
+
+#panel:target {
+    -webkit-transform: scaleX(1);
+}
+
+label{
+	font-size: 15px;
+}
+
+.distinct{
+	font-size: 20px;
+	margin-top: 20px;
+	height: 300px;
+}
+
+.close{
+	float: right;
+	display: block;
+	right:0;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.title-only{
+	display: block;
+}
+
+.distinct{
+	overflow: scroll;
+}
+
+.sub-cat{
+	display: block;
+}
+
+.selection a{
+	font-size: 15px;
+	margin: 5px;
+}
+
+ul.seller{
+	margin-top: 10px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 5px;
+	list-style: none;
+}
+
+.seller li{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.sell{
+	margin: 5px;
+	text-decoration: none;
+	color: black;
+	display: inline-table;
+}
+
+.sell:hover{
+	background: grey;
+	cursor: pointer;
+}
+
+.sell:active{
+	background: grey;
+}
+
+.image{
+	margin-top: 10px;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.today{
+	margin-top: 5px;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.price-range{
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.price-title{
+	font-size: 20px;
+}
+
+.min{
+	width: 50px;
+}
+
+.max{
+	width: 50px;
+}
+
+.submit-button{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 20px;
+	float: right;
+}
+
+.sub-heading{
+	display: inline-block;
+	margin-left: 40%;
+}
+
+.display{
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 5px;
+	list-style: none;
+}
+
+.display li{
+	display: inline-block;
+}
+
+.view{
+	font-size: 20px;
+	margin: 5px;
+	text-decoration: none;
+	color: black;
+	display: inline-table;
+}
+
+.view + .view{
+	border-left: 1px solid black;
+	padding-left: 10px;
+}
+
+.view:hover{
+	background: grey;
+	cursor: pointer;
+}
+
+.view:active{
+	background: grey;
+}
+
+.dropdown{
+	display: inline-block;
+	font-size: 20px;
+}
+
+.sort{
+	display: inline-block;
+	margin-left: 400px;
+	font-size: 20px;
+}
+
+
+.items{
+	margin-left: 257px;
+	width: 74.75%;
+	margin-top: 15px;
+	position: relative;
+}
+
+.item-list{
+	position: absolute;
+	background: white;
+	/*overflow: hidden;*/
+	opacity: 0;
+	height: 100%;
+	transition: opacity 400ms ease;
+	width: 100%;
+	height: 100%;
+}
+
+.item-list:target{
+	opacity: 1;
+	z-index: 2;
+}
+
+.list-table{
+	font-size: 20px;
+	width: 100%;
+}
+
+.list-table th{
+	padding: 0px 12.5px 0px 12.5px;
+	font-weight: bold;
+	text-align: left;
+	border: 2px solid black;
+}
+
+.list-table td{
+	text-align: left;
+	border: 1px solid black;
+	padding: 0px 12.5px 0px 12.5px;
+}
+
+.list-table td.fave{
+	text-align: center;
+}
+
+.list-table th.fave{
+	text-align: left;
+}
+
+
