@@ -10,7 +10,7 @@
 7. Find the web root through FTP on your server
 8. Design your website. 
 
-####Best tutorial on the internet can be found here: [Digital Ocean's Tutorial Page](https://www.digitalocean.com/community/tutorials/)
+####Best tutorials on the Internet about getting your own website started can be found here: [Digital Ocean's Tutorial Page](https://www.digitalocean.com/community/tutorials/)
 
 [The Specificity Graph](http://csswizardry.com/2014/10/the-specificity-graph/)
 --
