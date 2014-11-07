@@ -1,0 +1,98 @@
+.fixed{
+	max-width: 960px;
+	margin: auto;
+}
+
+.login-box{
+	position: relative;
+	top: 20px;
+	left: 12%;
+	float: right;
+	width: 30%;
+}
+
+.body{
+	float: left;
+	width: 700px;
+	padding: 80px;
+}
+
+#banner{
+	padding-bottom: 15px;
+	width: auto;
+}
+
+#search-bar{
+	position: relative;
+	width: 750px;	
+	left: 69px;
+	border: 1px solid lightgrey;
+}
+
+form{
+	display: inline-block;	
+}
+
+.tiles{
+	position: fixed;
+	top: 300px;
+	left: 7%;
+	right: 7%;
+}
+
+.tiles img{
+	padding-right: 1%;
+	padding-left: 30px;	
+	width: 340px;
+	height: 340px;
+	display: inline-block;
+}
+
+/*Debugger*/
+.container div *{
+    //border: 1px solid #f00;
+}
+
+@media only screen and (max-width:580px){
+	.login-box{
+		float: left;
+		padding-left: 720px;
+	}
+}
+
+@media only screen and (max-width:1850px){
+	.tiles img{
+		padding-right: 120px;
+	}
+}
+
+@media only screen and (max-width:1730px){
+	.tiles img{
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+}
+
+@media only screen and (max-width:1545px){
+	.tiles img{
+		padding-right: 150px;
+		padding-left: 150px;
+	}
+	
+}
+
+
+
+@media only screen and (max-width:1148px){
+	.tiles img{
+		padding-left: 190px;
+		padding-right: 190px;
+	}
+}
+
+@media only screen and (max-width:830px){
+	.tiles img{
+		padding-left: 180px;
+		padding-right: 180px; 		
+	}
+}
