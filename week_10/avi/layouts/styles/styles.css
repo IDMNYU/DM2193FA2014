@@ -1,0 +1,86 @@
+/* CSS Coming Soon! */
+
+* 
+{
+    box-sizing: border-box;
+    box-sizing: Content-box;
+    font-family: arial;
+}
+
+html, body
+{
+    min-height: 100%;
+}
+
+body
+{
+    margin: 40px;
+}
+
+.heading,
+.sub-heading,
+.section-heading
+{
+    margin: 0 0 25px;
+}
+
+/*
+    Demo Content
+ */
+
+.demo-nav {}
+
+.demo-nav-item 
+{
+    display: block;
+}
+
+.demo-paragraph {}
+
+.demo-image {
+    display: block;
+    margin: 0 0 10px 0;
+    border-radius: 3px;
+}
+
+
+/*
+    Fixed Three Column Layout
+ */
+
+.fixed-three-column { }
+
+/*
+    Fluid Three Column Layout
+ */
+
+.fluid-three-column .col-1 {
+    float: left;
+    width: 17%;
+ }
+
+.fluid-three-column .col-2 {
+    float: left;
+    width: 60.5%;
+    margin-right: 2% 
+ }
+
+ .fluid-three-column .col-3 {
+    float: left;
+    width: 20.5%;
+ }
+
+.fluid-three-column .col-3 {
+    float: left;
+    width: 100%;
+ }
+
+/*
+    Responsive Two Column
+ */
+
+.responsive-two-column {}
+
+@media only screen and (max-width: 480px) {
+  .responsive-two-column {}
+}
