@@ -17,11 +17,14 @@
 
 In class this week we covered a broad spectrum of topics embedded in coding exercises.
 
-jQuery Selection
-jQuery Event Handling
-Data Attributes as JS directives
-Decoupling JS functionality from CSS Styling 
-Responsive Layout also included responsive images
+* jQuery Selection
+* jQuery Event Handling
+* Data Attributes as JS directives
+* Decoupling JS functionality from CSS Styling 
+* Responsive Layout also included responsive images
+  * [Media Queries](http://css-tricks.com/snippets/css/media-queries-for-standard-devices)
+  * [Meta Viewport](http://css-tricks.com/snippets/html/responsive-meta-tag)
+
 
 ### In-Class Coding
 * Advanced Interface - Responsive Layouts 
