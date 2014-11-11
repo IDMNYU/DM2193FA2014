@@ -62,7 +62,9 @@ a {
     transition: opacity 500ms ease;
 }
 
-.display:target {
+.page-home .home-banner,
+.page-gigs .gig-banner,
+.page-gig-results .gig-results-banner {
     opacity: 1;
     z-index: 2;
 }
@@ -112,11 +114,14 @@ a {
 	position:fixed;
 	top: 117px;
 	left:390px;
-	background-image: url("/images/search_icon.png");
+	background-image: url("./images/search_icon.png");
+	background-repeat: no-repeat;
 	color: black;
+	background-position: 1px 40px;
 	border-top-style: none;
 	border-right-style: none;
 	border-left-style: none;
+	padding: 30px;
 	border-bottom: 4px solid black;
 }
 .search:focus {
