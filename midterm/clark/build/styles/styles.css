@@ -2,7 +2,8 @@
 *{
 	background: #a6a6a6;
 	font-family: arial;
-
+	box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 .logo{
@@ -134,15 +135,15 @@
 }
 
 .homeImg{
-	margin-left: 55%;
-	margin-bottom: 45%;
+	margin-left: 75%;
+	margin-bottom: 35%;
 	margin-top: 0%;
 }
 
-.p{
+p{
 	margin-left: 25%;
-	text-align: center;
-	font-size: 10px;
+	margin-top: 80%;
+	font-size: 14px;
 	font-family: arial;
 }
 
@@ -157,6 +158,7 @@
 	text-align: center;
 	margin-left: 45%;
 	margin-bottom: 10px;
+	margin-top: 90%;
 }
 
 .btn3{
@@ -204,4 +206,24 @@
 	margin-left: 30%;
 	margin-bottom: 45%;
 	margin-top: 0%;
+}
+
+.fixedThreeColumn{
+	width: 960px;
+    margin: auto;
+}
+
+.fixedThreeColumn .col-1{
+    float: left;
+    width: 160px;
+}
+
+.fixedThreeColumn .col-2{
+    float: left;
+    width: 560px;
+}
+
+.fixedThreeColumn .col-3{
+    float: left;
+    width: 200px;
 }
