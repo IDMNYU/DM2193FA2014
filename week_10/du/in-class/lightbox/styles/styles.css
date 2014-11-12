@@ -47,8 +47,12 @@ body
 .lightbox
 {
     /* Position the modal in the center of the page */
-    position: absolute; /* fixed */
-    top: 50%; left: 50%;
+    position: fixed; /* absolute */
+
+    /*compare corner to corner*/
+    top: 50%; 
+    left: 50%;
+    /*moves to the center*/
     transform: translate(-50%, -50%);
 
     /* Styling for the Modal */
