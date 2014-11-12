@@ -42,9 +42,9 @@ body
 }
 
 /*
-    Lightbox
+    Modals
  */
-.lightbox
+.modal
 {
     /* Position the modal in the center of the page */
     position: fixed;
@@ -53,82 +53,39 @@ body
 
     /* Styling for the Modal */
     width: 80%;
-    max-width: 720px;
-    min-width: 240px;
+    min-width: 300px;
+    max-width: 480px;
     padding: 10px;
     background: #fff;
     border-radius: 3px;
 
-    /* Hide lightbox By Default */
+    /* Hide Modals By Default */
     display: none;
 
     /* Modals sit on top of Glass */
     z-index: 90211;
 }
-.lightbox.active
+.modal.active
 {
-    /* Active lightbox is visible */
+    /* Active Modals are visible */
     display: block;
 }
-
-.lightbox-controls
+.modal-content h3
 {
-    margin-top: 10px;
-    clear: both;
-}
-    .lightbox-controls .previous
-    {
-        float: left;
-    }
-    .lightbox-controls .next
-    {
-        float: right;
-    }
-
-.lightbox-close-button
-{
-    position: absolute;
-    top: -12px; right: -12px;
-    height: 29px; width: 29px;
-    
-    border-radius: 50%;
-
-    transform: rotate(45deg);
-    
-    text-align: center;
-    line-height: 28px;
-    padding: 0;
-    font-size: 21px;
-    background: #333;
-    color: #fff;
+    margin: 0 0 10px;
 }
 
-.lightbox-label
-{
-    line-height: 34px;
-    text-align: center;
-}
-.lightbox-item
-{
-    position: absolute;
-    top: 0; left: 0;
-    display: none;
-}
-.lightbox-item.active
-{
-    position: relative;
-    display: block;
-}
-.lightbox-image
+.modal-content img
 {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    margin: 10px 0;
     border-radius: 3px;
 }
 
 /*
-    Glass
+    Modal Glass
  */
 .glass
 {

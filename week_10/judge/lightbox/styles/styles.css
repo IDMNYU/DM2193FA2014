@@ -47,7 +47,7 @@ body
 .lightbox
 {
     /* Position the modal in the center of the page */
-    position: fixed;
+    position: fixed; /* fixed */
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
 
@@ -59,7 +59,7 @@ body
     background: #fff;
     border-radius: 3px;
 
-    /* Hide lightbox By Default */
+    /* Hide Modals By Default */
     display: none;
 
     /* Modals sit on top of Glass */
@@ -90,11 +90,8 @@ body
     position: absolute;
     top: -12px; right: -12px;
     height: 29px; width: 29px;
-    
     border-radius: 50%;
-
     transform: rotate(45deg);
-    
     text-align: center;
     line-height: 28px;
     padding: 0;
