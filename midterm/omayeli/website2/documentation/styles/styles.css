@@ -117,11 +117,11 @@ a {
 	background-image: url("./images/search_icon.png");
 	background-repeat: no-repeat;
 	color: black;
-	background-position: 1px 40px;
+	background-position: 0px 0px 10px;
 	border-top-style: none;
 	border-right-style: none;
 	border-left-style: none;
-	padding: 30px;
+	padding: 10px;
 	border-bottom: 4px solid black;
 }
 .search:focus {

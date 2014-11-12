@@ -7,7 +7,7 @@
     </head>
     <body>
     	<h1 class = "heading"> 
-    		<a class = "heading-anchor" href = "#home">Craigslist</a>
+    		<a class = "heading-anchor" href = "index.html">Craigslist</a>
     	</h1>
     	 <form><input type = "text" name = "search-input" class = "search"/> </form>
       <nav class = "menu-nav">
@@ -44,9 +44,10 @@
        						<td class = gig item> <input class = "checkbox" type="checkbox" checked="unchecked"/>Talent</td>
        					</tr>
        				</table>
-              <form action="#search">
-                 <input type="submit" class = "submit" name= "Submit"/>
+              <form action="gig-results.html" id = "gig-form">
+                  <input type="submit" name="Submit">
               </form>
+              <button class = "submit" formtarget = "gig-results" type = "submit" form = "gig-form" value = "Submit"> Submit </button>
     		</div>
 
 	</div>
