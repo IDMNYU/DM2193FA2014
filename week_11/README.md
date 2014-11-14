@@ -58,6 +58,15 @@
         * [LESS Compilers](http://lesscss.org/usage/#guis-for-less)
     * ARIA
         * https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+* Documentation Overview
+    * Expectations
+    * Examples of Documentation
+    * Working Period
+
+### Cool Stuff
+* A to Z CSS -- Cool Videos about CSS Topics!
+    * http://www.atozcss.com
+    * http://www.atozcss.com/the-z-index-css-property/
 
 ### Reading Assignments
 * [5 Reasons not to use Twitter Bootstrap](http://www.zingdesign.com/5-reasons-not-to-use-twitter-bootstrap)
