@@ -20,6 +20,13 @@ body {
 	border-width: 5px;
 
 }
+h3 {
+	font-size: 20px;
+	border-bottom: 2px solid black;
+}
+h3:hover {
+	color:rgba(0,0,0,0.3);
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -44,7 +51,7 @@ a {
 	top: 170px;
 	bottom:100px;
 	margin-left: 300px;
-  	width: 900px;
+  	max-width: 500px;
  	height: 529px;
  	border-bottom-style: solid;
  	border-top-style: solid;
@@ -58,8 +65,7 @@ a {
     position: absolute;
     height: 100%; 
     width: 100%;
-    opacity: 0;
-    transition: opacity 500ms ease;
+    opacity: 1;
 }
 
 .page-home .home-banner,
@@ -67,6 +73,9 @@ a {
 .page-gig-results .gig-results-banner {
     opacity: 1;
     z-index: 2;
+}
+.nav-item:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 .submit {
 	position:absolute;
@@ -87,6 +96,10 @@ a {
 .gig:hover {
 	background: rgba(0,0,0,0.12);
 }
+.gig-results {
+  	max-width: 800px;
+ 	height: 529px;
+}
 .gig-result {
 	border: 3px solid;
 	max-width: 100%;
@@ -96,7 +109,7 @@ a {
 	margin-bottom: 30px;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-bottom: 10px;
 }
 
@@ -132,16 +145,35 @@ a {
 
 
 .extra-links {
-	width:100%;
+	width:500px;
 	height:20px;
-	position:absolute;
+	position:relative;
 	bottom:0;
-	margin-left:870px;
+	margin-top: 200px;
+
+	margin-left:600px;
 	border-top-style: solid;
 	border-top-width: 5px;
 }
 .footer-item {
+	position: relative;
 	display: inline-block;
 	padding: 10px;
 	font-size: 14px;
 }
+.button {
+	margin-top: -60px;
+	margin-left: 600px; 
+  display: block;
+  width: 100px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+}
+.button:hover {
+	background: rgba(0, 0, 0, 0.09);
+	}

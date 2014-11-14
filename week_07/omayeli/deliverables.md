@@ -19,12 +19,9 @@
 Assignments change week-to-week based on in class work.*
 
 ### Show & Tell
-<!-- * [Name](http://link-to-cool-thing) -->
+ * [0 to 255](http://www.0to255.com/) --> Find variations of every color!
 ### Reading Responses
-<!-- #### [Title, Author](http://link-to-article) -->
-### Coding Exercise
-<!-- #### [Excercise Name](./link/to/exercise.html) -->
-
+<!-- #### [Sketching Interfaces Workshop, Pubsmith](http://www.slideshare.net/pubsmith/sketching-interfaces-workshop-interactions12-dublin) --> I thought this was a really great article. I always try to diminish the advantages of sketching simply because I don't like drawing but I'm seeing more and more that making a wireframe on illustrator does not compare to sketching because in some sense those things are pretty or complete. It also takes a bunch of time. If you sketch your idea you can get more ideas out first because you're not spending hours with the pen tool trying to create the first idea. It's a great way to get constant and effective feedback because you're focused on making only what you need to.
 ---
 
 ### Tips
