@@ -66,7 +66,10 @@
 ### Cool Stuff
 * A to Z CSS -- Cool Videos about CSS Topics!
     * http://www.atozcss.com
-    * http://www.atozcss.com/the-z-index-css-property/
+    * http://www.atozcss.com/the-z-index-css-property
+    * http://www.atozcss.com/vertical-alignment-in-css
+* AWESOME presentation about tools and workflows for building for the web
+    * https://speakerdeck.com/addyosmani/front-end-tooling-workflows
 
 ### Reading Assignments
 * [5 Reasons not to use Twitter Bootstrap](http://www.zingdesign.com/5-reasons-not-to-use-twitter-bootstrap)
