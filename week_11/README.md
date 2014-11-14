@@ -70,7 +70,9 @@
     * http://www.atozcss.com/vertical-alignment-in-css
 * AWESOME presentation about tools and workflows for building for the web
     * https://speakerdeck.com/addyosmani/front-end-tooling-workflows
-
+* Great article about responsive images
+    * http://alistapart.com/article/responsive-images-in-practice
+    
 ### Reading Assignments
 * [5 Reasons not to use Twitter Bootstrap](http://www.zingdesign.com/5-reasons-not-to-use-twitter-bootstrap)
 * [Web Sites vs. Web Apps: What the experts think](http://www.visionmobile.com/blog/2013/07/web-sites-vs-web-apps-what-the-experts-think)
