@@ -22,7 +22,6 @@
 ### Reading Responses
 * [Classical Inheritance in Javascript](http://javascript.crockford.com/inheritance.html)
 It was a bit confusing at first because of the syntax but I got the idea after a few reads. The article just basically talks about how much better javascfipt is than java --in terms of the flexibility of classes and objects. (Just to add, I think classical inheritance and objects works the way they should in java -- the kind of flexibility javascript offers would be a mess in jave). There are so many ways to access classes i.e. multiple inheritance, parasitic inheritance and they are much easier to do. Also, being able to just add or remove methods without creating a new class entirely is refreshing and saves a lot of time. (Imagine having to make classes for every breed of a dog instead of adding unique attributes to a dog class individually). I still need to familarize myself with the syntax but overall the article was pretty informative.
-### Coding Exercise
 
 
 ---

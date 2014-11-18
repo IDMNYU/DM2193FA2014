@@ -19,7 +19,7 @@
 Assignments change week-to-week based on in class work.*
 
 ### Show & Tell
-<!-- * [Name](http://link-to-cool-thing) -->
+* [The Grid](https://thegrid.io/) 
 ### Reading Responses
 <!-- #### [Title, Author](http://link-to-article) -->
 ### Coding Exercise
