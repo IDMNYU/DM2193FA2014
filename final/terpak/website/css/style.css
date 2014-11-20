@@ -21,6 +21,11 @@ body {
 
 a {
 	cursor: pointer;
+	color: #4E76C9;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
 
 .clearfix {
