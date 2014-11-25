@@ -19,7 +19,7 @@
 [Motherfucking website](http://motherfuckingwebsite.com/)
 It's just a "motherfucking website" but the writer makes the point to argue, what else do we want? It's lightweight, it's responsive, it works. He's not saying all websites should look like that but the problems we have (does it work in IE6? My video isn't loading bla bla) are made by us, when we overdesign which I think is interesting.
 He also has a site where he makes fast websites for everybody.
-[Hey! Fast websites!](http://txti.es/) 
+
 
 ### Reading Responses
 * Responses can be found in deliverables from previous weeks. Didn't think I should copy them over...I could...

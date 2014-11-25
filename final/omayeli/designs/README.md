@@ -13,7 +13,10 @@
 
 ---
 
-## Weekly Deliverables Template
+## Final Deliverables
 
-### Show & Tell
-[Hey! Fast websites!](http://txti.es/) 
+### Designs
+
+Include all iterations clearly labeled in folders or by filenames.
+
+Three different views, at least two iterations.

@@ -13,7 +13,14 @@
 
 ---
 
-## Weekly Deliverables Template
+## Midterm Deliverables
 
-### Show & Tell
-[Hey! Fast websites!](http://txti.es/) 
+### Build
+
+Static HTML Build of your final designs for the three views
+
+- 3 HTML Documents
+- 1 Stylesheet
+- Any supporting images
+- Each view should link to the next view
+- Javascript is not necessary
