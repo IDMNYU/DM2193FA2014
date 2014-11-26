@@ -1,0 +1,24 @@
+Notes for Themes
+
+{Variable}
+// "Your Blog Name"
+
+
+{Block: Posts}
+// Post
+	<div class="post">
+		...
+			...
+				...
+// Post
+// Post
+
+we have 10 posts
+they all should look the same
+we only need to write the Html for 1 post and reuse it 
+
+
+//loop
+for (i = 0; i < posts; i++) {
+	posts [...]
+}
