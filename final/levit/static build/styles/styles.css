@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+body {
+	background-image: url("../images/paw-background.jpg"); 
+}
+
+.container-header {
+	background-image: url("../images/cover-photo.jpg");
+	background-repeat: repeat-x;
+	height: 350px;
+}
+
+.container-info {
+	background-image: url("../images/blank.jpg");
+	height: 300px;
+}
+
+.container-info-text {
+	text-align: center;
+}
+
+.container-carousel {
+	height: 650px;
+}
