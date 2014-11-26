@@ -1,0 +1,13 @@
+<html>
+	<head></head>
+	<body>
+	<div class="theme-container">
+		<header class="theme-header">
+		<h1>header</h1>
+		<p>description</p>
+		</header>
+		<div class="theme-body">
+		<div class="post">
+		<div class="post-media"></div>
+
+		
