@@ -22,6 +22,7 @@
 .responsive-two-column .col-2{
     float: center;
     width: 45%;
+    background-color: white;
 }
 
 .icon{
@@ -31,4 +32,8 @@
 	max-height: 100px;
 	max-width: 100px;
 	margin-right: 100%;
+}
+
+.fileBox{
+
 }
