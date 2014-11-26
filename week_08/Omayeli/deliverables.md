@@ -15,24 +15,7 @@
 
 ## Weekly Deliverables Template
 
-*Copy this template into your weekly folder to use for various homework deliverables. 
-Assignments change week-to-week based on in class work.*
-
 ### Show & Tell
-<!-- * [Name](http://link-to-cool-thing) -->
-### Reading Responses
-<!-- #### [Title, Author](http://link-to-article) -->
-### Coding Exercise
-<!-- #### [Excercise Name](./link/to/exercise.html) -->
+ * [How big is your browser](http://howbigismybrowser.com/) 
 
----
-
-### Tips
-
-##### <a name="filenames"></a>Filenames
-Guidelines for good file names for web development
-* all lower case
-* no spaces
-* no punctation `!*(){}[]#@$%^&`
-  * hyphens and underscores are ok
-* only alphanumerics `[a-z][1-9]`
+* no reading response/coding exercise due

@@ -1,0 +1,89 @@
+// Brownish
+background-color = hsla(353, 8%, 40%, 1)
+// Purple
+background-color = hsla(259, 36%, 47%, 1)
+// CodePen Grey
+//background-color = #252527
+// CodePen Blue
+//background-color = hsla(210, 63%, 53%, 1)
+
+// Some settings
+shadow-scale =       1.1
+letter-spacing =     (300em/1000)
+initial-skew =       -40deg
+hover-skew =         -10deg
+animation-duration = .3s
+
+// Automatic settings
+shadow-initial-skew = ((initial-skew / 2) * -1)
+shadow-hover-skew =   ((hover-skew / 2) * -1)
+
+// Styles
+p
+  color #fff
+  font-family Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif
+  font-size 1em
+  font-weight 700
+
+  span
+    display inline-block
+    position relative
+    transform-style preserve-3d
+    perspective 500
+    -webkit-font-smoothing antialiased
+    
+    &::before,
+    &::after
+      display none
+      position absolute
+      top 0
+      left -1px
+      transform-origin left top
+      transition all ease-out animation-duration
+      content attr(data-text)
+
+    &::before
+      z-index 1
+      color rgba(0, 0, 0, .2)
+      transform scale(shadow-scale, 1) skew(0deg, shadow-initial-skew)
+
+    &::after
+      z-index 2
+      color background-color
+      text-shadow -1px 0 1px background-color, 1px 0 1px rgba(0, 0, 0, .8)
+      transform rotateY(initial-skew)
+
+    &:hover
+      &::before
+        transform scale(shadow-scale, 1) skew(0deg, shadow-hover-skew)
+      &::after
+        transform rotateY(hover-skew)
+
+    & + span
+      margin-left letter-spacing
+      
+p
+  @media (min-width: 20em)
+    font-size 2em
+    span::before,
+    span::after
+    	display block
+  @media (min-width: 30em)
+    font-size 3em
+  @media (min-width: 40em)
+    font-size 5em
+  @media (min-width: 60em)
+    font-size 8em
+
+// Unimportant bits
+html,
+body
+  margin 0
+  padding 0
+  height 100%
+
+body
+  display flex
+  align-items center
+  justify-content center
+  background-color background-color

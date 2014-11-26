@@ -20,6 +20,11 @@ a{
 	color: blue;
 }
 
+.everything{
+	width: 100%;
+	height: 100%;
+}
+
 .heading-nav{
 	position: relative;
 	margin-left: 15px;
@@ -467,9 +472,7 @@ div.category{
 }
 
 .footer{
-	width: 90%;
-	display: block;
-	position: absolute;
+	width: 100%;
 	bottom: 0;
 	left:3em;
 	z-index: 999;
@@ -480,10 +483,23 @@ div.category{
 	padding-right: 4px;
 	margin-right: 40px;
 	font-size: 15px;
+	bottom: 0;
 }
 
 
 /*for sale/ free all*/
+
+.heading-divider{
+	display: inline-block;
+	font-size: 36px;
+	margin:  10px;
+}
+
+.heading-category{
+	display: inline-block;
+	font-size: 36px;
+	margin: 10px;
+}
 
 .post-fsf{
 	display: inline-block;
@@ -515,7 +531,8 @@ div.category{
     box-shadow: 0px 0px 15px black;
     background: white;
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
+    margin-bottom: -40px;
     -webkit-transform-origin: 50% 100%;
     -webkit-transform: scaleX(0.00001);
     -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -593,7 +610,7 @@ ul.seller{
 	background: grey;
 }
 
-.image{
+.has_image{
 	margin-top: 10px;
 	display: block;
 	font-size: 15px;
@@ -731,3 +748,21 @@ ul.seller{
 }
 
 
+.thumbnail{
+	width: 80px;
+	height: 80px;
+	padding-top: 10px;
+}
+
+.page-click{
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.pages li{
+	display: inline-block;
+	font-size: 36px;
+	text-align: center;
+}
