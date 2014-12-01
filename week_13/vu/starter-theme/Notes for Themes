@@ -1,0 +1,15 @@
+Notes for Themes
+
+{Tags/Variable}
+// "Your Blog Name"
+
+{Block: Posts}
+//Post
+	<div class="post">
+		....
+			....
+				....
+//Post
+//Post
+//Post
+//Post
