@@ -1,0 +1,219 @@
+/*
+  Reset Styles
+ */
+* {
+    margin: 0;
+    padding: 0;
+    /*font-size: 100%;*/
+    font: inherit;
+    /*font-weight: normal;*/
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+/*
+  Global Styles
+ */
+html, body {
+    height: 100%;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    color: white;
+    font-size: 12pt;
+    /*background: #F2F2F2 url('{image:Background}');*/
+    background: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+    background-attachment: fixed;
+}
+a, a:hover {
+    color: white;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+nav ul {
+    list-style: none;
+}
+.glass {
+    background: rgba(0,0,0,0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    z-index: 999;
+}
+/*
+  Container Styles
+ */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.col-half {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar {
+    height: 75px;
+    padding: 20px;
+    color: white;
+    font-size: 14pt;
+    z-index: 1000;
+}
+.nav {
+    font-size: 16pt;
+}
+.navbar ul {
+    display: inline-block;
+}
+.nav-right {
+    float: right;
+}
+.header {
+    min-height: 90%;
+    /*background: #2D567C url('{image:Background}');*/
+    background: url('../img/header.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: auto;
+}
+.intro {
+    position: absolute;
+    top: 25%;
+    width: 600px;
+    left: 50%;
+    margin: 0 auto;
+    margin-left: -300px;
+    color: white;
+}
+.header-img {
+    border-radius: 100px;
+    height: 128px;
+    width: 128px;
+}
+.name {
+    font-size: 24pt;
+    font-weight: bold;
+}
+.about {
+    font-size: 16pt;
+}
+.tile {
+    min-width: 400px;
+    padding: 10px;
+    vertical-align: top;
+    background-color: white;
+    margin-bottom: 20px;
+    color: #2b2b2b;
+}
+.tile a, .tile .like-wrap {
+    color: #2b2b2b;
+    display: inline-block;
+}
+.tile img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.actions a {
+    margin-right: 10px;
+}
+.input-group {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    overflow:hidden;
+}
+.input-group > input, label {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid white;
+}
+.input-group > button {
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    margin: 0px -5px;
+    padding: 0 10px;
+}
+.sidebar {
+    position: fixed;
+    background-color: #2b2b2b;
+    padding: 20px;
+    min-width: 10%;
+    width: 25%;
+    height: 100%;
+    z-index: 1001;
+    display: none;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sidebar-nav {
+    margin-top: 30px;
+}
+
+.sidebar-nav ul {
+    margin-bottom: 50px;
+}
+
+.sidebar-nav ul li {
+    font-size: 14pt;
+}
+
+.sidebar-nav ul hr {
+    margin-top: 0;
+}
+
+.social-media-btn {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin: -15px 10px 0 0;
+}
+.date {
+    display: inline-block;
+    float: right;
+}
+.date a{
+    color: #2b2b2b;
+}
+.title {
+    font-size: 22pt;
+}
+.text-post, .image-post {
+    margin: 5px 0;
+}
+.body, .caption {
+    font-size: 14pt;
+}
+.caption, .tags {
+    padding: 1em .5em;
+}
+.tags {
+    list-style: none;
+}
+.tags li a{
+    margin-right: 5px;
+    color: #5E5E5E;
+}
