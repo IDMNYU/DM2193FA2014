@@ -1,0 +1,140 @@
+
+ * {
+ 	margin: 0;
+    padding: 0;
+
+    font: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+}
+body {
+    font-family: "Open Sans Condensed", Helvetica;
+    color: black;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	font-size: 52px;
+	padding: 10px;
+}
+p {
+	text-indent: 50px;
+}
+.first-scroll-page {
+	height: 750px;
+	background-image: url("../images/background-image-1.jpg");
+	background-repeat: no-repeat;
+	border: 3px solid black;
+}
+.title-first-page {
+	font-size: 60px;
+	max-width: 300px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+.fp-nav  {
+	color: white;
+	list-style-type: none;
+	margin-top: 100px;
+	max-height: 200px;
+	padding-left: 2px;
+	padding-right: 2px;
+
+}
+
+.first-page-nav-item {
+	display: inline-table;
+	font-size: 28px;
+	padding-left: 290px;
+	padding-right: 290px;
+}
+
+.by, .author-name, .author-description {
+    text-align: center;
+	margin: auto;
+}
+.author-description {
+	max-width: 600px;
+	margin-left: 300px;
+}
+.by, .author-name{
+	margin-left: -90px;
+}
+.author-description {
+	padding: 30px;
+}
+.posts-nav-page {
+	height: 750px;
+	border: 2px solid black;
+}
+.posts-list {
+	font-size: 20px;
+	max-width: 350px;
+	text-align: center;
+	margin: auto;
+	margin-right: 480px;
+	margin-top: 220px;
+	list-style-type: upper-roman;
+}
+.archive-page {
+	height: 750px;
+	border: 2px solid black;
+}
+.archive-page-list {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 93px;
+	margin-bottom: 100px;
+	width: 800px;
+	height: 500px;
+}
+.archive-month {
+	width: 300px;
+	text-align: right;
+	border: 2px solid black;
+	max-height: 80px;
+	padding: 10px;
+}
+.pp-nav {
+	position: fixed;
+	list-style-type: square;
+	display: list-item;
+	margin-top: 20px;
+	margin-left: 1230px;
+	
+}
+.blog-heading {
+	position: fixed;
+}
+
+.post {
+	margin-left: 280px;
+	position: relative;
+	max-width: 800px;
+	margin-top: 96px;
+	border-left: 2px solid black;
+}
+.post-title {
+	margin: auto;
+	border-bottom: 3px solid black;
+	font-size: 28px;
+	max-width: 200px;
+	text-align: center;
+	padding-top: 35px;
+	margin-bottom: 40px;
+}
+.the-post-image {
+	position: fixed;
+	margin-left: 85px;
+	margin-right: 85px;
+	margin-top: 350px;
+}
+.post-text {
+	margin-left: 100px;
+	font-family: "Open Sans", Helvetica;
+	margin-bottom: 50px;
+	max-width: 650px;
+}
