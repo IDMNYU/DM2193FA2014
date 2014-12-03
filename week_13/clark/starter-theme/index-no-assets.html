@@ -1,19 +1,34 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" class="{block:IndexPage} page-index {/block:IndexPage}{block:PermalinkPage} page-permalink {/block:PermalinkPage}">
 <head>
-	<meta charset = 'utf-8'>
-	<img class = 'logo' src = 'images/tumblr_logo.jpg' />
-	<title>tumblr</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <meta charset="utf-8">
+    <title>{Title}</title>
+    
+    {block:Description}
+        <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
+    
+    <!-- @TODO: Add Theme Variables -->
+    <!-- @TODO: Add an external stylesheet -->
+    <!-- @TODO: Add an inline stylesheet for consuming Theme Variables -->
+
 </head>
+
 <body>
-	<div class = 'responsive-two-column'>
-		<div class = 'col-1'>
-			<img class = 'icon' src = 'images/defaultIcon.png' />
-			<img class = 'icon' src = 'images/squareIcon.png' />
-			<img class = 'icon' src = 'images/defaultIcon.png' />
-		</div>
-		<div class = 'col-2'>
-		<section class="theme-body posts">
+
+    <div class="theme-container">
+
+        <header class="theme-header">
+            <h1><a href="{BlogURL}">{Title}</a></h1>
+            {block:Description}
+                <p><a href="">{Description}</a></p>
+            {/block:Description}
+        </header>
+
+        <section class="theme-body posts">
+          
           {block:Posts}
 
                 {block:Regular}
@@ -96,7 +111,31 @@
 
         </section>
 
-		</div>
+        {block:Pagination}
+        <footer class="theme-footer">
+            <nav class="pagination">
+                
+                <div class="pagination-count">{CurrentPage} <span>of</span> {TotalPages}</div>
+
+                <hr class="pagination-hr" />
+
+                {block:NextPage}
+                    <a class="pagination-older" href="{NextPage}">&larr; Older</a>
+                {/block:NextPage}
+                
+                {block:PreviousPage}
+                    <a class="pagination-newer" href="{PreviousPage}">Newer &rarr;</a>
+                {/block:PreviousPage}
+
+            </nav>
+        </footer>
+        {/block:Pagination}
+
+    </div><!-- END: .theme-container -->
+    
+    <!-- @TODO: Add an external scripts [ jQuery, Theme JS ] -->
+    <!-- @TODO: Add inline script for consuming Theme Variables -->
+    <!-- @TODO: Initialize Theme JS -->
 
 </body>
 </html>

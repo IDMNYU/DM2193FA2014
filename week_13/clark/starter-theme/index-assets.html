@@ -1,19 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" class="{block:IndexPage} page-index {/block:IndexPage}{block:PermalinkPage} page-permalink {/block:PermalinkPage}">
 <head>
-	<meta charset = 'utf-8'>
-	<img class = 'logo' src = 'images/tumblr_logo.jpg' />
-	<title>tumblr</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <meta charset="utf-8">
+    <title>{Title}</title>
+    
+    {block:Description}
+        <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
+
+    <!-- Theme Variables -->
+    <meta name="color:Favorite Color" content="{TitleColor}"/>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="/path/to/styles/main.css" />
+
+    <!-- Inline Stylesheet for Variable Consumption -->
+    <style>
+        .theme-header a {
+            color: {color:Favorite Color};
+        }
+        /* :) */
+    </style>
+
 </head>
+
 <body>
-	<div class = 'responsive-two-column'>
-		<div class = 'col-1'>
-			<img class = 'icon' src = 'images/defaultIcon.png' />
-			<img class = 'icon' src = 'images/squareIcon.png' />
-			<img class = 'icon' src = 'images/defaultIcon.png' />
-		</div>
-		<div class = 'col-2'>
-		<section class="theme-body posts">
+
+    <div class="theme-container">
+
+        <header class="theme-header">
+            <h1><a href="{BlogURL}">{Title}</a></h1>
+            {block:Description}
+                <p><a href="">{Description}</a></p>
+            {/block:Description}
+        </header>
+
+        <section class="theme-body posts">
+          
           {block:Posts}
 
                 {block:Regular}
@@ -96,7 +121,42 @@
 
         </section>
 
-		</div>
+        {block:Pagination}
+        <footer class="theme-footer">
+            <nav class="pagination">
+                
+                <div class="pagination-count">{CurrentPage} <span>of</span> {TotalPages}</div>
+
+                <hr class="pagination-hr" />
+
+                {block:NextPage}
+                    <a class="pagination-older" href="{NextPage}">&larr; Older</a>
+                {/block:NextPage}
+                
+                {block:PreviousPage}
+                    <a class="pagination-newer" href="{PreviousPage}">Newer &rarr;</a>
+                {/block:PreviousPage}
+
+            </nav>
+        </footer>
+        {/block:Pagination}
+
+    </div><!-- END: .theme-container -->
+    
+    <!-- Third Party Libraries -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Application Code -->
+    <script src="/path/to/script/main.js"></script>
+    <!-- Inline Script for Theme Variables -->
+    <script>
+        // Any theme-rendered values you want to pass into your theme JS
+        var themeOptions = {
+            'someVariable' : '{color:Background}',
+            'currentPage' : '{CurrentPage}'
+        };
+        // Start the Theme App
+        ThemeApp.init(themeOptions);
+    </script>
 
 </body>
 </html>

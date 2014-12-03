@@ -5,7 +5,8 @@
 
 .logo{
 	margin: auto;
-	padding: auto;
+	max-width: 250px;
+	max-height: 150px;
 }
 
 .responsive-two-column {
@@ -20,9 +21,9 @@
 }
 
 .responsive-two-column .col-2{
-    float: center;
+    float: left;
     width: 45%;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .icon{
@@ -34,6 +35,3 @@
 	margin-right: 100%;
 }
 
-.fileBox{
-
-}
