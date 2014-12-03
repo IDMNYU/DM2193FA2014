@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>"What Type Of Thing Are You" Quiz with jQuery - CodePen</title>
+
+    <link rel="stylesheet" href="styles/style2.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="header">
+      <div class="fancy-text">
+          <span data-text="F">F</span>
+          <span data-text="A">A</span>
+          <span data-text="K">K</span>
+          <span data-text="E">E</span>
+         &nbsp
+          <span data-text="O">O</span>
+          <span data-text="R">R</span>
+         &nbsp
+          <span data-text="F">F</span>
+          <span data-text="O">O</span>
+          <span data-text="R">R</span>
+          <span data-text="T">T</span>
+          <span data-text="U">U</span>
+          <span data-text="N">N</span>
+          <span data-text="E">E</span>
+      </div>
+    </div>
+
+  <div id="quizzie">
+
+    <ul class="quiz-step step1 current">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>#1 Which one is fake?</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">This?</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap"> 
+                <p class="answer-text">Or this?</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step2">
+        <li class="question">
+            <div class="question-wrap">
+                <p>#2: Which one is fake? </p>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">This?</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Or this?</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step3">
+        <li class="question">
+            <div class="question-wrap">
+                <p> #3: How about this one?</p>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap">
+                <p class="answer-text">Fake!</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Fake!</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step4">
+        <li class="question">
+            <div class="question-wrap">
+                <p>#4: Which one? </p>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap">
+                <p class="answer-text"> Fake! </p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Fake!</p>
+            </div>
+        </li>
+    </ul>
+    <ul id="results">
+        <li class="results-inner">
+            <p>Your result is:</p>
+            <h1></h1>
+            <p class="desc"></p>
+        </li>
+    </ul>
+</div>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+  <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

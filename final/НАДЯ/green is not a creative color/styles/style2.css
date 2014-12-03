@@ -1,0 +1,210 @@
+@import url(http://fonts.googleapis.com/css?family=Satisfy|Pathway+Gothic+One);
+
+/* Fancy text*/
+
+.fancy-text {
+  color: #fff;
+  font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
+  font-size: 1em;
+  font-weight:700;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  right:100px;
+}
+.fancy-text span {
+  display: inline-block;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500;
+          perspective: 500;
+  -webkit-font-smoothing: antialiased;
+}
+.fancy-text span::before,
+.fancy-text span::after {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  -webkit-transform-origin:left top;
+      -ms-transform-origin:left top;
+          transform-origin:left top;
+  -webkit-transition: all ease-out 0.3s;
+          transition: all ease-out 0.3s;
+  content: attr(data-text);
+}
+.fancy-text span::before {
+  z-index: 1;
+  color: rgba(0,0,0,0.2);
+  -webkit-transform: scale(1.1, 1) skew(0deg, 20deg);
+      -ms-transform: scale(1.1, 1) skew(0deg, 20deg);
+          transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+.fancy-text span::after {
+  z-index: 2;
+  color: #684da3;
+  text-shadow: -1px 0 1px #684da3, 1px 0 1px rgba(0,0,0,0.8);
+  -webkit-transform: rotateY(-40deg);
+          transform: rotateY(-40deg);
+}
+.fancy-text span:hover::before {
+  -webkit-transform: scale(1.1, 1) skew(0deg, 5deg);
+      -ms-transform: scale(1.1, 1) skew(0deg, 5deg);
+          transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+.fancy-text span:hover::after {
+  -webkit-transform: rotateY(-10deg);
+          transform: rotateY(-10deg);
+}
+.fancy-text span + span {
+  margin-left: 0.3em;
+}
+@media (min-width: 20em) {
+  .fancy-text {
+    font-size: 2em;
+  }
+  .fancy-text span::before,
+  .fancy-text span::after {
+    display: block;
+  }
+}
+@media (min-width: 30em) {
+  .fancy-text {
+    font-size: 3em;
+  }
+}
+@media (min-width: 40em) {
+  .fancy-text {
+    font-size: 4em;
+  }
+}
+@media (min-width: 60em) {
+  .fancy-text {
+    font-size: 5em;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 10;
+  height: 100%;
+}
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #684da3;
+}
+
+.header
+{
+  width: 100%;
+  clear: both;
+}
+
+/* Defaults */
+html, body, #quizzie {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #677c8a;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Satisfy', 'cursive';
+  font-size: 2.5em;
+}
+
+h2, p {
+  font-family: 'Pathway Gothic One', 'sans-serif';
+  font-size: 2em;
+}
+
+h1, h2, p {
+  text-align: center;
+  display: block;
+  width: auto;
+  margin: 1%;
+}
+
+#quizzie {
+  padding: 5% 0;
+  /* Individual Steps/Sections */
+  /* Content */
+}
+#quizzie ul {
+  list-style: none;
+  display: block;
+  width: auto;
+  margin: 2% 2%;
+  padding: 2%;
+  overflow: auto;
+  display: none;
+  /* Step Questions and Answer Options */
+}
+#quizzie ul.current {
+  display: block;
+}
+#quizzie ul li {
+  display: inline-block;
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+  overflow: auto;
+  text-align: center;
+}
+#quizzie ul li.quiz-answer {
+  cursor: pointer;
+}
+#quizzie ul li.question, #quizzie ul li.results-inner {
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2%;
+}
+#quizzie ul li.results-inner {
+  padding: 5% 2%;
+}
+#quizzie ul li.results-inner img {
+  width: 250px;
+}
+#quizzie ul li:last-child {
+  margin-right: 0;
+}
+#quizzie .question-wrap, #quizzie .answer-wrap {
+  display: block;
+  padding: 1%;
+  margin: 1em 10%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#quizzie .answer-wrap {
+  background: Turquoise;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+#quizzie .answer-wrap:hover {
+  background: DarkTurquoise;
+}

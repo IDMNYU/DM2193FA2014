@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TITLE</title>
+
+<meta name="description" content="{MetaDescription}"/>
+
+
+                                                      <link rel="shortcut icon" href="{Favicon}">
+                                                      <link rel="alternate" type="application/rss+xml" href="{RSS}">
+                                                      <meta name="text:Link 1" content=""/>
+                                                      <meta name="text:Link 1 URL" content=""/>
+                                                      <meta name="text:Link 2" content=""/>
+                                                      <meta name="text:Link 2 URL" content=""/>
+                                                      <meta name="text:Link 3" content=""/>
+                                                      <meta name="text:Link 3 URL" content=""/>
+                                                      <meta name="text:Link 4" content=""/>
+                                                      <meta name="text:Link 4 URL" content=""/>
+                                                      <meta name="text:Link 5" content=""/>
+                                                      <meta name="text:Link 5 URL" content=""/>
+                                                      <meta name="text:Link 6" content=""/>
+                                                      <meta name="text:Link 6 URL" content=""/>
+                                                      <meta name="text:Link 7" content=""/>
+                                                      <meta name="text:Link 7 URL" content=""/>
+                                                      <meta name="text:Link 8" content=""/>
+                                                      <meta name="text:Link 8 URL" content=""/>
+                                                      <meta name="text:Home Label" content="Home"/>
+                                                      <meta name="text:Ask Label" content="Ask"/>
+                                                      <meta name="text:Submit Label" content="Submit"/>
+                                                      <meta name="text:Archive Label" content="Archive"/>
+                                                      <meta name="if:Show Archive Link" content="1"/>
+                                                      <meta name="if:Show Submit Link" content="1"/>
+                                                      <meta name="if:Show Title" content="1"/>
+                                                      <meta name="if:Show Tags" content="1"/>
+                                                      <meta name="if:Animation" content="1"/>
+                                                      <meta name="if:To Top Button" content="1"/>
+                                                      <meta name="if:Infinite Scroll" content="1"/>
+                                                      <meta name="if:Show Captions" content="1"/>
+                                                      <meta name="if:Show Tags" content="1"/>
+                                                      <meta name="image:Background" content=""/>
+                                                      <meta name="image:Sidebar" content=""/>
+                                                      <script type="text/javascript" src="http://static.tumblr.com/uiqhh9x/jkEm9tb4p/jquery-1.8.1.min.js"></script>
+
+
+                                                      <link rel="stylesheet" type="text/css" href="style.css">
+                                                      <script type="text/javascript" src="http://static.tumblr.com/tpqedpr/zREmibpvy/minified.js"></script>
+
+</head>
+
+
+
+<body>
+
+<style type="text/css">body, a:hover {cursor: url(http://i1326.photobucket.com/albums/u655/jimeaguinaga/osito_zps14bb9e90.png), progress !important;}</style><a href="http://allcursors.tumblr.com"></a>
+    <div id="contain" class="clearfix">
+    <div id="side">
+    <div class="text">
+  <h1><a href="/">TITLE</a></h1>
+  <a href="/" class="m-i"><img class="menu-picture" src="{image:sidebar}"/></a><div id="description">DESCRIPTION</div>
+    <div>
+
+    <a class="menu-link" href="/">
+  HOME LABEL</a>/
+    <a class="menu-link" href="/ask">ASK LABEL</a>
+
+     <a class="menu-link" href="/submit">SUBMIT LABEL</a>
+
+      <a class="menu-link" href="URL">LABEL</a>
+
+      <a class="menu-link" href="LINK 1"> LINK 1</a>
+
+      <a class="menu-link" href="LINK 2"> LINK 2 </a>
+
+      <a class="menu-link" href="LINK 3">LINK 3</a>{/block:iflink3}{block:iflink4}/<a class="menu-link" href="{text:link 4 url}">{text:link 4}</a>{/block:iflink4}{block:iflink5}/<a class="menu-link" href="{text:link 5 url}">{text:link 5}</a>{/block:iflink5}{block:iflink6}/<a class="menu-link" href="{text:link 6 url}">{text:link 6}</a>{/block:iflink6}{block:iflink7}/<a class="menu-link" href="{text:link 7 url}">{text:link 7}</a>{/block:iflink7}{block:iflink8}/<a class="menu-link" href="{text:link 8 url}">{text:link 8}</a>{/block:iflink8}{Block:IfShowArchiveLink}/ <a class="menu-link" href="/archive">{text:Archive Label}</a>{/Block:IfShowArchiveLink}</div>
+
+{block:IfNotInfiniteScroll}{block:Pagination}
+<p class="previous-next text">{block:PreviousPage}
+<a href="{PreviousPage}" class="next"><</a>{/block:PreviousPage}
+<span id="pages"> {CurrentPage} of {TotalPages} 
+</span>{block:NextPage}
+<a href="{NextPage}" class="previous">></a>{/block:NextPage}
+</p>{/block:Pagination}{/block:IfNotInfiniteScroll}
+</div>
+</div>
+
+
+<div id="content">
+{block:Posts}
+<div class="post">
+
+{block:Text}
+<div class="text">
+{block:Title}<h3>{Title}</h3>{/block:Title}
+{Body}
+<!-- permalink --> {block:IndexPage}
+
+<!-- /permalink --> {/block:IndexPage}
+</div>
+{/block:Text}
+    
+{block:Quote}
+<div class="text quote">
+<p class="words">&#8220;{Quote}&#8221;</p>
+{block:Source}<p class="source">{Source}</p>{/block:Source}
+
+<!-- permalink --> {block:IndexPage}
+
+<!-- /permalink --> {/block:IndexPage}
+</div>
+{/block:Quote}
+
+  
+{block:Link}
+<div class="text link">        
+<h3><a href="{URL}" {Target}>{Name}</a></h3>
+{block:Description}{Description}{/block:Description}
+<!-- permalink --> {block:IndexPage}
+
+<!-- /permalink --> {/block:IndexPage}
+</div>
+
+
+{/block:Link}
+  
+{block:Chat}
+                            <div class="text chat">
+                            <ul class="conversation">
+                            {block:Lines}
+                            <li class="line {Alt}">
+                            {block:Label}<span class="person">{Label}</span>{/block:Label}
+                            <span class="person-said">{Line}</span>
+                            </li>
+                            {/block:Lines}
+                            </ul>
+                            <!-- permalink --> {block:IndexPage}
+
+                            <!-- /permalink --> {/block:IndexPage}
+                            </div>
+{/block:Chat}
+
+{block:Audio}
+                              <div class="text audio">
+                              <p>{AudioPlayerBlack}</p>
+                              {block:IndexPage}{block:IfShowCaptions}
+                              {block:Caption}{Caption}{/block:Caption}
+                              {/block:IfShowCaptions}{/block:IndexPage}
+                              <!-- permalink --> {block:IndexPage}
+
+                              <!-- /permalink --> {/block:IndexPage}
+                              </div>
+{/block:Audio}
+
+{block:Answer}
+                                <div class="text answer">
+                                <div class="response">
+                                <p class="question">{Question}</p>
+                                <p>@{Asker}</p></div>
+                                {Answer}
+                                <!-- permalink --> {block:IndexPage}
+
+                                <!-- /permalink --> {/block:IndexPage}
+                                </div>
+{/block:Answer}
+
+{block:Photoset}
+
+                                <div class="photoset">
+                                <div class="box">
+                                <!-- permalink --> {block:IndexPage}
+
+                                <!-- /permalink --> {/block:IndexPage}
+                                <center>{Photoset-500}</center>
+                                </div>
+
+                                {block:IndexPage}{block:IfShowCaptions}
+                                {block:Caption}<div class="caption"> 
+                                {Caption}</div>{/block:Caption}
+
+                                {/block:IfShowCaptions}{/block:IndexPage}
+                                </div>
+
+{/block:Photoset}
+
+{block:Video}
+
+                                  <div class="video">
+                                  <div class="box">
+                                  <!-- permalink --> {block:IndexPage}
+
+                                  <!-- /permalink --> {/block:IndexPage}
+                                  <center>{Video-500}</center>
+                                  </div>
+                                  {block:IndexPage}{block:IfShowCaptions}
+                                  {block:Caption}<div class="caption text">{Caption}</div>{/block:Caption}
+                                  {/block:IfShowCaptions}{/block:IndexPage}
+                                  </div> 
+
+{/block:Video}
+    
+{block:Photo}
+                                  <div class="photo">
+                                  <div class="box">
+                                  <!-- permalink --> {block:IndexPage}
+
+                                  <!-- /permalink --> {/block:IndexPage}
+                                  {block:IndexPage}
+                                  <a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}" width="100%"/></a>
+                                  {/block:IndexPage}
+                                  {block:PermalinkPage}
+                                  {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" width="500"/>{LinkCloseTag}
+                                  {/block:PermalinkPage}
+                                  </div>
+                                  {block:IndexPage}{block:IfShowCaptions}
+                                  {block:Caption}<div class="caption text">{Caption}</div>{/block:Caption}
+                                  {/block:IfShowCaptions}{/block:IndexPage}
+                                  </div>
+{/block:Photo}
+
+{block:IfShowTags}  {block:IndexPage}  {block:HasTags}
+
+                                    <div class="tagged"><p>
+                                    {lang:Tagged}: {block:Tags}
+                                    <a href="{TagURL}">#{Tag}</a> 
+                                    {/block:Tags}</p>
+                                    </div>
+
+{/block:HasTags}{/block:IndexPage}{/block:IfShowTags}
+
+{block:PermalinkPage}
+
+                                      <div id="post-info" class="text">
+                                      {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+                                      {block:HasTags}
+                                      <p class="tagged">{lang:Tagged}: {block:Tags}<a href="{TagURL}">#{Tag}</a> {/block:Tags}</p>
+                                      {/block:HasTags}
+                                      <p class="post-info-data">
+                                      {block:Date}{12Hour}:{Minutes}:{Seconds} @ {MonthNumber}/{DayOfMonth}/{Year}<br/>{/block:Date}
+                                      {block:NoteCount}{NoteCountWithLabel}<br />
+                                      {/block:NoteCount}{block:RebloggedFrom}
+                                      Reblogged from 
+                                      <a href="{ReblogParentURL}">{ReblogParentName}</a><br/>Posted by <a href="{ReblogRootURL}">{ReblogRootName}</a>{block:RebloggedFrom}</p>
+                                      {block:PostNotes}
+                                      {PostNotes}
+                                      {/block:PostNotes}
+                                      </div>
+
+{/block:PermalinkPage}
+
+                                        </div> <!-- end single post -->
+{block:ContentSource}
+                                        <!-- {SourceURL}{block:SourceLogo}<img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" /> {/block:SourceLogo} {block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} -->
+{/block:ContentSource}
+                                          <!--{block:NoRebloggedFrom}{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}{/block:NoRebloggedFrom} -->
+{/block:Posts}     
+</div> <!-- end content -->
+<div class="loading"></div>
+
+</div> <!-- end containing div -->
+
+{block:IndexPage}{block:IfInfiniteScroll}
+{block:Pagination}<ul id="pagination">
+{block:PreviousPage}
+<li><a href="{PreviousPage}"></a></li>
+{/block:PreviousPage}
+{block:JumpPagination length="5"}
+{block:CurrentPage}
+<li><span class="current_page numbersNav"><strong>{PageNumber}</strong></span></li>
+{/block:CurrentPage}
+{block:JumpPage}
+<li><a class="jump_page numbersNav" href="{URL}">{PageNumber}</a></li>
+{/block:JumpPage}
+{/block:JumpPagination}
+{block:NextPage}
+<li><a id="nextPage" href="{NextPage}"></a></li>
+{/block:NextPage}
+</ul>{/block:Pagination}
+<script type="text/javascript">
+$(window).load(function () {
+var $content = $('#content');
+$content.infinitescroll({
+        navSelector    : '#pagination',  
+      nextSelector   : '#pagination a#nextPage',
+      itemSelector   : '.post, .loading',
+      loading: {
+          finishedMsg: '',
+          img: 'http://static.tumblr.com/uiqhh9x/amsm48v4p/add.gif'
+      },
+      bufferPx       : 200,
+      debug          : false,
+});
+});
+</script>
+{/block:IfInfiniteScroll}
+{/block:IndexPage}
+{block:IfToTopButton}
+<script type="text/javascript">
+        $(document).ready(function() {
+                /*
+                        var defaults = {
+                                containerID: 'toTop', // fading element id
+                                containerHoverID: 'toTopHover', // fading element hover id
+                                scrollSpeed: 1200,
+                                easingType: 'linear'
+                        };
+                        */
+                       
+                        $().UItoTop({ easingType: 'easeOutQuart' });
+                       
+                });
+</script>
+<a href="#" id="toTop" style="display: none; "><span id="toTopHover"></span>To Top</a>
+{/block:IfToTopButton}
+</body></html>
