@@ -22,7 +22,7 @@ a{
 
 .everything{
 	width: 100%;
-	min-height: 100%;
+	height: 900px;
 	position: relative;
 	display: block;
 }
@@ -211,10 +211,12 @@ td{
 
 .container{
 	position: relative;
-	height: 100%;
-	width: 100%;
+	height: 700px;
+	width: 80%;
 	display:block;
 	margin-left: 15px;
+	/*border: 1px solid black;*/
+	float: left;
 }
 
 .navigation{
@@ -397,12 +399,12 @@ div.category{
 
 .side-bar{
 	/*border: 1px solid black;*/
-	position: absolute;
 	margin-top: 50px;
-	width: 190px;
-	height:556px;
+	position: absolute;
+	width: 20%;
+	height:700px;
 	background: white;
-	float: none;
+	float: right;
 	right: 4em;
 	padding-left: 10px;
 }
@@ -764,6 +766,7 @@ ul.seller{
 	font-size: 54px;
 	text-decoration: none;
 	color: gold;
+	margin-left: 25px;
 }
 
 .arrows{
@@ -788,12 +791,12 @@ ul.seller{
 	display: inline-block;
 	width: 48%;
 	float: left;
-	height: 900px;
-	border: 1px solid black;
+	height: 750px;
+	margin-left: 25px;
 }
 
 .big-photo{
-	width: 100%;
+	width: 80%;
 }
 
 .pic1, .pic2{
@@ -803,14 +806,14 @@ ul.seller{
 
 .desc-resp{
 	display: inline-block;
-	width: 50%;
-	height: 900px;
-	border: 1px solid black;
+	width: 30%;
+	height: 750px;
+	margin-right: 25px;
 }
 
 .title{
 	text-decoration: bold;
-	font-size: 20px;
+	font-size: 36px;
 }
 
 .short{
@@ -819,6 +822,19 @@ ul.seller{
 
 .post-identification{
 	font-size: 20px;
+}
+
+.post-id{
+	display: inline-block;
+}
+
+.posted{
+	margin-left: 30px;
+	display: inline-block;
+}
+
+.divider{
+	margin: 50px 0px 50px 0px;
 }
 
 .quick-actions{
@@ -831,6 +847,12 @@ ul.seller{
 	font-size: 15px;
 	display: inline-block;
 	padding: 5%;
+	margin-left: 30px;
+}
+
+.reply-button{
+	width: 100px;
+	height: 50px;
 }
 
 .footer{
