@@ -41,9 +41,9 @@ Submitted to the Theme Garden
   * Use the language and vocabulary above to describe your decision making process / design process.
 
 * Self-Assessment -- Due at the end of the semester
-  * Critically evaluate your *process* and how it is has changed over the course of the semester.
+  * Critically evaluate your **process** and how it is has changed over the course of the semester.
   * Describe the qualities of your process, what worked for you, what didn't. What you would change about your process.
-  * Analyze the execution of your *project*: 
+  * Analyze the execution of your **project**: 
     * What was successful about it? 
     * What could use some improvement if you had more time.
     * How does your execution solve the problems well?
