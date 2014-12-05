@@ -2,7 +2,16 @@
 <head>
 	<meta charset = 'utf-8'>
 	<img class = 'logo' src = 'images/tumblr_logo.jpg' />
+    <div class = 'logIn'>
+        <button id = 'home' class = "home"> Home </button>
+        <button id = 'inbox' class = "inbox"> Indox </button>
+        <button id = 'help' class = "help"> Help </button>
+        <button id = 'logOff' class = 'logOff'> Log Out </button>
+    </div>
 	<title>tumblr</title>
+    {block:Description}
+        <meta name="description" content="{MetaDescription}">
+    {/block:Description}
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
@@ -97,6 +106,6 @@
         </section>
 
 		</div>
-
+        <script src = "scripts/scripts.js"></scripts>
 </body>
 </html>
