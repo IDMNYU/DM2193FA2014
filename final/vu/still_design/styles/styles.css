@@ -6,29 +6,33 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-size: 100%;
-    font: inherit;
-    font-weight: normal;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 100%;
+  font: inherit;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 body {
-    font-size: 24px;
-    color: black;
-    height: 100%;
-    font-family: 'Disney';
-    overflow-x:hidden;
+  font-size: 24px;
+  color: black;
+  height: 100%;
+  font-family: 'Disney';
+  overflow-x:hidden;
 }
 
 html{
-	background: url(../images/openbook.gif) no-repeat center center fixed; 
+  background: url(../images/openbook.gif) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+a{
+  text-decoration: none;
 }
 
 .menu {
@@ -96,16 +100,136 @@ html{
 
 /*home page*/
 
+.items img{
+  display: inline;
+  float: left;
+  position: absolute;
+}
 
+.apple{
+  width: 10%;
+  padding-left:30%;
+  z-index: -1;
+}
 
+.bow{
+  width: 10%;
+  padding-left:55%;
+  z-index: -1;
+  -ms-transform: rotate(25deg); /* IE 9 */
+  -webkit-transform: rotate(25deg); /* Chrome, Safari, Opera */
+  transform: rotate(25deg);
+  margin-top: -10%;
+}
 
+.comb{
+  width: 12%;
+  padding-left:4%;
+  z-index: -1;
+  padding-top:23%; 
+  overflow: hidden;
+}
 
+.dinglehopper{
+  width: 15%;
+  margin-left:50%;
+  z-index: -1;
+  padding-top: 25%;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
 
+.flower{
+  width: 10%;
+  padding-left:85%;
+  padding-top: 10%;
+  z-index: -1;
+}
 
+.frog{
+  width: 12%;
+  padding-left:3%;
+  z-index: -1;
+  padding-top: 38%;
+}
 
+.lamp{
+  width: 10%;
+  padding-left:80%;
+  z-index: -1;
+}
 
+.necklace{
+  width: 10%;
+  padding-left:85%;
+  z-index: -1;
+  padding-top: 35%;
+}
 
+.rose{
+  width: 20%;
+  padding-left:24%;
+  padding-top: 12%;
+  z-index: -1;
+  overflow: hidden;
+}
 
+.slipper{
+  width: 15%;
+  padding-left:35%;
+  padding-top: 36%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.snowflake{
+  width: 10%;
+  padding-left:55%;
+  z-index: -1;
+  padding-top: 35%;
+}
+
+.tiara{
+  width: 10%;
+  padding-left:11%;
+  z-index: 20;
+  margin-top: 4%;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+  transform: rotate(-20deg);
+}
+
+.left-page{
+  clear: both;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  margin-top: -2%;
+}
+
+.right-page{
+  display: inline-block;
+  width: 50%;
+  float:right;
+  margin-top: -2%;
+}
+
+.mini-post{
+  display: block;
+  width: 40%;
+  height: 40%;
+  margin-left: 30%;
+  margin-top: 6%;
+}
+
+.small-post{
+  width: 100%;
+  height: 100%;
+}
 
 /*post page*/
 
