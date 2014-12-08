@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{MobileAppHeaders}
+    <meta charset="utf-8">
+	<meta name="image:Background Image" content=""/>
+	<meta name="if:Show Facebook Share Button" content=""/>
+	<meta name="if:Show Tweet Button" content=""/>
+	<meta name="text:Facebook URL" content=""/>
+	<meta name="text:Twitter URL" content=""/>
+	<meta name="text:GooglePlus URL" content=""/>
+	<meta name="text:Pinterest URL" content=""/>
+	
+	<title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+	
+	{block:Description}
+        <meta name="description" content="{MetaDescription}" />
+    {/block:Description}
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+	
+	
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<style>
+		/*---------- Reset Styles ----------*/
+		* {
+			margin: 0;
+			padding: 0;
+			font: inherit;
+			line-height: 1.5;
+			box-sizing: border-box;
+		}
+		html, body {
+			height: 100%;
+			min-width: 480px;
+		}
+		body {
+			/*font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;*/
+			font-size: 12pt;
+			background: #f2f2f2 url('{image:Background Image}');
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-size: auto;
+			background-attachment: fixed;
+		}
+		a, a:hover {
+			cursor: pointer;
+			font-style: italic;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		nav a, nav a:hover, .sidebar a, .sidebar a:hover {
+		    color: white;
+		    font-style: normal;
+		}
+		ol {
+			list-style: none;
+		}
+		nav ul {
+			list-style: none;
+		}
+		.glass {
+			background: rgba(0,0,0,0.25);
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			position: fixed;
+			display: none;
+			z-index: 999;
+		}
+		/*---------- Theme Styles ------------*/
+		.container {
+			max-width: 925px;
+			margin: 0 auto;
+		}
+		.navbar {
+			height: 50px;
+			padding: 10px 20px;
+			margin-bottom: 10px;
+			background: #2b2b2b;
+			font-size: 14pt;
+			z-index: 1000;
+		}
+		.nav {
+			font-size: 16pt;
+		}
+		.navbar ul {
+			display: inline-block;
+		}
+		.nav-right {
+			float: right;
+		}
+		.header {
+		    min-height: 512px;
+			height: 90%;
+			background: #2D567C url('{HeaderImage}');
+			background-repeat: no-repeat;
+			background-position: bottom center;
+		}
+		.footer {
+			width: 100%;
+			display: block;
+		}
+		.intro {
+			position: absolute;
+			top: 20%;
+			width: 600px;
+			left: 50%;
+			margin: 0 auto;
+			margin-left: -300px;
+		}
+		.header-img {
+			border-radius: 100px;
+			height: 128px;
+			width: 128px;
+		}
+		h1, .name {
+			font-size: 32pt;
+			font-family: {TitleFont}, Helvetica, Arial, Sans-serif;;
+			font-weight: {TitleFontWeight};
+		}
+		.about {
+			font-size: 18pt;
+			max-height: 200px;
+			width: 66%;
+			overflow: hidden;
+            text-overflow: ellipsis;
+		}
+		.tile {
+			width: 440px;
+			padding: 20px;
+			vertical-align: top;
+			background-color: white;
+			margin: 10px auto;
+			color: #2b2b2b;
+			display: inline-block;
+			position: relative;
+			border: solid 1px #ccc;
+		}
+		.tile ul{
+			list-style: none;
+		}
+		.tile ul, .tile ul li, .date {
+			display: inline-block;
+		}
+		.tile a, .tile .like-wrap {
+			color: #2b2b2b;
+			display: inline-block;
+		}
+		.tile img {
+			position: relative;
+			width: 100%;
+			height: auto;
+		}
+		.actions a {
+			margin-right: 10px;
+		}
+		.actions li, .actions li a, .actions li a:hover {
+			color: #ccc;
+		}
+		.non-native {
+			font-size: 14pt;
+			display: inline;
+			padding-left: 10px;
+			bottom: 3px;
+			position: relative;
+		}
+		.input-group {
+			display: inline-block;
+			width: auto;
+			height: auto;
+			overflow:hidden;
+		}
+		.input-group input, label {
+			border: 0;
+			outline: 0;
+			width: 200px;
+			background: transparent;
+			border-bottom: 1px solid white;
+		}
+		.input-group button {
+			display: inline-block;
+			border: 0;
+			border-bottom: 1px solid white;
+			background: transparent;
+			color: white;
+			font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+			font-size: 100%;
+			font: inherit;
+			font-weight: normal;
+			margin: 0px -5px;
+			padding: 0 10px;
+		}
+		.sidebar {
+			position: fixed;
+			color: white;
+			background-color: #2b2b2b;
+			padding: 20px;
+			width: 275px;
+			left: -275px;
+			height: 100%;
+			z-index: 1001;
+		}
+		.fixed-top {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.sidebar-nav {
+			margin-top: 30px;
+		}
+		.sidebar-nav ul {
+			margin-bottom: 50px;
+		}
+		.sidebar-nav ul li {
+			font-size: 14pt;
+			width: 100%;
+		}
+		.sidebar-nav ul hr {
+			margin-top: 0;
+		}
+		.sidebar-nav li a {
+			width: 100%;
+		}
+		.main-sidebar-nav li a{
+		    display: block;
+		    width: 100%;
+		}
+		.social-media-btn {
+			font-size: 20pt;
+			padding-right: 5px;
+			padding-bottom: 5px;
+			display: inline-block;
+			margin: -15px 10px 0 0;
+			transition: color .5s;
+		}
+		.sidebar-nav a {
+		    transition: color .5s;
+		}
+		.sidebar-nav a:hover {
+		    color: #ccc;
+		}
+		.post {
+		    font-size: 14pt;
+		}
+		.date {
+			display: inline-block;
+			float: right;
+		}
+		.date a{
+			color: #2b2b2b;
+			bottom: 3px;
+			position: relative;
+		}
+		.title {
+			font-size: 22pt;
+		}
+		.text-post, .image-post {
+			margin: 5px 0;
+		}
+		.body, .caption {
+			font-size: 14pt;
+		}
+		.reblogged {
+			padding-bottom: 10px;
+		}
+		.caption, .tags {
+			padding: 1em .5em;
+		}
+		.tags {
+			list-style: none;
+		}
+		.tags li a{
+			margin-right: 5px;
+		}
+		.search-tile {
+		    font-family: {TitleFont};
+		    font-size: 24pt;
+		    position: relative;
+		    display: block;
+		    width: 50%;
+		    margin: 10px auto;
+		}
+		.invisible {
+			visibility: hidden;
+			display: none;
+		}
+		.link .a{
+		    font-size: 20pt;
+		    color: white;
+		    background: #2b2b2b;
+		    padding: 10px;
+		    width: 100%;
+		    text-align: center;
+		    margin-bottom: 10px;
+		}
+		.link .a:hover {
+		    color: white;
+		}
+		.quote {
+		    font-size: 20pt;
+		}
+		.quote .source {
+		    font-size: 16pt;
+		    margin: 10px 0 0 1em;
+		}
+		.quote .source::before {
+		    content: "- ";
+		}
+		.header {
+			color: {TitleColor};
+		}
+		body, input, a, a:hover {
+			color: white;
+		}
+		.tile a:hover {
+			color: #2b2b2b;
+		}
+		.tags li a, .reblogged, .reblogged a{
+			color: #5E5E5E;
+		}
+		.label {
+		    font-weight: bold;
+		    font-style: italic;
+		}
+        ol.notes {
+            padding: 0px;
+            margin: 25px 0px;
+            list-style-type: none;
+            border-bottom: solid 1px #ccc;
+        }
+
+        ol.notes li.note {
+            border-top: solid 1px #ccc;
+            padding: 10px;
+        }
+        ol.notes li.note img.avatar {
+            vertical-align: -4px;
+            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+        }
+        ol.notes li.note span.action {
+            font-weight: bold;
+        }
+        ol.notes li.note .answer_content {
+            font-weight: normal;
+        }
+        ol.notes li.note blockquote {
+            border-color: #eee;
+            padding: 4px 10px;
+            margin: 10px 0px 0px 25px;
+        }
+        ol.notes li.note blockquote a {
+            text-decoration: none;
+        }
+	</style>
+	<style>
+	
+	{CustomCSS}
+	</style>
+	<script src="http://codysherman.tumblr.com/tools/infinite-scrolling/code" async></script>
+</head>
+<body>
+	<div class="glass" data-close-sidebar></div>
+	<div class="sidebar">
+		<a title="Close" data-close-sidebar><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Close</a>
+		<nav class="sidebar-nav">
+			<ul class="main-sidebar-nav">
+				{block:HasPages}
+				{block:Pages}
+				<li><a href="{URL}" class="page">{Label}</a></li>
+				<hr>
+				{/block:Pages}
+				{/block:HasPages}
+				<li><a href="/archive" class="archive">{lang:Archive}</a></li>
+				<hr>
+			</ul>
+			<ul>
+				<div class="input-group">
+				    <form action="/search" method="get" id="search">
+                        <input type="text" name="q" id="q" placeholder="{lang:Search}" value="{SearchQuery}">
+                        <button type="submit" class="icon-search_16 btn btn-search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </form>
+				</div>
+			</ul>
+			<ul class="sub-sidebar-nav social-media-nav">
+				<li>Social Media:</li>
+				<hr>
+				<a href="{RSS}" class="social-media-btn"><i class="fa fa-rss"></i></a>
+				
+				{block:IfFacebookURL}
+				<a href="{text:Facebook URL}" class="social-media-btn"><i class="fa fa-facebook"></i></a>
+				{/block:IfFacebookURL}
+				{block:IfTwitterURL}
+				<a href="{text:Twitter URL}" class="social-media-btn"><i class="fa fa-twitter"></i></a>
+				{/block:IfTwitterURL}
+				{block:IfGooglePlusURL}
+				<a href="{text:GooglePlus URL}" class="social-media-btn"><i class="fa fa-google-plus"></i></a>
+				{/block:IfGooglePlusURL}
+				{block:IfPinterestURL}
+				<a href="{text:Pinterest URL}" class="social-media-btn"><i class="fa fa-pinterest"></i></a>
+				{/block:IfPinterestURL}
+				
+			</ul>
+		</nav>
+	</div>
+	<header id="header" class="header">
+		<div class="intro" align="center">
+			<img src="{PortraitURL-128}" alt="Profile" class="header-img">
+			<h1 class="name">{Title}</h1>
+			{block:Description}
+			<p class="about" id="description">{Description}</p>
+			{/block:Description}
+		</div>
+	</header><!-- /header -->
+	<nav class="navbar" id="main-nav">
+		<ul class="nav">
+			<li><a title="Menu" data-open-sidebar><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Menu</a></li>
+		</ul>
+		<ul class="nav-right">
+			<div class="input-group">
+				    <form action="/search" method="get" id="search">
+                        <input type="text" name="q" id="q" placeholder="{lang:Search}" value="{SearchQuery}">
+                        <button type="submit" class="icon-search_16 btn btn-search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </form>
+				</div>
+		</ul>
+	</nav>
+	{block:SearchPage}
+	<div class="container">
+        <div class="tile search-tile">
+            <h2>
+                {lang:SearchResultCount results for SearchQuery}
+                {block:NoSearchResults}{lang:Sorry no search results found}{/block:NoSearchResults}
+            </h2>
+        </div>
+    </div>
+    {/block:SearchPage}
+	<div class="container" id="container">
+		<ol id="posts">
+			<div class = "autopagerize_page_element" >
+			{block:Posts}
+				{block:Text}
+				<div class="tile">
+					{block:RebloggedFrom}
+					<div class="reblogged">
+						<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Reblogged from <a href="{ReblogRootURL}">{ReblogRootTitle}</a>
+					</div>
+					{/block:RebloggedFrom}
+					<li class="post text">
+						{block:Title}
+						<h3 class="title"><a href="{Permalink}">{Title}</a></h3>
+						{/block:Title}{Body}
+					</li>
+					{block:HasTags}
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">#{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>
+					{/block:HasTags}
+					<div class="tile-footer">
+						<hr>
+						<ul class="actions">
+							<li>{ReblogButton}</li>
+							<li>{LikeButton}</li>
+							<div class="non-native">
+								{block:IfShowFacebookShareButton}                                                  
+								<li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								{/block:IfShowFacebookShareButton}
+								{block:IfShowTweetButton}
+								<li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								{/block:IfShowTweetButton}
+								<li><a href="{Permalink}" class="share-item permalink"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></li>
+							</div>
+						</ul>
+						{block:Date}
+						<div class="date">{ShortMonth} {DayOfMonth}, {Year}</div>
+						{/block:Date}
+						{PostNotes}
+					</div>
+				</div>
+				{/block:Text}
+				{block:Photo}
+				<div class="tile">
+					{block:RebloggedFrom}
+					<div class="reblogged">
+						<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Reblogged from <a href="{ReblogRootURL}">{ReblogRootTitle}</a>
+					</div>
+					{/block:RebloggedFrom}
+					<li class="post photo">
+						<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+						{block:Caption}
+						<div class="caption">{Caption}</div>
+						{/block:Caption}
+					</li>
+					{block:HasTags}
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">#{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>
+					{/block:HasTags}
+					<div class="tile-footer">
+					   <hr>
+					   <ul class="actions">
+							<li>{ReblogButton}</li>
+							<li>{LikeButton}</li>
+							<div class="non-native">
+								{block:IfShowFacebookShareButton}                                                  
+								<li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								{/block:IfShowFacebookShareButton}
+								{block:IfShowTweetButton}
+								<li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								{/block:IfShowTweetButton}
+								<li><a href="{Permalink}" class="share-item permalink"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></li>
+							</div>
+						</ul>
+					  {block:Date}
+					  <div class="date">{ShortMonth} {DayOfMonth}, {Year}</div>
+					  {/block:Date}
+					  {PostNotes}
+					</div>
+				</div>
+				{/block:Photo}
+				{block:Panorama}
+				<div class="tile">
+					{block:RebloggedFrom}
+					<div class="reblogged">
+						<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Reblogged from <a href="{ReblogRootURL}">{ReblogRootTitle}</a>
+					</div>
+					{/block:RebloggedFrom}
+					<li class="post panorama">
+						{LinkOpenTag}
+							<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+						{LinkCloseTag}{block:Caption}
+							<div class="caption">{Caption}</div>
+						{/block:Caption}
+					</li>
+					{block:HasTags}
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">#{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>
+					{/block:HasTags}
+					<div class="tile-footer">
+					   <hr>
+					   <ul class="actions">
+						  <li>{ReblogButton}</li>
+						  <li>{LikeButton}</li>
+						  <div class="non-native">
+							{block:IfShowFacebookShareButton}                                                  
+							<li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							{/block:IfShowFacebookShareButton}
+							{block:IfShowTweetButton}
+							<li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							{/block:IfShowTweetButton}
+							<li><a href="{Permalink}" class="share-item permalink"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></li>
+						</div>
+						</ul>
+						{block:Date}
+						<div class="date">{ShortMonth} {DayOfMonth}, {Year}</div>
+						{/block:Date}
+						{PostNotes}
+					</div>
+				</div>
+				{/block:Panorama}
+				{block:Photoset}
+				<div class="tile">
+					{block:RebloggedFrom}
+					<div class="reblogged">
+						<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Reblogged from <a href="{ReblogRootURL}">{ReblogRootTitle}</a>
+					</div>
+					{/block:RebloggedFrom}
+					<li class="post photoset">
+						{Photoset}{block:Caption}
+						<div class="caption">{Caption}</div>
+						{/block:Caption}
+					</li>
+					{block:HasTags}
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">#{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>
+					{/block:HasTags}
+					<div class="tile-footer">
+					   <hr>
+					   <ul class="actions">
+						  <li>{ReblogButton}</li>
+						  <li>{LikeButton}</li>
+						  <div class="non-native">
+							{block:IfShowFacebookShareButton}                                                  
+							<li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							{/block:IfShowFacebookShareButton}
+							{block:IfShowTweetButton}
+							<li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							{/block:IfShowTweetButton}
+							<li><a href="{Permalink}" class="share-item permalink"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></li>
+						</div>
+						</ul>
+						{block:Date}
+						<div class="date">{ShortMonth} {DayOfMonth}, {Year}</div>
+						{/block:Date}
+						{PostNotes}
+					</div>
+				</div>
+				{/block:Photoset}
+				{block:Quote}
+				<div class="tile">
+					{block:RebloggedFrom}
+					<div class="reblogged">
+						<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Reblogged from <a href="{ReblogRootURL}">{ReblogRootTitle}</a>
+					</div>
+					{/block:RebloggedFrom}
+					<li class="post quote">
+						"{Quote}"
+						{block:Source}
+						<div class="source">{Source}</div>
+						{/block:Source}
+					</li>
+					{block:HasTags}
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">#{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>
+					{/block:HasTags}
+					<div class="tile-footer">
+					   <hr>
+					   <ul class="actions">
+						  <li>{ReblogButton}</li>
+						  <li>{LikeButton}</li>
+						  <div class="non-native">
+								{block:IfShowFacebookShareButton}                                                  
+								<li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								{/block:IfShowFacebookShareButton}
+								{block:IfShowTweetButton}
+								<li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								{/block:IfShowTweetButton}
+								<li><a href="{Permalink}" class="share-item permalink"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></li>
+							</div>
+						</ul>
+						{block:Date}
+						<div class="date">{ShortMonth} {DayOfMonth}, {Year}</div>
+						{/block:Date}
+						{PostNotes}
+					</div>
+				</div>
+				{/block:Quote}
+				{block:Link}
+				<div class="tile">
+					{block:RebloggedFrom}
+					<div class="reblogged">
+						<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Reblogged from <a href="{ReblogRootURL}">{ReblogRootTitle}</a>
+					</div>
+					{/block:RebloggedFrom}
+					<li class="post link">
+						<a href="{URL}" class="link a" {Target}>{Name}</a>
+						{block:Description}
+						<div class="description">{Description}</div>
+						{/block:Description}
+					</li>
+					{block:HasTags}
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">#{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>
+					{/block:HasTags}
+					<div class="tile-footer">
+					   <hr>
+					   <ul class="actions">
+						  <li>{ReblogButton}</li>
+						  <li>{LikeButton}</li>
+						  <div class="non-native">
+								{block:IfShowFacebookShareButton}                                                  
+								<li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								{/block:IfShowFacebookShareButton}
+								{block:IfShowTweetButton}
+								<li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								{/block:IfShowTweetButton}
+								<li><a href="{Permalink}" class="share-item permalink"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></li>
+							</div>
+						</ul>
+						{block:Date}
+						<div class="date">{ShortMonth} {DayOfMonth}, {Year}</div>
+						{/block:Date}
+						{PostNotes}
+					</div>
+				</div>
+				{/block:Link}
+				{block:Chat}
+				<div class="tile">
+					{block:RebloggedFrom}
+					<div class="reblogged">
+						<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Reblogged from <a href="{ReblogRootURL}">{ReblogRootTitle}</a>
+					</div>
+					{/block:RebloggedFrom}
+					<li class="post chat">
+						{block:Title}
+						<h3><a href="{Permalink}">{Title}</a></h3>
+						{/block:Title}
+						<ul class="chat">
+							{block:Lines}
+							<li class="{Alt} user_{UserNumber}">
+								{block:Label}
+								<span class="label">{Label}</span>
+								{/block:Label}{Line}
+							</li>
+							{/block:Lines}
+						</ul>
+					</li>
+					{block:HasTags}
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">#{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>
+					{/block:HasTags}
+					<div class="tile-footer">
+					   <hr>
+					   <ul class="actions">
+						  <li>{ReblogButton}</li>
+						  <li>{LikeButton}</li>
+						  <div class="non-native">
+								{block:IfShowFacebookShareButton}                                                  
+								<li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								{/block:IfShowFacebookShareButton}
+								{block:IfShowTweetButton}
+								<li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								{/block:IfShowTweetButton}
+								<li><a href="{Permalink}" class="share-item permalink"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></li>
+							</div>
+						</ul>
+						{block:Date}
+						<div class="date">{ShortMonth} {DayOfMonth}, {Year}</div>
+						{/block:Date}
+						{PostNotes}
+					</div>
+				</div>
+				{/block:Chat}
+				{block:Video}
+				<div class="tile">
+					{block:RebloggedFrom}
+					<div class="reblogged">
+						<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Reblogged from <a href="{ReblogRootURL}">{ReblogRootTitle}</a>
+					</div>
+					{/block:RebloggedFrom}
+					<li class="post video">
+						{VideoEmbed-400}{block:Caption}
+						<div class="caption">{Caption}</div>
+						{/block:Caption}
+					</li>
+					{block:HasTags}
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">#{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>
+					{/block:HasTags}
+					<div class="tile-footer">
+					   <hr>
+					   <ul class="actions">
+						  <li>{ReblogButton}</li>
+						  <li>{LikeButton}</li>
+						  <div class="non-native">
+								{block:IfShowFacebookShareButton}                                                  
+								<li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								{/block:IfShowFacebookShareButton}
+								{block:IfShowTweetButton}
+								<li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								{/block:IfShowTweetButton}
+								<li><a href="{Permalink}" class="share-item permalink"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></li>
+							</div>
+						</ul>
+						{block:Date}
+						<div class="date">{ShortMonth} {DayOfMonth}, {Year}</div>
+						{/block:Date}
+						{PostNotes}
+					</div>
+				</div>
+				{/block:Video}
+				{block:Audio}
+				<div class="tile">
+					{block:RebloggedFrom}
+					<div class="reblogged">
+						<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Reblogged from <a href="{ReblogRootURL}">{ReblogRootTitle}</a>
+					</div>
+					{/block:RebloggedFrom}
+					<li class="post audio">
+						{AudioEmbed-400}{block:Caption}
+						<div class="caption">{Caption}</div>
+						{/block:Caption}
+					</li>
+					{block:HasTags}
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">#{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>
+					{/block:HasTags}
+					<div class="tile-footer">
+					   <hr>
+					   <ul class="actions">
+						  <li>{ReblogButton}</li>
+						  <li>{LikeButton}</li>
+						  <div class="non-native">
+								{block:IfShowFacebookShareButton}                                                  
+								<li><a href="http://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								{/block:IfShowFacebookShareButton}
+								{block:IfShowTweetButton}
+								<li><a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								{/block:IfShowTweetButton}
+								<li><a href="{Permalink}" class="share-item permalink"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></li>
+							</div>
+						</ul>
+						{block:Date}
+						<div class="date">{ShortMonth} {DayOfMonth}, {Year}</div>
+						{/block:Date}
+						{PostNotes}
+					</div>
+				</div>
+				{/block:Audio}
+			{/block:Posts}
+			</div>
+		</ol>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="http://static.tumblr.com/xjllate/eh0nfzemg/masonry.pkgd.min.js"></script>
+	<script>
+	$(document).ready( function () {
+    
+    var $container = $('#container');
+    // initialize
+    $container.masonry({
+      columnWidth: 460,
+      itemSelector: '.tile'
+    });
+    
+	// Fix Navbar to top when scrolling past
+	$(window).scroll(function () {
+	    winHeight = $(window).height();
+	    if ($(window).scrollTop() > winHeight-50) {
+	        $('#main-nav').addClass('fixed-top');
+	    }
+	    if ($(window).scrollTop() < winHeight-50) {
+	        $('#main-nav').removeClass('fixed-top');
+	    }
+	});
+
+	// Open Sidebar
+	$('[data-open-sidebar]').click( function () {
+		$( ".navbar" ).slideUp();//addClass('invisible');
+		$( ".sidebar" ).animate({ left: '0px' });
+		$( ".glass" ).show();
+
+	} );
+
+	// Close Sidebar
+	$('[data-close-sidebar]').click( function () {
+		$( ".navbar" ).slideDown();
+		$( ".sidebar" ).animate({ left: '-275px' });
+		$( ".glass" ).hide();
+
+	} );
+
+	$(document).keyup(function(e){
+    if(e.keyCode === 27)
+        $( ".sidebar" ).animate({ left: '-275px' });
+		$( ".navbar" ).slideDown();
+		$( ".glass" ).hide();
+	});
+
+
+});</script>
+</body>
+</html>
