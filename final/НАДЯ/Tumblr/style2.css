@@ -1,12 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Eater);
-
-@font-face {
-    font-family: Eater;
-	}
 
 body {
 	color: #000000;background: #201361 url({image:Background});
-	font-family:Eater;
+	font-family: Arial;
+	font-size: 10px;
 	line-height: 1.5em;
 }
 
@@ -38,7 +34,7 @@ a:hover {color
 		border-left: solid 4px #EDEDED;
 }
 	h1 {
-		font-family: Eater;
+		font-family: Arial;
 		font-size: 24px;
 		line-height: 1.5em;font-weight: normal;
 		  color: #000;
@@ -68,7 +64,7 @@ line-height: 0px!important;
 }
 
 .post-link{
-	font-family:Eater;
+	font-family: Arial;
 	font-size: 8px;
 	line-height: 8px;}
 
@@ -378,139 +374,132 @@ html[xmlns]
 h1 {
   color: #000;
   font-size: 3em;
-  font-family:Eater;
+  font-family: sans-serif;
   font-weight: bolder;
   text-align: center;
   font-style: italic;
   margin-top: 50%;
 }
-
 @-webkit-keyframes colorChange {
-  0% {background: #000; }
-	10% {background: #f00; }
-  20% {background: #f0f; }
-  30% {background: #00f; }
-  40% {background: #0ff; }
-  50% {background: #0f0;}
-  60% {background: #ff0; }
-  70% {background: #f80; }
-  80% {background: #f00; }
-  90% {background: #f80; }
-  100% {background: #000; }
+  0% {background: #0000ff; }
+	10% {background: #0000e5; }
+  20% {background: #0000cc; }
+  30% {background: #0000b2; }
+  40% {background: #000099; }
+  50% {background: #00007f;}
+  60% {background: #000066; }
+  70% {background: #00004c; }
+  80% {background: #000033; }
+  90% {background: #000019; }
+  100% {background: #000000; }
 }
 @-o-keyframes colorChange {
-  0% {background: #000; }
-	10% {background: #f00; }
-  20% {background: #f0f; }
-  30% {background: #00f; }
-  40% {background: #0ff; }
-  50% {background: #0f0;}
-  60% {background: #ff0; }
-  70% {background: #f80; }
-  80% {background: #f00; }
-  90% {background: #f80; }
-  100% {background: #000; }
+  0% {background: #000ff; }
+	10% {background: #0000e5; }
+  20% {background: #0000cc; }
+  30% {background: #0000b2; }
+  40% {background: #000099; }
+  50% {background: #00007f;}
+  60% {background: #000066; }
+  70% {background: #00004c; }
+  80% {background: #000033; }
+  90% {background: #000019; }
+  100% {background: #000000; }
 }
 @-moz-keyframes colorChange {
-  0% {background: #000; }
-	10% {background: #f00; }
-  20% {background: #f0f; }
-  30% {background: #00f; }
-  40% {background: #0ff; }
-  50% {background: #0f0;}
-  60% {background: #ff0; }
-  70% {background: #f80; }
-  80% {background: #f00; }
-  90% {background: #f80; }
-  100% {background: #000; }
+  0% {background: #0000ff; }
+	10% {background: #0000e5; }
+  20% {background: #0000cc; }
+  30% {background: #0000b2; }
+  40% {background: #000099; }
+  50% {background: #00007f;}
+  60% {background: #000066; }
+  70% {background: #00004c; }
+  80% {background: #000033; }
+  90% {background: #000019; }
+  100% {background: #000000; }
 }
 @keyframes colorChange {
-  0% {background: #000; }
-	10% {background: #f00; }
-  20% {background: #f0f; }
-  30% {background: #00f; }
-  40% {background: #0ff; }
-  50% {background: #0f0;}
-  60% {background: #ff0; }
-  70% {background: #f80; }
-  80% {background: #f00; }
-  90% {background: #f80; }
-  100% {background: #000; }
+  0% {background: #000ff; }
+	10% {background: #0000e5; }
+  20% {background: #0000cc; }
+  30% {background: #0000b2; }
+  40% {background: #000099; }
+  50% {background: #00007f;}
+  60% {background: #000066; }
+  70% {background: #00004c; }
+  80% {background: #000033; }
+  90% {background: #000019; }
+  100% {background: #000000; }
 }
 
 @-webkit-keyframes h1Change {
-  0% {color: #000; }
-	10% {color: #f00; }
-  20% {color: #f0f; }
-  30% {color: #00f; }
-  40% {color: #0ff; }
-  50% {color: #0f0;}
-  60% {color: #ff0; }
-  70% {color: #f80; }
-  80% {color: #f00; }
-  90% {color: #f80; }
-  100% {color: #000; }
+  0% {color: #0000ff; }
+	10% {color: #0000e5; }
+  20% {color: #0000cc; }
+  30% {color: #0000b2; }
+  40% {color: #000099; }
+  50% {color: #00007f;}
+  60% {color: #000066; }
+  70% {color: #00004c; }
+  80% {color: #000033; }
+  90% {color: #000019; }
+  100% {color: #000000; }
 }
 @-o-keyframes h1Change {
-  0% {color: #000; }
-	10% {color: #f00; }
-  20% {color: #f0f; }
-  30% {color: #00f; }
-  40% {color: #0ff; }
-  50% {color: #0f0;}
-  60% {color: #ff0; }
-  70% {color: #f80; }
-  80% {color: #f00; }
-  90% {color: #f80; }
-  100% {color: #000; }
+  0% {color: #0000ff; }
+	10% {color: #0000e5; }
+  20% {color: #0000cc; }
+  30% {color: #0000b2; }
+  40% {color: #000099; }
+  50% {color: #00007f;}
+  60% {color: #000066; }
+  70% {color: #00004c; }
+  80% {color: #000033; }
+  90% {color: #000019; }
+  100% {color: #000000; }
 }
 @-moz-keyframes h1Change {
-  0% {color: #000; }
-	10% {color: #f00; }
-  20% {color: #f0f; }
-  30% {color: #00f; }
-  40% {color: #0ff; }
-  50% {color: #0f0;}
-  60% {color: #ff0; }
-  70% {color: #f80; }
-  80% {color: #f00; }
-  90% {color: #f80; }
-  100% {color: #000; }
+  0% {color: #0000ff; }
+	10% {color: #0000e5; }
+  20% {color: #0000cc; }
+  30% {color: #0000b2; }
+  40% {color: #000099; }
+  50% {color: #00007f;}
+  60% {color: #000066; }
+  70% {color: #00004c; }
+  80% {color: #000033; }
+  90% {color: #000019; }
+  100% {color: #000000; }
 }
 @keyframes h1Change {
-  0% {color: #000; }
-	10% {color: #f00; }
-  20% {color: #f0f; }
-  30% {color: #00f; }
-  40% {color: #0ff; }
-  50% {color: #0f0;}
-  60% {color: #ff0; }
-  70% {color: #f80; }
-  80% {color: #f00; }
-  90% {color: #f80; }
-  100% {color: #000; }
+  0% {color: #0000ff; }
+	10% {color: #0000e5; }
+  20% {color: #0000cc; }
+  30% {color: #0000b2; }
+  40% {color: #000099; }
+  50% {color: #00007f;}
+  60% {color: #000066; }
+  70% {color: #00004c; }
+  80% {color: #000033; }
+  90% {color: #000019; }
+  100% {color: #000000; }
 }
 
 
 body {
-  -webkit-animation: colorChange 2s infinite;
-  -moz-animation: colorChange 2s infinite;
-  -o-animation: colorChange 2s infinite;
-  animation: colorChange 2s infinite;
+  -webkit-animation: colorChange 10s infinite;
+  -moz-animation: colorChange 10s infinite;
+  -o-animation: colorChange 10s infinite;
+  animation: colorChange 10s infinite;
 }
 
 h1 {
-  -webkit-animation: h1Change 5s infinite;
-  -moz-animation: h1Change 5s infinite;
-  -o-animation: h1Change 5s infinite;
-  animation: h1Change 5s infinite;
+  -webkit-animation: h1Change 10s infinite;
+  -moz-animation: h1Change 10s infinite;
+  -o-animation: h1Change 10s infinite;
+  animation: h1Change 10s infinite;
 }
-
-
-
-
-
-
 
 
 

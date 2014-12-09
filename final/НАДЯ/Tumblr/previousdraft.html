@@ -42,10 +42,519 @@
                                                       <meta name="image:Background" content=""/>
                                                       <meta name="image:Sidebar" content=""/>
                                                       <script type="text/javascript" src="http://static.tumblr.com/uiqhh9x/jkEm9tb4p/jquery-1.8.1.min.js"></script>
+<style>
+{CustomCSS}
+
+@import url(http://fonts.googleapis.com/css?family=Flavors);
+
+@font-face {
+    font-family: Flavors;
+  }
+
+body {
+  color: #000000;background: #201361 url({image:Background});
+  font-family:Flavors;
+  line-height: 1.5em;
+}
 
 
-                                                      <link rel="stylesheet" type="text/css" href="style.css">
-                                                      <script type="text/javascript" src="http://static.tumblr.com/tpqedpr/zREmibpvy/minified.js"></script>
+p {
+  margin:0 0 .75em 0} 
+
+
+p:last-child {
+  margin:0}
+
+a {
+  color: #36d122;
+  text-decoration:none;
+
+        {block:IfAnimation}-webkit-transition:all 
+        .2s ease;transition:all 
+        .2s ease;-o-transition:all 
+        .2s ease;{/block:IfAnimation}}
+
+a:hover {color
+  : #05f7e3; }
+
+  blockquote {
+    quotes: "" "" "'" "'";
+    margin: 0.75em 0 .75em .75em;
+    padding-left: 1.5em;
+    line-height: 100%;
+    border-left: solid 4px #EDEDED;
+}
+  h1 {
+    font-family: Flavors;
+    font-size: 24px;
+    line-height: 1.5em;font-weight: normal;
+      color: #000;
+  
+}
+  ul { 
+    margin: 0px 1.5em .75em;}
+li {
+  margin: .75em 0;
+  list-style-type: square;
+}
+
+
+.box img { 
+    display: block;
+    max-width: 100%;}.m-i {
+  display: block;
+  line-height: 1px!important;
+}
+
+
+
+    .menu-picture {
+        line-height: 100%;
+display: inline-block;
+line-height: 0px!important;
+}
+
+.post-link{
+  font-family:Flavors;
+  font-size: 8px;
+  line-height: 8px;}
+
+p.source{text-align: center;}
+
+
+.menu-picture {
+  line-height: 100%;
+  display: inline-block;}
+
+p.source{text-align: center;}
+
+h3 {
+  font-size: 14px;
+   font-weight: normal;}
+
+
+.tagged { 
+  text-align: center; 
+  line-height: 8px;
+  font-size: 8px;}
+
+
+.text {
+ padding: 10px;}
+
+ p.question {
+    margin-bottom: .375em;}
+
+
+p.words {
+    padding: 6px;
+    line-height: 1.5em;
+  color: #333333;
+    background: #ebebeb;
+}
+.response {
+    background: #efefef;
+    padding: 5px;
+    margin-bottom: .75em;
+}
+
+.answer {
+text-align: center;
+}
+
+.post {
+  position: relative;
+  width:500px;
+  float:left;
+  
+  background: #5ebbc4;
+  padding:40px;
+  margin:10px;
+  border: 2px dashed #000000;}
+
+.box {position: relative;}
+
+#side {
+text-align: center;
+  margin-top: 10px;
+  width:141px;
+  padding:0px;position: fixed;
+  background: #7424a3;
+  border: 2px dashed #000000;}
+
+#side img {
+    max-width: 100%;
+}
+
+ul {
+margin-bottom: .75em;}
+
+#contain {
+  width:767px;
+  margin: 10px auto 0;}
+
+#content { 
+  width:604px;
+  float: right;
+}
+
+#infscr-loading{
+  position:relative!important;
+  left:49%}
+
+p.menu-m {
+  margin: .375em;} 
+
+
+.menu-link {
+  margin: 0 3px;}
+
+iframe#tumblr_controls,
+
+.btn.icon.theme{
+  filter:invert(100%);
+  -webkit-filter:invert(100%);
+  -moz-filter:invert(100%);
+  -o-filter:invert(100%);
+  -ms-filter:invert(100%);
+   opacity:.4;position:fixed!important}
+
+
+.box iframe {
+  max-width: 100%;
+}
+
+.text img {
+  max-width: 100%;}
+
+img {
+  display: block;}
+
+.box img {
+  display: block;}
+
+.post-info-data{
+  text-align:center}
+
+.notes img{
+  display:block;
+  float:left;
+  margin-right:.75em}
+
+ol.notes li{
+  margin:.375em 0;
+  list-style-type:none;
+  line-height:16px}
+
+#toTop{
+  display:none;
+  text-decoration:none;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  overflow:hidden;
+  width:21px;
+  height:21px;
+  border:0;
+  text-indent:100%;
+  background:url(http://static.tumblr.com/uiqhh9x/372m6hyqw/up.png) no-repeat left top;
+  opacity:.5;
+  filter:alpha(opacity = 50);
+
+  {block:IfAnimation}-webkit-transition:all 
+  .2s ease;-moz-transition:all 
+  .2s ease;transition:all 
+  .2s ease;-o-transition:all 
+  .2s ease;{/block:IfAnimation}}
+
+#toTopHover{
+  width:21px;
+  height:21px;
+  display:block;
+  overflow:hidden;
+  float:left;
+  opacity:0;
+  filter:alpha(opacity=0);
+  {block:IfAnimation}-webkit-transition:all 
+  .2s ease;-moz-transition:all
+   .2s ease;transition:all 
+   .2s ease;-o-transition:all
+    .2s ease;{/block:IfAnimation}}
+
+#toTop:hover{
+  opacity:1;
+  filter:alpha(opacity = 100)}
+
+
+#toTop:active,
+
+#toTop:focus{outline:0}
+
+a.btn{
+    position:absolute;
+    z-index:999999;
+    top:26px;
+    right:3px;
+    white-space:nowrap;
+    outline:0;
+    text-decoration:none;
+    cursor:pointer;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font:600 12px/18px "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+    height:20px;
+    padding:0 5px;
+    -webkit-font-smoothing:antialiased;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-transition-property:padding;
+    -moz-transition-property:padding;
+    -ms-transition-property:padding;
+    -o-transition-property:padding;
+    transition-property:padding;
+    -webkit-transition-duration:.1s;
+    -moz-transition-duration:.1s;
+    -ms-transition-duration:.1s;
+    -o-transition-duration:.1s;
+    transition-duration:.1s;
+    -webkit-transition-timing-function:ease;
+    -moz-transition-timing-function:ease;
+    -ms-transition-timing-function:ease;
+    -o-transition-timing-function:ease;
+    transition-timing-function:ease}
+
+
+.btn{
+    color:#fff;
+    border:1px solid rgba(0,0,0,0.18);
+    background:rgba(0,0,0,0.38);
+    text-shadow:1px 1px 0 rgba(0,0,0,0.08)}
+
+a.btn,
+
+a.btn:hover{
+    color:white!important}
+
+.btn{
+    margin-bottom:5px;
+    color:#fff;
+    border:1px solid rgba(0,0,0,0.18);
+    background:rgba(0,0,0,0.38);
+    text-shadow:1px 1px 0 rgba(0,0,0,0.08);
+    -webkit-border-radius:2px;
+    border-radius:2px}
+
+.btn:hover::after,
+
+.btn:focus::after{
+    background:rgba(255,255,255,0.09);
+    color:white}
+
+.btn:active::after{
+    background:rgba(255,255,255,0.18) 
+    color:white}
+
+.btn_label.show{
+  display:block}
+
+.btn::after{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    content:'';
+    -webkit-border-radius:inherit;
+    border-radius:inherit}
+
+.btn.icon::before{
+    display:block;
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:20px;
+    border-radius:inherit;
+    background:url('http://static.tumblr.com/tpqedpr/cQ1mbwb60/de.png') 0 0 no-repeat}
+
+.btn.theme::before{
+  background-position:0 -0px}
+
+.btn img{
+    width:15px}
+
+.btn.icon{
+    padding-left:20px}
+
+  .btn:active::after {
+    background:rgba(255,255,255,0.18)}
+
+.clear {
+  clear: both;} 
+#pagination {
+  display: none;} 
+
+.clearfix:after{
+    content:".";
+    display:block;
+    clear:both;
+    visibility:hidden;
+    line-height:0;
+    height:0}
+
+.clearfix{
+  display:inline-block}
+
+html[xmlns]
+
+.clearfix{
+  display:block}
+
+ * html 
+ .clearfix{
+  height:1%}
+
+h1 {
+  color: #000;
+  font-size: 3em;
+  font-family: Flavors;
+  font-weight: bolder;
+  text-align: center;
+  font-style: italic;
+  margin-top: 50%;
+}
+
+@-webkit-keyframes colorChange {
+  0% {background: #000; }
+  10% {background: #f00; }
+  20% {background: #f0f; }
+  30% {background: #00f; }
+  40% {background: #0ff; }
+  50% {background: #0f0;}
+  60% {background: #ff0; }
+  70% {background: #f80; }
+  80% {background: #f00; }
+  90% {background: #f80; }
+  100% {background: #000; }
+}
+@-o-keyframes colorChange {
+  0% {background: #000; }
+  10% {background: #f00; }
+  20% {background: #f0f; }
+  30% {background: #00f; }
+  40% {background: #0ff; }
+  50% {background: #0f0;}
+  60% {background: #ff0; }
+  70% {background: #f80; }
+  80% {background: #f00; }
+  90% {background: #f80; }
+  100% {background: #000; }
+}
+@-moz-keyframes colorChange {
+  0% {background: #000; }
+  10% {background: #f00; }
+  20% {background: #f0f; }
+  30% {background: #00f; }
+  40% {background: #0ff; }
+  50% {background: #0f0;}
+  60% {background: #ff0; }
+  70% {background: #f80; }
+  80% {background: #f00; }
+  90% {background: #f80; }
+  100% {background: #000; }
+}
+@keyframes colorChange {
+  0% {background: #000; }
+  10% {background: #f00; }
+  20% {background: #f0f; }
+  30% {background: #00f; }
+  40% {background: #0ff; }
+  50% {background: #0f0;}
+  60% {background: #ff0; }
+  70% {background: #f80; }
+  80% {background: #f00; }
+  90% {background: #f80; }
+  100% {background: #000; }
+}
+
+@-webkit-keyframes h1Change {
+  0% {color: #000; }
+  10% {color: #f00; }
+  20% {color: #f0f; }
+  30% {color: #00f; }
+  40% {color: #0ff; }
+  50% {color: #0f0;}
+  60% {color: #ff0; }
+  70% {color: #f80; }
+  80% {color: #f00; }
+  90% {color: #f80; }
+  100% {color: #000; }
+}
+@-o-keyframes h1Change {
+  0% {color: #000; }
+  10% {color: #f00; }
+  20% {color: #f0f; }
+  30% {color: #00f; }
+  40% {color: #0ff; }
+  50% {color: #0f0;}
+  60% {color: #ff0; }
+  70% {color: #f80; }
+  80% {color: #f00; }
+  90% {color: #f80; }
+  100% {color: #000; }
+}
+@-moz-keyframes h1Change {
+  0% {color: #000; }
+  10% {color: #f00; }
+  20% {color: #f0f; }
+  30% {color: #00f; }
+  40% {color: #0ff; }
+  50% {color: #0f0;}
+  60% {color: #ff0; }
+  70% {color: #f80; }
+  80% {color: #f00; }
+  90% {color: #f80; }
+  100% {color: #000; }
+}
+@keyframes h1Change {
+  0% {color: #000; }
+  10% {color: #f00; }
+  20% {color: #f0f; }
+  30% {color: #00f; }
+  40% {color: #0ff; }
+  50% {color: #0f0;}
+  60% {color: #ff0; }
+  70% {color: #f80; }
+  80% {color: #f00; }
+  90% {color: #f80; }
+  100% {color: #000; }
+}
+
+
+body {
+  -webkit-animation: colorChange 2s infinite;
+  -moz-animation: colorChange 2s infinite;
+  -o-animation: colorChange 2s infinite;
+  animation: colorChange 2s infinite;
+}
+
+h1 {
+  -webkit-animation: h1Change 5s infinite;
+  -moz-animation: h1Change 5s infinite;
+  -o-animation: h1Change 5s infinite;
+  animation: h1Change 5s infinite;
+}
+
+
+</style>
 
 </head>
 
@@ -74,6 +583,13 @@
       <a class="menu-link" href="LINK 2"> LINK 2 </a>
 
       <a class="menu-link" href="LINK 3">LINK 3</a>{/block:iflink3}{block:iflink4}/<a class="menu-link" href="{text:link 4 url}">{text:link 4}</a>{/block:iflink4}{block:iflink5}/<a class="menu-link" href="{text:link 5 url}">{text:link 5}</a>{/block:iflink5}{block:iflink6}/<a class="menu-link" href="{text:link 6 url}">{text:link 6}</a>{/block:iflink6}{block:iflink7}/<a class="menu-link" href="{text:link 7 url}">{text:link 7}</a>{/block:iflink7}{block:iflink8}/<a class="menu-link" href="{text:link 8 url}">{text:link 8}</a>{/block:iflink8}{Block:IfShowArchiveLink}/ <a class="menu-link" href="/archive">{text:Archive Label}</a>{/Block:IfShowArchiveLink}</div>
+
+
+  <a href="/" class="m-i"><img class="menu-picture" src="http://static.tumblr.com/a6b83012c05e019ce7b2979e74dc7421/44ykeha/emUn06dcr/tumblr_static_folp.gif"/></a>
+  
+  <a href="http://www.hitwebcounter.com/htmltutorial.php" target="_blank">
+  <img src="http://hitwebcounter.com/counter/counter.php?page=5894116&style=0050&nbdigits=6&type=page&initCount=1111" title="website numbers total" Alt="website numbers total"   border="0" >
+  </a><br/>
 
 {block:IfNotInfiniteScroll}{block:Pagination}
 <p class="previous-next text">{block:PreviousPage}
