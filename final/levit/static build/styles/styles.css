@@ -28,6 +28,9 @@ body {
 	text-align: center;
 }
 
-.container-carousel {
-	height: 650px;
+img {
+	border: 3px solid;
+	border-color: black;
+	height: 350px;
+	width: 350px;
 }
