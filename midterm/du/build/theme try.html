@@ -1,0 +1,395 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>{Title}{block:PostSummary} : {PostSummary}{/block:PostSummary}</title>
+        <!--
+
+          Alva theme for GE.
+
+        -->
+
+        <meta name="color:Background" content="#00bfbf"/>
+        <meta name="color:Box Background" content="#333333"/>
+        <meta name="color:Text" content="#FFFFFF"/>
+        <meta name="color:Post Text" content="#3976B1"/>
+        <meta name="color:Post Text Link" content="#66B5E0"/>
+        <meta name="color:Post Photo" content="#F42D33"/>
+        <meta name="color:Post Quote" content="#7AB762"/>
+        <meta name="color:Post Link" content="#000116"/>
+        <meta name="color:Post Chat" content="#F42D33"/>
+        <meta name="color:Post Chat Bubble" content="#FFFFFF"/>
+        <meta name="color:Post Audio" content="#FF9E28"/>
+        <meta name="color:Post Video" content="#F42D33"/>
+
+        <meta name="text:Disqus Shortname" content="" />
+
+        <meta name="font:Body" content="'ge_geek', Arial, helvetica, sans-serif;"/>
+        <meta name="font:Details" content="Arial, Helvetica, sans-serif"/>
+
+        <meta name="image:Background" content="0" />
+        <meta name="if:Background Image Repeat" content="0" />
+
+        <meta name="if:Italic Text" content="1"/>
+        <meta name="if:Nav Unit Ask Archive" content="1"/>
+        <meta name="if:Nav Unit Search Box" content="1"/>
+        <meta name="if:Nav Unit Social Buttons" content="1"/>
+        <meta name="if:Nav Unit Background Credit" content="1"/>
+        <meta name="if:Use Default Background" content="1"/>
+        <meta name="if:Box Shadow" content="1"/>
+        <meta name="if:Infinite Scroll" content="1"/>
+        
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
+        <link rel="icon" href="{Favicon}"/>
+        <meta name="description" content="{MetaDescription}"/>
+        
+        <!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+        
+        
+        <link href='http://static.tumblr.com/ychvj87/0nzmpbuvm/style_built.css' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            body { 
+                font-family: {font:Body}; 
+                color: {color:Text};
+                /*{block:ifNotUseDefaultBackground}
+                    background: {color:Background};*/
+                    {block:IfBackgroundImage}
+                        background: url('{image:Background}') no-repeat;
+                    {block:IfBackgroundImageRepeat}
+                        background-repeat: repeat;
+                    {/block:IfBackgroundImageRepeat}
+                    {/block:IfBackgroundImage}
+                    /*background-position: top;
+                    background-repeat: repeat;
+                {/block:ifNotUseDefaultBackground}*/
+
+                {block:IfNotBackgroundImage}
+                    background: url(http://static.tumblr.com/ychvj87/rekmavotn/geek_bg.gif);
+                {/block:IfNotBackgroundImage}
+                
+                background: {color:Background} url('{image:Background}') top left fixed repeat;
+            }
+            a, .sound .postInner { color: {color:Text}; }
+            .link .postInner h3 a { border-color: {color:Text}; }
+            #search, .noteCount, .date, .tags li, .postBase .source { font-family: {font:Details}; }
+            #icon, #mask, #baseCircle, .unit, article, .pagination a { background:{color:Box Background}; }
+            .notFound { color: {color:Box Background}; }
+            .cssgradients #edge-top:after, .cssgradients #edge-bottom:after, .unitWrap, .quote .quoteMeta:before, .quoteMeta:after, .nextPage:after, .nextPage:before { border-color: {color:Box Background}; }
+            .cssgradients #mask {
+                background-image: -moz-radial-gradient(-10px 32px, circle closest-corner, transparent 0, transparent 36px, {color:Box Background} 37px, {color:Box Background} 38px);
+                background-image: -webkit-radial-gradient(-10px 32px, circle closest-corner, rgba(0,0,0,0) 0, rgba(0,0,0,0) 36px, {color:Box Background} 37px, {color:Box Background} 38px);
+                background-image: -ms-radial-gradient(-10px 32px, circle closest-corner, rgba(0,0,0,0) 0, rgba(0,0,0,0) 36px, {color:Box Background} 37px, {color:Box Background} 38px);
+                background-image: -o-radial-gradient(-10px 32px, circle closest-corner, rgba(0,0,0,0) 0, rgba(0,0,0,0) 36px, {color:Box Background} 37px, {color:Box Background} 38px);
+                background-image: radial-gradient(-10px 32px, circle closest-corner, rgba(0,0,0,0) 0, rgba(0,0,0,0) 36px, {color:Box Background} 37px, {color:Box Background} 38px);
+            }
+            .text .postInner { background: {color:Post Text}; }
+            .text .postInner a, .text .postText a {color:{color:Post Text Link};}
+            .photo .caption a { color:{color:Post Photo}; }
+            .photosets .caption a { color:{color:Post Photo}; }
+            .quote .postInner { background: {color:Post Quote}; 
+                                color: {color:Box Background} !important; }
+            .link .postInner { background: {color:Post Link}; }
+            .link .caption a { color:{color:Post Photo}; }
+            .conversation .postInner { background: {color:Post Chat}; color: {color:Box Background}; }
+            .conversation .convo li { background: {color:Post Chat Bubble}; }
+            .conversation .convo li:after { border-top: 20px solid {color:Post Chat Bubble} !important; }
+            .sound .postInner { background: {color:Post Audio}; }
+            .vid .caption a { color:{color:Post Photo}; }
+            #pages a:hover { color: {color:Post Audio}; }
+            #links a:hover { color: {color:Post Quote}; }
+            #details a:hover { color: {color:Post Text}; }
+
+            {block:ifNotItalicText}
+                .colLeft, .colRight { font-style: normal; }
+            {/block:ifNotItalicText}
+            {block:ifNotBoxShadow}
+                #mask, .unit, article { box-shadow: 0px 0px 0px rgba(50, 50, 50, 0); }
+            {/block:ifNotBoxShadow}
+            
+            
+
+            {CustomCSS}
+        </style>
+        
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="http://static.tumblr.com/k2ux24d/b1ymd92ex/geek_ie.css">
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="wrapper">
+            
+            <div class="colLeft">
+                <div id="stuck">
+                    <a href="/"><div id="icon" class="inversePair" style="background: url('{PortraitURL-128}')"  ></div></a>
+                    
+                        {block:Description}<span class="description">{Description}</span>{/block:Description}
+                    </div>
+                    <div class="unitWrap">
+                        {block:HasPages}
+                        <div id="pages" class="unit">
+                            <ul>
+                                {block:Pages}
+                                <li><a href="{URL}">{Label}</a></li>
+                                {/block:Pages}
+                            </ul>
+                        </div>
+                        {/block:HasPages}
+                        {block:ifNavUnitAskArchive}
+                        <div id="details" class="unit">
+                            <ul>
+                            {block:AskEnabled}
+                                <li><a href="/ask">{AskLabel}</a></li>
+                            {/block:AskEnabled}
+                            <li><a href="/archive">Past Posts</a></li>
+                            </ul>
+                        </div>
+                        {/block:ifNavUnitAskArchive}
+                        {block:ifNavUnitSearchBox}
+                        <div id="search" class="unit">
+                            <form id="searchForm" onsubmit="return tagSearch(this)">
+                                <input name="tag" type="text" value="Search Tags..."
+                                    onfocus="if(this.value == 'Search Tags...') { this.value = ''; }" 
+                                    onblur="if(this.value == '') { this.value = 'Search Tags...'; }" />
+                                <input type="submit" value="S" />
+                            </form>
+                        </div>
+                        {/block:ifNavUnitSearchBox}
+                        {block:ifNavUnitSocialButtons}
+                        <div id="social" class="unit">
+                            <div class="socialButtons">
+                                <a class="facebook">&nbsp;</a>
+                                <a class="twitter">&nbsp;</a>
+                                <a class="googleplus">&nbsp;</a>
+                                <a class="stumble">&nbsp;</a>
+                            </div>
+                        </div>
+                        {/block:ifNavUnitSocialButtons}
+                        {block:ifNavUnitBackgroundCredit}
+                        <div id="about" class="unit">
+                            I am making a new theme!
+                        </div>
+                        {/block:ifNavUnitBackgroundCredit}
+                    </div>
+                    <div id="baseCircle"></div>
+                </div>
+            </div>
+                    
+
+            <div class="colRight">
+                
+                <div class="autopagerize_page_element" id="posts">
+                {block:Posts}
+                    <article class="{block:Quote}quote{/block:Quote}{block:Photo}photo{/block:Photo}{block:Photoset}photosets{/block:Photoset}{block:Text}text{/block:Text}{block:Link}link{/block:Link}{block:Chat}conversation{/block:Chat}{block:Audio}sound{/block:Audio}{block:Video}vid{/block:Video}">
+
+                        <div class="noteCount">
+                            {block:RebloggedFrom}
+                                Reblogged from <a href="{ReblogParentURL}" class="reblogLink">{ReblogParentName}</a>&nbsp;
+                            {/block:RebloggedFrom}
+
+                            {block:NoteCount}
+                                <a href="{permalink}">{NoteCountWithLabel}</a>
+                            {/block:NoteCount}
+                        </div>
+                        
+                        {block:Date}<div class="date"><a href="{Permalink}">Posted {DayOfMonth}, {Month}, {Year}</a></div>{/block:Date}
+
+                        {block:Text}
+                            <div class="postInner">
+                                {block:Title}<h4><a href="{Permalink}">{Title}</a></h4>{/block:Title}
+                                {Body}{block:More}<span class="moreLink">... <a href="{Permalink}" class="readMore">Read more</a></span>{/block:More}
+                            </div>
+                        {/block:Text}
+
+                        {block:Photo}
+                            {block:IndexPage}<a href="{Permalink}" class="imageLink">{/block:IndexPage}{block:PermalinkPage}{LinkOpenTag}{/block:PermalinkPage}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" class="bustImage" /></a>
+                            {block:Caption}
+                                <div class="caption">{Caption}{block:More}<span class="moreLink">... <a href="{Permalink}" class="readMore">Read more</a></span>{/block:More}</div>
+                            {/block:Caption}
+                        {/block:Photo}
+
+                        {block:Photoset}
+                            {Photoset-700}
+                            {block:Caption}
+                                <div class="caption">{Caption}{block:More}<span class="moreLink">... <a href="{Permalink}" class="readMore">Read more</a></span>{/block:More}</div>
+                            {/block:Caption}
+                        {/block:Photoset}
+
+                        {block:Quote}
+                            <div class="postInner">
+                                <h2>{Quote} 
+                                    {block:Source}
+                                        <span class="quoteMeta">By {Source}</span>
+                                    {/block:Source}
+                                </h2>
+                            </div>
+                        {/block:Quote}
+
+                        {block:Link}
+                            <div class="postInner">
+                                <h3><a href="{URL}" {Target}>{Name}</a></h3>
+                            </div>
+                            {block:Description}
+                                <div class="caption">{Description}{block:More}<span class="moreLink">... <a href="{Permalink}" class="readMore">Read more</a></span>{/block:More}</div>
+                            {/block:Description}
+                        {/block:Link}
+
+                        {block:Answer}
+                        <div class="question">
+                            <div class="nipple"></div>
+                            {Question}
+                        </div>
+                        <div class="asker_container"><img src="{AskerPortraitURL-128}">{Asker}</div>
+                        <div class="copy">{Answer}</div>
+                    {/block:Answer}
+
+                        {block:Chat}
+                            <div class="postInner">
+                                <ul class="convo">
+                                    {block:Lines}
+                                    <li class="{Alt} user_{UserNumber}">
+                                        {block:Label}<span class="name">{Label}</span>{/block:Label}
+                                        <p>{Line}</p>
+                                    </li>
+                                    {/block:Lines}
+                                </ul>
+                            </div>
+                        {/block:Chat}
+                        
+                        {block:Audio}
+                            <div class="postInner">
+                                {block:AlbumArt}<img src="{AlbumArtURL}" class="albumArt">{/block:AlbumArt}
+                                <div class="soundMeta">
+                                    {block:AudioPlayer}<div class="audio" id="{PostID}">{AudioPlayerBlack}</div>{/block:AudioPlayer}
+                                    {block:Caption}
+                                        <p>{Caption}</p>
+                                    {/block:Caption}
+                                    <ul>
+                                        {block:TrackName}<li>Track: {TrackName}</li>{/block:TrackName}
+                                        {block:Artist}<li>Artist: {Artist}</li>{/block:Artist}
+                                        {block:Album}<li>Album: {Album}</li>{/block:Album}
+                                        {block:PlayCount}<li>Plays: {PlayCount}</li>{/block:PlayCount} 
+                                    </ul>
+                                </div>
+                            </div>
+                        {/block:Audio}
+
+                        {block:Video}
+                            <div class="postInner">
+                                {Video-700}
+                            </div>
+                            {block:Caption}
+                                <div class="caption">{Caption}{block:More}<span class="moreLink">... <a href="{Permalink}" class="readMore">Read more</a></span>{/block:More}</div>
+                            {/block:Caption}
+                        {/block:Video}
+
+                        <div class="postBase">
+                            {block:HasTags}
+                            <ul class="tags">
+                            {block:Tags}
+                            <li><a href="{TagURL}">#{Tag}</a></li>
+                            {/block:Tags}
+                            </ul>
+                            {/block:HasTags}
+
+                            {block:Date}
+                            <div class="socialButtons">
+                                <div class="my-like" data-reblog="{ReblogURL}" data-id="{PostID}" title="Like">&nbsp;</div>
+                                <a href="{ReblogURL}" class="reblog">&nbsp;</a>
+                                <a href="http://www.facebook.com/share.php?u={ShortURL}&title={block:Quote}{Quote}{/block:Quote}{block:Text}{Title}{/block:Text}{block:Link}{Name}{/block:Link}{block:Chat}{Title}{/block:Chat}{block:Audio}{TrackName}{/block:Audio}" class="facebook">&nbsp;</a>
+                                <a href="http://twitter.com/home?status={block:Quote}{Quote}{/block:Quote}{block:Text}{Title}{/block:Text}{block:Link}{Name}{/block:Link}{block:Chat}{Title}{/block:Chat}{block:Audio}{TrackName}{/block:Audio}+{ShortURL}+@generalelectric" class="twitter">&nbsp;</a>
+                                <a href="https://plus.google.com/share?url={ShortURL}" class="googleplus">&nbsp;</a>
+                                <a href="http://www.stumbleupon.com/submit?url={ShortURL}&title={block:Quote}{Quote}{/block:Quote}{block:Text}{Title}{/block:Text}{block:Link}{Name}{/block:Link}{block:Chat}{Title}{/block:Chat}{block:Audio}{TrackName}{/block:Audio}" class="stumble">&nbsp;</a>
+                            </div>
+                            {block:ContentSource}
+                                <!-- ><a href="{SourceURL}" class="source">
+                                    {lang:Source}: {SourceTitle}
+                                </a> -->
+                            {/block:ContentSource}
+                            {/block:Date}
+
+
+                        </div>
+                    </article>
+
+                    {block:Permalink}
+                    {block:Date}
+
+                        {block:PostNotes}
+                        <article class="commentBox">{PostNotes}</article>
+                        {/block:PostNotes}
+
+                        {block:IfDisqusShortname}
+                        <article class="commentBox"><div id="disqus_thread"></div></article>
+                        <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+                        <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+                        {/block:IfDisqusShortname}
+
+                    {/block:Date}
+                    {/block:Permalink}
+                    
+                {/block:Posts}
+                </div>
+
+                {block:IfNotInfiniteScroll}
+                {block:Pagination}
+                    <div class="pagination">
+                    {block:PreviousPage}
+                        <a href="{PreviousPage}" class="prevPage">Previous</a>
+                    {/block:PreviousPage}
+                    {block:NextPage}
+                        <a href="{NextPage}" class="nextPage">Next</a>
+                    {/block:NextPage}
+                    </div>
+                {/block:Pagination}
+                {/block:IfNotInfiniteScroll}
+
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
+        <script src="http://static.tumblr.com/ychvj87/1Uempbuul/geek_built.js"></script>
+        {block:IfInfiniteScroll}
+        <script src="http://static.tumblr.com/ychvj87/dE7mavh6p/geek_infinite_built.js"></script>
+        {/block:IfInfiniteScroll}
+        <script>
+            var url = window.location.href
+            ,   fbShare = 'http://www.facebook.com/share.php?u='+url+'&title={Title}'
+            ,   twShare = 'http://twitter.com/home?status='+url+'+{Title}'
+            ,   ggShare = 'https://plus.google.com/share?url='+url
+            ,   stShare = 'http://www.stumbleupon.com/submit?url='+url+'&title={Title}';
+
+            $('#social .facebook').attr('href',fbShare);
+            $('#social .twitter').attr('href',twShare);
+            $('#social .googleplus').attr('href',ggShare);
+            $('#social .stumble').attr('href',stShare);
+        </script>
+        {block:IfDisqusShortname}
+        <script type="text/javascript">
+          //<![CDATA[
+          (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+              if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+              }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
+          })();
+        //]]>
+        </script>
+        {/block:IfDisqusShortname}
+
+        <iframe id="my-like-frame" style="display:none;"></iframe>
+    </body>
+</html>
