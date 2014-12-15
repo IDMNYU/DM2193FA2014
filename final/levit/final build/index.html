@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="{block:IndexPage} page-index {/block:IndexPage}{block:PermalinkPage} page-permalink {/block:PermalinkPage}">
+<head>
+    <meta charset="utf-8">
+    <title>{Title}</title>
+    
+    {block:Description}
+        <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
+
+    <!-- Theme Variables -->
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="/path/to/styles/main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+
+    <!-- Inline Stylesheet for Variable Consumption -->
+    <style>
+        * {
+         text-decoration: none;
+        }
+
+        .photo {
+            float: left;
+            max-width: 525px;
+            max-height: 525px;
+            display: inline;
+
+            padding: 5px;
+          
+        }
+        .theme-header a {
+            color: {TitleColor};
+
+        }
+        
+        .theme-header {
+            font-family: "Slabo 27px", "Arial Bold", Arial;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+            background-image:url("http://i.imgur.com/DQ8N1b9.png?2");
+            background-size: 100% 100%;
+            font-size: 40px;
+            height: 450px;
+        }
+        
+        h1 {
+            padding-top: 75px;
+            width: 60%;
+            font-size: 100px;
+        }
+        
+        p {
+            font-size: 25px;
+            width: 60%;
+        }
+        
+        body {
+                background: {BackgroundColor};
+            }
+            
+        .theme-body {
+            position: absolute;  
+            text-align: center;
+        }
+        /* :) */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="theme-container">
+
+        <header class="theme-header">
+            <h1><a href="{BlogURL}">{Title}</a></h1>
+            {block:Description}
+                <p><a href="http://petfinder.com">{Description}</a></p>
+            {/block:Description}
+        </header>
+
+        <section class="theme-body posts">
+          
+          {block:Posts}
+
+                {block:Photo}
+                <article class="photo post">
+                    {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{LinkCloseTag}
+                </article>
+                {/block:Photo}
+
+            {/block:Posts}
+
+        </section>
+
+        {block:Pagination}
+        <footer class="theme-footer">
+            <nav class="pagination">
+                
+                <div class="pagination-count">{CurrentPage} <span>of</span> {TotalPages}</div>
+
+                <hr class="pagination-hr" />
+
+                {block:NextPage}
+                    <a class="pagination-older" href="{NextPage}">&larr; Older</a>
+                {/block:NextPage}
+                
+                {block:PreviousPage}
+                    <a class="pagination-newer" href="{PreviousPage}">Newer &rarr;</a>
+                {/block:PreviousPage}
+
+            </nav>
+        </footer>
+        {/block:Pagination}
+
+    </div><!-- END: .theme-container -->
+    
+    <!-- Third Party Libraries -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</body>
+</html>
