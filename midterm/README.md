@@ -69,7 +69,7 @@ Keep primary audience in mind. Think about how you use the sites and any frustra
   * Be prepared to talk about your work in front of the class
   * Use the language and vocabulary above to describe your decision making process / design process.
 
-* Self-Assessment -- Due at the end of the semester
+* Self-Assessment -- [Email to me is due at the end of the semester](mailto:johnny.benson@nyu.edu?[Midterm Self-Assessment] YOUR NAME)
   * Critically evaluate your **process** and how it is has changed over the course of the semester.
   * Describe the qualities of your process, what worked for you, what didn't. What you would change about your process.
   * Analyze the execution of your **project**: 
