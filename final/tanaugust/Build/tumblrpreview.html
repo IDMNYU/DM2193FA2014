@@ -1,0 +1,211 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Logger, check out this piece of wood</title>
+</head>
+    <meta name="font:Body font" content="Gibson" />
+    <meta name="color:Title" content="#494949" />
+    <meta name="color:Accent" content="#24a970" />
+    <meta name="color:Header background" content="#217e81" />
+    <meta name="color:Header text" content="#d4d8df" />
+    <meta name="color:Body background" content="#b5e2fc" />
+    <meta name="color:Body text" content="#121417" />
+    <meta name="color:Box background" content="#d4d8df" />
+    <meta name="color:Box text" content="#24282f" />
+    <meta name="color:Code block background" content="#24282f" />
+    <meta name="color:Code block text" content="#d4d8df" />
+    <meta name="color:Link box text" content="#eaecef" />
+    
+<body>
+	<style>
+
+		*{
+			font-family: "Gibson", arial;
+			margin: 0px;
+			padding: 0px;
+			background-color: ;
+			max-width: 1366px;
+		}
+		
+		body{
+		    line-height: 1.4;
+		    font-size: 14px;
+		    background-color: {color:Body background};
+		}
+
+		.header-container{
+			font-size: 32px;
+			width: 100%;
+			height: 100px;
+			background-color: none;
+			position: absolute;
+			padding: 0px 8%;
+			margin: 0px;
+			border-bottom: 3px solid gray;
+            background-color: {color:header background};
+		}
+
+		.title{
+			font-size: 32px;
+			height: 80px;
+			padding-top: 18px;
+			padding-left: 100px;
+			margin: 0 auto;
+            width: 100%;
+            color: {color:Title};
+            font-family: {TitleFont}, "Helvetica Neue", "HelveticaNeue",                 "Arial"    , sans-serif;
+            font-weight: {TitleFontWeight};
+            
+            line-height: 1.2;
+		}
+
+		.header-image{
+			vertical-align: middle;
+			left: 100%;
+			height: 100%;
+			float: left;
+		}
+
+		.main-container{
+			top: 120px;
+			left: 13%;
+			width: 80%;
+			height:80%;
+			
+			position: absolute;
+			/*margin-bottom: 5%;*/
+		}
+
+		.btn {
+		  font-family: Arial;
+		  color: #ffffff;
+		  font-size: 11px;
+		  color: orange;
+		  padding: 5px 5px 10px 20px;
+		  text-decoration: none;
+		  
+		}
+		.post-title{
+			font-size: 32px;
+		}
+
+		.post-date{
+			font-size: 16px;
+		}
+
+		.post-content{
+			font-size: 16px;
+		}
+
+		.post-content p{
+			font-size: 16px;
+		}
+		article{
+		    margin-bottom: 3em;
+		    padding-bottom: 3em;
+		    border-bottom: 5px solid gray;
+		}
+		article .chat{
+		    list-style: none;
+		}
+		.siteDescription{
+		    font-size: 14px;
+		}
+		
+		.timestamp{
+		    font-size: 12px;
+		    opacity: 0.5;
+		    padding-bottom: 24px;
+		}
+		
+	</style>
+
+	<div class="header-container">
+		<div class="title">{Title}
+		</br>
+		<div class="siteDescription">{Description}</div>
+
+		</div>
+	</div>
+
+		<ul id="posts" class="main-container">
+		{block:Posts}
+           {block:Title}
+                <h1>{Title}</h1>
+            {/block:Title}
+            <div class="timestamp">
+                    {block:date}
+                    <a href="{Permalink}">
+                    {Timeago}
+                    </a>
+                    {/block:date}
+            </div>
+            
+                {block:Regular}
+                <article class="regular post">
+                    {Body}
+                </article>
+                {/block:Regular}
+
+                {block:Photo}
+                <article class="photo post">
+                        <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+                    <section class="post-meta">
+                        <div class="caption">{Caption}</div>
+                    </section>
+                </article>
+                {/block:Photo}
+
+                {block:Quote}
+                <article class="quote {length} post">
+                    <div class="quoteactual"><q>{Quote}</q></div>
+
+                    <section class="post-meta">
+                        <div class="source"><span class="emdash">&mdash;</span>{Source}</div>
+                    </section>
+                </article>
+                {/block:Quote}
+
+                {block:Link}
+                <article class="link post">
+                    <p><a href="{URL}" class="link" {Target}>{Name}</a></p>
+                    <div class="description">{Description}</div>
+                </article>
+                {/block:Link}
+
+                {block:Chat}
+                <article class="conversation content">
+                    <ul class = "chat">
+                        {block:Lines}
+                        <li class="{Alt}">
+                            {block:Label}<span class="label"><strong                                >{Label}</strong></span>{/block:Label}
+                            {Line}
+                        </li>
+                        {/block:Lines}
+                    </ul>
+                </article>
+                {/block:Chat}
+
+                {block:Audio}
+                <article class="audio post">
+                    {AudioPlayerWhite}
+                    <div class="caption">{block:Caption}{Caption}{/block:Caption}{block:ExternalAudio} [<a href="{ExternalAudioURL}">Download</a>]{/block:ExternalAudio}</div>
+                </article>
+                {/block:Audio}
+
+                {block:Video}
+                <article class="video post">
+                    {Video-500}
+                    <section class="post-meta">
+                        <div class="caption">{Caption}</div>
+                    </section>
+                </article>
+                {/block:Video}
+            {/block:Posts}
+    </div>
+	</ul>
+
+</body>
+</html>
+
+	
