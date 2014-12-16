@@ -1,10 +1,27 @@
-html
+.pageSetup
 {
 	background: url(skyline.jpg);
 	webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+}
+
+.pageSetup2
+{
+	background: url(world.jpg);
+	webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.logo1
+{
+	color:white;
+	font-size: 72px;
+	text-align:center;
+	margin-top:15%;
 }
 
 .topSection
@@ -56,6 +73,12 @@ html
 	font-weight: bold;
 }
 
+.default
+{
+	text-decoration: none;
+	color:black;
+}
+
 .craigslistSites
 {
 	float: right;
@@ -65,11 +88,12 @@ html
 .languageArea
 {
 	float:right;
+	margin-top:3%;
 }
 
 .language
 {
-	float:left;
+	float:right;
 	width:150px;
 	height:28px;
 	margin-right:50px;
@@ -77,22 +101,16 @@ html
 
 .locationArea
 {
-	clear:both;
 	float:right;
+	margin-top:3%;
 }
 
 .location
 {
-	float:left;
 	width:150px;
 	height:28px;
-	margin-left:-40px;
-
-}
-
-.calendarArea
-{
-	
+	margin-left:-39px;
+	margin-right:20px;
 }
 
 .logoPart
@@ -101,6 +119,7 @@ html
 	margin-top:50px;
 	margin-bottom:50px;
 	width:70%;
+	height:17%;
 	background-color: #A2B9D1;
 	border-style: solid;
 }
@@ -109,7 +128,6 @@ html
 {
 	font-size: 42px;
 	float:left;
-	clear:both;
 	width:30%;
 	margin-left:50px;
 	margin-top:20px;
@@ -117,8 +135,11 @@ html
 
 .searchArea
 {
+	margin-top:5%;
+	margin-bottom:3%;
 	float:right;
-	width:70%;
+	position: absolute;
+	margin-left: 43.4%;
 }
 
 .navigation
@@ -130,10 +151,6 @@ html
 	height:70px;
 	margin-bottom:3%;
 	background-color: #A2B9D1;;
-}
-
-.navigationMenu
-{
 }
 
 .navItem
@@ -180,17 +197,22 @@ html
 
 .postInfo
 {
-	margin-left:400px;
-	clear:both;
+	margin-left:10%;
 }
 
-.post
+.postStuff
 {
-	height:125px;
-	margin-top:50px;
+	margin-bottom:2px;
+	margin-top:1px;
+	margin-left:3%;
+}
+
+.postTitle
+{
+	margin-top:3%;
 	margin-left:50px;
-	font-size:18px;
-	width:400px;
+	font-size:22px;
+	height:18px;
 }
 
 .links
@@ -198,7 +220,127 @@ html
 	color: #FFEBCD;
 	text-decoration:none;
 	float:right;
-	margin-top:50px;	
+	margin-top:3%;
 	margin-right:20px;
-	margin-bottom:20px;
+	margin-bottom:1%;
+}
+
+.links1
+{
+	color: #FFEBCD;
+	text-decoration:none;
+	float:right;
+	margin-top:17%;
+	margin-right:20px;
+	margin-bottom:1%;
+}
+
+.permalink
+{
+	color:black;
+	text-decoration:none;
+}
+
+.category
+{
+	text-decoration:none;
+	color:darkblue;
+}
+
+.user
+{
+	text-decoration:none;
+	color:darkblue;
+}
+
+.country
+{
+	margin-left:46%;
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+.state
+{
+	margin-left:46%;
+	margin-bottom:1%;
+}
+
+.city
+{
+	margin-left:46%;
+}
+
+.permalinkPost
+{
+	text-align:center;
+	border-style: solid;
+	width:50%;
+	margin-left:25%;
+	margin-top: 5%;
+	border-radius: 35px;
+	border-color: gray;
+}
+
+.titlePart
+{
+	font-family: calibri;
+	font-size: 28px;
+	color:darkblue;
+}
+
+.picture
+{
+	height: 40%;
+}
+
+.information
+{
+	margin-left:5%;
+	margin-right:5%;
+	color:white;
+}
+
+.postInformation
+{
+	border-style: solid;
+	border-radius: 20px;
+	border-width: 1px;
+	border-color: gray;
+	margin-top:5%;
+	width:70%;
+	margin-left:15%;
+}
+
+.creatorInfo
+{
+	color:white;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: calibri;
+}
+
+.user1
+{
+	font-weight: bold;
+	font-size: 16px;
+	font-family: calibri;
+	color:white;
+}
+
+.category1
+{
+	font-weight: bold;
+	font-size: 18px;
+	font-family: calibri;
+	color:white;
+	text-decoration: none;
+}
+.logo2
+{
+	font-size: 50px;
+	text-align:center;
+	margin-top:5%;
 }

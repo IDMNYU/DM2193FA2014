@@ -1,0 +1,171 @@
+/* CSS Coming Soon! */
+
+* 
+{
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+html, body
+{
+    min-height: 100%;
+}
+
+body
+{
+    margin: 40px;
+}
+
+.heading,
+.sub-heading,
+.section-heading
+{
+    margin: 0 0 25px;
+}
+
+/*
+    Demo Content
+ */
+
+.demo-nav {}
+
+.demo-nav-item 
+{
+    display: block;
+}
+
+.demo-paragraph {}
+
+.demo-image {
+    display: block;
+    margin: 0 0 10px 0;
+    border-radius: 3px;
+}
+
+/*
+    Debugging Helpers
+ */
+
+.debug .container > div
+{
+    border: 1px solid #f00;
+}
+
+/*
+    Fixed Three Column Layout
+ */
+
+.fixed-three-column
+{
+    width: 960px;
+    margin: auto;
+}
+
+.fixed-three-column .col-1
+{
+    float: left;
+    width: 160px;
+}
+
+.fixed-three-column .col-2
+{
+    float: left;
+    width: 600px;
+    padding: 10px;
+}
+.fixed-three-column .col-3
+{
+    float: right;   
+    width: 200px;
+}
+
+
+/*
+    Fluid Three Column Layout
+ */
+
+.fluid-three-column
+{
+    width: 100%;
+    margin: auto;
+}
+
+.fluid-three-column .col-1
+{
+    float: left;
+    width: 17%;
+}
+
+.fluid-three-column .col-2
+{
+    float: left;
+    width: 62.5%;
+    padding: 0 40px;
+}
+.fluid-three-column .col-3
+{
+    float: right;   
+    width: 20.5%;
+}
+
+.fluid-three-column .demo-image
+{
+    width: 100%;
+    height: auto;
+}
+
+/*
+    Responsive Two Column
+ */
+
+.responsive-two-column
+{
+    max-width: 960px;
+    margin: auto;
+}
+
+.responsive-two-column .col-1
+{
+    float: left;
+    width: 20%;
+    max-width: 200px;
+    margin-right: 2%;
+}
+
+.responsive-two-column .col-2
+{
+    float: left;
+    width: 78%;
+    max-width: 720px;
+}
+
+.responsive-two-column .demo-image
+{
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .responsive-two-column .col-1,
+  .responsive-two-column .col-2
+  {
+    float: none;
+    width: auto;
+    max-width: none;
+  }
+
+   .responsive-two-column .col-2
+   {
+    margin-top: 20px;
+   }
+
+  .responsive-two-column .demo-nav-item
+  {
+    padding: 5px;
+    background: rgba(0,0,0,0.123);
+    margin: 0 0 2px;
+    text-decoration: none;
+  }
+
+}
