@@ -47,7 +47,7 @@ body
 .lightbox
 {
     /* Position the modal in the center of the page */
-    position: absolute; /* fixed */
+    position: relative; /* fixed */
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
 

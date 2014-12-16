@@ -1,0 +1,249 @@
+*{ 
+	font-size: 100%;
+	font: inherent;
+	font-weight: normal;
+	font-family: "Gill Sans", "GothamExtraLight";
+	max-width: 1270px;
+}
+
+body{
+	font-size: 10px;
+}
+
+.wrapper{
+	position:relative;
+    width: 1270px;
+    top:123px;
+}
+
+.logoname{
+	position:relative;
+    font-size: 30px;
+    left:330px;
+    font:"Gill Sans Light";
+}
+
+.navlogo{
+	height: 12px auto ;
+	font-family: "Gill Sans", Sans-serif;
+}
+
+.navname{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.mainnav{
+	position:fixed;
+	top: 40px;
+	left:30px;
+}
+
+	/* unvisited link */
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+	color:black;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+.nav-item-nav-home{
+}
+
+.nav-item-nav-about{
+	font-size:13px;
+}
+
+.images-wrapper{
+	position:relative;
+    width: 1270px;
+    top:123px;
+    left: 422px;
+}
+
+.about-wrapper{
+	position:relative;
+    width: 1270px;
+    top: 123px;
+    left: 280px;
+}
+
+.about-bio{
+	color: grey;
+	font-style: bold;
+	font-size: 13px;
+	width: 234px;
+}
+
+.about-rightside{
+	position:relative;
+	left:650px;
+	top:-290px;
+	width: 200px;
+}
+
+.rightside-name{
+	font-size: 20px;
+	font-style: bold;
+}
+
+.rightside-subtitle{
+	font-style: italic;
+	font: GothamExtraLight;
+	font-size: 16px;
+	
+}
+
+.email{
+	font-size: 13px;
+}
+
+
+/*
+B U T T O N S 
+*/
+
+.btn
+{
+    padding: 0px;
+    background: rgba(0,0,0,0.125);
+    border: 0px solid rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.btn:active
+{
+    background: rgba(0,0,0,0.15);
+    box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.25);
+    outline: none;
+}
+
+/*
+    Lightbox
+ */
+.lightbox
+{
+    /* Position the modal in the center of the page */
+    position:fixed;
+    top:100px;
+    left:100px;
+
+    /* Styling for the Modal */
+    width: 80%;
+    max-width: 720px;
+    min-width: 240px;
+    padding: 10px;
+    background: black;
+    border-radius: 3px;
+
+    /* Hide Modals By Default */
+    display: none;
+
+    /* Modals sit on top of Glass */
+    z-index: 90211;
+}
+.lightbox.active
+{
+    /* Active lightbox is visible */
+    display: block;
+}
+
+.lightbox-controls
+{
+    margin-top: 10px;
+    clear: both;
+}
+    .lightbox-controls .previous
+    {
+        float: left;
+    }
+    .lightbox-controls .next
+    {
+        float: right;
+    }
+
+.lightbox-close-button
+{
+    position: absolute;
+    top: -12px; right: -12px;
+    height: 29px; width: 29px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    text-align: center;
+    line-height: 28px;
+    padding: 0;
+    font-size: 21px;
+    background: #333;
+    color: #fff;
+}
+
+.lightbox-label
+{
+    line-height: 34px;
+    text-align: center;
+}
+.lightbox-item
+{
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+}
+.lightbox-item.active
+{
+    position: relative;
+    display: block;
+}
+.lightbox-image
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+/*
+    Glass
+ */
+.glass
+{
+    /* Glass Covers Everything (except the Modal) */
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0,0,0,0.25);
+
+    /* Hide Modal Glass By Default */
+    display: none;
+
+    /* Glass sits on top of everything else */
+    z-index: 90210;
+}
+.glass.active
+{
+    /* When Glass is showing */
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+*/
