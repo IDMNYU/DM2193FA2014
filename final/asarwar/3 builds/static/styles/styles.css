@@ -6,13 +6,13 @@ body{
         font-size:10px; 
         text-align: left; 
         font-family:arial; 
-        background-color:#ffffff; 
+        background-color:#000; 
         background-image:url(http://assets.tumblr.com/images/x.gif?v=1); 
         background-attachment: fixed; background-position:top center; background-repeat: repeat;
     } 
 
 a{
-    color:#000000; 
+    color:#fff; 
     text-decoration:none;
 } 
 
@@ -24,7 +24,7 @@ a:focus{outline-style: none;}
 
 link:focus{outline: none;} 
 
-strong{color:#000;} 
+strong{color:#fff;} 
 
 img{border:none;} 
 
@@ -37,7 +37,7 @@ div#content{
 } 
 
 div#center{ 
-    background-color:#ffffff; 
+    background-color:#000; 
     margin-left: 0px; 
     padding: 10px; 
     width:500px; 
@@ -45,7 +45,7 @@ div#center{
 } 
 
 div#header{ 
-    background-color:#ffffff; 
+    background-color:#000; 
     padding: 10px; 
     width:500px;
 } 
@@ -55,7 +55,7 @@ div#header h1 {
     line-height:90px; 
     font-family: arial, serif; 
     font-weight:normal; 
-    color:#000000; 
+    color:#fff; 
     letter-spacing:-2px; 
     display:inline;
 } 
@@ -66,7 +66,7 @@ div#header hr{
     margin-bottom:30px; 
     border: 0; 
     height:3px; 
-    background-color:#000000;
+    background-color:#fff;
 } 
 
 div#header a{
@@ -98,9 +98,9 @@ div#sidebar{
     margin-left: 470px; 
 } 
 
-div#sidebar .image { } blockquote{ 
+blockquote{ 
     margin: 10px; 
-    color: #B3B3B3; 
+    color: #fff; 
     padding: 10px;
 } 
 
@@ -152,18 +152,17 @@ ul, ol, li{
     font-size: 20px; 
     line-height: 23px; 
     letter-spacing: -1px; 
-    color: #000000; 
+    color: #fff; 
     padding:1px 1px 0px 1px; 
     text-transform:uppercase;
 } 
 
-.title2{ /*
-    font-family: ; */
+.title2{ 
     font-weight:bold; 
     font-size: 15px; 
     line-height: 23px; 
     letter-spacing: -1px; 
-    color: #000000; 
+    color: #fff; 
     padding:1px 1px 0px 1px;
 } 
 
@@ -199,7 +198,7 @@ ul, ol, li{
 } 
 
 .border{ 
-    background:#000000; 
+    background:#fff; 
     border: 0 none; 
     height: 3px; 
     margin: 12px auto; 
@@ -208,7 +207,7 @@ ul, ol, li{
 } 
 
 .permalink_photo_notes{ 
-    color: #FFFFFF; 
+    color: #000; 
     display: block; 
     font-family: arial,serif; 
     font-size: 60px; 
@@ -262,12 +261,12 @@ div#photo div#picture div#info {
     visibility:hidden; 
     z-index:998; 
     text-align:center; 
-    background-color:#000; 
-    opacity 0.7s linear; 
+    background-color:#111111; 
+    opacity 0.4s linear; 
 } 
 
 #entry div#photo div#picture:hover div#info{ 
-    opacity 0.7s linear; opacity: 0.9; 
+    opacity 0.4s linear; opacity: 0.9; 
 } 
 
 div#photo div#picture div#info div#holder { 
@@ -314,7 +313,7 @@ div#entry .permalink1{
     padding-right:10px; 
     padding-bottom:10px; 
     font-style:italic; 
-    border-right: 4px solid #000000; 
+    border-right: 4px solid #fff; 
     text-align: right; 
     overflow:hidden; 
     line-height:12px; 
@@ -347,30 +346,30 @@ div.padd {
     margin-left: -34px;
 } 
 
-#sidebar_info { 
-    margin-left: 55px; 
+#sidebar_title { 
+    margin-left: 105px; 
     height: auto; 
-    color: #aaa; 
+    color: #fff; 
     padding:10px 0; 
     width:170px; 
-    background-color: #ffffff; 
+    background-color: #000; 
     padding-bottom:15px; 
-    border-left: 4px solid #000000;
+    border-left: 4px solid #fff;
 } 
 
-#sidebar_info_inside {  
+#sidebar_background {  
     height: auto; 
     padding: 10px; 
-    color: #aaa; 
+    color: #fff; 
     padding:0 10px;
 } 
 
-#sidebar_info h1 { 
+#sidebar_title h1 { 
     font-size: 19px; 
     line-height: 50px; 
     font-family: arial, serif; 
     font-weight:normal; 
-    color:#000000; 
+    color:#fff; 
     letter-spacing:0px; 
     display:inline;
 } 
@@ -379,9 +378,10 @@ div.padd {
     width: 200px; 
     position:fixed; 
     height: auto;  
-    border-left: 4px solid #000000; 
+    border-left: 4px solid #fff; 
     text-align:left; 
     margin-left: 530px; 
     padding-top:50px; 
     padding-bottom:50px; 
-    padding:10px;}
+    padding:10px;
+}
