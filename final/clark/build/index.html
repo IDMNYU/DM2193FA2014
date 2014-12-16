@@ -1,31 +1,99 @@
 <html>
 <head>
-	<meta charset = 'utf-8'>
-	<img class = 'logo' src = 'images/tumblr_logo.jpg' />
-    <div class = 'logIn'>
-        <button id = 'home' class = "home"> Home </button>
-        <button id = 'inbox' class = "inbox"> Indox </button>
-        <button id = 'help' class = "help"> Help </button>
-        <button id = 'logOff' class = 'logOff'> Log Out </button>
-    </div>
-	<title>tumblr</title>
+    <meta charset = 'utf-8'>
+    <style>
+    body{
+       
+            background-color: #36465d;
+
+        }
+
+        .logo{
+            margin: auto;
+            max-width: 250px;
+            max-height: 150px;
+        }
+
+        .responsive-two-column {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .responsive-two-column .col-1{
+            float: left;
+            width: 45%;
+            max-height: 2%;
+        }
+
+        .responsive-two-column .col-2{
+            float: left;
+            width: 45%;
+            background-color: #ffffff;
+            padding-right: 30%;
+            padding-bottom: 20%;
+        }
+
+        .icon{
+            margin-left: 25%;
+            margin-top: 20%;
+            padding-bottom: 50px;
+            max-height: 100px;
+            max-width: 100px;
+            margin-right: 100%;
+        }
+        
+        .pic{
+            float: left;
+            position: relative;
+            max-height: 2%;
+            padding: 5%;
+        }
+
+        .btn{
+            float: right;
+            text-align: center;
+            max-width: 250px;
+            max-height: 250px;
+            color: gray;
+            background-color: gray;
+        }
+        
+        .theme-body posts{
+            padding: 50px;
+            padding-left: 50%;
+        }
+    </style>
+    <title>tumblr</title>
     {block:Description}
         <meta name="description" content="{MetaDescription}">
     {/block:Description}
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
-	<div class = 'responsive-two-column'>
-		<div class = 'col-1'>
-			<img class = 'icon' src = 'images/defaultIcon.png' />
-			<img class = 'icon' src = 'images/squareIcon.png' />
-			<img class = 'icon' src = 'images/defaultIcon.png' />
-		</div>
-		<div class = 'col-2'>
-		<section class="theme-body posts">
+    <img class = 'logo' src = 'http://www.puregenie.com/wp-content/uploads/2012/11/God-bless-tumblr-tumblr-31201634-436-291-1.jpg' />
+ <div class = 'logIn'>
+        <form class = 'btn' action="https://www.tumblr.com/login">
+            <input type="submit" value="Log Off">
+        </form>
+        <form class = 'btn' action="https://www.tumblr.com/help">
+            <input type="submit" value="Help">
+        </form>
+        <form class = 'btn' action = "https://www.tumblr.com/inbox">
+            <input type = "submit" value = "Inbox">
+        </form>
+        <form class = 'btn' action = "https://www.tumblr.com/dashboard">
+            <input type = "submit" value = "Home">
+        </form>
+    </div>
+    <div class = 'responsive-two-column'>
+        <section class="theme-body posts">
           {block:Posts}
 
                 {block:Regular}
+                 <div class = 'pic'>
+                    <img class = 'icon' src = 'http://media.tumblr.com/tumblr_m8c4vt5pYb1qiv5yk.gif' />
+                </div>
+                <div class = 'col-2'>
                 <article class="regular post">
                     {block:Title}
                         <h2 class="title">{Title}</h2>
@@ -37,9 +105,14 @@
                         <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
                     </section>
                 </article>
+                </div>
                 {/block:Regular}
 
                 {block:Photo}
+                <div class = 'pic'>
+                    <img class = 'icon' src = 'http://media.tumblr.com/tumblr_m8c4vt5pYb1qiv5yk.gif' />
+                </div>
+                <div class = 'col-2'>
                 <article class="photo post">
                     <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
 
@@ -48,9 +121,14 @@
                         <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
                     </section>
                 </article>
+                </div>
                 {/block:Photo}
 
                 {block:Quote}
+                <div class = 'pic'>
+                    <img class = 'icon' src = 'http://media.tumblr.com/tumblr_m8c4vt5pYb1qiv5yk.gif' />
+                </div>
+                <div class = 'col-2'>
                 <article class="quote {length} post">
                     <div class="quoteactual"><q>{Quote}</q></div>
 
@@ -59,17 +137,27 @@
                         <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
                     </section>
                 </article>
+                </div>
                 {/block:Quote}
 
                 {block:Link}
+                <div class = 'pic'>
+                    <img class = 'icon' src = 'http://media.tumblr.com/tumblr_m8c4vt5pYb1qiv5yk.gif' />
+                </div>
+                <div class = 'col-2'>
                 <article class="link post">
                     <p><a href="{URL}" class="link" {Target}>{Name}</a></p>
                     <div class="description">{Description}</div>
                     <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
                 </article>
+                </div>
                 {/block:Link}
 
                 {block:Conversation}
+                <div class = 'pic'>
+                    <img class = 'icon' src = 'http://media.tumblr.com/tumblr_m8c4vt5pYb1qiv5yk.gif' />
+                </div>
+                <div class = 'col-2'>
                 <div class="conversation content">
                     <ul>
                         {block:Lines}
@@ -81,17 +169,27 @@
                     </ul>
                     <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
                 </article>
+                </div>
                 {/block:Conversation}
 
                 {block:Audio}
+                <div class = 'pic'>
+                    <img class = 'icon' src = 'http://media.tumblr.com/tumblr_m8c4vt5pYb1qiv5yk.gif' />
+                </div>
+                <div class = 'col-2'></div>
                 <article class="audio post">
                     {AudioPlayerWhite}
                     <div class="caption">{block:Caption}{Caption}{/block:Caption}{block:ExternalAudio} [<a href="{ExternalAudioURL}">Download</a>]{/block:ExternalAudio}</div>
                     <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
                 </article>
+                </div>
                 {/block:Audio}
 
                 {block:Video}
+                <div class = 'pic'>
+                    <img class = 'icon' src = 'http://media.tumblr.com/tumblr_m8c4vt5pYb1qiv5yk.gif' />
+                </div>
+                <div class = 'col-2'>
                 <article class="video post">
                     {Video-500}
                     <section class="post-meta">
@@ -99,13 +197,12 @@
                         <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
                     </section>
                 </article>
+                </div>
                 {/block:Video}
 
             {/block:Posts}
 
         </section>
-
-		</div>
         <script src = "scripts/scripts.js"></scripts>
 </body>
 </html>

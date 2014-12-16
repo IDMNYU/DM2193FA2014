@@ -35,31 +35,16 @@
 	margin-right: 100%;
 }
 
-.logIn{
+.btn{
 	float: right;
 	text-align: center;
-}
-
-.home{
 	max-width: 250px;
 	max-height: 250px;
+	color: gray;
 	background-color: gray;
 }
 
-.inbox{
-	max-width: 250px;
-	max-height: 250px;
-	background-color: gray;
-}
-
-.help{
-	max-width: 250px;
-	max-height: 250px;
-	background-color: gray;
-}
-
-.logOff{
-	max-width: 250px;
-	max-height: 250px;
-	background-color: gray;
+.theme-body posts{
+	padding: 50px;
+	padding-left: 50%;
 }
