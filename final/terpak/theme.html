@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>imblr - share images yo</title>
+		<title>imblr - {Title}</title>
 		<!--ONLY USED BOOTSTRAP FOR GLYPHICONS-->
-		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		<meta name="description" content="{MetaDescription}">
 		
 		<style>
 			* {
@@ -353,13 +354,54 @@
 					<img class="share" alt="Twitter" src="./img/twitter.png"/>
 					<img class="share" alt="Reddit" src="./img/reddit.png"/>
 				</div>
-				<h1 class="post-title">This is my pic, yo</h1>
-				<div class="post-by">
-					by <a href="{PostAuthorURL}" class="user-link">Dingus</a> - 6 mins ago
-				</div>
+				{block:Posts}
+					{block:Post1}
+						{block:Title}<h1 class="post-title">{Title}</h1>{/block:Title}
+						<div class="post-by">
+							by <a href="{PostAuthorURL}" class="user-link">{PostAuthorName}</a> - {TimeAgo}
+						</div>
 
-				<img class="post-img" alt="Post Image" src="http://static4.businessinsider.com/image/507c3c99ecad046a4a00000a-480/stephen-colbert.jpg"/>
-				<div class="post-text">This is my picture, man, don't you like it?? Good because I don't like you.</div>
+						{block:Text}
+							<div class="post-text">{Body}</div>
+						{/block:Text}
+
+						{block:Photo}
+							<img class="post-img" alt="Post Image" src="{PhotoURL-700}"/>
+						{/block:Photo}
+
+						{block:Panorama}
+							<img class="post-img" alt="Post Image" src="{PhotoURL-Panorama}"/>
+						{/block:Panorama}
+
+						{block:Photoset}
+							{block:Photos}
+								<img class="post-img" alt="Post Image" src="{PhotoURL-700}"/>
+							{/block:Photos}
+							<div class="post-text">{Caption}</div>
+						{/block:Photoset}
+
+						{block:Quote}
+							<div class="post-text">{Quote}</div>
+						{/block:Quote}
+
+						{block:Link}
+							<div class="post-text">
+								<a target="_blank" href="{URL}">{Name}</a>
+								{block:Description}
+									</br>{Description}
+								{/block:Description}
+							</div>
+						{/block:Link}
+
+						{block:Chat} {/block:Chat}
+
+						{block:Audio} {/block:Audio}
+
+						{block:Video} {/block:Video}
+
+						{block:Answer} {/block:Answer}
+					{/block:Post1}
+				{/block:Posts}
 			</div>
 			<div class="posts-next">
 				<div class="posts-navigate">
@@ -428,8 +470,8 @@
 			<div class="clearfix"></div>
 		</div>
 
-		<script type="text/javascript" src="./js/jquery.min.js"></script>
-		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		
 		<script type="text/javascript">
 			$(document).ready(function(){

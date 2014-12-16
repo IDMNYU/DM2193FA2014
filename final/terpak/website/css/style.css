@@ -135,7 +135,8 @@ a:hover {
 
 .content {
 	display: block;
-	padding: 10px 13%;
+	width: 1000px;
+	margin: 10px auto;
 }
 .post {
 	display: inline-block;
