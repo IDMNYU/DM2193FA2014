@@ -1,0 +1,156 @@
+<html>
+    <head>
+     
+        <title>{Title}</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="altertnate" type="application/rss+xml" href="{RSS}">
+        <meta name="description" content="" />
+        <meta http-equiv="x-dns-prefetch-control" content="off"/>
+       
+        <script type="text/javascript" src="http://static.tumblr.com/iuggpng/bGqm4yfv9/jquery-1.7.2.js"></script>
+     
+    <style type="text/css">
+     
+    body {
+        font-size: 16px;
+        font-family: Calibri;
+        color: #fff;
+        background-color: #000;
+    }
+           
+    a {
+        color: #fff;
+        text-decoration: none;
+        -moz-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+     
+    a:hover {
+        color: #cf2d85;
+        -moz-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+
+           
+    .container  {
+        position: relative;
+        width: 800px; 
+        margin-left: 0px;
+    }
+     
+    .sidebar {
+        margin-left: 50px;
+        margin-top: 100px;
+        width: 150px;
+        height: 200px;
+        position: fixed;
+        padding: 10px;
+        background-color: #000;
+        border-color: #fff;
+    }
+     
+    .postcol {
+        position: relative;
+        width: 540px;
+        margin-top: 100px;
+        margin-left: 240px;
+    }
+     
+    .posts {
+        position: relative;
+        margin-left: 0px;
+        margin-bottom: 30px;
+        background-color: #000;
+        padding: 20px;
+    }
+
+    .like_and_reblog_buttons {
+        border: 1px solid #e8e8e8;
+        border-radius: 3px;
+        list-style: none;
+    }
+    .like_and_reblog_buttons li {
+        float: left;
+        margin: 0;
+        padding: 7px 15px;
+        height: 20px;
+    }
+
+    .like_and_reblog_buttons li:first-child {
+        border-right: 1px solid #e8e8e8;
+    }
+
+    </style>  
+    </head>
+     
+    <body>
+        <div class="container">
+         
+        <div class="sidebar">
+        <a href="/">ap tumblr theme</a></div>
+         
+        <div class="postcol">
+        {block:Posts}
+        <div class="posts">
+
+        {block:Text}
+        {block:Title}<h2>{Title}</h2>{/block:Title}
+        {Body}
+        {/block:Text}
+
+        {block:Answer}
+        <div class="question">
+        <img src="{AskerPortraitURL-40}"> {Asker} asked: {Question}
+        </div>
+        {Answer}
+        {/block:Answer}
+         
+        {block:Quote}
+        <div class="quote">
+        <div class="quotetext_{Length}">"{Quote}"</div>
+        {block:Source}<div class="source">{Source}</div>{/block:Source}
+        </div>
+        {/block:Quote}
+
+        {block:Link}
+        <h2><a href="{URL}">{Name}</a></h2>
+        {block:Description}{Description}{/block:Description}    
+        {/block:Link}
+
+        {block:Chat}
+        {block:Title}<h2>{Title}</h2>{/block:Title}
+        <ul class="convo">{block:Lines}<li class="line">{block:Label}<span class="label">{Label}</span>{/block:Label}
+        {Line}</li>{/block:Lines}</ul>
+        {/block:Chat}
+
+        {block:Photo}
+        {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" width="400px">{LinkCloseTag}
+         
+        {block:Caption}{Caption}{/block:Caption}
+        {/block:Photo}
+
+        {block:Photoset}
+        {Photoset-500}
+        {block:Caption}{Caption}{/block:Caption}
+        {/block:Photoset}
+
+        {block:Video}
+        {Video-500}
+        {block:Caption}{Caption}{/block:Caption}
+        {/block:Video}
+        </div>
+
+        <ul class="like_and_reblog_buttons">
+            <li>{ReblogButton}</li>
+            <li>{LikeButton}</li>
+        </ul>
+
+        {/block:Posts}
+         
+        </div></div>
+    </body>
+</html>
