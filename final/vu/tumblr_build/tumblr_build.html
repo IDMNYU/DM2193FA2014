@@ -1,0 +1,673 @@
+<html>
+<head>
+	<title>{Title}</title>
+	<meta charset="utf-8"> 
+	<meta name="font:Title" content="disney"/>
+    <meta name="font:Body" content="disney"/>
+	<link rel="shortcut icon" href="{Favicon}">
+	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+	
+</head>
+<style>
+@font-face {
+	font-family: 'Disney';
+    src: url("http://static.tumblr.com/niuh358/zxUng35fv/waltograph42.otf) format("opentype"),
+        url("http://static.tumblr.com/niuh358/ZR5ng35g4/waltographui.ttf") format( "truetype"),
+        url("http://static.tumblr.com/niuh358/xPPng35g0/waltograph42-webfont.woff") format( "woff ");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 100%;
+  font: inherit;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 24px;
+  height: 100%;
+  font-family: 'Permanent Marker', cursive;
+  overflow-x:hidden;
+  text-shadow: 4px 4px 4px #FFCC66;
+}
+{block:IndexPage}
+html{
+  background: url(http://static.tumblr.com/niuh358/qeong3536/openbook.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+{/block:IndexPage}
+
+{block:PermalinkPage}
+html{
+  background: url(http://static.tumblr.com/niuh358/TGmngeqz5/page.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+{/block:PermalinkPage}
+
+a{
+  text-decoration: none;
+}
+
+.home-buttons{
+    top:0;
+    left:0;
+}
+
+.menu {
+    position: fixed;
+    z-index: 20;
+    background-color: #0f2ebc;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    left:-300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+}
+
+.pml-open .menu{
+    left: 0;
+}
+.pml-open #wrapper {
+    left: 300px
+}
+
+.disney-logo{
+  width:100%;
+  display: block;
+}
+
+.tumblr-name{
+  margin-top: -95px;
+  margin-left: 20px;
+  font-size: 40px;
+  color: #9dceee;
+  text-shadow: none;
+  text-align: center;
+}
+
+.divider{
+  height: 100px;
+}
+
+.about, .ask, .archives{
+  font-size: 30px;
+  color: #9dceee;
+  margin-left: 40px;
+   text-shadow: none;
+}
+
+.home-pic{
+  width: 50px;
+  height: 50px;
+  margin: 1% 0% 0% 4%;
+}
+
+#wrapper {
+  position: relative;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width:100%;
+  height:790px;
+}
+
+/*home page*/
+
+.items img{
+  display: inline;
+  float: left;
+  position: absolute;
+}
+
+.apple{
+  width: 10%;
+  padding-left:30%;
+  z-index: -1;
+}
+
+.bow{
+  width: 10%;
+  padding-left:55%;
+  z-index: -1;
+  -ms-transform: rotate(25deg); /* IE 9 */
+  -webkit-transform: rotate(25deg); /* Chrome, Safari, Opera */
+  transform: rotate(25deg);
+  margin-top: -10%;
+}
+
+.comb{
+  width: 12%;
+  padding-left:4%;
+  z-index: -1;
+  padding-top:23%; 
+  overflow: hidden;
+}
+
+.dinglehopper{
+  width: 15%;
+  margin-left:50%;
+  z-index: -1;
+  padding-top: 25%;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.flower{
+  width: 10%;
+  padding-left:85%;
+  padding-top: 10%;
+  z-index: -1;
+}
+
+.frog{
+  width: 12%;
+  padding-left:3%;
+  z-index: -1;
+  padding-top: 38%;
+}
+
+.lamp{
+  width: 10%;
+  padding-left:80%;
+  z-index: -1;
+}
+
+.necklace{
+  width: 10%;
+  padding-left:85%;
+  z-index: -1;
+  padding-top: 35%;
+}
+
+.rose{
+  width: 20%;
+  padding-left:24%;
+  padding-top: 12%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.slipper{
+  width: 15%;
+  padding-left:35%;
+  padding-top: 36%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.snowflake{
+  width: 10%;
+  padding-left:55%;
+  z-index: -1;
+  padding-top: 35%;
+}
+
+.tiara{
+  width: 10%;
+  padding-left:11%;
+  z-index: 20;
+  margin-top: 4%;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+  transform: rotate(-20deg);
+}
+
+.left-page{
+  clear: both;
+  float: left;
+  margin-top: -2%;
+  width:100%;
+  height:790px;
+  overflow:auto;
+}
+
+
+.mini-post{
+  display: inline-block;
+  width: 325px;
+  height: 325px;
+  margin-left: 15%;
+  margin-top: 3%;
+  float: left;
+  margin-right: 13%;
+  margin-bottom: 2%;
+  text-align:center;
+  text-shadow: 4px 4px 4px #FFCC66;
+  position:relative;
+}
+
+.small-post{
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  float:left;
+}
+
+/*post page*/
+.princess-header{
+  width: 100%;
+  height: 200px;
+}
+
+.princess{
+  width: 50%;
+  top:0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.post-thing{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 60px;
+  width: 70%;
+}
+
+.perm-post{
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    width:100%;
+    height:100%;
+}
+
+.your-text{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 30px;
+  text-shadow: 4px 4px 4px #FFCC66;
+}
+
+.post-info{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 50px;
+  width: 100%;
+  text-shadow: 4px 4px 4px #FFCC66;
+}
+
+#date, #author, #original{
+  font-size: 30px;
+  text-shadow: 4px 4px 4px #FFCC66;
+  display: inline;
+  margin-right: 20px;
+}
+
+#pagination a{
+    bottom: 0;
+    display: block;
+    color: #DAA520;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px #FF0000;
+}
+
+.next_page{
+    float: right;
+    right:0;
+    margin-right: 50px;
+    position: fixed;
+    font-size: 50px;
+}
+
+.previous_page{
+    float: left;
+    left:0;
+    margin-left: 50px;
+    position: fixed;
+    font-size: 40px;
+}
+
+.buttons{
+    display: inline-block;
+    float:right;
+    top:0;
+}
+
+.buttons li{
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    list-style-type: none;
+}
+
+
+</style>
+<body>
+{block:IndexPage}
+	<nav class="menu push-menu-left">
+	  <ul>
+		<li><button class="close-menu">&larr; Close</button></li>
+        <li><a class="home" href="{BlogURL}"><img class="disney-logo" src=" http://static.tumblr.com/niuh358/VCJng3531/disney_edited.png"><a></li>
+        <li><a class="home" href="{BlogURL}"><p class="tumblr-name"> {Title} </p></a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="archives" href="/archive">Archives </a></li>
+       </ul>
+    </nav>
+
+    <div id="wrapper">
+    	<div class="items">
+    		<img class="apple" src="http://static.tumblr.com/niuh358/UUWng353f/apples.png">
+    		<img class="bow" src="http://static.tumblr.com/niuh358/yVUng353g/bow-and-arrow.png">
+    		<img class="comb" src="http://static.tumblr.com/niuh358/TBjng353i/comb.png">
+    		<img class="dinglehopper" src="http://static.tumblr.com/niuh358/2cxng3530/dinglehopper.png">
+    		<img class="flower" src="http://static.tumblr.com/niuh358/Scang3532/flower.png">
+    		<img class="frog" src="http://static.tumblr.com/niuh358/cggng3532/frog.png">
+    		<img class="lamp" src="http://static.tumblr.com/niuh358/tvung3534/lamp.png">
+    		<img class="necklace" src="http://static.tumblr.com/niuh358/8sWng3535/necklace.png">
+    		<img class="rose" src="http://static.tumblr.com/niuh358/TTTng353a/rose.png">
+    		<img class="slipper" src="http://static.tumblr.com/niuh358/Ljvng353b/slipper.png">
+    		<img class="snowflake" src="http://static.tumblr.com/niuh358/eWUng353b/snowflake.png">
+    		<img class="tiara" src="http://static.tumblr.com/niuh358/xA6ng353d/tiara.png">
+    	</div>
+    	<div class="home-buttons">
+			<a class="nav-toggler toggle-push-left"> <img src="http://static.tumblr.com/niuh358/aAJng3534/home.png" class= "home-pic "></a>
+		</div>
+		<div class="left-page">
+				{block:Posts}
+
+                {block:Regular}
+                <div class="mini-post">
+                <a href={permalink}>
+                <article class="regular small-post">
+                    {block:Title}
+                        <h2 class="title">{Title}</h2>
+                    {/block:Title}
+                </article>
+                </a>
+                <ul class="buttons"> 
+                    <li class="like"> {LikeButton} </li>
+                    <li class="reblog"> {ReblogButton} </li>
+                </ul>
+                </div>
+                {/block:Regular}
+
+                {block:Photo}
+                <div class="mini-post">
+                <a href={permalink}>
+                <article class="photo small-post">
+                    <img class="small-post" src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+
+                </article>
+                </a>
+                <ul class="buttons"> 
+                    <li class="like"> {LikeButton} </li>
+                    <li class="reblog"> {ReblogButton} </li>
+                </ul>
+                </div>
+                {/block:Photo}
+
+                {block:Quote}
+                <div class="mini-post">
+                <article class="quote {length} small-post">
+                    <div class="quoteactual"><q>{Quote}</q></div>
+                </article>
+                <ul class="buttons"> 
+                    <li class="like"> {LikeButton} </li>
+                    <li class="reblog"> {ReblogButton} </li>
+                </ul>
+                </div>
+                {/block:Quote}
+
+                {block:Link}
+                <div class="mini-post">
+                <article class="link small-post">
+                    <div class=" small-post">
+                        <p><a href="{URL}" class="link" {Target}>{Name}</a></p>
+                        <div class="description">{Description}</div>
+                    </div>
+                </article>
+                <ul class="buttons"> 
+                    <li class="like"> {LikeButton} </li>
+                    <li class="reblog"> {ReblogButton} </li>
+                </ul>
+                </div>
+                {/block:Link}
+
+                {block:Conversation}
+                <div class="mini-post">
+                <div class="conversation content small-post">
+                    <ul>
+                        {block:Lines}
+                        <li class="{Alt}">
+                            {block:Label}<span class="label">{Label}</span>{/block:Label}
+                            {Line}
+                        </li>
+                        {/block:Lines}
+                    </ul>
+                </div>
+                <ul class="buttons"> 
+                    <li class="like"> {LikeButton} </li>
+                    <li class="reblog"> {ReblogButton} </li>
+                </ul>
+                </div>
+                {/block:Conversation}
+
+                {block:Audio}
+            	<div class="mini-post">
+                <article class="audio small-post">
+                    {AudioPlayerWhite}
+                    <div class="caption">{block:Caption}{Caption}{/block:Caption}{block:ExternalAudio} [<a href="{ExternalAudioURL}">Download</a>]{/block:ExternalAudio}</div>
+                </article>
+                <ul class="buttons"> 
+                    <li class="like"> {LikeButton} </li>
+                    <li class="reblog"> {ReblogButton} </li>
+                </ul>
+                </div>
+                {/block:Audio}
+
+                {block:Video}
+                <div class="mini-post">
+                <article class="video small-post">
+                    {Video-250}
+                </article>
+                <ul class="buttons"> 
+                    <li class="like"> {LikeButton} </li>
+                    <li class="reblog"> {ReblogButton} </li>
+                </ul>
+                </div>
+                {/block:Video}
+
+            {/block:Posts}
+        </div>
+			{block:Pagination}
+            <div id="pagination">
+                {block:PreviousPage}
+                <a href="{PreviousPage}" class="previous_page">&#9668;</a>
+                {/block:PreviousPage}
+                {block:NextPage}
+                    <a href="{NextPage}" class="next_page">&#9658;</a>
+                {/block:NextPage}
+            </div>
+            {/block:Pagination}
+		</div>
+{/block:IndexPage}
+
+{block:PermalinkPage}
+	<nav class="menu push-menu-left">
+	  <ul>
+		<li><button class="close-menu">&larr; Close</button></li>
+        <li><a class="home" href="{BlogURL}"><img class="disney-logo" src="http://static.tumblr.com/niuh358/VCJng3531/disney_edited.png"><a></li>
+        <li><a class="home" href="{BlogURL}"><p class="tumblr-name"> {Title}</p></a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="archives" href="/archive">Archives </a></li>
+       </ul>
+    </nav>
+
+    <div id="wrapper">
+    	<div class="home-buttons">
+			<a class="nav-toggler toggle-push-left"> <img src="http://static.tumblr.com/niuh358/aAJng3534/home.png" class='home-pic'></a>
+		</div>
+		<img class="princess"src="http://static.tumblr.com/niuh358/IEEnger3x/princess.png">
+
+		<div class="post">
+            {block:Posts}
+
+                {block:Regular}
+                <div class="post-thing">
+                <a href={permalink}>
+                <article class="regular perm-post">
+                    {block:Title}
+                        <h2 class="title">{Title}</h2>
+                    {/block:Title}
+                </article>
+                </a>
+                 <div class="post-info">
+			   {block:HasTags} 
+			   <article> {TagsAsClasses}</article>
+			   {/block:HasTags} 
+				<a id="date" href="{permalink}">Told on {ShortMonth} {DayofMonth}</a>
+				{block:RebloggedFrom}<a id="author" href="{ReblogParentURL}"> by {ReblogParentName} </a>
+                <a id="original"> Writer:{ReblogRootName} </a> {/block:RebloggedFrom}
+			</div>
+                </div>
+                {/block:Regular}
+
+                {block:Photo}
+                <div class="post-thing">
+                <a href={permalink}>
+                <article class="photo perm-post">
+                    <img class="perm-post" src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+                    {block:Caption}<div>{Caption}</div> {/block:Caption}
+                </article>
+                </a>
+                <div class="post-info">
+			   {block:HasTags} 
+			   <article> {TagsAsClasses}</article>
+			   {/block:HasTags} 
+				<a id="date" href="{permalink}">Told on {ShortMonth} {DayofMonth}</a>
+				{block:RebloggedFrom}<a id="author" href="{ReblogParentURL}"> by {ReblogParentName} </a>
+                <a id="original"> Writer:{ReblogRootName} </a> {/block:RebloggedFrom}
+			</div>
+			</div>
+                </div>
+                {/block:Photo}
+
+                {block:Quote}
+                <div class="post-thing">
+                <article class="quote {length} perm-post">
+                    <div class="quoteactual"><q>{Quote}</q></div>
+                </article>
+                 <div class="post-info">
+			   {block:HasTags} 
+			   <article> {TagsAsClasses}</article>
+			   {/block:HasTags} 
+				<a id="date" href="{permalink}">Told on {ShortMonth} {DayofMonth}</a>
+				{block:RebloggedFrom}<a id="author" href="{ReblogParentURL}"> by {ReblogParentName} </a>
+                <a id="original"> Writer:{ReblogRootName} </a> {/block:RebloggedFrom}
+			</div>
+                </div>
+                {/block:Quote}
+
+                {block:Link}
+                <div class="post-thing">
+                <article class="link perm-post">
+                    <div class=" perm-post">
+                        <p><a href="{URL}" class="link" {Target}>{Name}</a></p>
+                        <div class="description">{Description}</div>
+                    </div>
+                </article>
+                 <div class="post-info">
+			   {block:HasTags} 
+			   <article> {TagsAsClasses}</article>
+			   {/block:HasTags} 
+				<a id="date" href="{permalink}">Told on {ShortMonth} {DayofMonth}</a>
+				{block:RebloggedFrom}<a id="author" href="{ReblogParentURL}"> by {ReblogParentName} </a>
+                <a id="original"> Writer:{ReblogRootName} </a> {/block:RebloggedFrom}
+			</div>
+                </div>
+                {/block:Link}
+
+                {block:Conversation}
+                <div class="post-thing">
+                <div class="conversation content perm-post">
+                    <ul>
+                        {block:Lines}
+                        <li class="{Alt}">
+                            {block:Label}<span class="label">{Label}</span>{/block:Label}
+                            {Line}
+                        </li>
+                        {/block:Lines}
+                    </ul>
+                </div>
+                 <div class="post-info">
+			   {block:HasTags} 
+			   <article> {TagsAsClasses}</article>
+			   {/block:HasTags} 
+				<a id="date" href="{permalink}">Told on {ShortMonth} {DayofMonth}</a>
+				{block:RebloggedFrom}<a id="author" href="{ReblogParentURL}"> by {ReblogParentName} </a>
+                <a id="original"> Writer:{ReblogRootName} </a> {/block:RebloggedFrom}
+			</div>
+                </div>
+                {/block:Conversation}
+
+                {block:Audio}
+            	<div class="post-thing">
+                <article class="audio perm-post">
+                    {AudioPlayerWhite}
+                    <div class="caption">{block:Caption}{Caption}{/block:Caption}{block:ExternalAudio} [<a href="{ExternalAudioURL}">Download</a>]{/block:ExternalAudio}</div>
+                </article>
+                 <div class="post-info">
+			   {block:HasTags} 
+			   <article> {TagsAsClasses}</article>
+			   {/block:HasTags} 
+				<a id="date" href="{permalink}">Told on {ShortMonth} {DayofMonth}</a>
+				{block:RebloggedFrom}<a id="author" href="{ReblogParentURL}"> by {ReblogParentName} </a>
+                <a id="original"> Writer:{ReblogRootName} </a> {/block:RebloggedFrom}
+			</div>
+                </div>
+                {/block:Audio}
+
+                {block:Video}
+                <div class="post-thing">
+                <article class="video perm-post">
+                    {Video-250}
+                </article>
+                 <div class="post-info">
+			   {block:HasTags} 
+			   <article> {TagsAsClasses}</article>
+			   {/block:HasTags} 
+				<a id="date" href="{permalink}">Told on {ShortMonth} {DayofMonth}</a>
+				{block:RebloggedFrom}<a id="author" href="{ReblogParentURL}"> by {ReblogParentName} </a>
+                <a id="original"> Writer:{ReblogRootName} </a> {/block:RebloggedFrom}
+			</div>
+                </div>
+                {/block:Video}
+
+            {/block:Posts}
+
+		</div>
+	</div>
+{/block:PermalinkPage}
+
+
+	<script src="http://static.tumblr.com/niuh358/zanng358f/scripts.js"></script>
+	<script src="http://static.tumblr.com/niuh358/P9ing358l/jquery-2.1.1.js"></script>
+</body>
+</html>
