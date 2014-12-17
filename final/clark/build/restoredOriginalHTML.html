@@ -1,0 +1,167 @@
+<html>
+<head>
+    <meta charset = 'utf-8'>
+    <style>
+    body{
+       
+            background-color: #36465d;
+
+        }
+
+        .logo{
+            margin: auto;
+            max-width: 250px;
+            max-height: 150px;
+        }
+
+        .responsive-two-column {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .responsive-two-column .col-1{
+            float: left;
+            width: 45%;
+            max-height: 2%;
+        }
+
+        .responsive-two-column .col-2{
+            float: left;
+            width: 45%;
+            background-color: #ffffff;
+        }
+
+        .icon{
+            margin-left: 25%;
+            margin-top: 20%;
+            padding-bottom: 50px;
+            max-height: 100px;
+            max-width: 100px;
+            margin-right: 100%;
+        }
+
+        .btn{
+            float: right;
+            text-align: center;
+            max-width: 250px;
+            max-height: 250px;
+            color: gray;
+            background-color: gray;
+        }
+    </style>
+    <title>tumblr</title>
+    {block:Description}
+        <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+</head>
+<body>
+    <img class = 'logo' src = 'http://www.puregenie.com/wp-content/uploads/2012/11/God-bless-tumblr-tumblr-31201634-436-291-1.jpg' />
+ <div class = 'logIn'>
+        <form class = 'btn' action="https://www.tumblr.com/login">
+            <input type="submit" value="Log Off">
+        </form>
+        <form class = 'btn' action="https://www.tumblr.com/help">
+            <input type="submit" value="Help">
+        </form>
+        <form class = 'btn' action = "https://www.tumblr.com/inbox">
+            <input type = "submit" value = "Inbox">
+        </form>
+        <form class = 'btn' action = "https://www.tumblr.com/dashboard">
+            <input type = "submit" value = "Home">
+        </form>
+    </div>
+    <div class = 'responsive-two-column'>
+        <div class = 'col-1'>
+            <img class = 'icon' src = 'http://media.tumblr.com/tumblr_m8c4vt5pYb1qiv5yk.gif' />
+            <img class = 'icon' src = 'https://lh6.googleusercontent.com/-CX3_kvb-Fz4/AAAAAAAAAAI/AAAAAAAAACc/E-9Y5cAZJpg/photo.jpg' />
+            <img class = 'icon' src = 'http://media.tumblr.com/tumblr_m8c4vt5pYb1qiv5yk.gif' />
+        </div>
+        <div class = 'col-2'>
+        <section class="theme-body posts">
+          {block:Posts}
+
+                {block:Regular}
+                <article class="regular post">
+                    {block:Title}
+                        <h2 class="title">{Title}</h2>
+                    {/block:Title}
+                  
+                    {Body}
+
+                    <section class="post-meta">
+                        <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
+                    </section>
+                </article>
+                {/block:Regular}
+
+                {block:Photo}
+                <article class="photo post">
+                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+
+                    <section class="post-meta">
+                        <div class="caption">{Caption}</div>
+                        <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
+                    </section>
+                </article>
+                {/block:Photo}
+
+                {block:Quote}
+                <article class="quote {length} post">
+                    <div class="quoteactual"><q>{Quote}</q></div>
+
+                    <section class="post-meta">
+                        <div class="source"><span class="emdash">&mdash;</span>{Source}</div>
+                        <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
+                    </section>
+                </article>
+                {/block:Quote}
+
+                {block:Link}
+                <article class="link post">
+                    <p><a href="{URL}" class="link" {Target}>{Name}</a></p>
+                    <div class="description">{Description}</div>
+                    <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
+                </article>
+                {/block:Link}
+
+                {block:Conversation}
+                <div class="conversation content">
+                    <ul>
+                        {block:Lines}
+                        <li class="{Alt}">
+                            {block:Label}<span class="label">{Label}</span>{/block:Label}
+                            {Line}
+                        </li>
+                        {/block:Lines}
+                    </ul>
+                    <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
+                </article>
+                {/block:Conversation}
+
+                {block:Audio}
+                <article class="audio post">
+                    {AudioPlayerWhite}
+                    <div class="caption">{block:Caption}{Caption}{/block:Caption}{block:ExternalAudio} [<a href="{ExternalAudioURL}">Download</a>]{/block:ExternalAudio}</div>
+                    <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
+                </article>
+                {/block:Audio}
+
+                {block:Video}
+                <article class="video post">
+                    {Video-500}
+                    <section class="post-meta">
+                        <div class="caption">{Caption}</div>
+                        <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
+                    </section>
+                </article>
+                {/block:Video}
+
+            {/block:Posts}
+
+        </section>
+
+        </div>
+        <script src = "scripts/scripts.js"></scripts>
+</body>
+</html>
