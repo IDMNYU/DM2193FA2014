@@ -1,0 +1,529 @@
+<html>
+
+<head>
+
+<style type="text/css"></style>
+
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+
+<meta name="description" content={Description}>
+<meta name="color:Background" content="#222222"/>
+<meta name="image:Background" content=""/>
+<meta name="image:Header" content=""/>
+<meta name="font:Text" content="Helvetica">
+<meta name="color:Text" content="#333333">
+<meta name="color:Link" content="#2EB3FE">
+<meta name="color:Link Hover" content="#006c87">
+<meta name="color:Header" content="#0182ac">
+<meta name="color:Border" content="#1a1a1a">
+<meta name="color:Content" content="#ffffff">
+
+<!-- CSS Styles -->
+
+<style type="text/css">
+
+body {
+background-color: #222222;
+background-image: ""
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+color: #333333; 
+}
+
+a {
+color: #222222;
+font-weight: bold;
+text-decoration: none;
+}
+
+a:hover {
+color: #222222;
+}
+
+a img {
+border: 0px;
+}
+
+a.install {
+    width: 96px;
+    height: 20px;
+    background: 
+    display: block;
+    position: absolute;
+    top: 26px;
+    right: 3px;
+  }
+ 
+
+.container {
+ position: relative;
+ margin-left: auto;
+ margin-right: auto;
+ width: 700px;
+}
+
+.content {
+position: relative;
+top: -20px;
+width: 550px;
+padding: 10px;
+background-color: #484646;
+border: 7px solid #1a1a1a;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+
+.sidebar {
+position: absolute;
+left: 577px;
+top: 10px;
+width: 155px;
+padding: 10px;
+background-color: #484646;
+border: 7px solid #1a1a1a;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+
+.post img {
+display: block;
+margin: 0 auto;
+}
+
+.notesandtags {
+padding: 5px;
+border-top: 1px solid #777777;
+margin-bottom: 30px;
+margin-top: 5px;
+}
+
+.tags {
+font-size: 10px;
+float: left;
+text-transform: lowercase;
+}
+
+.tag {
+font-weight: normal;
+margin-right: 2px;
+font-style: italic;
+}
+
+.time {
+font-size: 10px;
+color: #666;
+text-transform: lowercase;
+font-weight: bold;
+}
+
+h3 {
+font-size: 20px;
+margin: 0px;
+}
+
+blockquote {
+font-size: 11px;
+background-color: #EEEEEE;
+padding: 5px;
+border-left: 5px solid #000000;
+margin: 5px;
+}
+
+.source {
+margin-left: 25px;
+}
+
+.link {
+background-color: #0182ac;
+color: white;
+padding: 5px;
+font-size: 16px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+font-weight: normal;
+font-style: italic;
+}
+
+.link:hover {
+background-color: #006c87;
+color: #222222;
+}
+
+ul.chat {
+margin: 0;
+padding: 0;
+}
+
+.chat li {
+list-style-type: none;
+margin-left: 0px;
+padding: 3px;
+}
+
+.chat li.odd {
+background-color: #CCCCCC;
+margin-bottom: 1px;
+color: #222222;
+}
+
+.chat li.even {
+background-color: #222222;
+margin-bottom: 1px;
+color: #CCCCCC;
+}
+
+.label {
+font-weight: bold;
+}
+
+.title {
+margin-left: 10px;
+margin-bottom: 10px;
+font-size: 20px;
+font-family: Georgia;
+letter-spacing: -2px;
+color: #00c6ff;
+}
+
+.header {
+margin-top: 20px;
+margin-bottom: 20px;
+padding-bottom: 20px;
+border-bottom: 2px dashed #777777;
+}
+
+
+.sidebar ul {
+margin-left: -10px;
+list-style-type: square;
+font-size: 14px;
+}
+
+
+</style>
+
+<style type="text/css" id="tumblr_teaser_follow_css">
+#tumblr_teaser_follow {
+display: block;
+opacity: 1;
+visibility: hidden;
+position: fixed;
+bottom: 0px;
+right: 0px;
+width: 1px;
+height: 1px;
+z-index: 2147483647;
+}
+#tumblr_teaser_follow.open {
+visibility: visible;
+width: 310px;
+height: 110px;
+}
+</style>
+
+<style type="text/css" id="tumblr_iframe_css">
+.tumblr_controls {
+position: absolute;
+top: 0px;
+right: 0px;
+display: block;
+opacity: 1;
+width: 1px;
+height: 1px;
+z-index: 2147483647;
+visibility: hidden;
+pointer-events: none;
+}
+.tumblr_controls.visible {
+visibility: visible;
+pointer-events: all;
+}
+.tumblr_controls.sticky {
+position: fixed;
+}
+.tumblr_controls.transition {
+-webkit-transition: top 0.1s ease;
+-moz-transition: top 0.1s ease;
+-ms-transition: top 0.1s ease;
+-o-transition: top 0.1s ease;
+transition: top 0.1s ease;
+}
+iframe#tumblr_controls.tumblr_controls.sticky.transition {
+-webkit-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+-moz-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+-ms-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+-o-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+top: 0 !important;
+}
+.tumblr_controls.sticky.transition {
+-webkit-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+-moz-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+-ms-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+-o-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+top: 0 !important;
+}
+.tumblr_controls.flash_fix {
+visibility: hidden !important;
+}
+#tumblr_controls {
+width: 179px;
+height: 26px;
+}
+@-webkit-keyframes tumblr_controls_fade_in {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+@-moz-keyframes tumblr_controls_fade_in {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+@-ms-keyframes tumblr_controls_fade_in {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+@-o-keyframes tumblr_controls_fade_in {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+@keyframes tumblr_controls_fade_in {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+
+<meta property="fb:app_id" content="48119224995">
+<meta property="og:url" content="https://soundcloud.com/ateller">
+<meta property="og:description" content="Mergeeee">
+<meta property="og:type" content="tumblr-feed:tumblelog">
+
+
+<body cz-shortcut-listen="true"><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object type="application/x-shockwave-flash" id="_GPL_e6a00_swf" data="http://cdncache-a.akamaihd.net/items/e6a00/storage.swf?r=1" width="1" height="1"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl"></object></div>
+ 
+
+
+<div class="container">
+<div class="content">
+
+<!-- Header Image -->
+
+<a href='http://ateller.tumblr.com' target='_blank'> <img src='http://s5.postimg.org/60m0133cn/rndm4.png' border='0' alt="randomerger" /></a>
+
+
+<a href='http://ateller.tumblr.com' target='_blank'> <img src='http://s5.postimg.org/5ee72mxtj/header.png' border='0' alt="randomerger" /></a>
+
+
+<!-- Posts/Main Content -->
+
+<div class="post">
+<a href=""><img src="http://static.fjcdn.com/pictures/Illuminati_c6cde1_4975836.jpg" alt=""><br><br></a>
+</div>
+
+
+<div class="hey">
+<center><p>What</p></div> </center> <br><br>
+<div class="post">
+<a href=""><img src="http://www.funnypica.com/wp-content/uploads/2012/01/Funny-Dogs-Funny-Dog-Picture-104-FunnyPica.com_.jpg" alt=""></a>
+</div>
+
+
+<div class="hey">
+<center><p>yes?</p></div> </center> <br><br>
+<div class="post">
+<a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtOb5Wh9Q5lSv9_Lbu7MU317W-rxAaiQVVAz3vLTctjwJYnxQu" alt=""></a>
+</div>
+
+<div class="hey">
+<center><p>or nah</p></div> </center> <br><br>
+<div class="post">
+<a href=""><img src="http://www.mememaker.net/static/images/memes/3137223.jpg" alt=""></a>
+</div>
+
+<!-- Start Sidebar -->
+
+
+<div class="sidebar">
+
+
+<!-- Title -->
+
+<div class="title"><center><font face="helvetica" color="ae7987">Email<br>4iqi7bkmsqazb<br>@tumblr.com <br>
+to post 
+<br>
+ANYTHING
+</font>
+</center>
+</div>
+
+<center><img src="http://s5.postimg.org/dkiaur73n/menu.png"></center>
+
+
+<!-- Pages -->
+
+<ul>
+<li><a href="">Our Sponsors:</a> </li> 
+<li><a href="http://www.sony.com/">Sony</a> </li> 
+<li><a href="http://i2.wp.com/listverse.com/wp-content/uploads/2010/05/458895.jpg">Kim Jong Il</a> </li> 
+<li><a href="http://www.billmurraystory.com/">Bill Murray.</a> </li> 
+</ul>
+
+
+<!-- Description -->
+
+<center>
+<p>~Stay Random~</p></center>
+
+</div> 
+</div>
+
+<!-- BEGIN TUMBLR CODE -->
+
+<iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;"</iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = true;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/?route=%2F'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script>
+<script type="text/javascript">!function(s){s.src='https://www.tumblr.com/impixu?T=1418859728&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvb2N0b3R1dHMudHVtYmxyLmNvbVwvIiwicmVxdHlwZSI6MCwicm91dGUiOiJcLyJ9&U=CMGIPCMPNK&K=7bd3d7a3940122176e92f5f8fd4384610170ec01bf03e7bce384e592d3115e2c&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript>&lt;img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://www.tumblr.com/impixu?T=1418859728&amp;J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvb2N0b3R1dHMudHVtYmxyLmNvbVwvIiwicmVxdHlwZSI6MCwicm91dGUiOiJcLyIsIm5vc2NyaXB0IjoxfQ==&amp;U=CMGIPCMPNK&amp;K=4de6a6a2f37b67bfc62d125fc2c050c20f6531032b4c2a646a4cb79914f95984&amp;R="&gt;</noscript><script type="text/javascript">!function(s){s.src='https://www.tumblr.com/impixu?T=1418859728&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL29jdG90dXRzLnR1bWJsci5jb21cLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC8iLCJwb3N0cyI6W3sicG9zdGlkIjoiMTQ1ODk5NTI0MDYiLCJibG9naWQiOiIzODA3NTA4NyIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiMTQ1ODg0NDAzNTYiLCJibG9naWQiOiIzODA3NTA4NyIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiMTQ1NTYxNjAxOTIiLCJibG9naWQiOiIzODA3NTA4NyIsInNvdXJjZSI6MzN9XX0=&U=IKFKPFBBLM&K=aae107d203715ea6e6fe14db0d91dddf7319e295e06eb6965570a0e89207d3d1&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript>&lt;img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://www.tumblr.com/impixu?T=1418859728&amp;J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL29jdG90dXRzLnR1bWJsci5jb21cLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC8iLCJwb3N0cyI6W3sicG9zdGlkIjoiMTQ1ODk5NTI0MDYiLCJibG9naWQiOiIzODA3NTA4NyIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiMTQ1ODg0NDAzNTYiLCJibG9naWQiOiIzODA3NTA4NyIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiMTQ1NTYxNjAxOTIiLCJibG9naWQiOiIzODA3NTA4NyIsInNvdXJjZSI6MzN9XSwibm9zY3JpcHQiOjF9&amp;U=IKFKPFBBLM&amp;K=d34db6303b19d598f863a0ff64ed93792beb85c31cd68c2662c5a9c8d4ee8e90&amp;R="&gt;</noscript><script>
+                (function() {
+                    var s = document.createElement('script');
+                    var el = document.getElementsByTagName('script')[0];
+                                            s.src = ('https:' == document.location.protocol ? 'https://s' : 'http://l') + '.yimg.com/ss/rapid-3.18.1.js';
+                                        s.onload = function(){
+                        var YAHOO = window.YAHOO;
+                        if (YAHOO) {
+                            var keys = {
+                                pd:'/',
+                                _li:0,
+                                b_id:38075087,
+                                i_rad:0,
+                                i_strm:0
+                            };
+                            var conf = {
+                                                                spaceid:1197716038,
+                                client_only:1,
+                                yql_enabled:false,
+                                keys:keys,
+                                nol:1
+                            };
+                            YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                        }
+                    };
+                    el.parentNode.insertBefore(s, el);
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.min.js?_v=1360de60c9b05c6a55bd6a6e510e1699';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls sticky visible" width="179" height="26" frameborder="0" scrolling="no" </iframe><div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0"  id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=3f7aaadc4834fb52a1754e9878721fe6");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script>
+
+</script>
+</div>
+</body>
+</html>
+
+
+
