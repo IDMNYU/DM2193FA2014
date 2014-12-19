@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>{Title}</title>
+        
+
+        <!-- STYLES -->
+        <style>
+        
+        body{
+            background: black;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            margin: 40px;
+        }
+        
+        a:link{
+            text-decoration: none;
+            color: green;
+        }
+        
+        a:visited{
+            text-decoration: none;
+            color: gray;
+        }
+        
+        a:active{
+            text-decoration: none;
+        }
+        
+        a:hover{
+            text-decoration: none;
+            color: #ccc;
+        }
+        
+        
+        img{
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        
+        gif{
+            max-width: 380px;
+            border-radius: 10px;
+        }
+        
+        .container{
+            width: 570px;
+            margin: auto;
+            margin-top: 230px;
+            margin-bottom: 50px;
+            background: black;
+            padding: 20px 20px;
+            border-radius: 10px;
+        }
+        
+        .header{
+            text-align: center;
+        }
+        
+        .header-image{
+            background-image: url(http://i58.tinypic.com/14vqstv.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            z-index: 3;
+            height: 800px;
+            position: fixed;
+            top: -260px;
+            left: 0;
+            width: 100%;
+        }
+        
+        .header-paw{
+            background-image: url(http://i57.tinypic.com/1495il2.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            z-index: 2;
+            height: 260px;
+            position: fixed;
+            top: 330px;
+            left: -250px;
+            width: 100%;
+        }
+        
+        .blog-title{
+            font-size: 58px;
+            color: yellow;
+            text-shadow: 5px 5px 5px gray;
+        }
+        
+        .description{
+            font-size: 20px;
+        }
+        
+        .title{
+            line-height: 16px;
+            border-bottom: 1px solid green;
+            font-size: 20px;
+            padding-bottom: 10px;
+            padding-left: 8px;
+            text-shadow: 1px 1px 1px #ccc;
+        }
+        
+        .regular-post{
+            background: white;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 65px;
+            padding-bottom: 10px;
+            padding-left: 60px;
+            border-radius: 10px;
+        }
+        
+        .photo-post{
+            background: white;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 65px;
+            padding-bottom: 10px;
+            padding-left: 60px;
+            border-radius: 10px;
+        }
+        
+        .link-post{
+            background: white;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 65px;
+            padding-bottom: 10px;
+            padding-left: 60px;
+            border-radius: 10px;
+        }
+        
+        .quote-post{
+            background: white;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 65px;
+            padding-bottom: 10px;
+            padding-left: 60px;
+            border-radius: 10px;
+        }
+        
+        .video-post{
+            background: white;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 65px;
+            padding-bottom: 10px;
+            padding-left: 60px;
+            border-radius: 10px;
+        }
+        
+        .conversation-post{
+            background: white;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 65px;
+            padding-bottom: 10px;
+            padding-left: 60px;
+            border-radius: 10px;
+        }
+        
+        audio-post{
+            background: white;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 65px;
+            padding-bottom: 10px;
+            padding-left: 60px;
+            border-radius: 10px;
+        }
+        
+        .posts{
+            
+        }
+        
+        .permalink{
+            text-decoration: none;
+            font-size: 12px;
+            color: green;
+        }
+        
+        
+        .description{
+            font-size: 16px;
+        }
+        
+        .quoteactual{
+            font-size: 22px;
+        }
+        
+        .source{
+            text-decoration: 12px;
+        }
+        
+        @media screen and (max-width: 480px){
+        
+            .container{
+                width: 300px;
+            }
+            
+            img{
+                max-width: 200px;
+            }
+            
+            .blog-title{
+                font-size: 40px;
+            }
+            
+            .regular-post, .photo-post, .link-post, .video-post, .conversation-post, .audio-post, quote-post{
+            padding-right: 10px;
+            padding-left: 10px;
+                
+            }
+            
+        }
+        
+        </style>
+    </head>
+ 
+    <body>
+    
+    <div class="header-image">
+        
+    </div>
+    
+     <div class="header-paw">
+        
+    </div>
+    <br><br>
+    
+    <!--CONTAINER-->
+    <div class="container">
+    
+    <br><br><br><br>
+        <!--HEADER-->
+        <header class="header">
+        
+        <h1 class="blog-title">{Title}</h1>
+        <br>
+            {block:Description}
+                {Description}
+            {/block:Description}
+        </header>
+        <!--POSTS-->
+        <section class="posts">
+            
+            {block:Posts}
+
+                {block:Regular}
+                <article class="regular-post">
+                    {block:Title}
+                        <h2 class="title">{Title}</h2>
+                    {/block:Title}
+                  
+                    {Body}
+
+                    <section class="post-meta">
+                        <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>
+            {ReblogButton}{LikeButton}
+                    </section>
+                </article>
+                {/block:Regular}
+
+                {block:Photo}
+                <article class="photo-post">
+                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+
+                    <section class="post-meta">
+                        <div class="caption">{Caption}</div>
+                        <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>{ReblogButton}{LikeButton}
+                    </section>
+                </article>
+                {/block:Photo}
+
+                {block:Quote}
+                <article class="quote-post">
+                    <div class="quoteactual"><q>{Quote}</q></div>
+
+                    <section class="post-meta">
+                        <div class="source"><span class="emdash">&mdash;</span>{Source}</div>
+                        <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>{ReblogButton}{LikeButton}
+                    </section>
+                </article>
+                {/block:Quote}
+
+                {block:Link}
+                <article class="link-post">
+                    <p><a href="{URL}" class="link" {Target}>{Name}</a></p>
+                    <div class="description">{Description}</div>
+                    <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>{ReblogButton}{LikeButton}
+                </article>
+                {/block:Link}
+
+                {block:Conversation}
+                <article class="conversation-post">
+                    <ul>
+                        {block:Lines}
+                        <li class="{Alt}">
+                        {block:Label}<span class="label">{Label}</span>{/block:Label}
+                            {Line}
+                        </li>
+                        {/block:Lines}
+                    </ul>
+                    <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>{ReblogButton}{LikeButton}
+                </article>
+                {/block:Conversation}
+
+
+
+                {block:Video}
+                <article class="video-post">
+                    {Video-500}
+                    <section class="post-meta">
+                        <div class="caption">{Caption}</div>
+                        <a class="permalink" href="{Permalink}">{Month} {DayOfMonth}, {Year}</a>{ReblogButton}{LikeButton}
+                    </section>
+                </article>
+                {/block:Video}
+
+            {/block:Posts}
+            
+            
+        </section>
+        
+                {block:Pagination}
+        <footer class="theme-footer">
+            <nav class="pagination">
+                
+                <div class="pagination-count">{CurrentPage} <span>of</span> {TotalPages}</div>
+
+                <hr class="pagination-hr" />
+
+                {block:NextPage}
+                    <a class="pagination-older" href="{NextPage}">&larr; Older</a>
+                {/block:NextPage}
+                
+                {block:PreviousPage}
+                    <a class="pagination-newer" href="{PreviousPage}">Newer &rarr;</a>
+                {/block:PreviousPage}
+
+            </nav>
+        </footer>
+        {/block:Pagination}
+        
+    </div>
+ 
+
+    </body>
+</html>

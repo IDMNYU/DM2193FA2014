@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8" />
+
+    <title>{Title}</title>
+
+    <meta name="description" content="{block:IndexPage}{block:Description}{MetaDescription}{/block:Description}{/block:IndexPage}{block:PermalinkPage}{block:PostSummary}{PostSummary}{/block:PostSummary}{/block:PermalinkPage}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="image:Logo" content=""/>	
+
+	<meta name="image:Header" content="http://static.tumblr.com/ztelplt/drxn9flcg/header.jpg"/>
+
+
+    <meta name="font:Blog Title" content="Georgia"/>
+    <meta name="font:Post Title" content="Lucida Sans"/>
+    <meta name="font:Subheading" content="Georgia"/>
+    <meta name="font:Body" content="Baskerville"/>
+    <meta name="font:Foot" content="Lucida Sans"/>
+	<meta name="color:Background" content="#ffffff"/>
+	<meta name="color:Text" content="#777777"/>
+	<meta name="color:Headline" content="#222222"/>
+	<meta name="color:Link" content="#777777"/>
+	<meta name="color:Link Border" content="#dddddd"/>
+	<meta name="color:Link Hover" content="#3c3d4b"/>
+
+
+	
+
+	<style>
+
+		body {
+
+	    	font-family: {font:Blog Title};
+
+			background: {color:Background};
+
+			color: {color:Text};
+
+			margin: 0;
+
+			padding: 0;
+
+			-webkit-font-smoothing: antialiased;
+
+			
+
+		}
+
+
+		h1, h2, h3, h4, h5, h6 {
+
+			font-family: {font: Blog Title};
+	    	color: black;
+            text-align:center;
+			font-weight: normal;
+
+			margin: 0;
+
+			
+
+		}
+
+
+
+	
+
+		.post-title {
+
+		    margin: auto;
+
+        	border-bottom: 3px solid black;
+
+        	font-size: 32px;
+
+        	text-align:center;
+
+        	max-width: 400px;
+
+        	margin-bottom: 40px;
+
+		}
+
+		.post-heading {
+
+		    text-transform: uppercase;
+
+		    position: fixed;
+
+		    font-size: 55px;
+
+		    margin-left: -300px;
+		    margin-top: -70px;
+
+		}
+
+
+
+    	.title-first-page {
+
+        	color: black;
+
+        	font-size: 80px;
+        	text-transform: uppercase;
+
+        	max-width: 300px;
+        	margin-right: auto;
+        	margin-left:auto;
+        	
+
+        	margin-top: 190px;
+
+        }
+
+        .title-content {
+          font-family:"Open Sans Condensed", Helvetica;
+          top: -50px;
+          opacity: 0;
+          margin-right:auto;
+          margin-left:auto;
+          max-width: 450px;
+          transition: all 500ms ease;
+
+        }
+
+        .title-content.active {
+          margin-top: 100px;
+          max-width: 450px;
+          margin-left: auto;
+          margin-right: auto;
+          opacity: 1;
+
+        }
+
+        		
+
+		a:hover { 
+			color: {color:Link Hover}; 
+
+			opacity: 0.3;
+
+
+		}
+
+		   
+
+
+
+		
+
+		h3 {
+
+			
+
+			font-size: 21px;
+
+			line-height: 1.25;
+
+			margin-bottom: 27px;
+
+			
+
+		}
+
+		
+
+		h4, h5 {
+
+			
+
+			font-size: 18px;
+
+			line-height: 1.4;
+
+			margin-bottom: 27px;
+
+			
+
+		}
+
+		
+
+		h5 { color: {color:Text}; }
+
+		
+
+		h6 { 
+
+		
+
+			font-size: 16px;
+
+			line-height: 1.7;
+
+			margin-bottom: 27px;
+
+			
+
+			
+
+		}
+
+		h2 {
+
+		    max-width: 300px;
+
+		}
+
+		
+
+		p { margin: 0 0 27px 0; }
+
+		a {
+
+			
+
+			color: {color:Link};
+
+			text-decoration: none;
+
+			outline: 0;
+
+			
+
+			-webkit-transition: all 0.25s ease-out; 
+
+			   -moz-transition: all 0.25s ease-out; 
+
+			        transition: all 0.25s ease-out; 
+
+			        
+
+		}
+
+		
+
+		a:active { outline: 0; }
+
+
+
+		ul {
+
+			
+
+			margin: 27px 0;
+
+			list-style: none;
+
+			padding: 0;
+
+			
+
+		}
+
+		
+
+		li { margin: 0 0 7px 0; padding: 0; }
+
+		ul li:last-child { margin-bottom: 0; }
+
+
+
+		ol { list-style: decimal; color: {color:List}; }
+
+		ol, ul.square, ul.circle, ul.disc { margin-left: 27px; }
+
+		ul.square { list-style: square outside; }
+
+		ul.circle { list-style: circle outside; }
+
+		ul.disc { list-style: disc outside; }
+
+		.container {
+
+			
+
+			width: 700px;
+
+			margin: 0 auto;
+
+			
+
+		}
+
+
+		#mast-head {
+
+
+
+			background: {color:Header} {block:IfHeaderImage} url({image:Header}) center center no-repeat {/block:IfHeaderImage};
+
+			
+
+			{block:IfHeaderImage}
+
+				-webkit-background-size: cover;
+
+				   -moz-background-size: cover;
+
+				     -o-background-size: cover;
+
+				        background-size: cover;
+
+			{/block:IfHeaderImage}
+
+            height: 750px;
+
+			color: white;
+
+			padding: 0 60px;
+
+			text-align: center;
+
+			margin-bottom: 79px;
+
+			overflow: hidden;
+
+			
+
+		}
+
+
+		.nav ul {
+
+			height: 81px;
+
+			margin: 0;
+
+		}
+
+		
+
+		.fp-nav{
+
+        	margin-top: 100px;
+
+        	max-height: 200px;
+
+        	padding-left: 20px;
+
+        	padding-right: 20x;
+
+        	margin-left: 506px;
+
+        	margin-right: 500px;
+
+		}
+
+			.pp-nav {
+
+		    color: black;
+		    margin-top: -70px;
+
+		    font-size: 18px;
+
+        	position: fixed;
+
+        	list-style-type: square;
+
+        	display: list-item;
+
+        	margin-left: 380px;
+
+        }
+
+        .pp-nav-item {
+
+            color: black;
+
+		    font-size: 18px;
+
+		    text-transform: uppercase;
+
+        }
+
+		.nav ul li {
+
+			margin: 0 auto;
+
+			float: left;
+
+			margin-right: 36px;
+
+			line-height: 27px;
+
+			padding: 35px 0;
+
+			
+
+		}
+
+		
+
+		.nav ul li a {
+
+			
+
+			line-height: 27px;
+
+			color: white;
+
+			font-size: 18px;
+
+			font-weight: 900;
+
+			text-transform: uppercase;
+
+			border: 0;
+
+			letter-spacing: 1.5px;
+
+			
+
+		}
+
+		
+
+		.nav ul li a:hover {
+
+			
+
+			color: white;
+
+			opacity: 0.6;
+
+			
+
+		}
+
+		
+
+		.nav ul li:last-child {
+
+			
+
+			margin-right: 0; 
+
+			
+
+		}
+		.posts-nav-page {
+		    height: 350px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    width: 280px;
+		    
+		    
+		}
+
+		.posts-list {
+
+		    list-style-type: upper-roman;
+
+        	margin-top: 100px;
+
+		}
+
+		.post-name {
+            font-size: 20px;
+
+            padding:5px;
+
+            color:black;
+
+		}
+
+
+		header.page-head {
+
+			
+
+			margin-bottom: 79px;
+
+			text-align: center;
+
+			
+
+		}
+
+		
+
+		header.page-head h4 {
+
+			
+
+			margin: 0;
+
+			color: {color:Text};
+
+		
+
+		}
+
+		#main { margin-bottom: 120px; }
+
+		#main article:last-of-type {
+
+			
+
+			margin-bottom: 0;
+
+			padding-bottom: 0;
+
+			border: 0;
+
+			
+
+		}
+
+		
+
+
+
+		.post .content *:last-child { margin-bottom: 0; }
+
+
+		 .post-footer {
+
+			
+
+			width: 500px;
+
+			margin: 0 auto;
+
+			margin-top: 39px;
+
+			
+
+			
+
+		}
+
+
+		
+
+		.post .post-footer a {
+
+			
+
+			font-size: 13px;
+
+			color: {color:Post Meta};
+
+			
+
+		}
+
+		
+
+		.post .post-footer a:hover { color: {color:Link Hover}; }
+
+		
+
+            .post-footer .tags {
+
+			
+
+			display: block;
+
+			margin: 39px 0 0 0;
+
+			
+
+		}
+
+		
+
+		.post .post-footer .tags li { display: inline-block; margin-right: 6px; }
+
+		
+
+		.post .post-footer .tags li a:before { content: '#'; }
+
+		
+
+		.post .post-footer .date { float: right; }
+
+		
+
+		.post .post-footer .note-count { float: left; margin-right: 9px; }		
+
+		.post {
+
+			max-width: 1500px;
+
+			margin-top:10px;
+
+			margin-bottom: 84px;
+
+			position: relative;
+
+			border-left: 2px solid black;
+
+            overflow:hidden;
+
+		}
+
+    	.post-text {
+            margin-left: 80px;
+        	overflow:hidden;
+
+			margin-top: 80px;
+
+			margin-bottom: 84px;
+
+		    color:black;
+		    font-family: "Open Sans", Helvetica;
+
+		    max-width: 650px;
+		    padding: 10px;
+
+		}
+        p {
+            text-indent: 40px;
+        }
+
+		.post .headline,
+
+		.post .headline a {
+
+			
+
+			color: {color:Headline};
+
+			border: 0;
+
+			
+
+		}
+
+		.headline {
+
+		    	margin: auto;
+
+		    	margin-top: 40px;
+
+            	border-bottom: 3px solid black;
+
+            	font-size: 28px;
+
+            	max-width: 200px;
+
+            	text-align: center;
+
+            	padding-top: 35px;
+
+            	margin-bottom: 40px;
+
+		}
+
+
+
+		
+
+		.post .headline a:hover { color: {color:Link Hover}; }
+
+
+		#notes,
+
+		#disqus_thread {
+
+			
+
+			width: 500px;
+
+			margin: 38px auto 0 auto;
+
+			padding-top: 38px;
+
+			border-top: 1px solid {color:Border};
+
+			
+
+		}
+
+		
+
+		#disqus_thread iframe { display: block; margin: 0; padding: 0; }
+
+		
+
+		#notes ol.notes { list-style: none; margin: 0; padding: 0; }
+
+				
+
+		#notes ol.notes li { margin-bottom: 12px; }
+
+		#notes ol.notes li:last-child { margin-bottom: 0; }
+
+
+
+		#notes ol.notes .avatar_frame { margin-right: 9px; border: 0; display: inline-block; }
+
+		#notes ol.notes .avatar { border-radius: 50%; vertical-align: middle; }
+
+		#pagination {
+
+			
+
+			margin-top: 54px;
+
+			padding-top: 54px;
+
+			border-top: 1px solid {color:Border};			
+
+			
+
+		}
+
+		
+
+		.btn {
+
+			font-weight: 900;
+
+			letter-spacing: 1.5px;
+
+			text-align: center;
+
+			text-transform: uppercase;
+
+			font-size: 13px;
+
+			color: {color:Button};
+
+			line-height: 42px;
+
+			height: 42px;
+
+			display: inline-block;
+
+			border: 3px solid {color:Button Border};
+
+			border-radius: 400px;
+
+			padding: 0 12px;
+
+			min-width: 140px;
+		}
+			
+
+
+		.btn:hover {
+
+			
+
+			border-color: {color:Button Background Hover};
+
+			background: {color:Button Background Hover};
+
+			color: {color:Button Hover};
+
+			
+
+		}
+
+		
+
+		#pagination .prev-page { float: left; }
+
+		#pagination .next-page { float: right; }
+
+	
+
+		@media only screen and (max-width: 767px) {
+
+			
+
+			#mast-head { overflow: hidden; margin-bottom: 39px; }
+
+		
+
+			#mast-head #logo { padding: 50px 0; }
+
+			
+
+			.nav { text-align: center; }
+
+				
+
+			.nav ul { height: auto; }	
+
+			.fp-nav{
+
+        	margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        	text-align: center;
+
+		}
+
+			.nav ul li {
+
+				
+
+				float: none; 
+
+				display: inline-block;
+
+				margin: 0 9px;
+
+				padding: 12px 0;
+
+				
+
+			}
+
+
+
+			.container { margin: 39px; width: auto; }
+
+			
+
+			.post .content,
+
+			.post .post-footer,
+
+			#notes,
+
+			#disqus_thread { width: auto; }
+
+			
+
+			#pagination .btn {
+
+				
+
+				float: none;
+
+				display: block;
+
+				margin-bottom: 16px;
+
+				
+
+			}
+
+			
+
+			#pagination .next-page { margin-bottom: 0;}	
+
+		
+
+		}
+
+		.clear:before,
+
+		.clear:after {
+
+		    content: " ";
+
+		    display: table;
+
+		}
+
+		
+
+		.clear:after {
+
+		    clear: both;
+
+		}
+
+
+
+		{CustomCSS}
+
+  
+
+	</style>
+
+
+
+	<!-- Google Fonts
+
+  ================================================== -->			
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+        
+
+</head>
+
+<body>
+
+    {block:IndexPage}
+
+	<header id="mast-head">
+
+		<div class = "author-stuff">
+
+		<h1 class = "title-first-page" id="logo">
+
+			<a href="/" id="logo">
+
+				{block:IfNotLogoImage}{Title}{/block:IfNotLogoImage}
+
+			</a>
+
+		</h1>
+
+		<div class = "title-content">
+
+		<p class = "description"> {Description}</p>	
+
+		</div>
+
+		</div>
+
+		<nav class="nav fp-nav">
+
+			<ul class = "fp-nav">
+
+				<li class = "fp-nav-item"><a href="#posts-nav-page">Recent</a></li>
+
+				<li class="fp-nav-item"><a href="/archive">Archive</a></li>
+
+				{block:HasPages}
+
+					{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+
+				{/block:HasPages}
+
+				
+
+				
+
+			</ul>
+
+		
+
+		</nav>
+
+	
+
+	</header>
+
+	
+
+	     <div class = "posts-nav-page" id = "posts-nav-page">
+
+          <ol class = "posts-list id="recent-posts”>
+
+            <li class = "post-name"><a href="#" id="post8">The come up</a></li>
+
+            <li class = "post-name"><a href="#" id="post7">Thoughts while living in books</a></li>
+
+             <li class = "post-name"><a href="#" id="post6">You shall see them</a></li>                          <li class = "post-name"><a href="#" id="post5">Lower your voice</a></li>
+
+           <li class = "post-name"><a href="#" id="post4">Le counselor</a></li>
+
+            <li class = "post-name"><a href="#" id="post3">He loves me not</a></li>
+
+             <li class = "post-name"><a href="#" id="post2">You don't know me</a></li>
+
+            <li class = "post-name"><a href="#" id="post1">Jar of Hearts</a></li>
+
+
+
+        </ol>
+
+     </div>
+
+	<section id="main">
+
+{/block:IndexPage}		
+
+		<div class="container">
+
+
+
+			{block:SearchPage}
+
+				<!-- Page header for search pages -->
+
+				<header class="page-head">
+
+				
+
+					<h4>{SearchResultCount} Search Results for <span class="search-query">"{URLSafeSearchQuery}"</span></h4>
+
+				
+
+				</header>
+
+			{/block:SearchPage}
+
+			
+
+			{block:TagPage}
+
+				<!-- Page header for tag pages --> 
+
+				<header class="page-head">
+
+				
+
+					<h4>Posts tagged with <span class="search-query">"{URLSafeTag}"</span></h4>
+
+				
+
+				</header>
+
+			{/block:TagPage} 
+
+			{block:PermalinkPage}
+
+			{block:Posts}
+
+				<!-- Posts -->
+
+		<section = "post-nav">
+
+			     <h1 class = "post-heading">
+
+					<a class= "no-effect" href="/">{PostAuthorTitle}</a></h1>
+
+			 <nav class="fp-nav">
+
+		<ul class = "pp-nav">
+
+			<li class = "pp-nav-item"><a href="http://higoneeeeeeee.tumblr.com/#posts-nav-page">Recent</a></li>
+
+			<li class="pp-nav-item"><a href="/archive">Archive</a></li>
+
+		</ul>
+
+		</nav>
+
+	  </section>
+
+				<article class="post {block:Text}text{/block:Text}">
+
+					 {block:Text}
+
+						<!-- Text Post -->
+
+						
+
+							{block:PostTitle}
+
+								<h2 class="post-title">
+
+									{block:IndexPage}<a href="{Permalink}">{/block:IndexPage} 
+
+									{PostTitle}
+
+									{block:IndexPage}</a>{/block:IndexPage} 
+
+								</h2>
+
+							{/block:PostTitle}
+
+									
+
+						<section class="content clear post-text">
+
+							{Body}
+
+					
+
+						</section>  
+
+					{/block:Text}                 
+
+					{block:Date}
+
+						<!-- Post Meta -->
+
+						<footer class="post-footer clear">
+
+
+
+							
+
+							<!-- Note Count -->
+
+							<span class="note-count">
+
+								<a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+
+							</span>
+
+							
+
+							<!-- Post Date -->
+
+							<span class="date">
+
+								<a href="{Permalink}">{TimeAgo}</a>
+
+							</span>
+
+														
+
+							<!-- Tags -->
+
+							{block:HasTags} 
+
+								<ul class="tags">
+
+									{block:Tags}
+
+										<li><a href="{TagURL}">{Tag}</a></li>
+
+									{/block:Tags}
+
+								</ul>
+
+							{/block:HasTags} 
+
+							
+
+						</footer>
+
+	
+
+						{block:PermalinkPage} 
+
+	
+
+							{block:PostNotes} 
+
+								<!-- Notes -->
+
+								<div id="notes">
+
+									
+
+									<h4>Notes</h4>
+
+									
+
+									{PostNotes-16}
+
+								
+
+								</div>
+
+							{/block:PostNotes}
+
+							
+
+							{block:IfDisqusShortname}
+
+								<!-- Disqus Comment Section -->
+
+								<div id="disqus_thread"></div>
+
+							{/block:IfDisqusShortname}
+
+	
+
+					
+
+							{block:IfDisqusShortname}
+
+								<!-- Disqus Comment Count Script -->
+
+								<script type="text/javascript">
+
+									var disqus_shortname = '{text:Disqus Shortname}';
+
+									
+
+									(function () {
+
+										var s = document.createElement('script'); s.async = true;
+
+										s.type = 'text/javascript';
+
+										s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+
+										(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+
+									}());
+
+								</script>
+
+							{/block:IfDisqusShortname}
+
+					
+
+						{/block:PermalinkPage} 
+
+					
+
+					{/block:Date}
+
+					
+
+				</article>
+
+				
+
+			{/block:Posts}
+
+{/block:PermalinkPage}
+
+			{block:Pagination}
+
+				<!-- Pagination -->
+
+				<section id="pagination" class="clear">
+
+					
+
+					{block:PreviousPage}
+
+						<a href="{PreviousPage}" class="prev-page btn">Previous Page</a>
+
+					{/block:PreviousPage}
+
+					
+
+					{block:NextPage}
+
+						<a href="{NextPage}" class="next-page btn">Next Page</a>
+
+					{/block:NextPage}
+
+				
+
+				</section>
+
+			{/block:Pagination}
+
+					
+
+		</div>
+
+	
+
+	</section>
+
+	
+
+	{block:PermalinkPage} 
+
+	{block:IfDisqusShortname}
+
+		<!-- Disqus Commennts -->		
+
+		<script type="text/javascript">
+
+			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+
+			var disqus_shortname = '{text:Disqus Shortname}'; // Required - Replace <example> with your forum shortname
+
+			
+
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+
+			(function() {
+
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+			})();
+
+		</script>
+
+	{/block:IfDisqusShortname}
+
+	{/block:PermalinkPage} 
+
+		
+
+
+
+	<!-- Assets (DO NOT DELETE These)
+
+  ================================================== -->		
+
+	<script>
+
+	window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>')</script>
+
+	<script type="text/javascript" src="http://static.tumblr.com/ztelplt/6Hzn9fkxi/photoset-grid.min.js"></script>
+
+	<script type="text/javascript" src="http://static.tumblr.com/ztelplt/PoWn9fqjx/jquery.colorbox-min.js"></script>
+
+	<script type="text/javascript" src="http://static.tumblr.com/ztelplt/kKsn9fvfg/theme.min.js"></script>
+
+    <script>
+
+	$('.author-stuff').hover(function() { 
+
+    	console.log("Hi!");
+
+       $(this).find('.title-content').addClass('active');
+
+    } ,function(){
+
+       $(this).find('.title-content').removeClass('active');
+
+    });
+
+	</script>
+
+	<script>
+
+                $(document).ready(function () {
+
+             $.getJSON('http://higoneeeeeeee.tumblr.com/api/read/json?callback=?',
+
+                function(response) {
+
+                   $('#post8').attr('href',response.posts[7].url);
+
+            });
+
+             $.getJSON('http://higoneeeeeeee.tumblr.com/api/read/json?callback=?',
+
+                function(response) {
+
+                   $('#post7').attr('href',response.posts[6].url);
+
+            });
+
+             $.getJSON('http://higoneeeeeeee.tumblr.com/api/read/json?callback=?',
+
+                function(response) {
+
+                   $('#post6').attr('href',response.posts[5].url);
+
+            });
+
+             $.getJSON('http://higoneeeeeeee.tumblr.com/api/read/json?callback=?',
+
+                function(response) {
+
+                   $('#post5').attr('href',response.posts[4].url);
+
+            });
+
+             $.getJSON('http://higoneeeeeeee.tumblr.com/api/read/json?callback=?',
+
+                function(response) {
+
+                   $('#post4').attr('href',response.posts[3].url);
+
+            });
+
+             $.getJSON('http://higoneeeeeeee.tumblr.com/api/read/json?callback=?',
+
+                function(response) {
+
+                   $('#post3').attr('href',response.posts[2].url);
+
+            });
+
+            $.getJSON('http://higoneeeeeeee.tumblr.com/api/read/json?callback=?',
+
+                function(response) {
+
+                   $('#post2').attr('href',response.posts[1].url);
+
+            });
+
+               $.getJSON('http://higoneeeeeeee.tumblr.com/api/read/json?callback=?',
+
+                function(response) {
+
+                   $('#post1').attr('href',response.posts[0].url);
+
+            });
+
+        });
+
+	</script>
+
+
+
+
+
+</body>
+
+</html>
