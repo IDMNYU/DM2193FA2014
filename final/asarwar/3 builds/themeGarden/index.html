@@ -39,6 +39,9 @@
 
 <meta name="viewport" content="width=820" />
 
+<!-- Infinite Scrolling From Cody Sherman -->
+<script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
+
 <style type="text/css"> 
 body{ 
         line-height: 11px; 
@@ -48,13 +51,13 @@ body{
         font-size:10px; 
         text-align: left; 
         font-family:arial; 
-        background-color:#ffffff; 
+        background-color:#000; 
         background-image:url(http://assets.tumblr.com/images/x.gif?v=1); 
         background-attachment: fixed; background-position:top center; background-repeat: repeat;
     } 
 
 a{
-    color:#000000; 
+    color:#fff; 
     text-decoration:none;
 } 
 
@@ -66,7 +69,7 @@ a:focus{outline-style: none;}
 
 link:focus{outline: none;} 
 
-strong{color:#000;} 
+strong{color:#fff;} 
 
 img{border:none;} 
 
@@ -79,7 +82,7 @@ div#content{
 } 
 
 div#center{ 
-    background-color:#ffffff; 
+    background-color:#000; 
     margin-left: 0px; 
     padding: 10px; 
     width:500px; 
@@ -87,7 +90,7 @@ div#center{
 } 
 
 div#header{ 
-    background-color:#ffffff; 
+    background-color:#000; 
     padding: 10px; 
     width:500px;
 } 
@@ -97,7 +100,7 @@ div#header h1 {
     line-height:90px; 
     font-family: arial, serif; 
     font-weight:normal; 
-    color:#000000; 
+    color:#fff; 
     letter-spacing:-2px; 
     display:inline;
 } 
@@ -108,7 +111,7 @@ div#header hr{
     margin-bottom:30px; 
     border: 0; 
     height:3px; 
-    background-color:#000000;
+    background-color:#fff;
 } 
 
 div#header a{
@@ -194,7 +197,7 @@ ul, ol, li{
     font-size: 20px; 
     line-height: 23px; 
     letter-spacing: -1px; 
-    color: #000000; 
+    color: #fff; 
     padding:1px 1px 0px 1px; 
     text-transform:uppercase;
 } 
@@ -205,7 +208,7 @@ ul, ol, li{
     font-size: 15px; 
     line-height: 23px; 
     letter-spacing: -1px; 
-    color: #000000; 
+    color: #fff; 
     padding:1px 1px 0px 1px;
 } 
 
@@ -241,7 +244,7 @@ ul, ol, li{
 } 
 
 .border{ 
-    background:#000000; 
+    background:#fff; 
     border: 0 none; 
     height: 3px; 
     margin: 12px auto; 
@@ -250,7 +253,7 @@ ul, ol, li{
 } 
 
 .permalink_photo_notes{ 
-    color: #FFFFFF; 
+    color: #000; 
     display: block; 
     font-family: arial,serif; 
     font-size: 60px; 
@@ -265,7 +268,7 @@ ul, ol, li{
 } 
 
 .permalink_photo_notes a { 
-    border-bottom:solid 3px white; 
+    border-bottom:solid 3px black; 
     padding:0 0 10px
 } 
 
@@ -275,7 +278,7 @@ ul, ol, li{
     -moz-transition: all 0.3s linear; 
 } 
 
-.permalink_photo_notes a {color:#fff;} 
+.permalink_photo_notes a {color:#000;} 
 
 #entry:hover .permalink_photo_notes:hover{ 
     opacity:1; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear;
@@ -304,18 +307,18 @@ div#photo div#picture div#info {
     visibility:hidden; 
     z-index:998; 
     text-align:center; 
-    background-color:#000; 
-    opacity 0.7s linear; 
+    background-color:#C0C0C0; 
+    opacity 0.2s linear; 
 } 
 
 #entry div#photo div#picture:hover div#info{ 
-    opacity 0.7s linear; opacity: 0.9; 
+    opacity 0.7s linear; opacity: 0.4; 
 } 
 
 div#photo div#picture div#info div#holder { 
     position:absolute; 
     z-index:999; 
-    color:#000;
+    color:#fff;
 } 
 
 div#photo div#picture div#info div#holder a,div#photo div#picture div#info div#holder a:hover { 
@@ -356,7 +359,7 @@ div#entry .permalink1{
     padding-right:10px; 
     padding-bottom:10px; 
     font-style:italic; 
-    border-right: 4px solid #000000; 
+    border-right: 4px solid #fff; 
     text-align: right; 
     overflow:hidden; 
     line-height:12px; 
@@ -395,15 +398,15 @@ div.padd {
     color: #aaa; 
     padding:10px 0; 
     width:170px; 
-    background-color: #ffffff; 
+    background-color: #000; 
     padding-bottom:15px; 
-    border-left: 4px solid #000000;
+    border-left: 4px solid #fff;
 } 
 
 #sidebar_info_inside {  
     height: auto; 
     padding: 10px; 
-    color: #aaa; 
+    color: #fff; 
     padding:0 10px;
 } 
 
@@ -412,16 +415,20 @@ div.padd {
     line-height: 50px; 
     font-family: arial, serif; 
     font-weight:normal; 
-    color:#000000; 
+    color:#fff; 
     letter-spacing:0px; 
     display:inline;
 } 
+
+#sidebar_info a:hover {
+	color: #00009C;
+}
 
 #permalink_post_info { 
     width: 200px; 
     position:fixed; 
     height: auto;  
-    border-left: 4px solid #000000; 
+    border-left: 4px solid #fff; 
     text-align:left; 
     margin-left: 530px; 
     padding-top:50px; 
@@ -722,7 +729,165 @@ $(window).scroll(function() {
         <div class="border"></div>
         </div><!-- End entry -->
         {block:PostNotes}
-                <br>{PostNotes}<br>
+                {block:Quote}
+                 {block:IndexPage}
+                        <div class="permalink"><span class="permalink1">
+                        {block:Date}
+                        <a href="{permalink}" target="_blank">
+                        {block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}
+                        </a><br>                       
+                        <a href="{permalink}">{TimeAgo} on</a><br>
+                        <a href="{permalink}">{DayOfMonth} {Month} {Year}</a><br>
+                        {/block:Date}</span></div>
+                {/block:IndexPage}
+                <center>
+                <span class="quotesymbols">❝</span>
+                <span class="title">{Quote}</span>
+                <span class="quotesymbols">❞</span><br>
+                {block:Source}{Source}{/block:Source}</center>
+        {/block:Quote}
+
+        {block:Text}
+                 {block:IndexPage}
+                        <div class="permalink"><span class="permalink1">
+                        {block:Date}
+                        <a href="{permalink}">
+                        {block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}
+                        </a><br>
+                        <a href="{permalink}">{TimeAgo} on</a><br>
+                        <a href="{permalink}">{DayOfMonth} {Month} {Year}</a><br>
+                        {/block:Date}</span></div>
+                {/block:IndexPage}
+                {block:Title}<span class="title">{Title}</span>{/block:Title}
+                {Body}
+        {/block:Text}
+
+        {block:Link}
+                 {block:IndexPage}
+                        <div class="permalink"><span class="permalink1">
+                        {block:Date}
+                        <a href="{permalink}">
+                        {block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}
+                        </a><br>
+                        <a href="{permalink}">{TimeAgo} on</a><br>
+                        <a href="{permalink}">{DayOfMonth} {Month} {Year}</a><br>
+                        {/block:Date}</span></div>
+                {/block:IndexPage}
+                <a href="{URL}" class="title">{Name}</a>
+                {block:Description}{Description}{/block:Description}
+        {block:Link}
+
+        {block:Answer}
+        <div class="answer_post">
+           <img class="asker_portrait" src="{AskerPortraitURL-30}"/>
+           <div class="question">
+               {Asker} asked:<br>
+               {Question}
+           </div>
+           <div class="answer">{Answer}</div>
+        </div>
+        {/block:Answer} 
+
+
+        {block:Photo}
+                 {block:IndexPage}
+                        <div class="permalink"><span class="permalink1">
+                        {block:Date}                     
+                        <a href="{permalink}">{TimeAgo}</a><br>
+                        <a href="{permalink}">{DayOfMonth} {Month} {Year}</a><br>
+                        <a href="{ReblogURL}">Reblog</a>
+                       
+                        {/block:Date}</span></div>
+                {/block:IndexPage}
+                <div class="post">
+                <div id="extraonephoto">
+                <div id="photo">           
+                {block:IndexPage}
+                        <div id="picture">
+                        {block:Date}
+                 <a href="{permalink}"><div class="permalink_photo">
+                 
+                 </div></a>
+                 <div class="permalink_photo_notes">
+                    <a href="{permalink}">{block:NoteCount} {NoteCount}{/block:NoteCount}</a>
+                 </div>
+                           <div id="info">
+                           <div id="holder">
+                           </div></div>
+                        {/block:Date}
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}"></div>
+                        {block:ifshowphotoCaption}
+                        {block:Caption}{Caption}{/block:Caption}{/block:ifshowphotoCaption}
+                {/block:IndexPage}
+                {block:PermalinkPage}
+                        {LinkOpenTag}
+                                <img src="{PhotoURL-500}" alt="{PhotoAlt}" width=500px/><br><br>
+                        {LinkCloseTag}
+                        {block:Caption}{Caption}{/block:Caption}
+                {/block:PermalinkPage}
+                </div></div></div>
+        {/block:Photo}
+        
+        {block:Chat}
+                 {block:IndexPage}
+                        <div class="permalink"><span class="permalink1">
+                        {block:Date}
+                        <a href="{permalink}">
+                        {block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}
+                        </a><br>
+                        <a href="{permalink}">{TimeAgo} on</a><br>
+                        <a href="{permalink}">{DayOfMonth} {Month} {Year}</a><br>
+                        {/block:Date}</span></div>
+                {/block:IndexPage}
+                {block:Title}<span class="title">{Title}</span>{/block:Title}
+                <ul class="chat">
+                        {block:Lines}
+                                <li class="user_{UserNumber}">
+                                        {block:Label}
+                                        <span class="label">{Label}</span>
+                                        {/block:Label}
+                                        {Line}
+                                </li>
+                        {/block:Lines}
+                </ul>
+        {/block:Chat}
+        {block:Audio}  
+                 {block:IndexPage}
+                        <div class="permalink"><span class="permalink1">
+                        {block:Date}
+                        <a href="{permalink}">
+                        {block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}
+                        </a><br>
+                        <a href="{permalink}">{TimeAgo} on</a><br>
+                        <a href="{permalink}">{DayOfMonth} {Month} {Year}</a><br>
+                        {/block:Date}</span></div>
+                {/block:IndexPage}
+                <center><div style="width:400px; height:20px;">
+                <div style="float:left">{AudioPlayerWhite}</div>
+                <div style="margin-top:8px; float:right;"><small>
+                {FormattedPlayCount} plays {block:ExternalAudio} // 
+                <a href="{ExternalAudioURL}">Download?</a>
+                {/block:ExternalAudio}</small>
+                </div></div></center><br>
+                {block:Caption}{Caption}{/block:Caption}
+        {/block:Audio}
+        
+        {block:Video}
+                 {block:IndexPage}
+                        <div class="permalink"><span class="permalink1">
+                        {block:Date}
+                        <a href="{permalink}">
+                        {block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}
+                        </a><br>
+                        <a href="{permalink}">{TimeAgo} on</a><br>
+                        <a href="{permalink}">{DayOfMonth} {Month} {Year}</a><br>
+                        {/block:Date}</span></div>
+                {/block:IndexPage}
+                <center>
+                {Video-500}<br>
+                {block:Caption}{Caption}{/block:Caption}
+                </center>
+        {/block:Video}
         {/block:PostNotes}
         {/block:Posts}
         </div>
